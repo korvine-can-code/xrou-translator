@@ -3,89 +3,112 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#1c1422">
+<meta name="theme-color" content="#111111">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Xrou Speech — Lexicon & Translator</title>
+<title>Dvandva Xrou-Haxa Translator</title>
 <style>
 :root {
-  --bg:#130f17; --panel:#211827; --panel2:#2b2034; --ink:#f6eff8;
-  --muted:#b8a9bd; --line:#46374f; --accent:#d2a8df; --accent2:#92beb7;
-  --warn:#e3bb76; --good:#9dd4af;
+  --bg:#080808; --panel:rgba(18,18,18,.9); --panel2:rgba(28,28,28,.96); --panel3:rgba(10,10,10,.82);
+  --ink:#f5f5f5; --muted:#b7b7b7; --line:#5b5b5b; --accent:#ffffff; --accent-soft:#d9d9d9;
+  --warn:#d8d8d8; --good:#efefef; --shadow:0 20px 54px rgba(0,0,0,.45);
 }
 * { box-sizing:border-box; }
 html { color-scheme:dark; }
 body {
   margin:0; color:var(--ink);
   font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:
-    radial-gradient(circle at 10% 0%,rgba(132,78,154,.18),transparent 34rem),
-    radial-gradient(circle at 95% 15%,rgba(65,129,118,.12),transparent 30rem),
-    var(--bg);
+  background:var(--bg);
+  min-height:100vh;
+  position:relative;
 }
-.wrap { width:min(1080px,calc(100% - 28px)); margin:auto; }
-header { padding:42px 0 18px; }
-.eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.72rem; font-weight:800; color:var(--accent2); }
-h1 { font-family:Georgia,serif; font-size:clamp(2rem,8vw,4rem); line-height:.98; margin:.35rem 0 .55rem; }
+body::before {
+  content:""; position:fixed; inset:0; z-index:-2;
+  background:url('./assets/cave-bg.jpg') center center / cover no-repeat fixed;
+  filter:saturate(.8) brightness(.55);
+}
+body::after {
+  content:""; position:fixed; inset:0; z-index:-1;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.78), rgba(0,0,0,.70) 24%, rgba(0,0,0,.75) 65%, rgba(0,0,0,.88)),
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 32rem),
+    radial-gradient(circle at 50% 100%, rgba(255,255,255,.05), transparent 28rem);
+}
+.wrap { width:min(1120px,calc(100% - 28px)); margin:auto; }
+header { padding:36px 0 18px; }
+.hero {
+  background:linear-gradient(180deg, rgba(15,15,15,.86), rgba(8,8,8,.9));
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:28px; padding:26px 22px 20px;
+  box-shadow:var(--shadow); backdrop-filter: blur(6px);
+}
+.headerArt {
+  width:min(360px, 68vw); display:block; margin:0 auto 14px; 
+  filter: drop-shadow(0 10px 28px rgba(0,0,0,.45));
+}
+.eyebrow { text-transform:uppercase; letter-spacing:.22em; font-size:.74rem; font-weight:800; color:#d6d6d6; text-align:center; }
+h1 {
+  font-family:Georgia,serif; font-size:clamp(2.05rem,7vw,4.2rem); line-height:1.03; margin:.35rem 0 .55rem;
+  text-align:center; color:#fff; text-shadow:0 1px 0 rgba(255,255,255,.08);
+}
 p { line-height:1.55; }
-.sub { color:var(--muted); max-width:780px; margin:0; }
+.sub { color:var(--muted); max-width:820px; margin:0 auto; text-align:center; }
 .tabs {
-  display:flex; gap:8px; margin-top:20px; padding:6px; width:max-content; max-width:100%;
-  background:rgba(33,24,39,.85); border:1px solid var(--line); border-radius:14px;
+  display:flex; gap:8px; margin:20px auto 0; padding:6px; width:max-content; max-width:100%;
+  background:rgba(10,10,10,.88); border:1px solid rgba(255,255,255,.16); border-radius:14px;
 }
 .tab {
   min-height:40px; border:0; border-radius:10px; padding:0 16px; color:var(--muted);
   background:transparent; cursor:pointer; font-weight:800;
 }
-.tab.active { color:var(--ink); background:var(--panel2); }
+.tab.active { color:#111; background:#f0f0f0; }
 .panel { display:none; padding:20px 0 64px; }
 .panel.active { display:block; }
 .box {
-  background:linear-gradient(180deg,rgba(43,32,52,.98),rgba(31,23,37,.98));
-  border:1px solid var(--line); border-radius:18px; padding:16px;
-  box-shadow:0 16px 44px rgba(0,0,0,.25);
+  background:linear-gradient(180deg,rgba(22,22,22,.96),rgba(12,12,12,.95));
+  border:1px solid rgba(255,255,255,.15); border-radius:22px; padding:18px;
+  box-shadow:var(--shadow); backdrop-filter: blur(6px);
 }
 label { display:block; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:7px; }
 textarea,input,select,button {
-  font:inherit; color:var(--ink); border-radius:12px; border:1px solid var(--line); background:#19131e;
+  font:inherit; color:var(--ink); border-radius:12px; border:1px solid rgba(255,255,255,.18); background:#101010;
 }
 textarea { width:100%; min-height:126px; padding:13px; resize:vertical; line-height:1.5; }
 input { width:100%; min-height:46px; padding:0 14px; }
 select { min-height:46px; padding:0 12px; }
-button {
-  min-height:42px; padding:0 14px; font-weight:800; cursor:pointer;
-}
-button:hover { background:var(--panel2); }
+button { min-height:42px; padding:0 14px; font-weight:800; cursor:pointer; transition:.18s ease; }
+button:hover { background:#1d1d1d; border-color:rgba(255,255,255,.32); }
 .direction { display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:end; }
 .swap { min-width:46px; font-size:1.2rem; }
 .actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:12px; }
-.primary { background:#3d2948; border-color:#76578a; }
+.primary { background:#ededed; border-color:#ffffff; color:#101010; }
+.primary:hover { background:#ffffff; }
 .notice {
-  margin-top:12px; padding:11px 12px; border-radius:12px; color:#d8c7dd;
-  background:rgba(227,187,118,.07); border:1px solid rgba(227,187,118,.22); font-size:.88rem;
+  margin-top:12px; padding:11px 12px; border-radius:12px; color:#e4e4e4;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:.88rem;
 }
 .output {
-  margin-top:16px; padding:15px; border-radius:14px; background:#17111b; border:1px solid var(--line);
+  margin-top:16px; padding:15px; border-radius:14px; background:#0c0c0c; border:1px solid rgba(255,255,255,.13);
   min-height:84px;
 }
 .outputTitle { color:var(--muted); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
 .translation { font-family:Georgia,serif; font-size:1.35rem; line-height:1.5; overflow-wrap:anywhere; }
-.unknown { color:var(--warn); }
+.unknown { color:#d0d0d0; text-decoration:underline dotted rgba(255,255,255,.45); }
 .details { margin-top:12px; display:flex; flex-wrap:wrap; gap:7px; }
 .chip {
-  padding:5px 8px; border-radius:999px; border:1px solid var(--line); background:var(--panel);
-  color:var(--muted); font-size:.78rem;
+  padding:5px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.14); background:#171717;
+  color:#d1d1d1; font-size:.78rem;
 }
 .controls { display:grid; grid-template-columns:minmax(0,1fr) 220px auto; gap:10px; }
 .meta { display:flex; justify-content:space-between; gap:12px; margin:11px 0 0; color:var(--muted); font-size:.86rem; }
 .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:14px; }
-.card { background:var(--panel); border:1px solid var(--line); border-radius:15px; padding:15px; min-width:0; }
+.card { background:rgba(20,20,20,.95); border:1px solid rgba(255,255,255,.12); border-radius:15px; padding:15px; min-width:0; }
 .cardTop { display:flex; gap:10px; align-items:flex-start; justify-content:space-between; }
 .word { font-family:Georgia,serif; font-size:1.35rem; font-weight:700; overflow-wrap:anywhere; }
-.badge { color:#bce0db; border:1px solid rgba(146,190,183,.28); border-radius:999px; padding:4px 8px; font-size:.7rem; text-align:center; }
-.eng { margin-top:7px; line-height:1.45; }
-.notes { margin-top:8px; color:var(--muted); font-size:.86rem; line-height:1.45; }
-.empty { grid-column:1/-1; padding:36px; border:1px dashed var(--line); border-radius:15px; text-align:center; color:var(--muted); }
-footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
+.badge { color:#111; background:#ececec; border:1px solid #fff; border-radius:999px; padding:4px 8px; font-size:.7rem; text-align:center; }
+.eng { margin-top:7px; line-height:1.45; color:#f1f1f1; }
+.empty { grid-column:1/-1; padding:36px; border:1px dashed rgba(255,255,255,.18); border-radius:15px; text-align:center; color:var(--muted); }
+footer { color:#c7c7c7; font-size:.84rem; padding-bottom:40px; }
+.footerBox { background:rgba(12,12,12,.82); border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:14px 16px; }
 @media (max-width:760px) {
   .direction { grid-template-columns:1fr; }
   .swap { width:100%; }
@@ -97,12 +120,15 @@ footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
 </head>
 <body>
 <header class="wrap">
-  <div class="eyebrow">Xrou Speech</div>
-  <h1>Lexicon & Translator</h1>
-  <p class="sub">Search the dictionary or make a literal dictionary translation in either direction. Unknown words stay visibly marked instead of being invented.</p>
-  <div class="tabs">
-    <button class="tab active" data-tab="translator">Translator</button>
-    <button class="tab" data-tab="dictionary">Dictionary</button>
+  <div class="hero">
+    <img class="headerArt" src="./assets/dvandva-header.png" alt="Dvandva crest header art">
+    <div class="eyebrow">House Dvandva • Xrou / Drowspeech</div>
+    <h1>Dvandva Xrou-Haxa Translator</h1>
+    <p class="sub">Search the lexicon or make a literal bidirectional translation between English and Xrou-Haxa. Unknown words stay visibly marked instead of being invented.</p>
+    <div class="tabs">
+      <button class="tab active" data-tab="translator">Translator</button>
+      <button class="tab" data-tab="dictionary">Dictionary</button>
+    </div>
   </div>
 </header>
 
@@ -114,14 +140,14 @@ footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
           <label for="sourceLang">From</label>
           <select id="sourceLang">
             <option value="en">English</option>
-            <option value="xrou">Xrou / Drowspeech</option>
+            <option value="xrou">Xrou-Haxa</option>
           </select>
         </div>
         <button id="swapBtn" class="swap" title="Swap direction">⇄</button>
         <div>
           <label for="targetLang">To</label>
           <select id="targetLang">
-            <option value="xrou">Xrou / Drowspeech</option>
+            <option value="xrou">Xrou-Haxa</option>
             <option value="en">English</option>
           </select>
         </div>
@@ -153,10 +179,9 @@ footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
   <section id="dictionary" class="panel">
     <div class="box">
       <div class="controls">
-        <input id="search" type="search" placeholder="Search English or Drowspeech…">
+        <input id="search" type="search" placeholder="Search English or Xrou-Haxa…">
         <select id="typeFilter">
           <option value="">All types</option>
-          <option value="adjective">adjective</option><option value="adjective / adverb">adjective / adverb</option><option value="adjective / compound">adjective / compound</option><option value="adjective / endearment">adjective / endearment</option><option value="adjective / noun">adjective / noun</option><option value="adjective / pronoun">adjective / pronoun</option><option value="adjective / verb">adjective / verb</option><option value="adverb">adverb</option><option value="adverb / interjection">adverb / interjection</option><option value="adverb / noun">adverb / noun</option><option value="comparative element">comparative element</option><option value="compound">compound</option><option value="compound / endearment">compound / endearment</option><option value="compound / relational form">compound / relational form</option><option value="compound / title">compound / title</option><option value="compound / verb form">compound / verb form</option><option value="compound / vulgar">compound / vulgar</option><option value="conjunction">conjunction</option><option value="conjunction / adverb">conjunction / adverb</option><option value="conjunction / relational word">conjunction / relational word</option><option value="construction">construction</option><option value="demonstrative">demonstrative</option><option value="endearment">endearment</option><option value="endearment / compound">endearment / compound</option><option value="epithet / compound">epithet / compound</option><option value="ethnonym / compound">ethnonym / compound</option><option value="grammar form">grammar form</option><option value="grammar particle">grammar particle</option><option value="grammar prefix">grammar prefix</option><option value="imperative">imperative</option><option value="insult">insult</option><option value="insult / adjective">insult / adjective</option><option value="insult / compound">insult / compound</option><option value="insult / epithet">insult / epithet</option><option value="intensifier">intensifier</option><option value="interjection">interjection</option><option value="interjection / adjective">interjection / adjective</option><option value="interjection / imperative">interjection / imperative</option><option value="interjection / noun">interjection / noun</option><option value="modal">modal</option><option value="modal / imperative">modal / imperative</option><option value="modifier">modifier</option><option value="negative">negative</option><option value="negative compound">negative compound</option><option value="negative verb form">negative verb form</option><option value="nickname / compound">nickname / compound</option><option value="noun">noun</option><option value="noun / adjective">noun / adjective</option><option value="noun / endearment">noun / endearment</option><option value="noun / insult">noun / insult</option><option value="noun / relational word">noun / relational word</option><option value="noun / root">noun / root</option><option value="noun / suffix">noun / suffix</option><option value="noun / title">noun / title</option><option value="noun / verb">noun / verb</option><option value="number / adjective">number / adjective</option><option value="onomastic / marital particle">onomastic / marital particle</option><option value="onomastic / relational particle">onomastic / relational particle</option><option value="onomastic particle">onomastic particle</option><option value="particle">particle</option><option value="phrase">phrase</option><option value="place / title phrase">place / title phrase</option><option value="politeness marker">politeness marker</option><option value="possessive expression">possessive expression</option><option value="preposition">preposition</option><option value="pronoun">pronoun</option><option value="pronoun / possessive">pronoun / possessive</option><option value="proper noun">proper noun</option><option value="proper noun / group title">proper noun / group title</option><option value="proper noun / house name">proper noun / house name</option><option value="proper noun / order or sect">proper noun / order or sect</option><option value="question expression">question expression</option><option value="question phrase">question phrase</option><option value="question word">question word</option><option value="relational form">relational form</option><option value="relational word">relational word</option><option value="root">root</option><option value="slang / adjective">slang / adjective</option><option value="slang / compound">slang / compound</option><option value="slang / epithet">slang / epithet</option><option value="slang / idiom">slang / idiom</option><option value="swear / interjection">swear / interjection</option><option value="swear / verb">swear / verb</option><option value="title">title</option><option value="title / adjective">title / adjective</option><option value="title / compound">title / compound</option><option value="title / endearment">title / endearment</option><option value="title / loanword">title / loanword</option><option value="title / nickname">title / nickname</option><option value="title / noun">title / noun</option><option value="title / social term">title / social term</option><option value="unresolved word">unresolved word</option><option value="verb">verb</option><option value="verb / compound">verb / compound</option><option value="verb / construction">verb / construction</option><option value="verb / form">verb / form</option><option value="verb / noun">verb / noun</option><option value="verb / phrase">verb / phrase</option><option value="verb / root">verb / root</option>
         </select>
         <button id="clearSearch">Clear</button>
       </div>
@@ -170,7 +195,7 @@ footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
 </main>
 
 <footer class="wrap">
-  The translator uses dictionary matching, not automatic grammar. New everyday words are provisional Xrou proposals; unknown words remain untranslated. As the lexicon grows, translation coverage improves automatically.
+  <div class="footerBox">The translator uses dictionary matching, not automatic grammar. Unknown words remain untranslated, and coverage improves automatically as the lexicon grows.</div>
 </footer>
 
 <script>
@@ -310,7 +335,6 @@ document.getElementById('copyTranslation').addEventListener('click',async()=>{
   try { await navigator.clipboard.writeText(value); } catch { window.prompt('Copy this:',value); }
 });
 
-// Dictionary
 const search=document.getElementById('search');
 const typeFilter=document.getElementById('typeFilter');
 const results=document.getElementById('results');
@@ -322,7 +346,7 @@ function renderDictionary() {
   const filtered=LEXICON.filter(item=>{
     if (type && item.type!==type) return false;
     if (!q) return true;
-    return norm(item.drow).includes(q)||norm(item.english).includes(q)||norm(item.type).includes(q)||norm(item.notes || "").includes(q);
+    return norm(item.drow).includes(q)||norm(item.english).includes(q)||norm(item.type).includes(q);
   });
   count.textContent=`${filtered.length} of ${LEXICON.length} entries`;
   if (!filtered.length) {
@@ -336,7 +360,6 @@ function renderDictionary() {
         ${item.type?`<div class="badge">${esc(item.type)}</div>`:''}
       </div>
       <div class="eng">${esc(item.english)}</div>
-      
       <div class="actions"><button data-copy="${encodeURIComponent(item.drow)}">Copy</button></div>
     </article>`).join('');
   document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
@@ -349,14 +372,12 @@ search.addEventListener('input',renderDictionary);
 typeFilter.addEventListener('change',renderDictionary);
 document.getElementById('clearSearch').addEventListener('click',()=>{search.value='';typeFilter.value='';renderDictionary();search.focus();});
 
-// Tabs
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById(btn.dataset.tab).classList.add('active');
 }));
-
 
 async function loadLexicon() {
   const res = await fetch('./lexicon.json', {cache:'no-store'});

@@ -1,5 +1,7 @@
-const CACHE = 'xrou-speech-v2';
-const ASSETS = ['./', './index.html', './lexicon.json', './manifest.webmanifest'];
+const CACHE = 'dvandva-xrou-haxa-v1';
+const ASSETS = [
+  './', './index.html', './lexicon.json', './manifest.webmanifest', './assets/cave-bg.jpg', './assets/dvandva-header.png'
+];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });

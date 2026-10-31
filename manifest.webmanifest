@@ -1,9 +1,9 @@
 {
-  "name": "Xrou Speech Lexicon & Translator",
-  "short_name": "Xrou Speech",
+  "name": "Dvandva Xrou-Haxa Translator",
+  "short_name": "Xrou-Haxa",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#130f17",
-  "theme_color": "#1c1422",
-  "description": "Searchable Xrou/Drowspeech lexicon with literal bidirectional translation."
+  "background_color": "#080808",
+  "theme_color": "#111111",
+  "description": "Searchable Xrou-Haxa lexicon with literal bidirectional translation."
 }
