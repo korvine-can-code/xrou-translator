@@ -1,2323 +1,4022 @@
 [
   {
+    "drow": "Abba",
+    "english": "dada; daddy; papa",
+    "type": "noun / family"
+  },
+  {
     "drow": "abhi",
     "english": "still; yet; nevertheless",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "acha",
     "english": "okay; right; I see",
-    "type": "interjection",
-    "notes": ""
-  },
-  {
-    "drow": "ada-kurtas",
-    "english": "my claimed; the one I have claimed",
-    "type": "possessive expression",
-    "notes": ""
+    "type": "interjection"
   },
   {
     "drow": "adam",
     "english": "I; me; my (in compounds)",
-    "type": "pronoun / possessive",
-    "notes": "Masculine/default first person."
+    "type": "pronoun / possessive"
   },
   {
     "drow": "adam-",
     "english": "my; of me",
-    "type": "grammar prefix",
-    "notes": "Possessive use in compounds."
+    "type": "grammar prefix"
   },
   {
     "drow": "adam-anayhana",
     "english": "my offering; for me to offer",
-    "type": "compound / verb form",
+    "type": "compound / verb form"
+  },
+  {
+    "drow": "Adam-Bhakshaka",
+    "english": "my devourer",
+    "type": "compound"
   },
   {
     "drow": "adam-bhram",
     "english": "my lapse; my error",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "adam-dhanya",
     "english": "my gratitude; my thanks",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "Adam-dil",
-    "english": "my heart; context-dependent possessive form",
-    "type": "compound",
-    "notes":
+    "english": "context-dependent form; use adam-ker for my heart",
+    "type": "compound"
   },
   {
     "drow": "Adam-Javitaran",
     "english": "my husband",
-    "type": "compound / endearment",
-    "notes": ""
+    "type": "compound / endearment"
   },
   {
     "drow": "adam-kala",
     "english": "my time; my appointed/fated hour",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
-    "drow": "adam-lassesukha",
-    "english": "my affections; my intimacy",
-    "type": "compound",
-    "notes": ""
+    "drow": "adam-ker",
+    "english": "my heart",
+    "type": "compound"
+  },
+  {
+    "drow": "adam-manas",
+    "english": "my mind",
+    "type": "compound"
   },
   {
     "drow": "adam-naqab",
     "english": "my mask",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "adam-rupa",
     "english": "my appearance; my form",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "adam-sarva",
+    "english": "my everything; my all",
+    "type": "compound"
+  },
+  {
+    "drow": "adam-shrinkhala",
+    "english": "my chains",
+    "type": "compound"
   },
   {
     "drow": "adam-svamin",
     "english": "my lord; my master",
-    "type": "compound / title",
-    "notes": ""
+    "type": "compound / title"
   },
   {
     "drow": "adam-xana",
     "english": "my soul; my essential self",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "adam-xsfava",
     "english": "my rage",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "Adam-yek",
     "english": "my only; my one",
-    "type": "compound / endearment",
-    "notes": ""
+    "type": "compound / endearment"
   },
   {
     "drow": "adams",
-    "english": "we",
-    "type": "pronoun",
-    "notes": "Older working form; Xcsadam is also used."
+    "english": "we (older variant)",
+    "type": "pronoun"
   },
   {
     "drow": "adar",
     "english": "I; me (feminine)",
-    "type": "pronoun",
-    "notes": "Explicit feminine first-person form."
+    "type": "pronoun"
   },
   {
     "drow": "adas",
     "english": "I; me (neutral)",
-    "type": "pronoun",
-    "notes": "Neutral first-person form."
+    "type": "pronoun"
+  },
+  {
+    "drow": "adhas",
+    "english": "below; beneath",
+    "type": "preposition"
   },
   {
     "drow": "adhik",
     "english": "more; additional",
-    "type": "adjective / adverb",
-    "notes": ""
+    "type": "adjective / adverb"
+  },
+  {
+    "drow": "adhikansha",
+    "english": "most; majority",
+    "type": "adjective / noun"
   },
   {
     "drow": "adhikara",
     "english": "authority; right; permission",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "adhyaya",
+    "english": "study; learn a lesson",
+    "type": "verb"
   },
   {
     "drow": "adi",
     "english": "very; strongly",
-    "type": "intensifier",
-    "notes": "Older form; ati is also used."
+    "type": "intensifier"
+  },
+  {
+    "drow": "agaccha",
+    "english": "come; approach",
+    "type": "verb"
+  },
+  {
+    "drow": "agni",
+    "english": "fire; flame",
+    "type": "noun"
+  },
+  {
+    "drow": "agnikunda",
+    "english": "hearth; fireplace",
+    "type": "noun"
   },
   {
     "drow": "ah-haxa",
     "english": "sigh",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "aham",
+    "english": "myself",
+    "type": "pronoun"
+  },
+  {
+    "drow": "ahankara",
+    "english": "ego; self-importance",
+    "type": "noun"
+  },
+  {
+    "drow": "ahvana",
+    "english": "call for; summon",
+    "type": "verb"
   },
   {
     "drow": "ai",
     "english": "of the union; by union with",
-    "type": "onomastic particle",
-    "notes": "Working surname particle."
+    "type": "onomastic particle"
+  },
+  {
+    "drow": "ajna",
+    "english": "command; order; instruct",
+    "type": "verb / noun"
   },
   {
     "drow": "akan",
     "english": "context-dependent word",
-    "type": "unresolved word",
-    "notes": "Seen in an older Drowspeech example."
+    "type": "unresolved word"
+  },
+  {
+    "drow": "akasma",
+    "english": "suddenly",
+    "type": "adverb"
+  },
+  {
+    "drow": "akela",
+    "english": "lonely; alone",
+    "type": "adjective"
+  },
+  {
+    "drow": "alankara",
+    "english": "ornament; decoration",
+    "type": "noun"
+  },
+  {
+    "drow": "alp",
+    "english": "few; little",
+    "type": "adjective"
+  },
+  {
+    "drow": "alvida",
+    "english": "farewell; goodbye",
+    "type": "interjection"
   },
   {
     "drow": "amahay",
     "english": "ally-related element",
-    "type": "noun / adjective",
-    "notes": "Part of a phrase meaning 'you plural are allies.'"
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "Amma",
+    "english": "mama; mommy",
+    "type": "noun / family"
   },
   {
     "drow": "anaiba",
     "english": "unknown descriptor",
-    "type": "unresolved word",
-    "notes": "Appears after 'I think/believe you are ...'."
+    "type": "unresolved word"
+  },
+  {
+    "drow": "ananda",
+    "english": "joy; happiness",
+    "type": "noun"
   },
   {
     "drow": "anausa",
     "english": "always; forever",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
+  },
+  {
+    "drow": "anaya",
+    "english": "bring; fetch",
+    "type": "verb"
   },
   {
     "drow": "anayhana",
     "english": "offer; present; give",
-    "type": "verb",
-    "notes": "Variant/related form used in older examples."
+    "type": "verb"
+  },
+  {
+    "drow": "anda",
+    "english": "egg",
+    "type": "noun"
+  },
+  {
+    "drow": "andhi",
+    "english": "storm; tempest",
+    "type": "noun"
+  },
+  {
+    "drow": "anna",
+    "english": "grain; cooked rice",
+    "type": "noun"
   },
   {
     "drow": "anokha",
     "english": "strange; unfamiliar",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "antar",
+    "english": "in; inward; inside",
+    "type": "adverb / preposition"
+  },
+  {
+    "drow": "antar-kalaha",
+    "english": "infighting; internal quarrel",
+    "type": "noun"
   },
   {
     "drow": "antatah",
     "english": "finally; at last; about time",
-    "type": "adverb / interjection",
-    "notes": ""
+    "type": "adverb / interjection"
+  },
+  {
+    "drow": "antima",
+    "english": "last; final",
+    "type": "adjective"
+  },
+  {
+    "drow": "anupata",
+    "english": "ratio; proportion",
+    "type": "noun"
+  },
+  {
+    "drow": "anusara",
+    "english": "follow",
+    "type": "verb"
   },
   {
     "drow": "anushas",
     "english": "discipline; correct; train",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "anusiya",
     "english": "discord / dissent / cause-related root",
-    "type": "root",
-    "notes": "Meaning varies across constructions."
+    "type": "root"
   },
   {
     "drow": "anvis",
     "english": "seek; intend; try",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "anya-dast",
     "english": "another hand",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "anyatra",
+    "english": "elsewhere",
+    "type": "adverb"
   },
   {
     "drow": "apares",
     "english": "will need; need",
-    "type": "modal",
-    "notes": ""
+    "type": "modal"
   },
   {
     "drow": "api",
     "english": "also; too",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "apsara",
     "english": "never / irrealis-related element",
-    "type": "grammar form",
-    "notes": "Appears in a sentence translated as 'I will never feel shame because of you.'"
+    "type": "grammar form"
   },
   {
     "drow": "arambh",
     "english": "begin; start",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "ardha",
+    "english": "half",
+    "type": "number"
+  },
+  {
+    "drow": "ardharatri",
+    "english": "midnight",
+    "type": "noun"
+  },
+  {
+    "drow": "ardra",
+    "english": "wet; damp",
+    "type": "adjective"
   },
   {
     "drow": "arha",
     "english": "worthy",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "asambhav",
     "english": "impossible",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "asambhav-murakh",
+    "english": "absurd; ridiculously foolish",
+    "type": "adjective"
+  },
+  {
+    "drow": "asan",
+    "english": "chair; seat",
+    "type": "noun"
+  },
+  {
+    "drow": "asatya",
+    "english": "false; untrue",
+    "type": "adjective"
   },
   {
     "drow": "asha",
     "english": "hope; wish",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
+  },
+  {
+    "drow": "asha-kiran",
+    "english": "optimism; glimmer of hope",
+    "type": "noun"
   },
   {
     "drow": "ashista",
     "english": "impolite; discourteous; lacking manners",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "ashru",
+    "english": "tear; tears",
+    "type": "noun"
+  },
+  {
+    "drow": "ashta",
+    "english": "eight",
+    "type": "number"
+  },
+  {
+    "drow": "ashva",
+    "english": "horse",
+    "type": "noun"
+  },
+  {
+    "drow": "asthi",
+    "english": "bone",
+    "type": "noun"
+  },
+  {
+    "drow": "asthi-paryanta",
+    "english": "to the bone",
+    "type": "adverbial phrase"
   },
   {
     "drow": "athva",
     "english": "or",
-    "type": "conjunction",
-    "notes": ""
+    "type": "conjunction"
   },
   {
     "drow": "ati",
     "english": "too; excessively; very",
-    "type": "intensifier",
-    "notes": ""
+    "type": "intensifier"
+  },
+  {
+    "drow": "ati-vishala",
+    "english": "oversized; enormous",
+    "type": "adjective"
+  },
+  {
+    "drow": "atithi",
+    "english": "guest",
+    "type": "noun"
+  },
+  {
+    "drow": "atra",
+    "english": "here",
+    "type": "adverb"
   },
   {
     "drow": "avara",
     "english": "future; coming",
-    "type": "adjective / noun",
-    "notes": ""
+    "type": "adjective / noun"
+  },
+  {
+    "drow": "avashyak",
+    "english": "necessary; needed",
+    "type": "adjective"
   },
   {
     "drow": "aves",
     "english": "those; that which",
-    "type": "demonstrative",
-    "notes": ""
+    "type": "demonstrative"
   },
   {
     "drow": "ayina",
     "english": "mirror",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "azidaraya",
     "english": "embrace; serpent-hold",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "bahas",
+    "english": "argue; debate",
+    "type": "verb"
+  },
+  {
+    "drow": "bahir",
+    "english": "out; outside; outward",
+    "type": "adverb / preposition"
+  },
+  {
+    "drow": "bahut",
+    "english": "many; a lot",
+    "type": "adjective"
+  },
+  {
+    "drow": "bahut-dhanya",
+    "english": "many thanks; thank you very much",
+    "type": "expression"
+  },
+  {
+    "drow": "bakri",
+    "english": "goat",
+    "type": "noun"
   },
   {
     "drow": "bakshes",
     "english": "forgiveness; pardon",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "bala",
     "english": "child; little one",
-    "type": "noun / endearment",
-    "notes": ""
+    "type": "noun / endearment"
   },
   {
     "drow": "Bala-zaban",
     "english": "childish speech; petty childish insults",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "balak",
+    "english": "boy",
+    "type": "noun"
+  },
+  {
+    "drow": "bali",
+    "english": "sacrifice; offering",
+    "type": "noun"
+  },
+  {
+    "drow": "balika",
+    "english": "girl; child",
+    "type": "noun"
   },
   {
     "drow": "band",
     "english": "bound; bond",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
   },
   {
     "drow": "Band-Javitar",
     "english": "bonded husband",
-    "type": "title / endearment",
-    "notes": ""
+    "type": "title / endearment"
+  },
+  {
+    "drow": "bandh-kara",
+    "english": "close; shut",
+    "type": "verb"
+  },
+  {
+    "drow": "bartan",
+    "english": "utensil; vessel",
+    "type": "noun"
   },
   {
     "drow": "bas",
     "english": "contextual limiter / emphasis",
-    "type": "particle",
-    "notes": "Appears in a negative 'not letting you leave' construction."
+    "type": "particle"
   },
   {
     "drow": "Bauxes",
     "english": "mourn; grieve; sorrow",
-    "type": "verb / root",
-    "notes": "Related to bauxes-haxa 'whimper'."
+    "type": "verb / root"
   },
   {
     "drow": "bauxes-haxa",
     "english": "whimper",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "bauxes-kara",
     "english": "mourn; grieve",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "Baxcen",
     "english": "sorry; apology",
-    "type": "interjection / noun",
-    "notes": ""
+    "type": "interjection / noun"
   },
   {
     "drow": "baz",
     "english": "open",
-    "type": "adjective / verb",
-    "notes": ""
+    "type": "adjective / verb"
+  },
+  {
+    "drow": "bazaar",
+    "english": "market; marketplace",
+    "type": "noun"
   },
   {
     "drow": "be-lazzat",
     "english": "pleasure",
-    "type": "noun",
-    "notes": "Older pleasure term; lassetas is also used."
+    "type": "noun"
+  },
+  {
+    "drow": "bech",
+    "english": "sell; trade away",
+    "type": "verb"
   },
   {
     "drow": "behtar",
     "english": "better",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "bhai",
+    "english": "brother",
+    "type": "noun"
+  },
+  {
+    "drow": "Bhakshaka",
+    "english": "devourer",
+    "type": "noun / title"
+  },
+  {
+    "drow": "bhakshana",
+    "english": "eating; devouring",
+    "type": "noun / verb"
+  },
+  {
+    "drow": "bhakta",
+    "english": "devoted; doting",
+    "type": "adjective"
+  },
+  {
+    "drow": "bhangura",
+    "english": "breakable; fragile",
+    "type": "adjective"
+  },
+  {
+    "drow": "bhara",
+    "english": "burden; weight",
+    "type": "noun"
   },
   {
     "drow": "bhas-kapa",
     "english": "blastcap",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "bhasma",
     "english": "ash",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "bhava",
     "english": "become",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "bhava-kala",
+    "english": "becoming; coming into being",
+    "type": "noun"
   },
   {
     "drow": "bhavatu",
     "english": "may it be; let it be",
-    "type": "modal / imperative",
-    "notes": ""
+    "type": "modal / imperative"
+  },
+  {
+    "drow": "bhaya",
+    "english": "fear",
+    "type": "noun"
+  },
+  {
+    "drow": "bhijita",
+    "english": "soaked; drenched",
+    "type": "adjective"
+  },
+  {
+    "drow": "bhitti",
+    "english": "wall",
+    "type": "noun"
+  },
+  {
+    "drow": "bhojana",
+    "english": "meal; food",
+    "type": "noun"
+  },
+  {
+    "drow": "bhojana-kaksha",
+    "english": "dining room",
+    "type": "noun"
+  },
+  {
+    "drow": "bhojya",
+    "english": "food; something edible",
+    "type": "noun"
   },
   {
     "drow": "bhram",
     "english": "lapse; error; momentary failing",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "Bhranti",
+    "english": "delusion; false perception",
+    "type": "noun"
+  },
+  {
+    "drow": "bhranti-mund",
+    "english": "world of delusion",
+    "type": "compound"
+  },
+  {
+    "drow": "bhukha",
+    "english": "hungry",
+    "type": "adjective"
+  },
+  {
+    "drow": "bhumi",
+    "english": "ground; earth",
+    "type": "noun"
+  },
+  {
+    "drow": "bhumi-tala",
+    "english": "floor",
+    "type": "noun"
+  },
+  {
+    "drow": "bija",
+    "english": "seed",
+    "type": "noun"
+  },
+  {
+    "drow": "bijli",
+    "english": "lightning",
+    "type": "noun"
+  },
+  {
+    "drow": "billi",
+    "english": "cat",
+    "type": "noun"
+  },
+  {
+    "drow": "cara",
+    "english": "walk; tread",
+    "type": "verb"
   },
   {
     "drow": "caxra",
     "english": "leave; go away; run away",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "caxra samyak",
+    "english": "go well; farewell",
+    "type": "expression"
   },
   {
     "drow": "cet",
     "english": "else; otherwise",
-    "type": "particle",
-    "notes": "Used in 'Na cet?' = 'Or else?'"
+    "type": "particle"
+  },
+  {
+    "drow": "chaku",
+    "english": "knife",
+    "type": "noun"
+  },
+  {
+    "drow": "chamcha",
+    "english": "spoon",
+    "type": "noun"
+  },
+  {
+    "drow": "chara",
+    "english": "footstep; walking step",
+    "type": "noun"
   },
   {
     "drow": "chashm",
     "english": "eye; gaze",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "chashm-kur",
     "english": "blind-eyed; oblivious",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
   },
   {
     "drow": "chatham",
     "english": "that / demonstrative construction",
-    "type": "demonstrative",
-    "notes": "Context-dependent."
+    "type": "demonstrative"
+  },
+  {
+    "drow": "chatur",
+    "english": "four",
+    "type": "number"
+  },
+  {
+    "drow": "chaya-pana",
+    "english": "tea; brewed tea",
+    "type": "noun"
+  },
+  {
+    "drow": "cheda",
+    "english": "cut; slice",
+    "type": "verb"
+  },
+  {
+    "drow": "chhat",
+    "english": "roof; ceiling",
+    "type": "noun"
+  },
+  {
+    "drow": "chhota",
+    "english": "short; small",
+    "type": "adjective"
   },
   {
     "drow": "chikitsa",
     "english": "medical treatment; healing care",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "chini",
+    "english": "sugar",
+    "type": "noun"
+  },
+  {
+    "drow": "chinta",
+    "english": "worry; anxiety",
+    "type": "noun / verb"
+  },
+  {
+    "drow": "chitra",
+    "english": "picture; image",
+    "type": "noun"
+  },
+  {
+    "drow": "chuno",
+    "english": "choose; select",
+    "type": "verb"
   },
   {
     "drow": "cumbana",
     "english": "kiss",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
   },
   {
     "drow": "da-",
     "english": "of; belonging to; from; because of; relational",
-    "type": "grammar prefix",
-    "notes": "Broad genitive/relational prefix, e.g. da-tumu."
+    "type": "grammar prefix"
   },
   {
     "drow": "da-adam",
     "english": "of me; from me",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
   },
   {
     "drow": "da-Deva",
     "english": "of God; of the gods; divine",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
   },
   {
     "drow": "da-nagar",
     "english": "of the town",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
   },
   {
     "drow": "da-tumu",
     "english": "of you; yours; to you; from you",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
   },
   {
     "drow": "da-Vilasa",
     "english": "of Decadence; of indulgence",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
   },
   {
     "drow": "da-vise",
     "english": "of him; his",
-    "type": "relational form",
-    "notes": ""
+    "type": "relational form"
+  },
+  {
+    "drow": "dada",
+    "english": "give; hand over",
+    "type": "verb"
   },
   {
     "drow": "dah",
     "english": "burn",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "Dani",
     "english": "Dani",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
   },
   {
     "drow": "dant",
     "english": "tooth; teeth",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Dant-rast",
     "english": "true teeth; someone who backs up their threats",
-    "type": "slang / idiom",
-    "notes": ""
+    "type": "slang / idiom"
   },
   {
     "drow": "dar",
     "english": "belonging; possession; realm / relation",
-    "type": "relational word",
-    "notes": "Used in possession and 'belongs to' constructions."
+    "type": "relational word"
   },
   {
     "drow": "dar-adam",
     "english": "mine",
-    "type": "possessive expression",
-    "notes": ""
+    "type": "possessive expression"
+  },
+  {
+    "drow": "dar-tumu",
+    "english": "yours; belonging to you",
+    "type": "possessive expression"
   },
   {
     "drow": "daraz",
     "english": "truly; really",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "darbar",
     "english": "role; office; station",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "dars",
     "english": "see; look",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "darsam",
     "english": "bold; audacious",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "dasa",
     "english": "slave; servant",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "dasa-karm",
     "english": "slave labor",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "dasha",
+    "english": "ten",
+    "type": "number"
   },
   {
     "drow": "dast-band",
     "english": "closed hand; miser",
-    "type": "insult / compound",
-    "notes": ""
+    "type": "insult / compound"
   },
   {
     "drow": "dast-khali",
     "english": "empty-handed; useless; good-for-nothing",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
+  },
+  {
+    "drow": "deha",
+    "english": "body",
+    "type": "noun"
+  },
+  {
+    "drow": "dekho",
+    "english": "look!",
+    "type": "imperative"
   },
   {
     "drow": "der",
     "english": "late",
-    "type": "adjective / adverb",
-    "notes": ""
+    "type": "adjective / adverb"
   },
   {
     "drow": "Deva",
     "english": "god; divinity",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
   },
   {
     "drow": "Deva da-Vilasa",
     "english": "God of Decadence",
-    "type": "title",
-    "notes": ""
+    "type": "title"
   },
   {
     "drow": "Devexa",
     "english": "Delectant",
-    "type": "title",
-    "notes": ""
+    "type": "title"
   },
   {
     "drow": "dhanya",
     "english": "gratitude; thanks; appreciation",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "dhar",
     "english": "holder; bearer; keeper",
-    "type": "noun / suffix",
-    "notes": ""
+    "type": "noun / suffix"
+  },
+  {
+    "drow": "dharaka",
+    "english": "holder; keeper; bearer",
+    "type": "noun"
+  },
+  {
+    "drow": "dhava",
+    "english": "run",
+    "type": "verb"
+  },
+  {
+    "drow": "dhira",
+    "english": "slowly; patiently",
+    "type": "adverb"
+  },
+  {
+    "drow": "dhova",
+    "english": "wash; clean",
+    "type": "verb"
   },
   {
     "drow": "digar-jay",
     "english": "elsewhere; another place",
-    "type": "adverb / noun",
-    "notes": ""
+    "type": "adverb / noun"
+  },
+  {
+    "drow": "dikhava",
+    "english": "show; demonstrate",
+    "type": "verb"
   },
   {
     "drow": "dil-khasta",
     "english": "heart-tired; emotionally exhausted",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "dina",
     "english": "day; days",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "dipa",
+    "english": "lamp; lantern",
+    "type": "noun"
   },
   {
     "drow": "dosten",
     "english": "ally-related element",
-    "type": "noun / adjective",
-    "notes": "Part of a phrase meaning 'you plural are allies.'"
+    "type": "noun / adjective"
   },
   {
     "drow": "draugov",
     "english": "lie; deceive",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "drav",
     "english": "melt; become liquid",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "dudha",
+    "english": "milk",
+    "type": "noun"
+  },
+  {
+    "drow": "dukha",
+    "english": "sadness; grief",
+    "type": "noun"
   },
   {
     "drow": "durbal",
     "english": "weak",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "Dvandva",
     "english": "Dvandva",
-    "type": "proper noun / group title",
-    "notes": ""
+    "type": "proper noun / group title"
   },
   {
     "drow": "Dvar",
     "english": "Dwarf; Dwarves",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Dvar-zaban",
     "english": "Dwarven speech",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "dvara",
+    "english": "door; gate",
+    "type": "noun"
+  },
+  {
+    "drow": "dvesha",
+    "english": "hate; loathe",
+    "type": "verb"
+  },
+  {
+    "drow": "dvi",
+    "english": "two",
+    "type": "number"
+  },
+  {
+    "drow": "dviguna",
+    "english": "double; twice",
+    "type": "adjective / adverb"
   },
   {
     "drow": "eh",
     "english": "eh; hey; interjection",
-    "type": "interjection",
-    "notes": ""
+    "type": "interjection"
+  },
+  {
+    "drow": "eka",
+    "english": "one; a; an",
+    "type": "number / article"
   },
   {
     "drow": "ena",
     "english": "now; right now; already; by now",
-    "type": "adverb",
-    "notes": "Context-dependent working use."
+    "type": "adverb"
   },
   {
     "drow": "etha",
     "english": "this; it",
-    "type": "demonstrative",
-    "notes": ""
+    "type": "demonstrative"
+  },
+  {
+    "drow": "etha-prakar",
+    "english": "like that; in that manner",
+    "type": "adverb / expression"
+  },
+  {
+    "drow": "Faesong-vashikara",
+    "english": "magical compulsion through Faesong",
+    "type": "compound"
+  },
+  {
+    "drow": "gaay",
+    "english": "cow",
+    "type": "noun"
+  },
+  {
+    "drow": "galat",
+    "english": "wrong; incorrect",
+    "type": "adjective"
+  },
+  {
+    "drow": "gamana",
+    "english": "go; move",
+    "type": "verb"
+  },
+  {
+    "drow": "ganana",
+    "english": "count; calculate",
+    "type": "verb"
   },
   {
     "drow": "garbha",
     "english": "pregnant",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "garjana",
+    "english": "thunder",
+    "type": "noun"
   },
   {
     "drow": "garruer",
     "english": "awaken; rouse; stir",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "garva",
+    "english": "pride",
+    "type": "noun"
   },
   {
     "drow": "gautes",
     "english": "hear",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "gautex",
     "english": "hear; be heard",
-    "type": "verb / form",
-    "notes": "Used in an older sentence; exact inflection uncertain."
+    "type": "verb / form"
   },
   {
     "drow": "Georgia",
     "english": "Georgia",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
+  },
+  {
+    "drow": "ghanta",
+    "english": "hour; bell",
+    "type": "noun"
   },
   {
     "drow": "ghar",
     "english": "home; house",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "Ghar da-Ashraya",
+    "english": "House of Ashraya",
+    "type": "place / compound"
   },
   {
     "drow": "ghausa",
     "english": "sound; noise",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "gir",
     "english": "take; seize",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "godha",
+    "english": "lizard",
+    "type": "noun"
   },
   {
     "drow": "grahan",
     "english": "accept; acceptance; receive",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
+  },
+  {
+    "drow": "griha-dvara",
+    "english": "front door; doorway",
+    "type": "noun"
+  },
+  {
+    "drow": "guha",
+    "english": "cave",
+    "type": "noun"
   },
   {
     "drow": "guha-patana",
     "english": "cave-in",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "harit",
     "english": "green",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "Harit-kesha",
     "english": "green-hair; green-haired one",
-    "type": "nickname / compound",
-    "notes": ""
+    "type": "nickname / compound"
+  },
+  {
+    "drow": "has",
+    "english": "laugh",
+    "type": "verb"
+  },
+  {
+    "drow": "hasta",
+    "english": "hand; arm",
+    "type": "noun"
+  },
+  {
+    "drow": "hasta-alankara",
+    "english": "arm ornament; arm candy",
+    "type": "compound"
+  },
+  {
+    "drow": "hathila",
+    "english": "stubborn; obstinate",
+    "type": "adjective"
   },
   {
     "drow": "hatta",
     "english": "even; at least",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "havarkama",
     "english": "lips",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "haxa",
     "english": "sound; utterance; spoken words; voice",
-    "type": "noun / root",
-    "notes": "Productive sound/utterance root."
+    "type": "noun / root"
+  },
+  {
+    "drow": "haxarkama",
+    "english": "context-dependent sensory/taste term",
+    "type": "unresolved word"
+  },
+  {
+    "drow": "hima",
+    "english": "snow; frost",
+    "type": "noun"
+  },
+  {
+    "drow": "hm-vai",
+    "english": "mm-hm",
+    "type": "interjection"
   },
   {
     "drow": "iccha",
     "english": "want; desire; would like",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "idam",
+    "english": "this one",
+    "type": "demonstrative"
   },
   {
     "drow": "idias",
     "english": "if",
-    "type": "conjunction",
-    "notes": ""
+    "type": "conjunction"
+  },
+  {
+    "drow": "ime",
+    "english": "these",
+    "type": "demonstrative"
   },
   {
     "drow": "intezar",
     "english": "wait; waiting",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
+  },
+  {
+    "drow": "irshya",
+    "english": "jealousy; envy",
+    "type": "noun"
+  },
+  {
+    "drow": "jala",
+    "english": "water",
+    "type": "noun"
+  },
+  {
+    "drow": "jaldi",
+    "english": "hurry; quickly",
+    "type": "adverb"
+  },
+  {
+    "drow": "jan",
+    "english": "person; individual",
+    "type": "noun"
+  },
+  {
+    "drow": "jana-sabha",
+    "english": "crowd; gathering",
+    "type": "noun"
   },
   {
     "drow": "jara",
     "english": "old age",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "jati",
+    "english": "kind; lineage; people of a kind",
+    "type": "noun"
   },
   {
     "drow": "Javita",
     "english": "marriage",
-    "type": "noun",
-    "notes":
+    "type": "noun"
   },
   {
     "drow": "javitamar",
     "english": "wife; consort",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
   },
   {
     "drow": "Javitaran",
     "english": "husband",
-    "type": "noun / title",
-    "notes": "Masculine counterpart used for javitamar."
+    "type": "noun / title"
   },
   {
     "drow": "jiva",
     "english": "alive; living",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "juta",
+    "english": "shoe; footwear",
+    "type": "noun"
   },
   {
     "drow": "juvni",
     "english": "beloved",
-    "type": "noun / adjective",
-    "notes": "Seen in tama-juvni."
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "ka",
+    "english": "who",
+    "type": "question word"
   },
   {
     "drow": "ka-khet",
     "english": "who / comparative question construction",
-    "type": "question expression",
-    "notes": "Context-dependent."
+    "type": "question expression"
+  },
+  {
+    "drow": "kada",
+    "english": "when exactly",
+    "type": "question word"
+  },
+  {
+    "drow": "kadapi",
+    "english": "ever; at any time",
+    "type": "adverb"
+  },
+  {
+    "drow": "kagaz",
+    "english": "paper",
+    "type": "noun"
+  },
+  {
+    "drow": "kahani",
+    "english": "story; tale",
+    "type": "noun"
+  },
+  {
+    "drow": "kahva",
+    "english": "coffee",
+    "type": "noun"
+  },
+  {
+    "drow": "kal",
+    "english": "a while; a time",
+    "type": "noun"
   },
   {
     "drow": "kala",
     "english": "wish / feel / modal element",
-    "type": "grammar form",
-    "notes": "Context-dependent."
+    "type": "grammar form"
+  },
+  {
+    "drow": "kalaha",
+    "english": "quarrel; dispute",
+    "type": "noun"
+  },
+  {
+    "drow": "kalam",
+    "english": "pen; writing reed",
+    "type": "noun"
+  },
+  {
+    "drow": "kalasha",
+    "english": "jug; pitcher",
+    "type": "noun"
+  },
+  {
+    "drow": "kali-mirch",
+    "english": "pepper; black pepper",
+    "type": "noun"
   },
   {
     "drow": "kama",
     "english": "desire; want",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "kama-yhanam",
     "english": "gladly given; freely offered",
-    "type": "phrase",
-    "notes": ""
+    "type": "phrase"
+  },
+  {
+    "drow": "kamra",
+    "english": "room; chamber",
+    "type": "noun"
+  },
+  {
+    "drow": "kanta",
+    "english": "fork",
+    "type": "noun"
+  },
+  {
+    "drow": "kanya",
+    "english": "girl; young woman",
+    "type": "noun"
+  },
+  {
+    "drow": "kapra",
+    "english": "cloth; fabric",
+    "type": "noun"
   },
   {
     "drow": "kara",
     "english": "do; make; cause",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "karm",
     "english": "labor; work",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "kasma",
     "english": "why",
-    "type": "question word",
-    "notes": ""
+    "type": "question word"
+  },
+  {
+    "drow": "kasmai",
+    "english": "to whom",
+    "type": "question word"
+  },
+  {
+    "drow": "kasya",
+    "english": "whose",
+    "type": "question word"
+  },
+  {
+    "drow": "katha",
+    "english": "talk; conversation",
+    "type": "noun"
   },
   {
     "drow": "katham",
     "english": "how",
-    "type": "question word",
-    "notes": ""
+    "type": "question word"
+  },
+  {
+    "drow": "kathor",
+    "english": "hard; firm",
+    "type": "adjective"
+  },
+  {
+    "drow": "kati",
+    "english": "how much; how many",
+    "type": "question word"
+  },
+  {
+    "drow": "kati-vasa",
+    "english": "how often",
+    "type": "question expression"
+  },
+  {
+    "drow": "katora",
+    "english": "bowl",
+    "type": "noun"
   },
   {
     "drow": "kavalam",
     "english": "from; apart; away from",
-    "type": "relational word",
-    "notes":
+    "type": "relational word"
+  },
+  {
+    "drow": "kena",
+    "english": "by whom",
+    "type": "question word"
   },
   {
     "drow": "ker",
     "english": "heart-related element",
-    "type": "noun / root",
-    "notes":
+    "type": "noun / root"
   },
   {
     "drow": "kesha",
     "english": "hair",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "kevala",
+    "english": "only; merely",
+    "type": "adverb"
   },
   {
     "drow": "khab",
     "english": "sleep",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
   },
   {
     "drow": "khad",
     "english": "eat; devour",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "khar",
     "english": "biter; biting",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "kharid",
+    "english": "buy; purchase",
+    "type": "verb"
   },
   {
     "drow": "khasa-khasa",
     "english": "squabble; petty bickering",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
   },
   {
     "drow": "khasta",
     "english": "tired",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "khata",
+    "english": "sour; tart",
+    "type": "adjective"
   },
   {
     "drow": "khela",
     "english": "play",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
+  },
+  {
+    "drow": "khet",
+    "english": "field; farmland",
+    "type": "noun"
+  },
+  {
+    "drow": "khidki",
+    "english": "window",
+    "type": "noun"
+  },
+  {
+    "drow": "khola",
+    "english": "open; unlock",
+    "type": "verb"
   },
   {
     "drow": "khun-kam",
     "english": "thin-blooded; coward",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
   },
   {
     "drow": "khush",
     "english": "fun; enjoyable",
-    "type": "adjective / noun",
-    "notes": ""
+    "type": "adjective / noun"
   },
   {
     "drow": "kim",
     "english": "what",
-    "type": "question word",
-    "notes": ""
+    "type": "question word"
+  },
+  {
+    "drow": "kinara",
+    "english": "shore; bank; edge",
+    "type": "noun"
+  },
+  {
+    "drow": "kinchit",
+    "english": "some; a little",
+    "type": "adjective"
+  },
+  {
+    "drow": "koi-bat-vai",
+    "english": "no problem; it's nothing",
+    "type": "expression"
   },
   {
     "drow": "komal",
     "english": "frail; delicate",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "komal-man",
+    "english": "kindhearted; gentle-natured",
+    "type": "adjective"
+  },
+  {
+    "drow": "komala",
+    "english": "gentle; tender; soft",
+    "type": "adjective"
+  },
+  {
+    "drow": "krama",
+    "english": "order; sequence",
+    "type": "noun"
   },
   {
     "drow": "kripa",
     "english": "please",
-    "type": "politeness marker",
-    "notes": ""
+    "type": "politeness marker"
+  },
+  {
+    "drow": "kripaya",
+    "english": "please (polite form)",
+    "type": "politeness marker"
+  },
+  {
+    "drow": "krodha",
+    "english": "anger",
+    "type": "noun"
+  },
+  {
+    "drow": "kshama",
+    "english": "excuse; forgive",
+    "type": "verb"
+  },
+  {
+    "drow": "kshana",
+    "english": "moment; short while",
+    "type": "noun"
+  },
+  {
+    "drow": "kshanik",
+    "english": "brief; momentary",
+    "type": "adjective"
+  },
+  {
+    "drow": "kunji",
+    "english": "key",
+    "type": "noun"
+  },
+  {
+    "drow": "kutra",
+    "english": "where",
+    "type": "question word"
+  },
+  {
+    "drow": "lajja",
+    "english": "shyness; embarrassment",
+    "type": "noun"
   },
   {
     "drow": "lamasa",
     "english": "touch; strike; lay hands on",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
-    "drow": "lassesukha",
-    "english": "affections; sex; intimate favor",
-    "type": "noun",
-    "notes": "Appears in adam-lassesukha."
+    "drow": "lamba",
+    "english": "long; tall",
+    "type": "adjective"
+  },
+  {
+    "drow": "lambh",
+    "english": "reach; obtain",
+    "type": "verb"
   },
   {
     "drow": "lassetas",
     "english": "pleasure",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
-    "drow": "laxcarces",
-    "english": "concubine",
-    "type": "noun",
-    "notes": ""
+    "drow": "lena",
+    "english": "take; receive",
+    "type": "verb"
+  },
+  {
+    "drow": "likha",
+    "english": "write",
+    "type": "verb"
   },
   {
     "drow": "lobha",
     "english": "greed; greedy",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
   },
   {
     "drow": "Lobha-Paxain",
     "english": "Greedy Beast",
-    "type": "insult / epithet",
-    "notes": ""
+    "type": "insult / epithet"
   },
   {
     "drow": "lruys",
     "english": "scream",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
+  },
+  {
+    "drow": "maaf",
+    "english": "pardon me; excuse me",
+    "type": "interjection"
+  },
+  {
+    "drow": "madhu",
+    "english": "honey",
+    "type": "noun"
   },
   {
     "drow": "madhya",
     "english": "middle; center",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "madhyahna",
+    "english": "noon; midday",
+    "type": "noun"
   },
   {
     "drow": "maghz",
     "english": "brain",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "maghz-e",
     "english": "brain of; possessive brain construction",
-    "type": "compound / relational form",
-    "notes": "Seen in a prior idiom about someone's brain arriving late."
+    "type": "compound / relational form"
+  },
+  {
+    "drow": "maha",
+    "english": "great; mighty",
+    "type": "adjective / prefix"
+  },
+  {
+    "drow": "maha-bhranti",
+    "english": "great delusion",
+    "type": "noun"
+  },
+  {
+    "drow": "mahatva",
+    "english": "important; importance",
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "mahinga",
+    "english": "expensive; costly",
+    "type": "adjective"
+  },
+  {
+    "drow": "maila",
+    "english": "dirty; unclean",
+    "type": "adjective"
   },
   {
     "drow": "maitre",
     "english": "to me / relational element",
-    "type": "relational form",
-    "notes": "Appears in 'Offer your heart to me.'"
+    "type": "relational form"
+  },
+  {
+    "drow": "Makari",
+    "english": "spider",
+    "type": "noun"
+  },
+  {
+    "drow": "makhan",
+    "english": "butter",
+    "type": "noun"
   },
   {
     "drow": "malik",
     "english": "master",
-    "type": "title",
-    "notes": ""
+    "type": "title"
+  },
+  {
+    "drow": "mamsa",
+    "english": "meat",
+    "type": "noun"
+  },
+  {
+    "drow": "manas",
+    "english": "mind; thoughts",
+    "type": "noun"
+  },
+  {
+    "drow": "mand",
+    "english": "dim; dull",
+    "type": "adjective"
+  },
+  {
+    "drow": "mantra",
+    "english": "incantation; sacred utterance",
+    "type": "noun"
+  },
+  {
+    "drow": "manushya",
+    "english": "human; mortal",
+    "type": "noun"
+  },
+  {
+    "drow": "mapa",
+    "english": "measure",
+    "type": "verb"
   },
   {
     "drow": "mara",
     "english": "our people; folk",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "masa",
+    "english": "month",
+    "type": "noun"
   },
   {
     "drow": "masal",
     "english": "seasoned; spiced",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "masala",
+    "english": "spice; seasoning",
+    "type": "noun"
+  },
+  {
+    "drow": "mata-pita",
+    "english": "parents",
+    "type": "noun"
+  },
+  {
+    "drow": "matar",
+    "english": "mother",
+    "type": "noun / family"
+  },
+  {
+    "drow": "matka",
+    "english": "pot; jar",
+    "type": "noun"
+  },
+  {
+    "drow": "megha",
+    "english": "cloud",
+    "type": "noun"
+  },
+  {
+    "drow": "meja",
+    "english": "table",
+    "type": "noun"
   },
   {
     "drow": "mibini",
     "english": "see",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "mil",
+    "english": "meet; encounter",
+    "type": "verb"
+  },
+  {
+    "drow": "milana",
+    "english": "gather together; reunite",
+    "type": "verb"
+  },
+  {
+    "drow": "mina",
+    "english": "fish",
+    "type": "noun"
   },
   {
     "drow": "mitava",
     "english": "make; cause; bring about",
-    "type": "verb",
-    "notes": "Seen in a teasing sentence meaning 'You can't even make me orgasm?'"
+    "type": "verb"
+  },
+  {
+    "drow": "mitha",
+    "english": "sweet; sugary",
+    "type": "adjective"
+  },
+  {
+    "drow": "mitra",
+    "english": "friend",
+    "type": "noun"
+  },
+  {
+    "drow": "mitti",
+    "english": "soil; dirt",
+    "type": "noun"
   },
   {
     "drow": "Mo'Nique",
     "english": "Mo'Nique",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
+  },
+  {
+    "drow": "moha",
+    "english": "bewilderment; enchantment; confusion",
+    "type": "noun"
   },
   {
     "drow": "mubarak",
     "english": "congratulations; blessings",
-    "type": "interjection",
-    "notes": ""
+    "type": "interjection"
+  },
+  {
+    "drow": "mudra",
+    "english": "currency; money",
+    "type": "noun"
   },
   {
     "drow": "mukh-khara",
     "english": "sour face; pout",
-    "type": "noun / insult",
-    "notes": ""
+    "type": "noun / insult"
+  },
+  {
+    "drow": "mula",
+    "english": "root",
+    "type": "noun"
+  },
+  {
+    "drow": "mulya",
+    "english": "price; value",
+    "type": "noun"
   },
   {
     "drow": "mund",
     "english": "world",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "murakh",
     "english": "idiot; fool",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
+  },
+  {
+    "drow": "mushkil",
+    "english": "difficult; hard",
+    "type": "adjective"
+  },
+  {
+    "drow": "muska",
+    "english": "smile",
+    "type": "verb"
   },
   {
     "drow": "na",
     "english": "no; not",
-    "type": "negative",
-    "notes": ""
+    "type": "negative"
   },
   {
     "drow": "na-dar",
     "english": "have none; be without",
-    "type": "construction",
-    "notes": ""
+    "type": "construction"
   },
   {
     "drow": "na-dil",
     "english": "heartless",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "na-kadapi",
+    "english": "never",
+    "type": "adverb"
+  },
+  {
+    "drow": "nadi",
+    "english": "river",
+    "type": "noun"
   },
   {
     "drow": "nagar",
     "english": "town",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "nai",
     "english": "new",
-    "type": "adjective",
-    "notes":
+    "type": "adjective"
   },
   {
     "drow": "nai-ba",
     "english": "beautiful; shining; radiant",
-    "type": "adjective / compound",
-    "notes": ""
+    "type": "adjective / compound"
+  },
+  {
+    "drow": "nai-vayu",
+    "english": "fresh air",
+    "type": "noun"
   },
   {
     "drow": "nai-xun",
     "english": "new blood",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
+  },
+  {
+    "drow": "nama",
+    "english": "name",
+    "type": "noun"
+  },
+  {
+    "drow": "nama da-tumu",
+    "english": "your name",
+    "type": "compound"
+  },
+  {
+    "drow": "namak",
+    "english": "salt",
+    "type": "noun"
+  },
+  {
+    "drow": "namaskar",
+    "english": "hello; greetings",
+    "type": "interjection"
+  },
+  {
+    "drow": "namkina",
+    "english": "salty",
+    "type": "adjective"
   },
   {
     "drow": "naqab",
     "english": "mask; veil",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "nara",
+    "english": "man; adult male",
+    "type": "noun"
   },
   {
     "drow": "Narakan-paras",
     "english": "chosen; selected",
-    "type": "title / adjective",
-    "notes": ""
+    "type": "title / adjective"
+  },
+  {
+    "drow": "naram",
+    "english": "soft; mild",
+    "type": "adjective"
+  },
+  {
+    "drow": "nari",
+    "english": "woman; adult female",
+    "type": "noun"
+  },
+  {
+    "drow": "nava",
+    "english": "young; fresh",
+    "type": "adjective"
+  },
+  {
+    "drow": "nava-gan",
+    "english": "nine",
+    "type": "number"
+  },
+  {
+    "drow": "nayaka",
+    "english": "leader",
+    "type": "noun"
   },
   {
     "drow": "nidhara",
     "english": "set down; put down; lower",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "nikat",
+    "english": "near; close",
+    "type": "adjective"
+  },
+  {
+    "drow": "nimisha",
+    "english": "minute",
+    "type": "noun"
   },
   {
     "drow": "nimu",
     "english": "lemon",
-    "type": "noun",
-    "notes": "Useful root from Nimu-Thanatrutana."
+    "type": "noun"
   },
   {
     "drow": "Nimu-Thanatrutana",
     "english": "Lemon-Deathsaviour",
-    "type": "epithet / compound",
-    "notes": ""
+    "type": "epithet / compound"
+  },
+  {
+    "drow": "nirasha",
+    "english": "disappointment; despair",
+    "type": "noun"
+  },
+  {
+    "drow": "nirdesh",
+    "english": "direct; guide",
+    "type": "verb"
   },
   {
     "drow": "nirnay",
     "english": "decision; judgment",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "nishada",
+    "english": "lie down",
+    "type": "verb"
+  },
+  {
+    "drow": "nishana",
+    "english": "mark; sign",
+    "type": "noun"
+  },
+  {
+    "drow": "nishchaya",
+    "english": "ensure; make certain",
+    "type": "verb"
+  },
+  {
+    "drow": "nishedha",
+    "english": "forbid; prohibit",
+    "type": "verb"
+  },
+  {
+    "drow": "niskram",
+    "english": "exit; go out",
+    "type": "verb"
+  },
+  {
+    "drow": "nivas",
+    "english": "live; reside",
+    "type": "verb"
   },
   {
     "drow": "niyata",
     "english": "destined; intended; meant to be",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "nyaya",
     "english": "law; judgment; justice; verdict",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Nyaya-dhar",
     "english": "Bearer of Law; Keeper of the Law",
-    "type": "title / nickname",
-    "notes": ""
+    "type": "title / nickname"
   },
   {
     "drow": "O'zendaixu",
     "english": "Land of the sun",
-    "type": "place / title phrase",
-    "notes": ""
+    "type": "place / title phrase"
   },
   {
     "drow": "oftadi",
     "english": "fall",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "Ozz-xrou",
+    "english": "surface dweller; sun folk",
+    "type": "noun / ethnonym"
+  },
+  {
+    "drow": "Ozzendaihyu",
+    "english": "sun",
+    "type": "noun"
+  },
+  {
+    "drow": "paca",
+    "english": "cook",
+    "type": "verb"
   },
   {
     "drow": "pada",
     "english": "leg; legs",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "padosi",
+    "english": "neighbor",
+    "type": "noun"
+  },
+  {
+    "drow": "pahad",
+    "english": "mountain; hill",
+    "type": "noun"
   },
   {
     "drow": "pairadyxes",
     "english": "garden",
-    "type": "noun",
-    "notes": "Useful root from a larger endearment compound."
+    "type": "noun"
+  },
+  {
+    "drow": "pakshi",
+    "english": "bird",
+    "type": "noun"
+  },
+  {
+    "drow": "pancha",
+    "english": "five",
+    "type": "number"
+  },
+  {
+    "drow": "pani-jal",
+    "english": "drinking water",
+    "type": "noun"
   },
   {
     "drow": "par",
     "english": "then; so",
-    "type": "conjunction / adverb",
-    "notes": ""
+    "type": "conjunction / adverb"
+  },
+  {
+    "drow": "para",
+    "english": "other; another",
+    "type": "adjective"
   },
   {
     "drow": "parasa",
     "english": "spread; open apart",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "paravaita",
     "english": "begone; go away",
-    "type": "imperative",
-    "notes": ""
+    "type": "imperative"
+  },
+  {
+    "drow": "pariksha",
+    "english": "test; examine",
+    "type": "verb"
+  },
+  {
+    "drow": "parivar",
+    "english": "family; household",
+    "type": "noun"
+  },
+  {
+    "drow": "parivarta",
+    "english": "change; alter",
+    "type": "verb"
   },
   {
     "drow": "parun",
     "english": "how many",
-    "type": "question phrase",
-    "notes": ""
+    "type": "question phrase"
   },
   {
     "drow": "parvah",
     "english": "care; concern",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
+  },
+  {
+    "drow": "paryanta",
+    "english": "until; up to; as far as",
+    "type": "preposition"
+  },
+  {
+    "drow": "pashcha",
+    "english": "after; afterward",
+    "type": "adverb"
   },
   {
     "drow": "pashchatap",
     "english": "regret; remorse",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
+  },
+  {
+    "drow": "pashya",
+    "english": "watch; observe",
+    "type": "verb"
+  },
+  {
+    "drow": "pat",
+    "english": "fall; drop",
+    "type": "verb"
+  },
+  {
+    "drow": "patha",
+    "english": "read",
+    "type": "verb"
+  },
+  {
+    "drow": "patra",
+    "english": "plate; dish",
+    "type": "noun"
+  },
+  {
+    "drow": "patra-harit",
+    "english": "leaf",
+    "type": "noun"
+  },
+  {
+    "drow": "patta",
+    "english": "belt; strap",
+    "type": "noun"
+  },
+  {
+    "drow": "patta-sabzi",
+    "english": "leafy greens",
+    "type": "noun"
+  },
+  {
+    "drow": "pavana",
+    "english": "breeze",
+    "type": "noun"
   },
   {
     "drow": "Paxain",
     "english": "Horned Beast",
-    "type": "title / noun",
-    "notes": ""
+    "type": "title / noun"
+  },
+  {
+    "drow": "peti",
+    "english": "box; chest",
+    "type": "noun"
+  },
+  {
+    "drow": "phal",
+    "english": "fruit",
+    "type": "noun"
+  },
+  {
+    "drow": "phula",
+    "english": "bloom; flower",
+    "type": "noun"
+  },
+  {
+    "drow": "piba",
+    "english": "drink; sip",
+    "type": "verb"
   },
   {
     "drow": "pichha",
     "english": "back; rear; behind",
-    "type": "noun / relational word",
-    "notes": ""
+    "type": "noun / relational word"
+  },
+  {
+    "drow": "pitar",
+    "english": "father",
+    "type": "noun / family"
   },
   {
     "drow": "pixrit",
-    "english": "love",
-    "type": "verb",
-    "notes": ""
+    "english": "love (romantic)",
+    "type": "verb"
+  },
+  {
+    "drow": "prabhat",
+    "english": "morning; dawn",
+    "type": "noun"
+  },
+  {
+    "drow": "prakar",
+    "english": "manner; kind; fashion",
+    "type": "noun"
+  },
+  {
+    "drow": "prashna",
+    "english": "ask; question",
+    "type": "verb"
+  },
+  {
+    "drow": "pratidina",
+    "english": "daily; every day",
+    "type": "adverb"
+  },
+  {
+    "drow": "pratijna",
+    "english": "promise; solemn vow",
+    "type": "noun"
+  },
+  {
+    "drow": "pratya",
+    "english": "return; come back",
+    "type": "verb"
+  },
+  {
+    "drow": "pravesh",
+    "english": "enter",
+    "type": "verb"
   },
   {
     "drow": "preta",
     "english": "ghost; restless spirit",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "prithak",
+    "english": "apart; separately",
+    "type": "adverb"
   },
   {
     "drow": "prixist",
     "english": "love",
-    "type": "verb",
-    "notes": "Older love form; pixrit is also used."
+    "type": "verb"
+  },
+  {
+    "drow": "priya",
+    "english": "favorite; beloved; dear",
+    "type": "adjective / noun"
+  },
+  {
+    "drow": "priyatama",
+    "english": "most beloved; dearest",
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "puchha",
+    "english": "ask about; inquire",
+    "type": "verb"
   },
   {
     "drow": "puja",
     "english": "worship; adore",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "punar",
     "english": "again",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
+  },
+  {
+    "drow": "punar dars",
+    "english": "until we meet again",
+    "type": "expression"
+  },
+  {
+    "drow": "punar-mil",
+    "english": "see you later",
+    "type": "expression"
   },
   {
     "drow": "pur",
     "english": "full",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "purana",
+    "english": "old; aged",
+    "type": "adjective"
+  },
+  {
+    "drow": "puraya",
+    "english": "fill; make full",
+    "type": "verb"
   },
   {
     "drow": "Purohit",
     "english": "priest",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
+  },
+  {
+    "drow": "purva",
+    "english": "before; earlier",
+    "type": "adverb"
+  },
+  {
+    "drow": "pustaka",
+    "english": "book",
+    "type": "noun"
+  },
+  {
+    "drow": "putra",
+    "english": "son",
+    "type": "noun"
+  },
+  {
+    "drow": "putri",
+    "english": "daughter",
+    "type": "noun"
   },
   {
     "drow": "puxa",
     "english": "child; children",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "puxa-dar",
     "english": "child-bearing; pregnant",
-    "type": "adjective",
-    "notes": ""
-  },
-  {
-    "drow": "puxa-kara",
-    "english": "make a child; try for a baby",
-    "type": "verb / compound",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "puxayazi",
     "english": "context-dependent word",
-    "type": "unresolved word",
-    "notes": "Seen in an older Drowspeech example."
+    "type": "unresolved word"
+  },
+  {
+    "drow": "pyala",
+    "english": "cup; bowl",
+    "type": "noun"
   },
   {
     "drow": "qarib",
     "english": "close; near",
-    "type": "adjective / adverb",
-    "notes": ""
+    "type": "adjective / adverb"
   },
   {
     "drow": "qarz",
     "english": "debt; obligation owed",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "rah",
     "english": "path; way",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Raja-xun",
     "english": "royal blood; noble blood",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "rajan",
     "english": "king",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
   },
   {
     "drow": "rajata",
     "english": "silver",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "rakha",
+    "english": "keep; store; put away",
+    "type": "verb"
   },
   {
     "drow": "raksha",
     "english": "protection; guarding",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "rakta",
     "english": "red; crimson",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
-    "drow": "rasani",
-    "english": "orgasm; climax",
-    "type": "noun / verb",
-    "notes": ""
+    "drow": "rasa",
+    "english": "sensation; flavor; savor",
+    "type": "noun"
+  },
+  {
+    "drow": "rasa-phal",
+    "english": "fruit juice",
+    "type": "noun"
+  },
+  {
+    "drow": "Rasa-yhana",
+    "english": "communion; offering of sensations",
+    "type": "ritual / noun"
   },
   {
     "drow": "rasid",
     "english": "arrived",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "rasoi",
+    "english": "kitchen",
+    "type": "noun"
   },
   {
     "drow": "rassa",
     "english": "leash; tether",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "rast",
     "english": "yes",
-    "type": "interjection",
-    "notes": ""
+    "type": "interjection"
+  },
+  {
+    "drow": "ratri",
+    "english": "night",
+    "type": "noun"
+  },
+  {
+    "drow": "Ratri raksha tumu",
+    "english": "may the night protect you",
+    "type": "expression"
+  },
+  {
+    "drow": "ratri-bhojana",
+    "english": "dinner; evening meal",
+    "type": "noun"
   },
   {
     "drow": "Ravael",
     "english": "Ravael",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
   },
   {
     "drow": "Ravas",
     "english": "Gift",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
   },
   {
     "drow": "Rax-darsam",
     "english": "badass; fierce one; audacious beast",
-    "type": "slang / epithet",
-    "notes": ""
+    "type": "slang / epithet"
+  },
+  {
+    "drow": "Rax-nishan",
+    "english": "wildkin; beast marked",
+    "type": "ethnonym"
   },
   {
     "drow": "Raxuin",
     "english": "Raxuin",
-    "type": "proper noun / house name",
-    "notes": ""
+    "type": "proper noun / house name"
   },
   {
     "drow": "Raxuir",
     "english": "Beast",
-    "type": "noun / title",
-    "notes": ""
+    "type": "noun / title"
   },
   {
     "drow": "razi",
     "english": "agree; assent; consent",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "ret",
+    "english": "sand",
+    "type": "noun"
   },
   {
     "drow": "rhodah",
     "english": "flower",
-    "type": "noun",
-    "notes": "Useful root from a larger endearment compound."
+    "type": "noun"
+  },
+  {
+    "drow": "ritu",
+    "english": "season",
+    "type": "noun"
+  },
+  {
+    "drow": "roti",
+    "english": "bread",
+    "type": "noun"
+  },
+  {
+    "drow": "ruda",
+    "english": "weep; cry",
+    "type": "verb"
+  },
+  {
+    "drow": "ruk",
+    "english": "wait; hold on",
+    "type": "verb / imperative"
   },
   {
     "drow": "rukh-sust",
     "english": "weak-souled; spineless",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
   },
   {
     "drow": "rupa",
     "english": "appearance; form",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "sa",
     "english": "bound to; joined by bond",
-    "type": "onomastic particle",
-    "notes": "Working surname particle."
+    "type": "onomastic particle"
+  },
+  {
+    "drow": "sabun",
+    "english": "soap",
+    "type": "noun"
+  },
+  {
+    "drow": "sabzi",
+    "english": "vegetable",
+    "type": "noun"
   },
   {
     "drow": "sada",
     "english": "always; constantly",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
+  },
+  {
+    "drow": "saf",
+    "english": "clear; clean",
+    "type": "adjective"
   },
   {
     "drow": "sah",
     "english": "bear; endure",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "saha",
     "english": "with",
-    "type": "preposition",
-    "notes": ""
+    "type": "preposition"
   },
   {
     "drow": "sahal",
     "english": "easily; without difficulty",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
+  },
+  {
+    "drow": "sahasi",
+    "english": "brave; courageous",
+    "type": "adjective"
+  },
+  {
+    "drow": "sahasra",
+    "english": "thousand",
+    "type": "number"
+  },
+  {
+    "drow": "sahavasa",
+    "english": "company; companionship",
+    "type": "noun"
   },
   {
     "drow": "sahay",
     "english": "help; aid; assist",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "sahi",
+    "english": "correct; right",
+    "type": "adjective"
   },
   {
     "drow": "sahodar",
     "english": "sibling",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "sahodari",
+    "english": "sister",
+    "type": "noun"
   },
   {
     "drow": "sahra",
     "english": "companion",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "samajh",
+    "english": "understood; I see",
+    "type": "interjection"
+  },
+  {
+    "drow": "samapta",
+    "english": "finish; complete",
+    "type": "verb"
   },
   {
     "drow": "samay",
     "english": "time",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "sambhav",
+    "english": "possible; feasible",
+    "type": "adjective"
+  },
+  {
+    "drow": "sameta",
+    "english": "gather; collect",
+    "type": "verb"
+  },
+  {
+    "drow": "samjha",
+    "english": "understand; grasp",
+    "type": "verb"
+  },
+  {
+    "drow": "samuda",
+    "english": "community; group",
+    "type": "noun"
+  },
+  {
+    "drow": "samudra",
+    "english": "ocean; sea",
+    "type": "noun"
   },
   {
     "drow": "samyak",
     "english": "properly; correctly; rightly",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
+  },
+  {
+    "drow": "samyukta",
+    "english": "together; united",
+    "type": "adjective / adverb"
+  },
+  {
+    "drow": "sandhya",
+    "english": "dusk; twilight",
+    "type": "noun"
+  },
+  {
+    "drow": "sankar",
+    "english": "trouble; difficulty",
+    "type": "noun"
+  },
+  {
+    "drow": "sankata",
+    "english": "trouble; predicament",
+    "type": "noun"
+  },
+  {
+    "drow": "sapta",
+    "english": "seven",
+    "type": "number"
+  },
+  {
+    "drow": "saptaha",
+    "english": "week",
+    "type": "noun"
+  },
+  {
+    "drow": "saral",
+    "english": "simple; easy",
+    "type": "adjective"
+  },
+  {
+    "drow": "sarovar",
+    "english": "lake; pond",
+    "type": "noun"
+  },
+  {
+    "drow": "sarp",
+    "english": "snake",
+    "type": "noun"
   },
   {
     "drow": "sarva",
     "english": "all",
-    "type": "adjective / pronoun",
-    "notes": ""
+    "type": "adjective / pronoun"
+  },
+  {
+    "drow": "sarvada",
+    "english": "every time",
+    "type": "adverb"
+  },
+  {
+    "drow": "sarvesha",
+    "english": "each; every",
+    "type": "determiner"
+  },
+  {
+    "drow": "sasta",
+    "english": "cheap; inexpensive",
+    "type": "adjective"
+  },
+  {
+    "drow": "satya",
+    "english": "true; real; truth",
+    "type": "adjective / noun"
+  },
+  {
+    "drow": "satya-vac",
+    "english": "truthful speech; honesty",
+    "type": "noun"
   },
   {
     "drow": "saugavcse",
     "english": "fortunate; lucky",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "sava",
     "english": "manage oneself; take care of oneself",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "savadhan",
     "english": "attention; alertness; heed; attend",
-    "type": "interjection / imperative",
-    "notes": "Useful as a sharp command: 'Attention.'"
+    "type": "interjection / imperative"
+  },
+  {
+    "drow": "saval",
+    "english": "question; query",
+    "type": "noun"
   },
   {
     "drow": "Selkie",
     "english": "Selkie",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
   },
   {
     "drow": "Sensate",
     "english": "Sensate",
-    "type": "proper noun / order or sect",
-    "notes": ""
+    "type": "proper noun / order or sect"
+  },
+  {
+    "drow": "shabash",
+    "english": "well done; excellent",
+    "type": "interjection"
+  },
+  {
+    "drow": "shaila",
+    "english": "rock; stone",
+    "type": "noun"
+  },
+  {
+    "drow": "shakha",
+    "english": "branch",
+    "type": "noun"
   },
   {
     "drow": "shakta",
     "english": "strong; able; capable",
-    "type": "adjective",
-    "notes": "Can express strength or capability."
+    "type": "adjective"
   },
   {
     "drow": "Shakta-Raxuir",
     "english": "strong beast; powerhouse; formidable person",
-    "type": "slang / compound",
-    "notes": ""
+    "type": "slang / compound"
+  },
+  {
+    "drow": "shakti",
+    "english": "power; strength",
+    "type": "noun"
   },
   {
     "drow": "sham",
     "english": "evening",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "shanti",
+    "english": "peace; calm",
+    "type": "noun"
   },
   {
     "drow": "shapa",
     "english": "curse",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
   },
   {
     "drow": "sharam",
     "english": "shame; embarrassment",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "shash",
+    "english": "six",
+    "type": "number"
+  },
+  {
+    "drow": "shata",
+    "english": "hundred",
+    "type": "number"
+  },
+  {
+    "drow": "shatru",
+    "english": "enemy",
+    "type": "noun"
   },
   {
     "drow": "shava-murakh",
     "english": "ridiculous man; foolish man",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
+  },
+  {
+    "drow": "shayana-griha",
+    "english": "bedroom",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya",
+    "english": "bed",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-vastra",
+    "english": "blanket; bedding",
+    "type": "noun"
   },
   {
     "drow": "Sheriff",
     "english": "Sheriff",
-    "type": "title / loanword",
-    "notes": ""
+    "type": "title / loanword"
   },
   {
     "drow": "shesh",
     "english": "remainder; what remains",
-    "type": "noun / adjective",
-    "notes": ""
+    "type": "noun / adjective"
+  },
+  {
+    "drow": "shighra",
+    "english": "quickly; soon",
+    "type": "adverb"
   },
   {
     "drow": "shikasta",
     "english": "broken; cracked",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "shishu",
+    "english": "baby; infant",
+    "type": "noun"
+  },
+  {
+    "drow": "shita",
+    "english": "cold; chilly",
+    "type": "adjective"
+  },
+  {
+    "drow": "shrinkhala",
+    "english": "chain; fetter",
+    "type": "noun"
   },
   {
     "drow": "shse",
     "english": "context-dependent particle / word",
-    "type": "unresolved word",
-    "notes": "Seen in an older shared-experience/tasting phrase."
+    "type": "unresolved word"
+  },
+  {
+    "drow": "shubh",
+    "english": "good; auspicious",
+    "type": "adjective"
+  },
+  {
+    "drow": "shubha-ratri",
+    "english": "good night",
+    "type": "greeting"
+  },
+  {
+    "drow": "shubha-sham",
+    "english": "good evening",
+    "type": "greeting"
   },
   {
     "drow": "shuddha",
     "english": "refined; polished",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "shuddhi-kara",
+    "english": "clean; purify",
+    "type": "verb"
   },
   {
     "drow": "shunya",
     "english": "emptiness; void; absence",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "shunya-gan",
+    "english": "zero (number)",
+    "type": "number"
+  },
+  {
+    "drow": "shunya-yek",
+    "english": "zero; none",
+    "type": "number"
   },
   {
     "drow": "shvan",
     "english": "dog",
-    "type": "noun / insult",
-    "notes": ""
+    "type": "noun / insult"
   },
   {
     "drow": "shvas",
     "english": "breathe",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "sikar",
     "english": "poison",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "sikha",
+    "english": "teach; instruct",
+    "type": "verb"
+  },
+  {
+    "drow": "sikka",
+    "english": "coin",
+    "type": "noun"
   },
   {
     "drow": "sir-na",
     "english": "never-full; insatiable",
-    "type": "insult / adjective",
-    "notes": ""
+    "type": "insult / adjective"
   },
   {
     "drow": "siv-gautar",
     "english": "eavesdropper; hidden listener",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Sivri",
     "english": "Sivri",
-    "type": "proper noun",
-    "notes": ""
+    "type": "proper noun"
   },
   {
     "drow": "siyat",
     "english": "quiet",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "smara",
     "english": "memory",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "smara-kara",
+    "english": "remember; recall",
+    "type": "verb"
+  },
+  {
+    "drow": "snana-griha",
+    "english": "bathroom; bathing room",
+    "type": "noun"
+  },
+  {
+    "drow": "sneha",
+    "english": "affection; familial love; platonic love",
+    "type": "noun / verb"
+  },
+  {
+    "drow": "socha",
+    "english": "think; consider",
+    "type": "verb"
   },
   {
     "drow": "spasparabarr",
     "english": "sensation; sensory experience; physical/sensual experience",
-    "type": "noun",
-    "notes": "Useful sense from context."
+    "type": "noun"
+  },
+  {
+    "drow": "stana",
+    "english": "breast; teat",
+    "type": "noun"
+  },
+  {
+    "drow": "stha",
+    "english": "stay; remain",
+    "type": "verb"
+  },
+  {
+    "drow": "sukha",
+    "english": "comfort; ease",
+    "type": "noun"
+  },
+  {
+    "drow": "sukha-vayu",
+    "english": "dry air",
+    "type": "noun"
   },
   {
     "drow": "sun",
     "english": "soon",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "sun-thanatei",
     "english": "soon-to-be; shortly becoming",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "sundara",
     "english": "beautiful",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
+  },
+  {
+    "drow": "suni",
+    "english": "listen; pay attention",
+    "type": "verb"
+  },
+  {
+    "drow": "suno",
+    "english": "listen!",
+    "type": "imperative"
+  },
+  {
+    "drow": "suprabhat",
+    "english": "good morning",
+    "type": "greeting"
+  },
+  {
+    "drow": "sva",
+    "english": "self; one's own",
+    "type": "pronoun"
+  },
+  {
+    "drow": "sva-",
+    "english": "self; one's own",
+    "type": "grammar prefix"
+  },
+  {
+    "drow": "svagat",
+    "english": "welcome",
+    "type": "interjection"
   },
   {
     "drow": "svamin",
     "english": "lord; master; sir",
-    "type": "title",
-    "notes": ""
+    "type": "title"
   },
   {
     "drow": "Svamin Nyaya",
     "english": "Sir Law; Lord Law",
-    "type": "title / nickname",
-    "notes": ""
+    "type": "title / nickname"
+  },
+  {
+    "drow": "svap",
+    "english": "sleep; slumber",
+    "type": "verb"
+  },
+  {
+    "drow": "svayam",
+    "english": "on one's own; oneself",
+    "type": "pronoun"
   },
   {
     "drow": "tacharvith",
     "english": "Great House",
-    "type": "title / social term",
-    "notes": ""
+    "type": "title / social term"
+  },
+  {
+    "drow": "Tacharvith Ashraya",
+    "english": "Great House Ashraya",
+    "type": "title / compound"
+  },
+  {
+    "drow": "taila",
+    "english": "oil",
+    "type": "noun"
+  },
+  {
+    "drow": "takiya",
+    "english": "pillow",
+    "type": "noun"
+  },
+  {
+    "drow": "tala",
+    "english": "lock",
+    "type": "noun"
   },
   {
     "drow": "tama",
     "english": "sweet; dear; affectionate",
-    "type": "modifier",
-    "notes": ""
+    "type": "modifier"
   },
   {
     "drow": "tama-Javitaran",
     "english": "dear husband",
-    "type": "endearment",
-    "notes": ""
+    "type": "endearment"
   },
   {
     "drow": "tama-juvni",
     "english": "sweet beloved; dear beloved",
-    "type": "endearment",
-    "notes": ""
+    "type": "endearment"
+  },
+  {
+    "drow": "tama-puxa",
+    "english": "little one; dear child",
+    "type": "endearment"
   },
   {
     "drow": "tama-sahra",
     "english": "dear companion",
-    "type": "endearment",
-    "notes": ""
+    "type": "endearment"
   },
   {
     "drow": "tama-sundar",
     "english": "cute; adorably pretty",
-    "type": "adjective / endearment",
-    "notes": ""
+    "type": "adjective / endearment"
   },
   {
     "drow": "tama-zusla",
     "english": "sweet beloved",
-    "type": "endearment",
-    "notes": ""
+    "type": "endearment"
   },
   {
     "drow": "tama-zusta",
     "english": "sweet beloved",
-    "type": "endearment",
-    "notes": "Variant spelling seen in an older phrase."
+    "type": "endearment"
   },
   {
     "drow": "tamati",
     "english": "sweetest; very sweet",
-    "type": "modifier",
-    "notes": "Extracted from a larger endearment compound."
+    "type": "modifier"
   },
   {
     "drow": "tamati-rhodah-adam-pairadyxes",
     "english": "sweetest flower of my garden",
-    "type": "endearment / compound",
-    "notes": ""
+    "type": "endearment / compound"
   },
   {
     "drow": "tar",
     "english": "more than; beyond",
-    "type": "comparative element",
-    "notes": "Seen in 'I love you more than anything in this world.'"
+    "type": "comparative element"
   },
   {
     "drow": "Tarakavur",
     "english": "insolent; rebellious",
-    "type": "adjective",
-    "notes": "Seen in an older child/girl insult."
+    "type": "adjective"
   },
   {
     "drow": "tarsarqta",
     "english": "obedience; submission",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "tasyah",
     "english": "emphasis / assertion element",
-    "type": "grammar form",
-    "notes": "Seen in an older 'you are very strong' sentence."
+    "type": "grammar form"
+  },
+  {
+    "drow": "tat",
+    "english": "that one",
+    "type": "demonstrative"
   },
   {
     "drow": "tathapi",
     "english": "anyway; nevertheless",
-    "type": "adverb",
-    "notes": ""
+    "type": "adverb"
   },
   {
     "drow": "Tche",
     "english": "interjection / particle",
-    "type": "interjection",
-    "notes": "Exact force depends on context."
+    "type": "interjection"
+  },
+  {
+    "drow": "te",
+    "english": "those",
+    "type": "demonstrative"
+  },
+  {
+    "drow": "tejas",
+    "english": "bright; brilliant",
+    "type": "adjective"
+  },
+  {
+    "drow": "tez",
+    "english": "fast; swift",
+    "type": "adjective"
+  },
+  {
+    "drow": "thaila",
+    "english": "bag; pouch",
+    "type": "noun"
   },
   {
     "drow": "thanata",
     "english": "death; dead; die",
-    "type": "noun / verb",
-    "notes": "Used in a phrase about having already died."
+    "type": "noun / verb"
   },
   {
     "drow": "thanatei",
     "english": "will; future marker",
-    "type": "grammar particle",
-    "notes": ""
+    "type": "grammar particle"
   },
   {
     "drow": "thanatra",
     "english": "die; dying; approaching death",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "Thanatrutana",
     "english": "Deathsaviour",
-    "type": "title / compound",
-    "notes": "Death-related title element."
+    "type": "title / compound"
+  },
+  {
+    "drow": "tikha",
+    "english": "spicy; sharp-tasting",
+    "type": "adjective"
+  },
+  {
+    "drow": "tosha",
+    "english": "satisfy; please; contentment",
+    "type": "verb / noun"
+  },
+  {
+    "drow": "tri",
+    "english": "three",
+    "type": "number"
+  },
+  {
+    "drow": "trina",
+    "english": "grass",
+    "type": "noun"
   },
   {
     "drow": "tuma",
     "english": "you (variant form)",
-    "type": "pronoun",
-    "notes": "Variant seen in an older sentence."
+    "type": "pronoun"
   },
   {
     "drow": "tumu",
     "english": "you (singular)",
-    "type": "pronoun",
-    "notes": ""
+    "type": "pronoun"
   },
   {
     "drow": "tumys",
     "english": "you (plural)",
-    "type": "pronoun",
-    "notes": ""
+    "type": "pronoun"
   },
   {
     "drow": "tuvah",
     "english": "with you / together with you",
-    "type": "relational form",
-    "notes": "Seen in an older shared-experience passage."
+    "type": "relational form"
   },
   {
     "drow": "tyaj",
     "english": "discard; cast away",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "Ucca",
     "english": "high; exalted",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "Ucca-xun",
     "english": "Highblood; Highborn elf",
-    "type": "ethnonym / compound",
-    "notes": ""
+    "type": "ethnonym / compound"
+  },
+  {
+    "drow": "udara",
+    "english": "stomach; abdomen",
+    "type": "noun"
+  },
+  {
+    "drow": "udvega",
+    "english": "unease; distress",
+    "type": "noun"
+  },
+  {
+    "drow": "udvega-udara",
+    "english": "queasiness; upset stomach",
+    "type": "noun"
+  },
+  {
+    "drow": "upari",
+    "english": "above; on top",
+    "type": "preposition"
+  },
+  {
+    "drow": "upavesh",
+    "english": "sit",
+    "type": "verb"
   },
   {
     "drow": "ushna",
     "english": "heat; oppressive warmth",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "uta",
     "english": "and",
-    "type": "conjunction",
-    "notes": ""
+    "type": "conjunction"
+  },
+  {
+    "drow": "utha",
+    "english": "wake up",
+    "type": "verb"
+  },
+  {
+    "drow": "utsaha",
+    "english": "excitement; enthusiasm",
+    "type": "noun"
+  },
+  {
+    "drow": "uttara",
+    "english": "answer; reply",
+    "type": "verb"
+  },
+  {
+    "drow": "utthish",
+    "english": "stand up; rise",
+    "type": "verb"
   },
   {
     "drow": "va",
     "english": "and; but",
-    "type": "conjunction",
-    "notes": ""
+    "type": "conjunction"
+  },
+  {
+    "drow": "vad",
+    "english": "say; tell",
+    "type": "verb"
   },
   {
     "drow": "vaddress",
     "english": "fight",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "vaha",
+    "english": "carry",
+    "type": "verb"
   },
   {
     "drow": "vai",
     "english": "not; no; do not; negative/prohibitive marker",
-    "type": "grammar particle",
-    "notes": "Meaning depends on construction."
+    "type": "grammar particle"
+  },
+  {
+    "drow": "vai qarz",
+    "english": "no debts; you're welcome",
+    "type": "expression"
   },
   {
     "drow": "vai-adhik",
     "english": "no more; not more",
-    "type": "negative compound",
-    "notes": ""
+    "type": "negative compound"
   },
   {
     "drow": "vai-anusiya",
     "english": "do not quarrel; do not dissent; prohibition against discord",
-    "type": "construction",
-    "notes": ""
+    "type": "construction"
   },
   {
     "drow": "vai-haxa",
     "english": "silence; silence someone; no-sound",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
   },
   {
     "drow": "vai-prixist",
     "english": "does not love",
-    "type": "negative verb form",
-    "notes": "Older love-root construction."
+    "type": "negative verb form"
   },
   {
     "drow": "vai-tama",
     "english": "not sweet; bitter; unsweet",
-    "type": "negative compound",
-    "notes": ""
+    "type": "negative compound"
   },
   {
     "drow": "vai-vespa",
     "english": "only wish; wish only",
-    "type": "construction",
-    "notes": ""
+    "type": "construction"
   },
   {
     "drow": "vai-xsna",
     "english": "stranger; not-known person",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "vaiye-anausiya",
     "english": "bring/cause toward an outcome",
-    "type": "verb / construction",
-    "notes": "Exact nuance depends on context."
+    "type": "verb / construction"
   },
   {
     "drow": "vak-sundar",
     "english": "eloquent; beautiful in speech",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "vakhra",
     "english": "need; must; ought; should",
-    "type": "modal",
-    "notes": ""
+    "type": "modal"
+  },
+  {
+    "drow": "vama",
+    "english": "left",
+    "type": "adjective"
+  },
+  {
+    "drow": "vamana-bhava",
+    "english": "nausea; feeling like vomiting",
+    "type": "noun"
+  },
+  {
+    "drow": "van",
+    "english": "forest; woods",
+    "type": "noun"
+  },
+  {
+    "drow": "varsha",
+    "english": "year",
+    "type": "noun"
+  },
+  {
+    "drow": "varsha-jal",
+    "english": "rain",
+    "type": "noun"
   },
   {
     "drow": "vasa",
     "english": "enough; stop",
-    "type": "interjection / adjective",
-    "notes": ""
+    "type": "interjection / adjective"
   },
   {
     "drow": "vash-het",
     "english": "dance",
-    "type": "verb / phrase",
-    "notes": "Appears in 'Let us dance.'"
+    "type": "verb / phrase"
   },
   {
-    "drow": "vastra-utara",
-    "english": "strip; take off one's clothes",
-    "type": "verb",
-    "notes": ""
+    "drow": "vashikara",
+    "english": "compel; bring under magical influence",
+    "type": "verb"
+  },
+  {
+    "drow": "vastra",
+    "english": "clothing; garment",
+    "type": "noun"
+  },
+  {
+    "drow": "vayu",
+    "english": "air; wind",
+    "type": "noun"
   },
   {
     "drow": "vazra",
     "english": "very; intensely; loudly",
-    "type": "intensifier",
-    "notes": ""
+    "type": "intensifier"
   },
   {
     "drow": "Vazra-darsam",
     "english": "very bold; fiercely audacious; badass; impressive",
-    "type": "slang / adjective",
-    "notes": ""
+    "type": "slang / adjective"
   },
   {
     "drow": "vazra-haxa",
     "english": "scream",
-    "type": "noun / verb",
-    "notes": ""
+    "type": "noun / verb"
   },
   {
     "drow": "vazra-rakta",
     "english": "deep red; intense red",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "ve",
     "english": "joined to; joined into; bound into by union",
-    "type": "onomastic / marital particle",
-    "notes": "Working surname particle for a house entered or formed through marriage."
+    "type": "onomastic / marital particle"
   },
   {
     "drow": "vedana",
     "english": "pain; agony",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "vekh",
     "english": "damn; shit",
-    "type": "swear / interjection",
-    "notes": ""
+    "type": "swear / interjection"
   },
   {
     "drow": "vexna",
     "english": "let; allow; permit",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "vhama",
     "english": "think; believe",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "vikala",
+    "english": "incapacitated; disabled",
+    "type": "adjective"
   },
   {
     "drow": "vikalpa",
     "english": "option; choice",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Vilasa",
     "english": "decadence; luxury; indulgence",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
+  },
+  {
+    "drow": "Vilasa-Yuga",
+    "english": "Age of Indulgence",
+    "type": "title / era"
+  },
+  {
+    "drow": "vinaya",
+    "english": "humility; reverence",
+    "type": "noun"
   },
   {
     "drow": "viraha",
     "english": "miss; long for someone absent",
-    "type": "verb / noun",
-    "notes": ""
+    "type": "verb / noun"
   },
   {
     "drow": "vise",
-    "english": "he; him",
-    "type": "pronoun",
-    "notes": ""
+    "english": "he; him (sometimes third-person contextually)",
+    "type": "pronoun"
+  },
+  {
+    "drow": "vishala",
+    "english": "large; vast",
+    "type": "adjective"
+  },
+  {
+    "drow": "vishrama",
+    "english": "rest; relief; respite",
+    "type": "noun"
   },
   {
     "drow": "vismara",
     "english": "forget",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "vismaya",
+    "english": "surprise; wonder",
+    "type": "noun"
+  },
+  {
+    "drow": "vriddha",
+    "english": "elder; old person",
+    "type": "noun"
+  },
+  {
+    "drow": "vriksha",
+    "english": "tree",
+    "type": "noun"
   },
   {
     "drow": "vuktem",
     "english": "taste / experience-related term",
-    "type": "verb / noun",
-    "notes": "Exact standalone sense remains context-dependent."
+    "type": "verb / noun"
+  },
+  {
+    "drow": "vyapar",
+    "english": "trade; commerce",
+    "type": "noun"
   },
   {
     "drow": "xa",
     "english": "oh; hm",
-    "type": "interjection",
-    "notes": ""
+    "type": "interjection"
   },
   {
     "drow": "xai",
     "english": "amused scoff",
-    "type": "interjection",
-    "notes": ""
+    "type": "interjection"
   },
   {
     "drow": "Xamarjivan",
     "english": "Lifetaker",
-    "type": "title / noun",
-    "notes": ""
+    "type": "title / noun"
   },
   {
     "drow": "xamarjivre",
     "english": "kill; take life",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "xana",
     "english": "soul; essential self",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "xanathes",
     "english": "past / prior-state marker",
-    "type": "grammar form",
-    "notes": "Used in working past-tense constructions."
+    "type": "grammar form"
   },
   {
     "drow": "xar-vedana",
     "english": "extreme agony",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "xara",
     "english": "wander off",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "xauStyr",
     "english": "my favorite; favorite beloved",
-    "type": "endearment",
-    "notes": "Used in a lover context."
+    "type": "endearment"
   },
   {
     "drow": "xce",
     "english": "is; are; relational / clausal / question linker",
-    "type": "grammar particle",
-    "notes": "Flexible particle; do not force to one English word."
+    "type": "grammar particle"
   },
   {
     "drow": "xce-mara",
     "english": "disgrace of the people",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
   },
   {
     "drow": "xcexcam",
     "english": "context-dependent word",
-    "type": "unresolved word",
-    "notes": "Seen in an older Drowspeech example."
+    "type": "unresolved word"
   },
   {
     "drow": "xcexce",
     "english": "and; clause linker",
-    "type": "grammar particle",
-    "notes": ""
+    "type": "grammar particle"
   },
   {
     "drow": "Xcsadam",
     "english": "we; us",
-    "type": "pronoun",
-    "notes": ""
+    "type": "pronoun"
   },
   {
     "drow": "xcsadam-vikalpa",
     "english": "our options; our choices",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "xe",
     "english": "one of; counted among",
-    "type": "onomastic / relational particle",
-    "notes": "Working surname or clan-membership particle."
+    "type": "onomastic / relational particle"
   },
   {
     "drow": "xera",
     "english": "good; well-behaved",
-    "type": "adjective",
-    "notes": ""
-  },
-  {
-    "drow": "xha",
-    "english": "fuck",
-    "type": "swear / verb",
-    "notes": ""
-  },
-  {
-    "drow": "xha-khela",
-    "english": "fuck-play; sex",
-    "type": "compound / vulgar",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "xhantraj",
     "english": "context-dependent word",
-    "type": "unresolved word",
-    "notes": "Seen in an older Drowspeech example."
+    "type": "unresolved word"
   },
   {
     "drow": "xrou",
     "english": "person; people; Drow/Xrou",
-    "type": "noun",
-    "notes": "Used as the ethnonym Xrou and as a person/people root."
+    "type": "noun"
   },
   {
     "drow": "xrou-mund",
     "english": "everyone; all people",
-    "type": "compound",
-    "notes": "Older collective construction."
+    "type": "compound"
   },
   {
     "drow": "xrou-puxa",
     "english": "Drow boy; Xrou boy",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "xrou-zaban",
     "english": "native Drow tongue; Xrou speech",
-    "type": "compound",
-    "notes": ""
+    "type": "compound"
   },
   {
     "drow": "xsfava",
     "english": "rage; wrath",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "Xsfava-xun",
     "english": "rage-blooded; fierce; intimidating",
-    "type": "slang / compound",
-    "notes": ""
+    "type": "slang / compound"
   },
   {
     "drow": "xun",
     "english": "blood",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "xun-band",
     "english": "blood-clutcher; miser",
-    "type": "insult",
-    "notes": ""
+    "type": "insult"
   },
   {
     "drow": "xun-caxra",
     "english": "bleed out; blood-leave",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "Xun-Javitar",
     "english": "blood-bound husband",
-    "type": "title / endearment",
-    "notes": ""
+    "type": "title / endearment"
   },
   {
     "drow": "xun-rakta",
     "english": "blood-red; crimson",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "xvar",
     "english": "drink",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
   },
   {
     "drow": "xypremanah",
     "english": "know; learn",
-    "type": "verb",
-    "notes": ""
+    "type": "verb"
+  },
+  {
+    "drow": "yachana",
+    "english": "beg; petition; plead",
+    "type": "verb"
   },
   {
     "drow": "yadau",
     "english": "when",
-    "type": "conjunction",
-    "notes": ""
+    "type": "conjunction"
+  },
+  {
+    "drow": "yadi-na",
+    "english": "unless",
+    "type": "conjunction"
   },
   {
     "drow": "yatha",
     "english": "like; as; as though",
-    "type": "conjunction / relational word",
-    "notes": ""
+    "type": "conjunction / relational word"
+  },
+  {
+    "drow": "yatra",
+    "english": "where; upon which",
+    "type": "relative word"
   },
   {
     "drow": "Yauvye",
     "english": "future / again-related construction",
-    "type": "grammar form",
-    "notes": "Context-dependent."
+    "type": "grammar form"
   },
   {
     "drow": "yek",
     "english": "one; only",
-    "type": "number / adjective",
-    "notes": ""
+    "type": "number / adjective"
   },
   {
     "drow": "yhana",
     "english": "share; give; offer",
-    "type": "verb",
-    "notes": "Seen in a prior line translated as 'Shared with you.'"
+    "type": "verb"
   },
   {
     "drow": "yhanam",
     "english": "offer; give",
-    "type": "verb",
-    "notes": "Related to anayhana."
+    "type": "verb"
+  },
+  {
+    "drow": "yuvan",
+    "english": "young person; youth",
+    "type": "noun"
   },
   {
     "drow": "zaban",
     "english": "tongue; speech; language",
-    "type": "noun",
-    "notes": ""
+    "type": "noun"
   },
   {
     "drow": "zaban-khar",
     "english": "sharp-tongued",
-    "type": "adjective",
-    "notes": ""
+    "type": "adjective"
   },
   {
     "drow": "zu",
     "english": "the (title linker)",
-    "type": "grammar particle",
-    "notes": "Used between a name and title."
+    "type": "grammar particle"
   }
 ]
