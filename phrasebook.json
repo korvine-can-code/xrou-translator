@@ -3128,5 +3128,95 @@
     "english": "The crown is yours.",
     "xrou": "Shikhara xce dar-tumu.",
     "category": "Pacts & Promises"
+  },
+  {
+    "english": "I am a mage.",
+    "xrou": "Adam xce jadugar.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I am an alchemist.",
+    "xrou": "Adam xce rasayanik.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I am a blacksmith.",
+    "xrou": "Adam xce lohar.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I am a warrior.",
+    "xrou": "Adam xce yoddha.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I am a knight.",
+    "xrou": "Adam xce pratijna-yoddha.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I need mana.",
+    "xrou": "Adam apares mantra-bal.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I have no mana.",
+    "xrou": "Adam hav vai mantra-bal.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "This is a potion.",
+    "xrou": "Etha xce rasayan-peya.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "The medic is here.",
+    "xrou": "Vaidya xce atra.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "I practice alchemy.",
+    "xrou": "Adam kara rasayan.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "The caster uses magic.",
+    "xrou": "Mantra-prayokta upayoga-kara jadugari.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Protect the alchemist.",
+    "xrou": "Raksha rasayanik.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Kill the beast.",
+    "xrou": "Xamarjivre Raxuir.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Death comes for us all.",
+    "xrou": "Thanata caxra da-Xcsadam sarva.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "The knight protects the mage.",
+    "xrou": "Pratijna-yoddha raksha jadugar.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "A potion for you.",
+    "xrou": "Rasayan-peya da-tumu.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Mana is not anima.",
+    "xrou": "Mantra-bal vai xce jiva-sara.",
+    "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Anima is not the soul.",
+    "xrou": "Jiva-sara vai xce Viv.",
+    "category": "Astralith: Magic & Professions"
   }
 ]

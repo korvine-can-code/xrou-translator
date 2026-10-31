@@ -1,18 +1,32 @@
-Dvandva Xrou-Haxa Translator — Version 14: Lore & Canonical Vocabulary
+Dvandva Xrou-Haxa Translator — Version 15: Astralith Magic & Professions
 
-Contains:
- - Canonical names supplied by the language creator (Viv, kpva, Naefrazata, etc.)
- - Literal Xrou compounds for elemental / magical terms and geography
- - Reconciled synonyms: red = blood = xun, sky = above = upari,
-   tree / forest share the paudha-stambha root, silver = sacred metal
- - Title-case magical disciplines: Solstice, Faesong, Delusion,
-   Heartwood, Mnemosyne, Unseeing
- - Engine updated for the preferred English-to-Xrou mappings.
+This update adds magic, mana, anima, caster, user, potion and martial occupations,
+and preserves established terms for alchemy, alchemist, blacksmithing,
+blacksmith, mage, kill and death.
 
-The newly coined forms are provisional except the user-supplied canonical words.
+Core terminology:
+  jadugari = magic
+  jadugar = mage
+  prayokta = user / wielder
+  mantra-prayokta = caster / spellcaster
+  mantra-bal = mana (spell-power)
+  jiva-sara = anima (life essence; different from Viv, soul)
+  rasayan = alchemy
+  lohar-kaam = blacksmithing
+  xamarjivre = kill
+  thanata = death
+  rasayanik = alchemist
+  lohar = blacksmith
+  vaidya = medic
+  pratijna-yoddha = knight (sworn warrior)
+  ladaka = fighter
+  yoddha = warrior
+  rasayan-peya = potion
 
-To publish: extract this archive and upload the contents (including the assets
-folder) to the repository root in GitHub Pages. Commit replacements.
-KEEP THE EXISTING CNAME FILE IN THE REPOSITORY; it provides xrou-haxa.com.
-The website still uses only three navigation tabs: Translator, Dictionary, Phrasebook,
-and Sentence Patterns. (No Grammar tab.)
+The newly coined words are proposals; user-specified established vocabulary is retained.
+This package preserves the black/white/gray Dvandva theme and navigation without a grammar tab.
+
+To publish on GitHub Pages: extract the ZIP, upload all files and the assets folder
+into your existing repository root and commit. Keep your existing CNAME file for
+xrou-haxa.com! You can update the dictionary alone with lexicon.json, but
+engine.js, phrasebook.json, and sw.js are required for the full update.

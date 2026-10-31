@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v14 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v15 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -47,6 +47,17 @@
   const EN_CANON = {
     'fuck':'xha', 'fucking':'xha', 'damn':'vekh', 'shit':'vekh',
     // Cultural roots and element analogues (Version 14)
+    // Version 15 — Astralith professions and resources. Root words remain consistent.
+    magic:'jadugari', mage:'jadugar', wizard:'jadugar',
+    user:'prayokta', wielder:'prayokta',
+    caster:'mantra-prayokta', spellcaster:'mantra-prayokta',
+    'magic user':'jadugari-prayokta', 'magic-user':'jadugari-prayokta',
+    mana:'mantra-bal', anima:'jiva-sara', 'life essence':'jiva-sara',
+    alchemy:'rasayan', blacksmithing:'lohar-kaam',
+    kill:'xamarjivre', death:'thanata',
+    alchemist:'rasayanik', blacksmith:'lohar', medic:'vaidya',
+    knight:'pratijna-yoddha', fighter:'ladaka', warrior:'yoddha',
+    potion:'rasayan-peya', potions:'rasayan-peyays',
     doing:'kara', delusion:'Bhranti', astralith:'shapa-dharaka-burj',
     metal:'dhatu', wind:'vayu', fire:'agni', ice:'baraf', water:'jal',
     lightning:'pavitra-dhatu-agni', thunder:'upari-pratidhvaniys',
@@ -101,6 +112,15 @@
   const XROU_CANON = {
     xha:'fuck', vekh:'damn', 'xha-vekh':'fucking hell',
     // Canonical cultural vocabulary, with explicit reverse forms.
+    // Preferred reverse meanings for new Xrou-derived terms.
+    jadugari:'magic', jadugar:'mage', prayokta:'user',
+    'jadugari-prayokta':'magic user', 'mantra-prayokta':'caster',
+    'mantra-bal':'mana', 'jiva-sara':'anima',
+    rasayan:'alchemy', 'lohar-kaam':'blacksmithing',
+    xamarjivre:'kill', thanata:'death',
+    rasayanik:'alchemist', lohar:'blacksmith', vaidya:'medic',
+    'pratijna-yoddha':'knight', ladaka:'fighter', yoddha:'warrior',
+    'rasayan-peya':'potion',
     xrou:'Drow', 'ozzen-xrou':'sunlander',
     viv:'soul', kpva:'cut', 'viv-kpva':'severed',
     naefrazata:'demon', 'naefraza-bhogya':"demon's pactee", ipuhry:'magicless Drow',

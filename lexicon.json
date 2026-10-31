@@ -4201,13 +4201,33 @@
   },
   {
     "drow": "jadugar",
-    "english": "mage; magician",
+    "english": "mage; magician; wizard",
     "type": "noun"
   },
   {
     "drow": "jadugari",
-    "english": "sorcery; spellcraft",
+    "english": "magic; sorcery; spellcraft",
     "type": "noun"
+  },
+  {
+    "drow": "jadugari-prayokta",
+    "english": "magic user; magic-user; user of magic",
+    "type": "noun"
+  },
+  {
+    "drow": "jadugari-prayoktays",
+    "english": "magic users; users of magic",
+    "type": "noun / plural"
+  },
+  {
+    "drow": "jadugari-yukta",
+    "english": "magical; enchanted; magic-bearing",
+    "type": "adjective"
+  },
+  {
+    "drow": "jadugarys",
+    "english": "mages; magicians",
+    "type": "noun / plural"
   },
   {
     "drow": "jagana",
@@ -4463,6 +4483,11 @@
     "drow": "jiva",
     "english": "alive; living",
     "type": "adjective"
+  },
+  {
+    "drow": "jiva-sara",
+    "english": "anima; life essence; vital essence",
+    "type": "noun"
   },
   {
     "drow": "jod",
@@ -6180,6 +6205,16 @@
     "type": "noun"
   },
   {
+    "drow": "ladaka",
+    "english": "fighter; combatant",
+    "type": "noun"
+  },
+  {
+    "drow": "ladakays",
+    "english": "fighters; combatants",
+    "type": "noun / plural"
+  },
+  {
     "drow": "laga",
     "english": "attach; apply",
     "type": "verb"
@@ -6346,8 +6381,13 @@
   },
   {
     "drow": "lohar-kaam",
-    "english": "smithing; metalworking",
+    "english": "blacksmithing; smithing; metalworking",
     "type": "noun"
+  },
+  {
+    "drow": "loharys",
+    "english": "blacksmiths",
+    "type": "noun / plural"
   },
   {
     "drow": "lohe-kila",
@@ -6618,6 +6658,26 @@
     "drow": "mantra",
     "english": "incantation; sacred utterance",
     "type": "noun"
+  },
+  {
+    "drow": "mantra-bal",
+    "english": "mana; magical energy; spell-power",
+    "type": "noun"
+  },
+  {
+    "drow": "mantra-prayoga",
+    "english": "spellcasting; casting magic",
+    "type": "noun"
+  },
+  {
+    "drow": "mantra-prayokta",
+    "english": "caster; spellcaster; spell caster",
+    "type": "noun"
+  },
+  {
+    "drow": "mantra-prayoktays",
+    "english": "casters; spellcasters",
+    "type": "noun / plural"
   },
   {
     "drow": "manushya",
@@ -8615,6 +8675,16 @@
     "type": "noun"
   },
   {
+    "drow": "pratijna-yoddha",
+    "english": "knight; sworn warrior; oath-warrior",
+    "type": "noun"
+  },
+  {
+    "drow": "pratijna-yoddhays",
+    "english": "knights; sworn warriors",
+    "type": "noun / plural"
+  },
+  {
     "drow": "pratik",
     "english": "symbol",
     "type": "noun"
@@ -8668,6 +8738,16 @@
     "drow": "prayog-kara",
     "english": "use; employ",
     "type": "verb"
+  },
+  {
+    "drow": "prayokta",
+    "english": "user; wielder; practitioner",
+    "type": "noun"
+  },
+  {
+    "drow": "prayoktays",
+    "english": "users; wielders",
+    "type": "noun / plural"
   },
   {
     "drow": "premal",
@@ -9095,9 +9175,24 @@
     "type": "noun"
   },
   {
+    "drow": "rasayan-peya",
+    "english": "potion; alchemical draught",
+    "type": "noun"
+  },
+  {
+    "drow": "rasayan-peyays",
+    "english": "potions; alchemical draughts",
+    "type": "noun / plural"
+  },
+  {
     "drow": "rasayanik",
     "english": "alchemist; practitioner of alchemy",
     "type": "noun"
+  },
+  {
+    "drow": "rasayanikys",
+    "english": "alchemists",
+    "type": "noun / plural"
   },
   {
     "drow": "rasid",
@@ -10037,6 +10132,16 @@
   {
     "drow": "sangram",
     "english": "battle; combat",
+    "type": "noun"
+  },
+  {
+    "drow": "sangram-jadugar",
+    "english": "battle mage; combat mage",
+    "type": "noun"
+  },
+  {
+    "drow": "sangram-vaidya",
+    "english": "combat medic; battlefield healer",
     "type": "noun"
   },
   {
@@ -12475,6 +12580,11 @@
     "type": "adjective"
   },
   {
+    "drow": "vai-mantra-bal",
+    "english": "without mana; mana-less; drained of mana",
+    "type": "adjective / compound"
+  },
+  {
     "drow": "vai-marg",
     "english": "pathless; without a path",
     "type": "adjective / vai-compound"
@@ -12836,8 +12946,13 @@
   },
   {
     "drow": "vaidya",
-    "english": "healer; physician",
+    "english": "medic; healer; physician",
     "type": "noun"
+  },
+  {
+    "drow": "vaidyays",
+    "english": "medics; healers",
+    "type": "noun / plural"
   },
   {
     "drow": "vaise-bhi",
@@ -13346,7 +13461,7 @@
   },
   {
     "drow": "xamarjivre",
-    "english": "kill; take life",
+    "english": "kill; slay; take life",
     "type": "verb"
   },
   {
@@ -13728,6 +13843,16 @@
     "drow": "yhanam",
     "english": "offer; give",
     "type": "verb"
+  },
+  {
+    "drow": "yoddha",
+    "english": "warrior; combat warrior",
+    "type": "noun"
+  },
+  {
+    "drow": "yoddhays",
+    "english": "warriors",
+    "type": "noun / plural"
   },
   {
     "drow": "yogya",
