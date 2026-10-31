@@ -1,0 +1,275 @@
+[
+  {
+    "category": "Pronouns",
+    "english": "I [verb] you.",
+    "xrou": "Adam [verb] tumu.",
+    "example_en": "I protect you.",
+    "example_xrou": "Adam raksha tumu."
+  },
+  {
+    "category": "Pronouns",
+    "english": "You [verb] me.",
+    "xrou": "Tumu [verb] adam.",
+    "example_en": "You understand me.",
+    "example_xrou": "Tumu xypremanah adam."
+  },
+  {
+    "category": "Pronouns",
+    "english": "We [verb] together.",
+    "xrou": "Xcsadam [verb] saha.",
+    "example_en": "We travel together.",
+    "example_xrou": "Xcsadam yatra saha."
+  },
+  {
+    "category": "Possession",
+    "english": "My [noun].",
+    "xrou": "Adam-[noun].",
+    "example_en": "My husband.",
+    "example_xrou": "Adam-Javitaran."
+  },
+  {
+    "category": "Possession",
+    "english": "This is my [noun].",
+    "xrou": "Etha xce adam-[noun].",
+    "example_en": "This is my family.",
+    "example_xrou": "Etha xce adam-parivar."
+  },
+  {
+    "category": "Possession",
+    "english": "This belongs to [person].",
+    "xrou": "Etha xce dar-[person].",
+    "example_en": "This belongs to me.",
+    "example_xrou": "Etha xce dar-adam."
+  },
+  {
+    "category": "Future",
+    "english": "I will [verb].",
+    "xrou": "Adam thanatei [verb].",
+    "example_en": "I will leave.",
+    "example_xrou": "Adam thanatei caxra."
+  },
+  {
+    "category": "Future",
+    "english": "You will [verb].",
+    "xrou": "Tumu thanatei [verb].",
+    "example_en": "You will return.",
+    "example_xrou": "Tumu thanatei punar caxra."
+  },
+  {
+    "category": "Future",
+    "english": "We will [verb] tomorrow.",
+    "xrou": "Xcsadam thanatei [verb] akal.",
+    "example_en": "We will leave tomorrow.",
+    "example_xrou": "Xcsadam thanatei caxra akal."
+  },
+  {
+    "category": "Past",
+    "english": "I [past-tense verb].",
+    "xrou": "Adam xanathes [verb].",
+    "example_en": "I left.",
+    "example_xrou": "Adam xanathes caxra."
+  },
+  {
+    "category": "Past",
+    "english": "You [past-tense verb].",
+    "xrou": "Tumu xanathes [verb].",
+    "example_en": "You left.",
+    "example_xrou": "Tumu xanathes caxra."
+  },
+  {
+    "category": "Negation",
+    "english": "I do not [verb].",
+    "xrou": "Adam vai [verb].",
+    "example_en": "I do not know.",
+    "example_xrou": "Adam vai xypremanah."
+  },
+  {
+    "category": "Negation",
+    "english": "You will not [verb].",
+    "xrou": "Tumu vai thanatei [verb].",
+    "example_en": "You will not leave.",
+    "example_xrou": "Tumu vai thanatei caxra."
+  },
+  {
+    "category": "Negation",
+    "english": "Do not [verb].",
+    "xrou": "Vai [verb].",
+    "example_en": "Do not cry.",
+    "example_xrou": "Vai ruda."
+  },
+  {
+    "category": "Negation",
+    "english": "I am not [adjective].",
+    "xrou": "Adam vai xce [adjective].",
+    "example_en": "I am not tired.",
+    "example_xrou": "Adam vai xce khasta."
+  },
+  {
+    "category": "Requests",
+    "english": "Please [verb].",
+    "xrou": "Kripa [verb].",
+    "example_en": "Please listen.",
+    "example_xrou": "Kripa gautes."
+  },
+  {
+    "category": "Requests",
+    "english": "Please give [object] to me.",
+    "xrou": "Kripa yhanam [object] da-adam.",
+    "example_en": "Please give water to me.",
+    "example_xrou": "Kripa yhanam jal da-adam."
+  },
+  {
+    "category": "Requests",
+    "english": "Let me [verb].",
+    "xrou": "Vexna adam [verb].",
+    "example_en": "Let me help.",
+    "example_xrou": "Vexna adam sahay."
+  },
+  {
+    "category": "Requests",
+    "english": "I need [noun].",
+    "xrou": "Adam apares [noun].",
+    "example_en": "I need water.",
+    "example_xrou": "Adam apares jal."
+  },
+  {
+    "category": "Requests",
+    "english": "I want [noun].",
+    "xrou": "Adam kama [noun].",
+    "example_en": "I want bread.",
+    "example_xrou": "Adam kama roti."
+  },
+  {
+    "category": "Questions",
+    "english": "Where is [noun]?",
+    "xrou": "Kutra [noun] xce?",
+    "example_en": "Where is the key?",
+    "example_xrou": "Kutra kunji xce?"
+  },
+  {
+    "category": "Questions",
+    "english": "Who is [person]?",
+    "xrou": "Ka xce [person]?",
+    "example_en": "Who is the leader?",
+    "example_xrou": "Ka xce neta?"
+  },
+  {
+    "category": "Questions",
+    "english": "What is [noun]?",
+    "xrou": "Kim xce [noun]?",
+    "example_en": "What is this?",
+    "example_xrou": "Kim xce etha?"
+  },
+  {
+    "category": "Questions",
+    "english": "When will [person] [verb]?",
+    "xrou": "Yadau [person] thanatei [verb]?",
+    "example_en": "When will you return?",
+    "example_xrou": "Yadau tumu thanatei punar caxra?"
+  },
+  {
+    "category": "Questions",
+    "english": "Why did you [verb]?",
+    "xrou": "Kasma tumu xanathes [verb]?",
+    "example_en": "Why did you leave?",
+    "example_xrou": "Kasma tumu xanathes caxra?"
+  },
+  {
+    "category": "Questions",
+    "english": "How can I [verb]?",
+    "xrou": "Katham adam shakta [verb]?",
+    "example_en": "How can I help?",
+    "example_xrou": "Katham adam shakta sahay?"
+  },
+  {
+    "category": "Conditions",
+    "english": "If [condition], then [result].",
+    "xrou": "Idias [condition], par [result].",
+    "example_en": "If you leave, then I will follow.",
+    "example_xrou": "Idias tumu caxra, par adam thanatei anusara."
+  },
+  {
+    "category": "Conditions",
+    "english": "I will [verb] if [condition].",
+    "xrou": "Adam thanatei [verb] idias [condition].",
+    "example_en": "I will leave if you ask.",
+    "example_xrou": "Adam thanatei caxra idias tumu prashna."
+  },
+  {
+    "category": "Time",
+    "english": "I will [verb] tonight.",
+    "xrou": "Adam thanatei [verb] aaj-ratri.",
+    "example_en": "I will cook tonight.",
+    "example_xrou": "Adam thanatei paka aaj-ratri."
+  },
+  {
+    "category": "Time",
+    "english": "[Event] begins soon.",
+    "xrou": "[Event] arambha sun.",
+    "example_en": "The meeting begins soon.",
+    "example_xrou": "Sabha arambha sun."
+  },
+  {
+    "category": "Descriptions",
+    "english": "[Noun] is [adjective].",
+    "xrou": "[Noun] xce [adjective].",
+    "example_en": "The water is cold.",
+    "example_xrou": "Jal xce shita."
+  },
+  {
+    "category": "Descriptions",
+    "english": "This is [adjective].",
+    "xrou": "Etha xce [adjective].",
+    "example_en": "This is dangerous.",
+    "example_xrou": "Etha xce khatarnak."
+  },
+  {
+    "category": "Descriptions",
+    "english": "[Person] is here.",
+    "xrou": "[Person] xce atra.",
+    "example_en": "My mother is here.",
+    "example_xrou": "Adam-matar xce atra."
+  },
+  {
+    "category": "Travel",
+    "english": "Go to [place].",
+    "xrou": "Gamana da-[place].",
+    "example_en": "Go to Harlow.",
+    "example_xrou": "Gamana da-Harlow."
+  },
+  {
+    "category": "Travel",
+    "english": "Come with [person].",
+    "xrou": "Agaccha saha [person].",
+    "example_en": "Come with me.",
+    "example_xrou": "Agaccha saha adam."
+  },
+  {
+    "category": "Trade",
+    "english": "I want to buy [item].",
+    "xrou": "Adam kama kharid [item].",
+    "example_en": "I want to buy bread.",
+    "example_xrou": "Adam kama kharid roti."
+  },
+  {
+    "category": "Trade",
+    "english": "How much is [item]?",
+    "xrou": "Kati mulya [item]?",
+    "example_en": "How much is the bread?",
+    "example_xrou": "Kati mulya roti?"
+  },
+  {
+    "category": "Family",
+    "english": "Come here, [endearment].",
+    "xrou": "Agaccha atra, [endearment].",
+    "example_en": "Come here, little one.",
+    "example_xrou": "Agaccha atra, tama-puxa."
+  },
+  {
+    "category": "Safety",
+    "english": "We must protect [person].",
+    "xrou": "Xcsadam vakhra raksha [person].",
+    "example_en": "We must protect the children.",
+    "example_xrou": "Xcsadam vakhra raksha puxa."
+  }
+]
