@@ -5400,8 +5400,8 @@
     "type": "noun"
   },
   {
-    "drow": "Ozz-xrou",
-    "english": "surface dweller; sun folk",
+    "drow": "Ozzen-xrou",
+    "english": "sunlander; sunlanders; surface-dweller; surface-dwellers; surface dweller; surface dwellers; sun folk",
     "type": "noun / ethnonym"
   },
   {
@@ -9451,8 +9451,8 @@
   },
   {
     "drow": "xrou",
-    "english": "person; people; Drow/Xrou",
-    "type": "noun"
+    "english": "Drow; people; person; Xrou",
+    "type": "noun / ethnonym"
   },
   {
     "drow": "xrou-mund",

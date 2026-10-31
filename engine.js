@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v7 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v8 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -45,6 +45,11 @@
     .map(s => s.replace(/\s*\([^)]*\)/g,'').trim())
     .filter(Boolean);
   const EN_CANON = {
+    drow:'xrou', xrou:'xrou', people:'xrou',
+    sunlander:'Ozzen-xrou', sunlanders:'Ozzen-xrou',
+    'surface-dweller':'Ozzen-xrou', 'surface-dwellers':'Ozzen-xrou',
+    'surface dweller':'Ozzen-xrou', 'surface dwellers':'Ozzen-xrou',
+    'sun folk':'Ozzen-xrou', 'sun-folk':'Ozzen-xrou',
     i:'adam', me:'adam', you:'tumu', we:'Xcsadam', us:'Xcsadam',
     he:'vise', she:'vise', they:'vise', him:'vise', them:'vise',
     my:'adam-', your:'da-tumu', our:'da-Xcsadam', their:'da-vise', his:'da-vise', her:'da-vise', mine:'dar-adam', yours:'dar-tumu',
@@ -69,6 +74,7 @@
     the:'', a:'', an:'',
   };
   const XROU_CANON = {
+    xrou:'Drow', 'ozzen-xrou':'sunlander',
     adam:'I', adar:'I', adas:'I', tumu:'you', xcsadam:'we',
     vai:'not', thanatei:'will', xanathes:'', xce:'is',
     shakta:'can', 'vai shakta':'cannot', 'vai-shakta':'unable',
@@ -350,7 +356,9 @@
       if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
       const parts=[],matches=[],unknown=[];
       for(let i=0;i<tokens.length;) {
-        const irregularPlural=source==='en' && Object.hasOwn(singularEnglish,tokens[i].norm) ? derivedToken(tokens[i],source) : null;
+        // "people" is both a conventional plural and an established collective Xrou root:
+        // never invent xrouys for this standalone headword.
+        const irregularPlural=source==='en' && tokens[i].norm!=='people' && Object.hasOwn(singularEnglish,tokens[i].norm) ? derivedToken(tokens[i],source) : null;
         const prev=tokens[i-1]?.norm;
         const contextualPast=source==='en' && !['did','had'].includes(tokens[i].norm) && ['i','you','he','she','we','they','it'].includes(prev) && englishVerbStem(tokens[i].norm)?.past ? derivedToken(tokens[i],source) : null;
         const preferredDerived=irregularPlural || contextualPast;
