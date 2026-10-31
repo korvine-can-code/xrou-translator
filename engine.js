@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v8 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v14 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -45,7 +45,32 @@
     .map(s => s.replace(/\s*\([^)]*\)/g,'').trim())
     .filter(Boolean);
   const EN_CANON = {
+    'fuck':'xha', 'fucking':'xha', 'damn':'vekh', 'shit':'vekh',
+    // Cultural roots and element analogues (Version 14)
+    doing:'kara', delusion:'Bhranti', astralith:'shapa-dharaka-burj',
+    metal:'dhatu', wind:'vayu', fire:'agni', ice:'baraf', water:'jal',
+    lightning:'pavitra-dhatu-agni', thunder:'upari-pratidhvaniys',
+    sky:'upari', above:'upari', earth:'bhumi', dirt:'mitti', soil:'mitti',
+    agreement:'sahamati', pact:'sandhi', blood:'xun', bone:'asthi',
+    magma:'bhumi-agni', fate:'niyati', red:'xun',
+    silver:'pavitra-dhatu', crown:'shikhara', pinnacle:'shikhara',
+    spider:'Makari', web:'Makari-jala', desert:'vai-jal',
+    tree:'paudha-stambha', trees:'paudha-stambhays', forest:'paudha-stambhays',
+    meadow:'vai-paudha-stambhays',
+    demon:'Naefrazata', demons:'Naefrazata', neverborn:'Naefrazata',
+    soul:'Viv', cut:'kpva', severed:'Viv-kpva',
+    elf:'Sama-xun', elves:'Sama-xun', 'high elf':'Ucca-xun', 'high elves':'Ucca-xun',
+    draconian:'Skar-xrou', draconians:'Skar-xrou',
+    wildkin:'ardha-rax', human:'Ozzen-xrou', humans:'Ozzen-xrou',
+    'skin-changer':'tvaka-parnaxcsapxcal',
     drow:'xrou', xrou:'xrou', people:'xrou',
+    master:'natha', lord:'natha',
+    wolf:'bhediya', wolves:'bhediyays',
+    werewolf:'tvaka-parnaxcsapxcal', werewolves:'tvaka-parnaxcsapxcal',
+    'skin-changer':'tvaka-parnaxcsapxcal', 'skin-changers':'tvaka-parnaxcsapxcal',
+    moon:'ratri-mani', moons:'ratri-maniys',
+    star:'ratri-kingari', stars:'ratri-kingariys',
+    moonlight:'ratri-mani-prakasha',
     sunlander:'Ozzen-xrou', sunlanders:'Ozzen-xrou',
     'surface-dweller':'Ozzen-xrou', 'surface-dwellers':'Ozzen-xrou',
     'surface dweller':'Ozzen-xrou', 'surface dwellers':'Ozzen-xrou',
@@ -74,7 +99,30 @@
     the:'', a:'', an:'',
   };
   const XROU_CANON = {
+    xha:'fuck', vekh:'damn', 'xha-vekh':'fucking hell',
+    // Canonical cultural vocabulary, with explicit reverse forms.
     xrou:'Drow', 'ozzen-xrou':'sunlander',
+    viv:'soul', kpva:'cut', 'viv-kpva':'severed',
+    naefrazata:'demon', 'naefraza-bhogya':"demon's pactee", ipuhry:'magicless Drow',
+    'ucca-xun':'high elf', 'sama-xun':'elf', dvar:'dwarf',
+    'skar-xrou':'draconian', 'ardha-rax':'wildkin',
+    xun:'blood',
+    'shapa-dharaka-burj':'Astralith',
+    'pavitra-dhatu':'silver', 'pavitra-dhatu-agni':'lightning',
+    'upari-pratidhvaniys':'thunder', 'bhumi-agni':'magma',
+    niyati:'fate', 'makari-jala':'web',
+    'vai-jal':'desert', 'paudha-stambha':'tree',
+    'paudha-stambhays':'forest', 'vai-paudha-stambhays':'meadow',
+    shikhara:'crown',
+    'ozzendaihyu-priya':'Solstice', 'pavitra-dhatu-zaban':'Faesong',
+    agraha:'Delusion', 'eka-saha-prakriti':'Heartwood',
+    'pustaka-dharaka':'Mnemosyne', 'vai-drishti-krita':'Unseeing',
+    natha:'master', 'adam-natha':'my master',
+    bhediya:'wolf', bhediyays:'wolves',
+    'tvaka-parnaxcsapxcal':'werewolf',
+    'ratri-mani':'moon', 'ratri-maniys':'moons',
+    'ratri-kingari':'star', 'ratri-kingariys':'stars',
+    'ratri-mani-prakasha':'moonlight',
     adam:'I', adar:'I', adas:'I', tumu:'you', xcsadam:'we',
     vai:'not', thanatei:'will', xanathes:'', xce:'is',
     shakta:'can', 'vai shakta':'cannot', 'vai-shakta':'unable',
@@ -86,7 +134,7 @@
     'dar-adam':'mine', 'adam-javitaran':'my husband',
     'adam-matar':'my mother', 'adam-pitar':'my father',
     punar:'again', bali:'sacrifice', tumys:'you', vise:'they',
-    da:'for', prati:'to', saha:'with', upari:'on', adhas:'under', antar:'in', bahir:'out',
+    da:'for', prati:'to', saha:'with', upari:'above', adhas:'under', antar:'in', bahir:'out',
     uta:'and', athva:'or', lekin:'but', kyunki:'because', idias:'if', kintu:'although', paryanta:'until',
     'vai-saha':'without', 'karana-da':'because of', 'vishaya-da':'about', 'antara-madhye':'between',
     rast:'yes', kripa:'please', xera:'good',
@@ -280,7 +328,7 @@
         const lookup=indexes.xrou.get(rest)?.find(x=>x.key===rest);
         if(lookup) return 'my '+(XROU_CANON[rest]||splitAliases(lookup.entry.english)[0]);
       }
-      return splitAliases(segment.english)[0] || segment.english;
+      return (splitAliases(segment.english)[0] || segment.english).replace(/[.!?]+$/,'');
     }
     const isNounSrc = s => !!nounEntry(s,'xrou') || !!xrouNounRoot(s) || !!(s.startsWith('adam-') && nounEntry(s.slice(5),'xrou'));
     function englishAdjust(parts) {
@@ -355,7 +403,19 @@
       const tokens=tokenize(line);
       if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
       const parts=[],matches=[],unknown=[];
+      const titleMagic={
+        Astralith:'shapa-dharaka-burj', Solstice:'Ozzendaihyu-priya',
+        Faesong:'Pavitra-dhatu-zaban', Delusion:'Agraha',
+        Heartwood:'Eka-saha-prakriti', Mnemosyne:'Pustaka-dharaka',
+        Unseeing:'Vai-drishti-krita'
+      };
       for(let i=0;i<tokens.length;) {
+        if(source==='en' && Object.hasOwn(titleMagic,tokens[i].raw)) {
+          const token=tokens[i]; const output=titleMagic[token.raw];
+          parts.push({src:token.norm,text:output,start:token.start,end:token.end,unknown:false});
+          matches.push(`${token.raw} → ${output} (proper name)`);
+          i++;continue;
+        }
         // "people" is both a conventional plural and an established collective Xrou root:
         // never invent xrouys for this standalone headword.
         const irregularPlural=source==='en' && tokens[i].norm!=='people' && Object.hasOwn(singularEnglish,tokens[i].norm) ? derivedToken(tokens[i],source) : null;

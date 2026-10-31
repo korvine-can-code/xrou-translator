@@ -1,10 +1,18 @@
-Dvandva Xrou-Haxa Translator — Version 10 (streamlined navigation)
+Dvandva Xrou-Haxa Translator — Version 14: Lore & Canonical Vocabulary
 
-Changes:
-- Removed the Grammar guide tab and its page content.
-- Retained Translator, Dictionary, Phrasebook and Sentence patterns tabs.
-- Retained grammar processing in engine.js and all lexicon/phrasebook/pattern files.
-- Retained the monochrome theme, background and header artwork.
-- Updated offline cache version so the new navigation is shown.
+Contains:
+ - Canonical names supplied by the language creator (Viv, kpva, Naefrazata, etc.)
+ - Literal Xrou compounds for elemental / magical terms and geography
+ - Reconciled synonyms: red = blood = xun, sky = above = upari,
+   tree / forest share the paudha-stambha root, silver = sacred metal
+ - Title-case magical disciplines: Solstice, Faesong, Delusion,
+   Heartwood, Mnemosyne, Unseeing
+ - Engine updated for the preferred English-to-Xrou mappings.
 
-GitHub Pages: Extract the ZIP and upload all files to the repository root, preserving the assets/ directory; commit changes.
+The newly coined forms are provisional except the user-supplied canonical words.
+
+To publish: extract this archive and upload the contents (including the assets
+folder) to the repository root in GitHub Pages. Commit replacements.
+KEEP THE EXISTING CNAME FILE IN THE REPOSITORY; it provides xrou-haxa.com.
+The website still uses only three navigation tabs: Translator, Dictionary, Phrasebook,
+and Sentence Patterns. (No Grammar tab.)
