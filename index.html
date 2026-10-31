@@ -134,14 +134,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
 .patternExample strong {color:#fff}
 .moreRow {display:flex;justify-content:center;margin-top:16px}
 #phraseResults .empty,#patternResults .empty {grid-column:1/-1}
-.grammarTitle {font-family:Georgia,serif;font-size:clamp(1.5rem,4vw,2.1rem);margin:2px 0 12px}
-.grammarGrid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.grammarCard {padding:18px;background:rgba(20,20,20,.94);border:1px solid rgba(255,255,255,.14);border-radius:16px}
-.grammarCard h3 {font-family:Georgia,serif;font-size:1.23rem;margin:0 0 8px}
-.grammarCard p {font-size:.9rem;color:#d3d3d3;line-height:1.55;margin:0 0 12px}
-.grammarExample {font-weight:700;margin-top:9px;font-family:Georgia,serif}
-.grammarExample span {display:block;font-family:Inter,system-ui,sans-serif;font-size:.8rem;font-weight:400;margin-top:3px;color:#bcbcbc}
-@media(max-width:760px) {.phraseControls {grid-template-columns:1fr;} .phraseGrid {grid-template-columns:1fr;} .grammarGrid {grid-template-columns:1fr;} .tabs {width:100%;flex-wrap:wrap;justify-content:center;}}
+@media(max-width:760px) {.phraseControls {grid-template-columns:1fr;} .phraseGrid {grid-template-columns:1fr;} .tabs {width:100%;flex-wrap:wrap;justify-content:center;}}
 </style>
 </head>
 <body>
@@ -156,7 +149,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
       <button class="tab" data-tab="dictionary">Dictionary</button>
       <button class="tab" data-tab="phrasebook">Phrasebook</button>
       <button class="tab" data-tab="patterns">Sentence patterns</button>
-      <button class="tab" data-tab="grammar">Grammar guide</button>
+
     </div>
   </div>
 </header>
@@ -245,64 +238,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
       <div id="patternResults" class="phraseGrid"></div>
     </div>
   </section>
-  <section id="grammar" class="panel" aria-labelledby="grammarTitle">
-    <div class="box">
-      <h2 id="grammarTitle" class="grammarTitle">A working grammar of Xrou-Haxa</h2>
-      <p class="phraseIntro">These rules make new sentences possible without inventing a translation for every combination. Existing canon and fixed phrases always take precedence. <strong>Regular noun -ys is proposed, not yet formally attested for every noun.</strong></p>
-      <div class="grammarGrid">
-        <article class="grammarCard"><h3>Negation &amp; compounds</h3>
-          <p><strong>vai</strong> (separate) negates a statement; <strong>vai-</strong> (attached) forms a word meaning lacking or without something. Do not attach it indiscriminately.</p>
-          <div class="grammarExample">Tumu vai xce bali. <span>You are not a sacrifice.</span></div>
-          <div class="grammarExample">vai-drishti <span>blind / no-sight</span></div>
-        </article>
-        <article class="grammarCard"><h3>Possession</h3>
-          <p>Use <strong>adam-</strong> for “my” before a noun; use <strong>da-tumu</strong> before a noun for “your.” <strong>dar-adam</strong> means “mine.” <strong>da-</strong> also forms “of” relationships.</p>
-          <div class="grammarExample">adam-matar <span>my mother</span></div>
-          <div class="grammarExample">da-tumu ghar <span>your house</span></div>
-        </article>
-        <article class="grammarCard"><h3>Regular count-noun plurals <em>(proposed)</em></h3>
-          <p>Add <strong>-ys</strong> to an ordinary count noun. The translator recognizes the resulting plural when the singular appears in the dictionary. Some established words already have collective/plural meanings, such as <strong>puxa</strong>.</p>
-          <div class="grammarExample">matar → matarys <span>mother → mothers</span></div>
-          <div class="grammarExample">pustaka → pustakays <span>book → books</span></div>
-        </article>
-        <article class="grammarCard"><h3>Verbs &amp; time</h3>
-          <p>Verbs generally keep one base form across persons. Put <strong>thanatei</strong> before a verb for the future, or <strong>xanathes</strong> for a past event. English input recognizes many simple “-s” and past “-ed” forms.</p>
-          <div class="grammarExample">Adam raksha tumu. <span>I protect you.</span></div>
-          <div class="grammarExample">Adam xanathes raksha tumu. <span>I protected you.</span></div>
-          <div class="grammarExample">Adam thanatei raksha tumu. <span>I will protect you.</span></div>
-        </article>
-        <article class="grammarCard"><h3>Ability</h3>
-          <p><strong>shakta</strong> means can / able; <strong>vai shakta</strong> means cannot. The adjective <strong>vai-shakta</strong> means incapable or unable.</p>
-          <div class="grammarExample">Adam shakta dars. <span>I can see.</span></div>
-          <div class="grammarExample">Adam vai shakta dars. <span>I cannot see.</span></div>
-        </article>
 
-        <article class="grammarCard"><h3>Prepositions: for, to, of</h3>
-          <p><strong>da</strong> is the proposed stand-alone word for a beneficiary or purpose (“for”); <strong>da-</strong> is the existing relational prefix (“of,” “from,” etc.). Before a pronoun, use forms like <strong>da-tumu</strong> (“for you”) and <strong>da-adam</strong> (“for me”). For direction toward a place, use <strong>prati</strong> (“to/toward”).</p>
-          <div class="grammarExample">Etha xce da-tumu. <span>This is for you.</span></div>
-          <div class="grammarExample">Adam caxra prati ghar. <span>I go to the house.</span></div>
-        </article>
-        <article class="grammarCard"><h3>Function words &amp; connective meanings</h3>
-          <p>Use <strong>antar</strong> (in), <strong>upari</strong> (on/above), <strong>adhas</strong> (under), <strong>saha</strong> (with), <strong>vai-saha</strong> (without), <strong>antara-madhye</strong> (between), and <strong>vishaya-da</strong> (about). The standalone prefix <strong>vai-</strong> still forms negative compounds.</p>
-          <div class="grammarExample">Adam xce saha tumu. <span>I am with you.</span></div>
-          <div class="grammarExample">Adam xce vai-saha tumu. <span>I am without you.</span></div>
-        </article>
-        <article class="grammarCard"><h3>Conjunctions &amp; relationships</h3>
-          <p><strong>uta</strong> (and), <strong>athva</strong> (or), <strong>lekin</strong> (but), <strong>kyunki</strong> (because), <strong>idias</strong> (if), <strong>idias-vai</strong> (unless), <strong>kintu</strong> (although), and <strong>yatha-uddesha</strong> (so that). These are working defaults, not automatic substitutes in every idiom.</p>
-          <div class="grammarExample">Idias tumu kama. <span>If you wish.</span></div>
-          <div class="grammarExample">Kyunki adam pixrit tumu. <span>Because I love you.</span></div>
-        </article>
-        <article class="grammarCard"><h3>Ambiguities to watch for</h3>
-          <p>English <strong>to</strong> before a verb (“want to go”) is an infinitive marker, not the destination word <strong>prati</strong>. <strong>Since</strong> can mean “because” (<strong>kyunki</strong>) or “from then onward” (<strong>tada-prabhriti</strong>). <strong>For</strong> also has different uses for duration, purpose, and recipients. Full phrases are the most reliable when meanings overlap.</p>
-          <div class="grammarExample">Adam kama caxra. <span>I want to leave.</span></div>
-          <div class="grammarExample">Etha xce da-tumu. <span>This is for you.</span></div>
-        </article>
-        <article class="grammarCard"><h3>What still needs review?</h3>
-          <p>Questions, gender/number agreement, idioms, unusual verb tenses, and possessive meanings beyond “my/your” are not fully standardized. The translator shows known matches and leaves unknown material marked rather than pretending certainty.</p>
-        </article>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="wrap">
