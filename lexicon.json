@@ -350,6 +350,11 @@
     "type": "adjective"
   },
   {
+    "drow": "adhara",
+    "english": "lip; lips",
+    "type": "noun"
+  },
+  {
     "drow": "adhas",
     "english": "below; beneath; down; underneath; under",
     "type": "preposition"
@@ -358,6 +363,11 @@
     "drow": "adhas-prati",
     "english": "down to",
     "type": "compound preposition"
+  },
+  {
+    "drow": "adhi-bahu",
+    "english": "forearm; forearms",
+    "type": "noun"
   },
   {
     "drow": "adhik",
@@ -750,13 +760,38 @@
     "type": "adjective"
   },
   {
+    "drow": "anga",
+    "english": "body; form; anatomy",
+    "type": "noun"
+  },
+  {
+    "drow": "anga-bhaga",
+    "english": "body part; limb; body-piece",
+    "type": "noun"
+  },
+  {
+    "drow": "anga-vidya",
+    "english": "anatomy; bodily knowledge",
+    "type": "noun"
+  },
+  {
     "drow": "angan-vana",
     "english": "garden; planted courtyard",
     "type": "noun"
   },
   {
+    "drow": "anguli",
+    "english": "finger; fingers",
+    "type": "noun"
+  },
+  {
     "drow": "angur",
     "english": "grape; grapes",
+    "type": "noun"
+  },
+  {
+    "drow": "angustha",
+    "english": "thumb; thumbs",
     "type": "noun"
   },
   {
@@ -868,6 +903,11 @@
     "drow": "antima-sthane",
     "english": "ending at",
     "type": "compound preposition"
+  },
+  {
+    "drow": "antra",
+    "english": "intestine; intestines; bowel; bowels",
+    "type": "noun"
   },
   {
     "drow": "Anugaman adam",
@@ -1252,6 +1292,11 @@
   {
     "drow": "asthi",
     "english": "bone",
+    "type": "noun"
+  },
+  {
+    "drow": "asthi-majja",
+    "english": "marrow; bone marrow",
     "type": "noun"
   },
   {
@@ -2270,6 +2315,11 @@
     "type": "compound"
   },
   {
+    "drow": "bhru",
+    "english": "eyebrow; eyebrows; brow; brows",
+    "type": "noun"
+  },
+  {
     "drow": "bhugtan",
     "english": "payment; sum paid",
     "type": "noun"
@@ -2640,6 +2690,11 @@
     "type": "verb"
   },
   {
+    "drow": "dadhi",
+    "english": "beard; beards",
+    "type": "noun"
+  },
+  {
     "drow": "dafanana",
     "english": "bury",
     "type": "verb"
@@ -2710,6 +2765,16 @@
     "type": "slang / idiom"
   },
   {
+    "drow": "danta",
+    "english": "tooth; teeth",
+    "type": "noun"
+  },
+  {
+    "drow": "danta-mula",
+    "english": "gum; gums",
+    "type": "noun"
+  },
+  {
     "drow": "dar",
     "english": "belonging; possession; realm / relation",
     "type": "relational word"
@@ -2748,6 +2813,11 @@
     "drow": "darsam",
     "english": "bold; audacious",
     "type": "adjective"
+  },
+  {
+    "drow": "darsana",
+    "english": "sight; vision; sense of sight",
+    "type": "noun"
   },
   {
     "drow": "darvaza",
@@ -2810,6 +2880,11 @@
     "type": "noun"
   },
   {
+    "drow": "deha-tapa",
+    "english": "body heat; fever heat",
+    "type": "noun"
+  },
+  {
     "drow": "dekho",
     "english": "look!",
     "type": "imperative"
@@ -2867,6 +2942,11 @@
   {
     "drow": "dhal",
     "english": "shield; defensive board",
+    "type": "noun"
+  },
+  {
+    "drow": "dhamani",
+    "english": "artery; arteries",
     "type": "noun"
   },
   {
@@ -3440,6 +3520,11 @@
     "type": "noun"
   },
   {
+    "drow": "galu",
+    "english": "ankle bone; wrist bone; knuckle-bone",
+    "type": "noun"
+  },
+  {
     "drow": "gamana",
     "english": "go; move",
     "type": "verb"
@@ -3488,6 +3573,11 @@
     "drow": "garbha",
     "english": "pregnant",
     "type": "adjective"
+  },
+  {
+    "drow": "garbha-kosha",
+    "english": "womb; uterus",
+    "type": "noun"
   },
   {
     "drow": "gardan",
@@ -3585,6 +3675,11 @@
     "type": "noun"
   },
   {
+    "drow": "ghama",
+    "english": "sweat; perspiration",
+    "type": "noun"
+  },
+  {
     "drow": "ghanta",
     "english": "hour; bell",
     "type": "noun"
@@ -3670,6 +3765,11 @@
     "type": "verb"
   },
   {
+    "drow": "ghrana",
+    "english": "sense of smell",
+    "type": "noun"
+  },
+  {
     "drow": "ghutana-tekana",
     "english": "kneel",
     "type": "verb"
@@ -3730,6 +3830,11 @@
     "type": "noun"
   },
   {
+    "drow": "griva",
+    "english": "neck; necks",
+    "type": "noun"
+  },
+  {
     "drow": "gufa-dvar",
     "english": "cave entrance",
     "type": "noun"
@@ -3748,6 +3853,11 @@
     "drow": "gulabi",
     "english": "pink",
     "type": "adjective"
+  },
+  {
+    "drow": "gulpha",
+    "english": "ankle; ankles",
+    "type": "noun"
   },
   {
     "drow": "gum-kara",
@@ -3795,6 +3905,11 @@
     "type": "imperative"
   },
   {
+    "drow": "haddi-jora",
+    "english": "joint; joints",
+    "type": "noun"
+  },
+  {
     "drow": "haddi-shorba",
     "english": "bone broth",
     "type": "noun"
@@ -3825,8 +3940,18 @@
     "type": "adverb"
   },
   {
+    "drow": "hamsa-asthi",
+    "english": "collarbone; collarbones; clavicle; clavicles",
+    "type": "noun"
+  },
+  {
     "drow": "hani",
     "english": "harm; injury",
+    "type": "noun"
+  },
+  {
+    "drow": "hanu",
+    "english": "jaw; jaws",
     "type": "noun"
   },
   {
@@ -3858,6 +3983,11 @@
     "drow": "hasta-alankara",
     "english": "arm ornament; arm candy",
     "type": "compound"
+  },
+  {
+    "drow": "hasta-tala",
+    "english": "palm; palms",
+    "type": "noun"
   },
   {
     "drow": "hastakshar",
@@ -4013,6 +4143,11 @@
     "drow": "hoh",
     "english": "whoa!; hold up!; exclamation of surprise",
     "type": "interjection"
+  },
+  {
+    "drow": "hridaya",
+    "english": "heart; hearts",
+    "type": "noun"
   },
   {
     "drow": "huff",
@@ -4335,6 +4470,11 @@
     "type": "noun"
   },
   {
+    "drow": "jangha",
+    "english": "shin; shins",
+    "type": "noun"
+  },
+  {
     "drow": "jank",
     "english": "examine; inspect; check",
     "type": "verb"
@@ -4487,6 +4627,11 @@
   {
     "drow": "jiva-sara",
     "english": "anima; life essence; vital essence",
+    "type": "noun"
+  },
+  {
+    "drow": "jivha-mula",
+    "english": "gullet; esophagus",
     "type": "noun"
   },
   {
@@ -4955,6 +5100,11 @@
     "type": "noun"
   },
   {
+    "drow": "kanina",
+    "english": "pupil; pupils",
+    "type": "noun"
+  },
+  {
     "drow": "kank",
     "english": "glass; glassware",
     "type": "noun"
@@ -4980,8 +5130,18 @@
     "type": "noun"
   },
   {
+    "drow": "kantha",
+    "english": "throat; throats",
+    "type": "noun"
+  },
+  {
     "drow": "kanya",
     "english": "girl; young woman",
+    "type": "noun"
+  },
+  {
+    "drow": "kapala",
+    "english": "skull; skulls",
     "type": "noun"
   },
   {
@@ -5052,6 +5212,16 @@
   {
     "drow": "karmakari",
     "english": "employee",
+    "type": "noun"
+  },
+  {
+    "drow": "karna",
+    "english": "ear; ears",
+    "type": "noun"
+  },
+  {
+    "drow": "karna-lobha",
+    "english": "earlobe; earlobes",
     "type": "noun"
   },
   {
@@ -5323,6 +5493,11 @@
     "drow": "ker",
     "english": "heart-related element",
     "type": "noun / root"
+  },
+  {
+    "drow": "kesa",
+    "english": "hair; hairs",
+    "type": "noun"
   },
   {
     "drow": "kesha",
@@ -6270,6 +6445,16 @@
     "type": "noun"
   },
   {
+    "drow": "lalaa",
+    "english": "saliva; spit",
+    "type": "noun"
+  },
+  {
+    "drow": "lalata",
+    "english": "forehead; foreheads",
+    "type": "noun"
+  },
+  {
     "drow": "lamasa",
     "english": "touch; strike; lay hands on",
     "type": "verb"
@@ -6650,6 +6835,11 @@
     "type": "noun"
   },
   {
+    "drow": "manibandha",
+    "english": "wrist; wrists",
+    "type": "noun"
+  },
+  {
     "drow": "mans",
     "english": "meat; flesh as food",
     "type": "noun"
@@ -6762,6 +6952,11 @@
   {
     "drow": "mashal",
     "english": "torch",
+    "type": "noun"
+  },
+  {
+    "drow": "mastiska",
+    "english": "brain; brains",
     "type": "noun"
   },
   {
@@ -6898,6 +7093,11 @@
     "drow": "meri-rai",
     "english": "in my opinion; my view is",
     "type": "expression"
+  },
+  {
+    "drow": "meru-asthi",
+    "english": "spine; backbone; spinal column",
+    "type": "noun"
   },
   {
     "drow": "meva",
@@ -7065,6 +7265,11 @@
     "type": "interjection"
   },
   {
+    "drow": "muccha",
+    "english": "mustache; moustache; mustaches; moustaches",
+    "type": "noun"
+  },
+  {
     "drow": "mud-jana",
     "english": "turn away; change course",
     "type": "verb"
@@ -7093,6 +7298,16 @@
     "drow": "mukh-khara",
     "english": "sour face; pout",
     "type": "noun / insult"
+  },
+  {
+    "drow": "mukha",
+    "english": "face; faces",
+    "type": "noun"
+  },
+  {
+    "drow": "mukha-dvara",
+    "english": "mouth; mouths",
+    "type": "noun"
   },
   {
     "drow": "mula",
@@ -7190,6 +7405,11 @@
     "type": "verb"
   },
   {
+    "drow": "mutra-kosha",
+    "english": "bladder",
+    "type": "noun"
+  },
+  {
     "drow": "myan",
     "english": "sheath; scabbard",
     "type": "noun"
@@ -7230,8 +7450,18 @@
     "type": "noun"
   },
   {
+    "drow": "nabhi",
+    "english": "navel; belly button",
+    "type": "noun"
+  },
+  {
     "drow": "nadi",
     "english": "river",
+    "type": "noun"
+  },
+  {
+    "drow": "nadi-jala",
+    "english": "nervous system",
     "type": "noun"
   },
   {
@@ -7283,6 +7513,11 @@
     "drow": "nai-xun",
     "english": "new blood",
     "type": "compound"
+  },
+  {
+    "drow": "nakha",
+    "english": "nail; nails; fingernail; fingernails",
+    "type": "noun"
   },
   {
     "drow": "nakhoon",
@@ -7385,6 +7620,16 @@
     "type": "noun"
   },
   {
+    "drow": "nasa",
+    "english": "nose; noses",
+    "type": "noun"
+  },
+  {
+    "drow": "nasa-randhra",
+    "english": "nostril; nostrils",
+    "type": "noun"
+  },
+  {
     "drow": "nasha",
     "english": "lose; be deprived of",
     "type": "verb"
@@ -7457,6 +7702,16 @@
   {
     "drow": "nayaka",
     "english": "leader",
+    "type": "noun"
+  },
+  {
+    "drow": "netra",
+    "english": "eye; eyes",
+    "type": "noun"
+  },
+  {
+    "drow": "netra-rang",
+    "english": "iris; irises; iris",
     "type": "noun"
   },
   {
@@ -7700,6 +7955,11 @@
     "type": "verb"
   },
   {
+    "drow": "nitamba",
+    "english": "butt; rear; backside",
+    "type": "noun"
+  },
+  {
     "drow": "nivas",
     "english": "live; reside",
     "type": "verb"
@@ -7845,6 +8105,11 @@
     "type": "noun"
   },
   {
+    "drow": "pada-tala",
+    "english": "sole; soles",
+    "type": "noun"
+  },
+  {
     "drow": "pados-mitra",
     "english": "neighborliness",
     "type": "noun"
@@ -7965,6 +8230,11 @@
     "type": "noun"
   },
   {
+    "drow": "pakshma",
+    "english": "eyelash; eyelashes; lash; lashes",
+    "type": "noun"
+  },
+  {
     "drow": "pala",
     "english": "raise; nurture a child",
     "type": "verb"
@@ -7978,6 +8248,11 @@
     "drow": "palak-jhapakana",
     "english": "blink",
     "type": "verb"
+  },
+  {
+    "drow": "palaka",
+    "english": "eyelid; eyelids",
+    "type": "noun"
   },
   {
     "drow": "palayana-kara",
@@ -7997,6 +8272,11 @@
   {
     "drow": "pani-jal",
     "english": "drinking water",
+    "type": "noun"
+  },
+  {
+    "drow": "panja",
+    "english": "claw; claws",
     "type": "noun"
   },
   {
@@ -8183,6 +8463,11 @@
     "drow": "paryanta",
     "english": "until; up to; as far as; till",
     "type": "preposition"
+  },
+  {
+    "drow": "pasali",
+    "english": "rib; ribs",
+    "type": "noun"
   },
   {
     "drow": "pashka",
@@ -8395,6 +8680,11 @@
     "type": "adjective"
   },
   {
+    "drow": "peta",
+    "english": "belly; gut; middle",
+    "type": "noun"
+  },
+  {
     "drow": "peti",
     "english": "box; chest",
     "type": "noun"
@@ -8460,6 +8750,11 @@
     "type": "noun"
   },
   {
+    "drow": "phuphusa",
+    "english": "lung; lungs",
+    "type": "noun"
+  },
+  {
     "drow": "piba",
     "english": "drink; sip",
     "type": "verb"
@@ -8475,6 +8770,11 @@
     "type": "adjective"
   },
   {
+    "drow": "pindali",
+    "english": "calf; calves",
+    "type": "noun"
+  },
+  {
     "drow": "pitamaha",
     "english": "grandfather",
     "type": "noun"
@@ -8487,6 +8787,11 @@
   {
     "drow": "pith",
     "english": "back body",
+    "type": "noun"
+  },
+  {
+    "drow": "pitha",
+    "english": "back; backs",
     "type": "noun"
   },
   {
@@ -9125,11 +9430,6 @@
     "type": "noun"
   },
   {
-    "drow": "rakta",
-    "english": "crimson; blood-colored (older poetic form)",
-    "type": "adjective"
-  },
-  {
     "drow": "rang",
     "english": "color; dye",
     "type": "noun"
@@ -9157,6 +9457,11 @@
   {
     "drow": "rasa",
     "english": "sensation; flavor; savor",
+    "type": "noun"
+  },
+  {
+    "drow": "rasa-bodha",
+    "english": "sense of taste",
     "type": "noun"
   },
   {
@@ -9412,6 +9717,11 @@
   {
     "drow": "rom",
     "english": "hair; strand of hair",
+    "type": "noun"
+  },
+  {
+    "drow": "rom-kupa",
+    "english": "pore; pores; follicle; follicles",
     "type": "noun"
   },
   {
@@ -10105,6 +10415,11 @@
     "type": "noun"
   },
   {
+    "drow": "sandhi-sthana",
+    "english": "socket; joint socket",
+    "type": "noun"
+  },
+  {
     "drow": "sandhya",
     "english": "dusk; twilight",
     "type": "noun"
@@ -10660,6 +10975,16 @@
     "type": "noun"
   },
   {
+    "drow": "shira-nadi",
+    "english": "vein; veins",
+    "type": "noun"
+  },
+  {
+    "drow": "shiro-tvaka",
+    "english": "scalp; scalps",
+    "type": "noun"
+  },
+  {
     "drow": "shishi",
     "english": "vial; small bottle",
     "type": "noun"
@@ -10692,6 +11017,11 @@
   {
     "drow": "shivir",
     "english": "camp; encampment",
+    "type": "noun"
+  },
+  {
+    "drow": "shleshma",
+    "english": "mucus; phlegm",
     "type": "noun"
   },
   {
@@ -10798,6 +11128,11 @@
     "drow": "shvas",
     "english": "breathe",
     "type": "verb"
+  },
+  {
+    "drow": "shvasa-patha",
+    "english": "airway; windpipe; breathing passage",
+    "type": "noun"
   },
   {
     "drow": "sidha",
@@ -10925,6 +11260,11 @@
     "type": "adjective"
   },
   {
+    "drow": "skandha",
+    "english": "shoulder; shoulders",
+    "type": "noun"
+  },
+  {
     "drow": "Skar-xrou",
     "english": "draconian; draconians; scaled people",
     "type": "noun / species"
@@ -10957,6 +11297,11 @@
   {
     "drow": "snana-griha",
     "english": "bathroom; bathing room",
+    "type": "noun"
+  },
+  {
+    "drow": "snayu",
+    "english": "tendon; ligament; sinew",
     "type": "noun"
   },
   {
@@ -11020,8 +11365,18 @@
     "type": "noun"
   },
   {
+    "drow": "sparsha-bodha",
+    "english": "sense of touch",
+    "type": "noun"
+  },
+  {
     "drow": "sparsha-guna",
     "english": "texture",
+    "type": "noun"
+  },
+  {
+    "drow": "sparsha-sthana",
+    "english": "pressure point; sensitive spot",
     "type": "noun"
   },
   {
@@ -11055,6 +11410,16 @@
     "type": "noun"
   },
   {
+    "drow": "sravana",
+    "english": "hearing; sense of hearing",
+    "type": "noun"
+  },
+  {
+    "drow": "sroni",
+    "english": "pelvis; hips; hip",
+    "type": "noun"
+  },
+  {
     "drow": "stabdha",
     "english": "shocked",
     "type": "adjective"
@@ -11067,6 +11432,11 @@
   {
     "drow": "stana",
     "english": "breast; teat",
+    "type": "noun"
+  },
+  {
+    "drow": "stana-mukha",
+    "english": "nipple; nipples",
     "type": "noun"
   },
   {
@@ -11790,6 +12160,11 @@
     "type": "noun"
   },
   {
+    "drow": "thudi",
+    "english": "chin; chins",
+    "type": "noun"
+  },
+  {
     "drow": "thukra",
     "english": "refuse; reject",
     "type": "verb"
@@ -12105,6 +12480,11 @@
     "type": "preposition / noun"
   },
   {
+    "drow": "upari-bahu",
+    "english": "upper arm; upper arms",
+    "type": "noun"
+  },
+  {
     "drow": "upari-prati",
     "english": "onto",
     "type": "preposition"
@@ -12137,6 +12517,11 @@
   {
     "drow": "upnama",
     "english": "nickname",
+    "type": "noun"
+  },
+  {
+    "drow": "uru",
+    "english": "thigh; thighs",
     "type": "noun"
   },
   {
@@ -12985,6 +13370,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "vaksha",
+    "english": "chest; torso",
+    "type": "noun"
+  },
+  {
     "drow": "vakya",
     "english": "sentence; statement",
     "type": "noun"
@@ -13375,6 +13765,11 @@
     "type": "noun"
   },
   {
+    "drow": "vrikka",
+    "english": "kidney; kidneys",
+    "type": "noun"
+  },
+  {
     "drow": "vuktem",
     "english": "taste / experience-related term",
     "type": "verb / noun"
@@ -13675,6 +14070,11 @@
     "type": "title / endearment"
   },
   {
+    "drow": "xun-patha",
+    "english": "blood vessel; blood vessels",
+    "type": "noun"
+  },
+  {
     "drow": "xun-rakta",
     "english": "blood-red; crimson",
     "type": "adjective"
@@ -13748,6 +14148,11 @@
     "drow": "yakana",
     "english": "beg; petition; plead",
     "type": "verb"
+  },
+  {
+    "drow": "yakrit",
+    "english": "liver; livers",
+    "type": "noun"
   },
   {
     "drow": "yasya-yasya",

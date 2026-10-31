@@ -1,32 +1,9 @@
-Dvandva Xrou-Haxa Translator — Version 15: Astralith Magic & Professions
+Dvandva Xrou-Haxa Translator — Version 16
 
-This update adds magic, mana, anima, caster, user, potion and martial occupations,
-and preserves established terms for alchemy, alchemist, blacksmithing,
-blacksmith, mage, kill and death.
+Changes in this update:
+- The main title banner now uses the user-provided illustrated cave background image.
+- Added anatomy and body-part vocabulary, including visible features, internal organs, bones, fluids, and sensory terms.
+- Existing translation engine, phrasebook, patterns, and Dvandva styling are preserved.
 
-Core terminology:
-  jadugari = magic
-  jadugar = mage
-  prayokta = user / wielder
-  mantra-prayokta = caster / spellcaster
-  mantra-bal = mana (spell-power)
-  jiva-sara = anima (life essence; different from Viv, soul)
-  rasayan = alchemy
-  lohar-kaam = blacksmithing
-  xamarjivre = kill
-  thanata = death
-  rasayanik = alchemist
-  lohar = blacksmith
-  vaidya = medic
-  pratijna-yoddha = knight (sworn warrior)
-  ladaka = fighter
-  yoddha = warrior
-  rasayan-peya = potion
-
-The newly coined words are proposals; user-specified established vocabulary is retained.
-This package preserves the black/white/gray Dvandva theme and navigation without a grammar tab.
-
-To publish on GitHub Pages: extract the ZIP, upload all files and the assets folder
-into your existing repository root and commit. Keep your existing CNAME file for
-xrou-haxa.com! You can update the dictionary alone with lexicon.json, but
-engine.js, phrasebook.json, and sw.js are required for the full update.
+GitHub Pages: Extract the ZIP and upload all files (including the assets folder) to your repository.
+Keep your existing CNAME file in the repository so your custom domain remains connected.
