@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v5 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v7 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -8,6 +8,39 @@
   'use strict';
   const norm = s => String(s ?? '').replace(/[’‘]/g, "'").toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
   const lexWords = text => (String(text).match(/[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu) || []);
+  // Resolve familiar English contractions BEFORE word/phrase matching.
+  // Do not generically expand apostrophe-s: "the sailor's" is possessive, not "the sailor is".
+  // English apostrophe-d is ambiguous (had / would); choose would as a conservative default.
+  const CONTRACTIONS = {
+    "i'm":"I am", "you're":"you are", "we're":"we are", "they're":"they are",
+    "he's":"he is", "she's":"she is", "it's":"it is", "that's":"that is",
+    "this's":"this is", "there's":"there is", "here's":"here is",
+    "what's":"what is", "who's":"who is", "where's":"where is", "when's":"when is",
+    "why's":"why is", "how's":"how is",
+    "i've":"I have", "you've":"you have", "we've":"we have", "they've":"they have",
+    "could've":"could have", "would've":"would have", "should've":"should have", "might've":"might have", "must've":"must have",
+    "i'll":"I will", "you'll":"you will", "he'll":"he will", "she'll":"she will", "it'll":"it will",
+    "we'll":"we will", "they'll":"they will", "that'll":"that will", "there'll":"there will",
+    "i'd":"I would", "you'd":"you would", "he'd":"he would", "she'd":"she would",
+    "we'd":"we would", "they'd":"they would", "it'd":"it would", "that'd":"that would",
+    "isn't":"is not", "aren't":"are not", "wasn't":"was not", "weren't":"were not",
+    "can't":"cannot", "cannot":"cannot", "won't":"will not", "shan't":"shall not",
+    "don't":"do not", "doesn't":"does not", "didn't":"did not",
+    "couldn't":"could not", "wouldn't":"would not", "shouldn't":"should not",
+    "mustn't":"must not", "mightn't":"might not", "needn't":"need not",
+    "hasn't":"has not", "haven't":"have not", "hadn't":"had not",
+    "let's":"let us"
+  };
+  // Surrounding boundaries prevent replacement inside longer words or possessives.
+  const contractionRe = /(^|[^\p{L}\p{N}])([\p{L}]+(?:['’‘][\p{L}]+)+)(?=$|[^\p{L}\p{N}])/gu;
+  function expandEnglishContractions(text) {
+    return String(text).replace(contractionRe,(matched,prefix,word) => {
+      const expansion=CONTRACTIONS[norm(word)];
+      if(!expansion) return matched;
+      const adjusted=/^[A-Z]/.test(word) ? expansion[0].toUpperCase()+expansion.slice(1) : expansion;
+      return prefix+adjusted;
+    });
+  }
   const splitAliases = english => String(english || '').split(/\s*;\s*|\s+\/\s+/)
     .map(s => s.replace(/\s*\([^)]*\)/g,'').trim())
     .filter(Boolean);
@@ -281,6 +314,10 @@
         }
         if(p.src==='will' && n?.src==='not') {out.push({...p,text:'vai thanatei',end:n.end});i++;continue;}
         if(['do','does','did'].includes(p.src) && n?.src==='not') {out.push({...p,text:p.src==='did'?'xanathes vai':'vai',end:n.end});i++;continue;}
+        if(['can','cannot','could','would','should','must','might','shall','have','has','had','need'].includes(p.src) && n?.src==='not') {
+          const negative={can:'vai shakta',cannot:'vai shakta',could:'vai-shakta-tha',would:'vai iccha-tha',should:'vai vakhra',must:'vai vakhra',might:'vai sambhavit',shall:'vai thanatei',have:'vai hav',has:'vai hav',had:'xanathes vai hav',need:'vai apares'};
+          out.push({...p,text:negative[p.src],end:n.end});i++;continue;
+        }
         // English 'to' before an action verb is an infinitive marker, not a destination.
         // e.g. 'want to go' -> 'kama caxra'; 'go to town' keeps 'prati'.
         if(p.src==='to' && n && !n.unknown && (verbEntry(n.src) || (['go','leave','come','see','help','make','give','protect','speak','do','take','say','understand','eat','drink','read','write','walk','run','sleep','wait','be','have'].includes(n.src)))) {
@@ -356,7 +393,9 @@
     function translate(text,source='en') {
       if(source!=='en' && source!=='xrou') throw new Error('Invalid source language');
       if(!String(text).trim()) return {text:'—',matches:[],unknown:[]};
-      const lines=String(text).split(/(\n+)/);
+      // Only English input is expanded; Xrou has its own vocabulary and morphology.
+      const normalizedText=source==='en'?expandEnglishContractions(text):String(text);
+      const lines=normalizedText.split(/(\n+)/);
       const translated=[];const matches=[],unknown=[];
       for(let i=0;i<lines.length;i++) {
         if(/^\n+$/.test(lines[i])) { translated.push(lines[i]); continue; }
@@ -374,5 +413,5 @@
     }
     return {translate,suggestions,norm};
   }
-  return {createTranslator,norm};
+  return {createTranslator,norm,expandEnglishContractions};
 });

@@ -82,10 +82,6 @@ button:hover { background:#1d1d1d; border-color:rgba(255,255,255,.32); }
 .actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:12px; }
 .primary { background:#ededed; border-color:#ffffff; color:#101010; }
 .primary:hover { background:#ffffff; }
-.notice {
-  margin-top:12px; padding:11px 12px; border-radius:12px; color:#e4e4e4;
-  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:.88rem;
-}
 .output {
   margin-top:16px; padding:15px; border-radius:14px; background:#0c0c0c; border:1px solid rgba(255,255,255,.13);
   min-height:84px;
@@ -196,12 +192,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
         <button id="clearTranslate">Clear</button>
         <button id="copyTranslation">Copy result</button>
       </div>
-
-      <div class="notice">
-Version 6 adds <strong>common prepositions, conjunctions, and relationship phrases</strong> alongside plurals, possessives, and verb forms. These rules are provisional. Check the Grammar guide for examples; unknown words appear in ⟦brackets⟧.
-      </div>
-
-      <div class="output">
+<div class="output">
         <div class="outputTitle">Translation</div>
         <div id="translation" class="translation">—</div>
         <div id="translationDetails" class="details"></div>
@@ -315,7 +306,7 @@ Version 6 adds <strong>common prepositions, conjunctions, and relationship phras
 </main>
 
 <footer class="wrap">
-  <div class="footerBox">Version 6: expanded connective vocabulary, phrasebook, sentence patterns, and a grammar guide. Regular inflections are proposed forms; exact dictionary and phrasebook entries remain authoritative.</div>
+  <div class="footerBox">Xrou-Haxa is a developing language. The translator favors established dictionary and phrasebook entries, with grammar assistance for everyday speech.</div>
 </footer>
 
 <script src="./engine.js" defer></script>
