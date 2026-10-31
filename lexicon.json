@@ -21,7 +21,7 @@
     "drow": "adam",
     "english": "I; me; my (in compounds)",
     "type": "pronoun / possessive",
-    "notes": "Masculine/default first person; Sivri uses this as her dialect default."
+    "notes": "Masculine/default first person."
   },
   {
     "drow": "adam-",
@@ -33,7 +33,6 @@
     "drow": "adam-anayhana",
     "english": "my offering; for me to offer",
     "type": "compound / verb form",
-    "notes": "Seen in a question about how many children one should offer."
   },
   {
     "drow": "adam-bhram",
@@ -51,7 +50,7 @@
     "drow": "Adam-dil",
     "english": "my heart; context-dependent possessive form",
     "type": "compound",
-    "notes": "Used previously for 'my heart'; also appears in an older concubine construction, so its exact sense depends on context."
+    "notes":
   },
   {
     "drow": "Adam-Javitaran",
@@ -67,7 +66,7 @@
   },
   {
     "drow": "adam-lassesukha",
-    "english": "my affections; my sexual favor; my intimacy",
+    "english": "my affections; my intimacy",
     "type": "compound",
     "notes": ""
   },
@@ -184,12 +183,6 @@
     "english": "offer; present; give",
     "type": "verb",
     "notes": "Variant/related form used in older examples."
-  },
-  {
-    "drow": "aniya-jarib",
-    "english": "contraceptive herbs",
-    "type": "noun",
-    "notes": ""
   },
   {
     "drow": "anokha",
@@ -792,18 +785,6 @@
     "notes": "Productive sound/utterance root."
   },
   {
-    "drow": "haxarkama",
-    "english": "context-dependent sensory/taste term",
-    "type": "unresolved word",
-    "notes": "Seen in an older phrase about tasting/experiencing everything together."
-  },
-  {
-    "drow": "hm-vai",
-    "english": "mm-hm",
-    "type": "interjection",
-    "notes": ""
-  },
-  {
     "drow": "iccha",
     "english": "want; desire; would like",
     "type": "verb",
@@ -831,7 +812,7 @@
     "drow": "Javita",
     "english": "marriage",
     "type": "noun",
-    "notes": "Used alone as a startled/questioning 'Marriage?'"
+    "notes":
   },
   {
     "drow": "javitamar",
@@ -909,13 +890,13 @@
     "drow": "kavalam",
     "english": "from; apart; away from",
     "type": "relational word",
-    "notes": "Used in a dissent/quarrel construction."
+    "notes":
   },
   {
     "drow": "ker",
     "english": "heart-related element",
     "type": "noun / root",
-    "notes": "Appears in 'Offer your heart to me.'"
+    "notes":
   },
   {
     "drow": "kesha",
@@ -1143,7 +1124,7 @@
     "drow": "nai",
     "english": "new",
     "type": "adjective",
-    "notes": "Supported by nai-xun = new blood."
+    "notes":
   },
   {
     "drow": "nai-ba",
