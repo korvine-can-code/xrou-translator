@@ -1,14 +1,14 @@
-Dvandva Xrou-Haxa Translator — vocabulary correction update
+Dvandva Xrou-Haxa Translator — V9 Everyday Vocabulary
 
-Changes:
-- xrou = Drow / people / person.
-- Ozzen-xrou = sunlander(s) / surface-dweller(s) / sun folk.
-- Former Ozz-xrou entry corrected to Ozzen-xrou.
-- Both English-to-Xrou and Xrou-to-English translation updated for these words.
-- "people" now resolves to xrou as a collective term, without being pluralized to xrouys.
-- All Version 7 features, files and styling preserved.
+Dictionary entries: 2421 (V8: 1936, new: 485)
+Phrasebook expressions: 473 (new: 29)
 
-GitHub Pages: Extract ZIP, upload all files to the same repository root
-(including the assets folder), then commit. If you only want dictionary display
-changes, replace lexicon.json; for correct translation behavior also replace engine.js
-and sw.js.
+Expanded conversational, household, food, crafts, movement, social, time, nature, health and practical vocabulary.
+Retains xrou = Drow/people and Ozzen-xrou = sunlander/surface-dweller.
+New words are *proposed Xrou coinages*, not independently attested canon.
+Existing entries and all translator functionality and Dvandva visuals preserved.
+
+Upload the ZIP contents to the GitHub Pages repository (preserve assets/).
+For dictionary-only updates, only lexicon.json needs replacement.
+
+Notes: The translator is rule-based and can be ambiguous for compound words.

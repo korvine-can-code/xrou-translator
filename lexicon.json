@@ -30,9 +30,19 @@
     "type": "noun"
   },
   {
+    "drow": "aamtaur",
+    "english": "usually",
+    "type": "adverb"
+  },
+  {
     "drow": "aangan",
     "english": "courtyard; enclosed yard",
     "type": "noun"
+  },
+  {
+    "drow": "aankh-marana",
+    "english": "wink",
+    "type": "verb"
   },
   {
     "drow": "Abba",
@@ -45,6 +55,11 @@
     "type": "adverb"
   },
   {
+    "drow": "abhi vai",
+    "english": "not yet",
+    "type": "phrase"
+  },
+  {
     "drow": "abhi-abhi",
     "english": "just now; a moment ago",
     "type": "adverb"
@@ -55,9 +70,24 @@
     "type": "adverb"
   },
   {
+    "drow": "abhi-vai-adhik",
+    "english": "not anymore",
+    "type": "phrase"
+  },
+  {
+    "drow": "abhivadan-kara",
+    "english": "greet",
+    "type": "verb"
+  },
+  {
     "drow": "abhyas",
     "english": "practice; rehearse",
     "type": "verb"
+  },
+  {
+    "drow": "abhyas-satra",
+    "english": "practice session",
+    "type": "noun"
   },
   {
     "drow": "acha",
@@ -78,6 +108,71 @@
     "drow": "adam",
     "english": "I; me; my (in compounds)",
     "type": "pronoun / possessive"
+  },
+  {
+    "drow": "Adam apares sahay",
+    "english": "I need help",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam gautes",
+    "english": "I am listening",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam sammati",
+    "english": "I agree",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam smaran",
+    "english": "I remember",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam thanatei punar caxra",
+    "english": "I will return",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam vai xce taiyar",
+    "english": "I am not ready",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam vai xypremanah",
+    "english": "I do not know",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam vai-sammati",
+    "english": "I disagree",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam vismaran",
+    "english": "I forgot",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam xce taiyar",
+    "english": "I am ready",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam xce upalabdha",
+    "english": "I am free",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam xce vyasta",
+    "english": "I am busy",
+    "type": "phrase"
+  },
+  {
+    "drow": "Adam xypremanah",
+    "english": "I understand",
+    "type": "phrase"
   },
   {
     "drow": "adam-",
@@ -230,6 +325,11 @@
     "type": "pronoun"
   },
   {
+    "drow": "adat",
+    "english": "habit",
+    "type": "noun"
+  },
+  {
     "drow": "adbhut",
     "english": "wonderful; marvelous",
     "type": "adjective"
@@ -250,6 +350,21 @@
     "type": "adjective / adverb"
   },
   {
+    "drow": "adhik-athva-kam",
+    "english": "more or less",
+    "type": "phrase"
+  },
+  {
+    "drow": "adhik-priya",
+    "english": "prefer",
+    "type": "verb"
+  },
+  {
+    "drow": "adhik-se-adhik",
+    "english": "at most",
+    "type": "phrase"
+  },
+  {
     "drow": "adhika-saha",
     "english": "in addition to",
     "type": "compound preposition"
@@ -258,6 +373,11 @@
     "drow": "adhikansha",
     "english": "most; majority",
     "type": "adjective / noun"
+  },
+  {
+    "drow": "adhikansha-rup",
+    "english": "mostly",
+    "type": "adverb"
   },
   {
     "drow": "adhikara",
@@ -300,13 +420,33 @@
     "type": "noun"
   },
   {
+    "drow": "afvah",
+    "english": "rumor",
+    "type": "noun"
+  },
+  {
     "drow": "agaccha",
     "english": "come; approach",
     "type": "verb"
   },
   {
+    "drow": "aganit",
+    "english": "countless",
+    "type": "adjective"
+  },
+  {
+    "drow": "agla",
+    "english": "next",
+    "type": "adjective"
+  },
+  {
     "drow": "agni",
     "english": "fire; flame",
+    "type": "noun"
+  },
+  {
+    "drow": "agni-tinka",
+    "english": "match",
     "type": "noun"
   },
   {
@@ -365,6 +505,11 @@
     "type": "unresolved word"
   },
   {
+    "drow": "akar",
+    "english": "size",
+    "type": "noun"
+  },
+  {
     "drow": "akash",
     "english": "sky; heavens",
     "type": "noun"
@@ -390,9 +535,24 @@
     "type": "adverb"
   },
   {
+    "drow": "akrti",
+    "english": "shape",
+    "type": "noun"
+  },
+  {
     "drow": "aksar",
     "english": "often; frequently",
     "type": "adverb"
+  },
+  {
+    "drow": "akshara-haxa",
+    "english": "spell",
+    "type": "verb"
+  },
+  {
+    "drow": "alag",
+    "english": "different",
+    "type": "adjective"
   },
   {
     "drow": "alag-kara",
@@ -405,6 +565,11 @@
     "type": "noun"
   },
   {
+    "drow": "almari",
+    "english": "cabinet",
+    "type": "noun"
+  },
+  {
     "drow": "alp",
     "english": "few; little",
     "type": "adjective"
@@ -413,6 +578,11 @@
     "drow": "alsi",
     "english": "lazy; idle",
     "type": "adjective"
+  },
+  {
+    "drow": "alu-bukhara",
+    "english": "plum",
+    "type": "noun"
   },
   {
     "drow": "alvida",
@@ -475,6 +645,11 @@
     "type": "noun"
   },
   {
+    "drow": "andaza-kara",
+    "english": "guess",
+    "type": "verb"
+  },
+  {
     "drow": "andhera",
     "english": "darkness; absence of light",
     "type": "noun"
@@ -483,6 +658,11 @@
     "drow": "andhi",
     "english": "storm; tempest",
     "type": "noun"
+  },
+  {
+    "drow": "anek",
+    "english": "several",
+    "type": "adjective"
   },
   {
     "drow": "angan-vana",
@@ -515,6 +695,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "anjir",
+    "english": "fig",
+    "type": "noun"
+  },
+  {
     "drow": "ankur",
     "english": "sprout; seedling",
     "type": "noun"
@@ -528,6 +713,16 @@
     "drow": "anokha",
     "english": "strange; unfamiliar",
     "type": "adjective"
+  },
+  {
+    "drow": "anshik",
+    "english": "partial",
+    "type": "adjective"
+  },
+  {
+    "drow": "anshik-rup",
+    "english": "partly",
+    "type": "adverb"
   },
   {
     "drow": "antar",
@@ -575,9 +770,24 @@
     "type": "adjective"
   },
   {
+    "drow": "antima-samay",
+    "english": "deadline",
+    "type": "noun"
+  },
+  {
     "drow": "antima-sthane",
     "english": "ending at",
     "type": "compound preposition"
+  },
+  {
+    "drow": "Anugaman adam",
+    "english": "follow me",
+    "type": "phrase"
+  },
+  {
+    "drow": "anuman-kara",
+    "english": "assume",
+    "type": "verb"
   },
   {
     "drow": "anumati",
@@ -615,6 +825,16 @@
     "type": "root"
   },
   {
+    "drow": "anuvada-kara",
+    "english": "translate",
+    "type": "verb"
+  },
+  {
+    "drow": "anuyayi",
+    "english": "follower",
+    "type": "noun"
+  },
+  {
     "drow": "anvis",
     "english": "seek; intend; try",
     "type": "verb"
@@ -623,6 +843,11 @@
     "drow": "anya-dast",
     "english": "another hand",
     "type": "compound"
+  },
+  {
+    "drow": "anya-koi",
+    "english": "anyone else",
+    "type": "pronoun"
   },
   {
     "drow": "anya-paksha",
@@ -665,6 +890,21 @@
     "type": "modal"
   },
   {
+    "drow": "apat-kala",
+    "english": "emergency",
+    "type": "noun"
+  },
+  {
+    "drow": "apavad",
+    "english": "exception",
+    "type": "noun"
+  },
+  {
+    "drow": "apeksha-kara",
+    "english": "expect",
+    "type": "verb"
+  },
+  {
     "drow": "api",
     "english": "also; too; as well",
     "type": "adverb"
@@ -685,9 +925,19 @@
     "type": "connector phrase"
   },
   {
+    "drow": "aporti",
+    "english": "supply",
+    "type": "noun"
+  },
+  {
     "drow": "apsara",
     "english": "never / irrealis-related element",
     "type": "grammar form"
+  },
+  {
+    "drow": "ara",
+    "english": "saw",
+    "type": "noun"
   },
   {
     "drow": "aram-kara",
@@ -760,9 +1010,34 @@
     "type": "discourse connector"
   },
   {
+    "drow": "asabhya-bhava",
+    "english": "rudeness",
+    "type": "noun"
+  },
+  {
+    "drow": "asabhya-se",
+    "english": "rudely",
+    "type": "adverb"
+  },
+  {
+    "drow": "asadharan",
+    "english": "unusual",
+    "type": "adjective"
+  },
+  {
+    "drow": "asafal-bhava",
+    "english": "fail",
+    "type": "verb"
+  },
+  {
     "drow": "asafalta",
     "english": "failure; setback",
     "type": "noun"
+  },
+  {
+    "drow": "asahaj",
+    "english": "awkward",
+    "type": "adjective"
   },
   {
     "drow": "asambhav",
@@ -835,6 +1110,11 @@
     "type": "adjective"
   },
   {
+    "drow": "astabal",
+    "english": "stable",
+    "type": "noun"
+  },
+  {
     "drow": "asthi",
     "english": "bone",
     "type": "noun"
@@ -885,9 +1165,24 @@
     "type": "compound preposition"
   },
   {
+    "drow": "ati-khasta",
+    "english": "exhausted",
+    "type": "adjective"
+  },
+  {
     "drow": "ati-vishala",
     "english": "oversized; enormous",
     "type": "adjective"
+  },
+  {
+    "drow": "atirikta",
+    "english": "extra",
+    "type": "adjective"
+  },
+  {
+    "drow": "atirikta-sampada",
+    "english": "surplus",
+    "type": "noun"
   },
   {
     "drow": "atithi",
@@ -895,9 +1190,19 @@
     "type": "noun"
   },
   {
+    "drow": "atmavishvasi",
+    "english": "confident",
+    "type": "adjective"
+  },
+  {
     "drow": "atra",
     "english": "here",
     "type": "adverb"
+  },
+  {
+    "drow": "Atra aao",
+    "english": "come here",
+    "type": "phrase"
   },
   {
     "drow": "attari",
@@ -925,6 +1230,11 @@
     "type": "adjective / noun"
   },
   {
+    "drow": "avas",
+    "english": "lodging",
+    "type": "noun"
+  },
+  {
     "drow": "avashya",
     "english": "of course; certainly",
     "type": "adverb"
@@ -942,6 +1252,11 @@
   {
     "drow": "avsar",
     "english": "chance; opportunity",
+    "type": "noun"
+  },
+  {
+    "drow": "avyavastha",
+    "english": "mess",
     "type": "noun"
   },
   {
@@ -970,6 +1285,11 @@
     "type": "adverb"
   },
   {
+    "drow": "baada",
+    "english": "fence",
+    "type": "noun"
+  },
+  {
     "drow": "baant",
     "english": "divide; share among",
     "type": "verb"
@@ -995,9 +1315,24 @@
     "type": "verb"
   },
   {
+    "drow": "bacha-bhojana",
+    "english": "leftovers",
+    "type": "noun"
+  },
+  {
     "drow": "bacha-kara",
     "english": "rescue; save from harm",
     "type": "verb"
+  },
+  {
+    "drow": "bachana",
+    "english": "avoid",
+    "type": "verb"
+  },
+  {
+    "drow": "bada-pyala",
+    "english": "mug",
+    "type": "noun"
   },
   {
     "drow": "badal",
@@ -1025,9 +1360,24 @@
     "type": "verb"
   },
   {
+    "drow": "badha-jal",
+    "english": "flood",
+    "type": "noun"
+  },
+  {
     "drow": "badhai",
     "english": "carpenter; woodworker",
     "type": "noun"
+  },
+  {
+    "drow": "badhit-kara",
+    "english": "interrupt",
+    "type": "verb"
+  },
+  {
+    "drow": "badi-muskan",
+    "english": "grin",
+    "type": "verb"
   },
   {
     "drow": "badlav",
@@ -1035,9 +1385,19 @@
     "type": "noun"
   },
   {
+    "drow": "badle",
+    "english": "instead",
+    "type": "adverb"
+  },
+  {
     "drow": "badle-da",
     "english": "instead of; in place of; rather than",
     "type": "compound preposition"
+  },
+  {
+    "drow": "bahar-rakha",
+    "english": "exclude",
+    "type": "verb"
   },
   {
     "drow": "bahas",
@@ -1060,6 +1420,11 @@
     "type": "preposition"
   },
   {
+    "drow": "bahu",
+    "english": "numerous",
+    "type": "adjective"
+  },
+  {
     "drow": "bahut",
     "english": "many; a lot",
     "type": "adjective"
@@ -1068,6 +1433,11 @@
     "drow": "bahut-dhanya",
     "english": "many thanks; thank you very much",
     "type": "expression"
+  },
+  {
+    "drow": "bahut-kam",
+    "english": "seldom",
+    "type": "adverb"
   },
   {
     "drow": "baingani",
@@ -1145,6 +1515,11 @@
     "type": "title / endearment"
   },
   {
+    "drow": "bandal",
+    "english": "package",
+    "type": "noun"
+  },
+  {
     "drow": "bandargah",
     "english": "harbor; port",
     "type": "noun"
@@ -1170,6 +1545,11 @@
     "type": "noun"
   },
   {
+    "drow": "bandhana",
+    "english": "captivity",
+    "type": "noun"
+  },
+  {
     "drow": "bantna",
     "english": "distribute; hand out",
     "type": "verb"
@@ -1182,6 +1562,11 @@
   {
     "drow": "barf-bari",
     "english": "snowfall; falling snow",
+    "type": "noun"
+  },
+  {
+    "drow": "barf-kana",
+    "english": "snowflake",
     "type": "noun"
   },
   {
@@ -1198,6 +1583,16 @@
     "drow": "basi",
     "english": "stale; no longer fresh",
     "type": "adjective"
+  },
+  {
+    "drow": "batti",
+    "english": "wick",
+    "type": "noun"
+  },
+  {
+    "drow": "batua",
+    "english": "wallet",
+    "type": "noun"
   },
   {
     "drow": "Bauxes",
@@ -1218,6 +1613,11 @@
     "drow": "Baxcen",
     "english": "sorry; apology",
     "type": "interjection / noun"
+  },
+  {
+    "drow": "baxcen-kara",
+    "english": "apologize",
+    "type": "verb"
   },
   {
     "drow": "baz",
@@ -1270,13 +1670,38 @@
     "type": "adjective"
   },
   {
+    "drow": "belcha",
+    "english": "shovel",
+    "type": "noun"
+  },
+  {
     "drow": "bepani",
     "english": "thirsty; parched",
     "type": "adjective"
   },
   {
+    "drow": "ber",
+    "english": "berry",
+    "type": "noun"
+  },
+  {
+    "drow": "bhaap",
+    "english": "steam noun",
+    "type": "noun"
+  },
+  {
+    "drow": "bhaap-kara",
+    "english": "steam",
+    "type": "verb"
+  },
+  {
     "drow": "bhag",
     "english": "part; portion",
+    "type": "noun"
+  },
+  {
+    "drow": "bhagya",
+    "english": "luck",
     "type": "noun"
   },
   {
@@ -1312,6 +1737,21 @@
   {
     "drow": "bhandar",
     "english": "storage room; storeroom",
+    "type": "noun"
+  },
+  {
+    "drow": "bhandar-ghar",
+    "english": "warehouse",
+    "type": "noun"
+  },
+  {
+    "drow": "bhandar-suchi",
+    "english": "inventory",
+    "type": "noun"
+  },
+  {
+    "drow": "bhandaran",
+    "english": "storage",
     "type": "noun"
   },
   {
@@ -1385,9 +1825,19 @@
     "type": "noun"
   },
   {
+    "drow": "bhau-sikodana",
+    "english": "frown",
+    "type": "verb"
+  },
+  {
     "drow": "bhava",
     "english": "become",
     "type": "verb"
+  },
+  {
+    "drow": "Bhava savadhan",
+    "english": "be careful",
+    "type": "phrase"
   },
   {
     "drow": "bhava-kala",
@@ -1457,6 +1907,11 @@
   {
     "drow": "bhojana",
     "english": "meal; food",
+    "type": "noun"
+  },
+  {
+    "drow": "bhojana-hissa",
+    "english": "serving of food",
     "type": "noun"
   },
   {
@@ -1545,6 +2000,16 @@
     "type": "adjective"
   },
   {
+    "drow": "bigadana",
+    "english": "worsen",
+    "type": "verb"
+  },
+  {
+    "drow": "bij",
+    "english": "seed edible",
+    "type": "noun"
+  },
+  {
     "drow": "bija",
     "english": "seed",
     "type": "noun"
@@ -1560,6 +2025,16 @@
     "type": "noun"
   },
   {
+    "drow": "bikhra-saman",
+    "english": "clutter",
+    "type": "noun"
+  },
+  {
+    "drow": "bikri",
+    "english": "sale",
+    "type": "noun"
+  },
+  {
     "drow": "bilkul",
     "english": "exactly; absolutely",
     "type": "adverb"
@@ -1572,6 +2047,21 @@
   {
     "drow": "billi",
     "english": "cat",
+    "type": "noun"
+  },
+  {
+    "drow": "bodha-kara",
+    "english": "realize",
+    "type": "verb"
+  },
+  {
+    "drow": "botal",
+    "english": "bottle",
+    "type": "noun"
+  },
+  {
+    "drow": "brush",
+    "english": "brush",
     "type": "noun"
   },
   {
@@ -1610,6 +2100,11 @@
     "type": "verb"
   },
   {
+    "drow": "bunana",
+    "english": "knit",
+    "type": "verb"
+  },
+  {
     "drow": "bunkar",
     "english": "weaver; textile maker",
     "type": "noun"
@@ -1635,6 +2130,11 @@
     "type": "verb"
   },
   {
+    "drow": "Caxra adam akela",
+    "english": "leave me alone",
+    "type": "phrase"
+  },
+  {
     "drow": "caxra samyak",
     "english": "go well; farewell",
     "type": "expression"
@@ -1643,6 +2143,11 @@
     "drow": "cet",
     "english": "else; otherwise",
     "type": "particle"
+  },
+  {
+    "drow": "chabana",
+    "english": "chew",
+    "type": "verb"
   },
   {
     "drow": "chacha",
@@ -1680,9 +2185,19 @@
     "type": "verb"
   },
   {
+    "drow": "chakita",
+    "english": "surprised",
+    "type": "adjective"
+  },
+  {
     "drow": "chakkar",
     "english": "dizziness; vertigo",
     "type": "noun"
+  },
+  {
+    "drow": "chakkarita",
+    "english": "dizzy",
+    "type": "adjective"
   },
   {
     "drow": "chaku",
@@ -1695,8 +2210,18 @@
     "type": "noun"
   },
   {
+    "drow": "chamakana",
+    "english": "polish",
+    "type": "verb"
+  },
+  {
     "drow": "chamcha",
     "english": "spoon",
+    "type": "noun"
+  },
+  {
+    "drow": "chamda",
+    "english": "leather",
     "type": "noun"
   },
   {
@@ -1740,9 +2265,19 @@
     "type": "noun"
   },
   {
+    "drow": "chatana",
+    "english": "lick",
+    "type": "verb"
+  },
+  {
     "drow": "chatham",
     "english": "that / demonstrative construction",
     "type": "demonstrative"
+  },
+  {
+    "drow": "chatni",
+    "english": "sauce",
+    "type": "noun"
   },
   {
     "drow": "chattan",
@@ -1760,8 +2295,18 @@
     "type": "adjective"
   },
   {
+    "drow": "chauk",
+    "english": "square town",
+    "type": "noun"
+  },
+  {
     "drow": "chauraha",
     "english": "crossroads; intersection",
+    "type": "noun"
+  },
+  {
+    "drow": "chaurai",
+    "english": "width",
     "type": "noun"
   },
   {
@@ -1790,6 +2335,16 @@
     "type": "noun"
   },
   {
+    "drow": "chetavani",
+    "english": "warning",
+    "type": "noun"
+  },
+  {
+    "drow": "chetavani-yhana",
+    "english": "warn",
+    "type": "verb"
+  },
+  {
     "drow": "chhajja",
     "english": "balcony; projecting gallery",
     "type": "noun"
@@ -1800,9 +2355,19 @@
     "type": "noun"
   },
   {
+    "drow": "chhalakana",
+    "english": "spill",
+    "type": "verb"
+  },
+  {
     "drow": "chhanni",
     "english": "sieve; strainer",
     "type": "noun"
+  },
+  {
+    "drow": "chhantana",
+    "english": "sort",
+    "type": "verb"
   },
   {
     "drow": "chhat",
@@ -1845,6 +2410,16 @@
     "type": "adjective"
   },
   {
+    "drow": "chhota-kalin",
+    "english": "rug",
+    "type": "noun"
+  },
+  {
+    "drow": "chhoti-gali",
+    "english": "side street",
+    "type": "noun"
+  },
+  {
     "drow": "chhupa-kara",
     "english": "hide; conceal",
     "type": "verb"
@@ -1855,13 +2430,43 @@
     "type": "verb"
   },
   {
+    "drow": "chhutte-sikke",
+    "english": "change coins",
+    "type": "noun"
+  },
+  {
+    "drow": "chidhita",
+    "english": "annoyed",
+    "type": "adjective"
+  },
+  {
     "drow": "chidiya",
     "english": "bird; small songbird",
     "type": "noun"
   },
   {
+    "drow": "chihna-patra",
+    "english": "label",
+    "type": "noun"
+  },
+  {
     "drow": "chikitsa",
     "english": "medical treatment; healing care",
+    "type": "noun"
+  },
+  {
+    "drow": "chikna",
+    "english": "smooth",
+    "type": "adjective"
+  },
+  {
+    "drow": "chimta",
+    "english": "pliers",
+    "type": "noun"
+  },
+  {
+    "drow": "chingari",
+    "english": "spark",
     "type": "noun"
   },
   {
@@ -2075,6 +2680,16 @@
     "type": "verb"
   },
   {
+    "drow": "dafanana",
+    "english": "bury",
+    "type": "verb"
+  },
+  {
+    "drow": "dag",
+    "english": "stain",
+    "type": "noun"
+  },
+  {
     "drow": "dah",
     "english": "burn",
     "type": "verb"
@@ -2100,8 +2715,18 @@
     "type": "noun"
   },
   {
+    "drow": "dal-sathi",
+    "english": "teammate",
+    "type": "noun"
+  },
+  {
     "drow": "dalan",
     "english": "hallway; corridor",
+    "type": "noun"
+  },
+  {
+    "drow": "daliya",
+    "english": "porridge",
     "type": "noun"
   },
   {
@@ -2138,6 +2763,11 @@
     "drow": "dar-tumu",
     "english": "yours; belonging to you",
     "type": "possessive expression"
+  },
+  {
+    "drow": "daraj",
+    "english": "drawer",
+    "type": "noun"
   },
   {
     "drow": "daraz",
@@ -2210,6 +2840,11 @@
     "type": "adjective"
   },
   {
+    "drow": "dayalu-bhava",
+    "english": "kindness",
+    "type": "noun"
+  },
+  {
     "drow": "deha",
     "english": "body",
     "type": "noun"
@@ -2255,9 +2890,19 @@
     "type": "verb"
   },
   {
+    "drow": "dhakkan",
+    "english": "lid",
+    "type": "noun"
+  },
+  {
     "drow": "dhal",
     "english": "shield; defensive board",
     "type": "noun"
+  },
+  {
+    "drow": "dhan-bachana",
+    "english": "save money",
+    "type": "verb"
   },
   {
     "drow": "dhanush",
@@ -2268,6 +2913,11 @@
     "drow": "dhanya",
     "english": "gratitude; thanks; appreciation",
     "type": "noun"
+  },
+  {
+    "drow": "dhanya-yhana",
+    "english": "thank",
+    "type": "verb"
   },
   {
     "drow": "dhar",
@@ -2310,6 +2960,16 @@
     "type": "adverb"
   },
   {
+    "drow": "dhire-dhire",
+    "english": "gradually",
+    "type": "adverb"
+  },
+  {
+    "drow": "dhokar-saf",
+    "english": "rinse",
+    "type": "verb"
+  },
+  {
     "drow": "dhona",
     "english": "wash; cleanse",
     "type": "verb"
@@ -2318,6 +2978,11 @@
     "drow": "dhova",
     "english": "wash; clean",
     "type": "verb"
+  },
+  {
+    "drow": "dhua",
+    "english": "smoke",
+    "type": "noun"
   },
   {
     "drow": "dhul",
@@ -2355,6 +3020,11 @@
     "type": "verb"
   },
   {
+    "drow": "dikhavat-se",
+    "english": "apparently",
+    "type": "adverb"
+  },
+  {
     "drow": "dil-khasta",
     "english": "heart-tired; emotionally exhausted",
     "type": "compound"
@@ -2362,6 +3032,16 @@
   {
     "drow": "dina",
     "english": "day; days",
+    "type": "noun"
+  },
+  {
+    "drow": "dina-patra",
+    "english": "calendar",
+    "type": "noun"
+  },
+  {
+    "drow": "dinacharya",
+    "english": "routine",
     "type": "noun"
   },
   {
@@ -2377,6 +3057,11 @@
   {
     "drow": "disha",
     "english": "direction; compass bearing",
+    "type": "noun"
+  },
+  {
+    "drow": "disha-yantra",
+    "english": "compass navigation",
     "type": "noun"
   },
   {
@@ -2398,6 +3083,16 @@
     "drow": "dopahar-bhojan",
     "english": "lunch; midday meal",
     "type": "noun"
+  },
+  {
+    "drow": "dori",
+    "english": "string",
+    "type": "noun"
+  },
+  {
+    "drow": "dosh-bhara",
+    "english": "guilty",
+    "type": "adjective"
   },
   {
     "drow": "dosha",
@@ -2430,6 +3125,11 @@
     "type": "noun"
   },
   {
+    "drow": "drishya",
+    "english": "visible",
+    "type": "adjective"
+  },
+  {
     "drow": "dub",
     "english": "sink; submerge",
     "type": "verb"
@@ -2442,6 +3142,16 @@
   {
     "drow": "dudha",
     "english": "milk",
+    "type": "noun"
+  },
+  {
+    "drow": "duhkhi",
+    "english": "miserable",
+    "type": "adjective"
+  },
+  {
+    "drow": "dukan",
+    "english": "shop",
     "type": "noun"
   },
   {
@@ -2467,6 +3177,21 @@
   {
     "drow": "durbal",
     "english": "weak",
+    "type": "adjective"
+  },
+  {
+    "drow": "durghatana",
+    "english": "accident",
+    "type": "noun"
+  },
+  {
+    "drow": "duri",
+    "english": "distance",
+    "type": "noun"
+  },
+  {
+    "drow": "durlabh",
+    "english": "rare",
     "type": "adjective"
   },
   {
@@ -2510,6 +3235,16 @@
     "type": "adjective / adverb"
   },
   {
+    "drow": "dvip",
+    "english": "island",
+    "type": "noun"
+  },
+  {
+    "drow": "dvitiya",
+    "english": "second",
+    "type": "adverb"
+  },
+  {
     "drow": "edi",
     "english": "heel",
     "type": "noun"
@@ -2523,6 +3258,16 @@
     "drow": "eh",
     "english": "eh; hey; interjection",
     "type": "interjection"
+  },
+  {
+    "drow": "ek-saman",
+    "english": "identical",
+    "type": "adjective"
+  },
+  {
+    "drow": "ek-sath",
+    "english": "at once",
+    "type": "phrase"
   },
   {
     "drow": "eka",
@@ -2545,6 +3290,16 @@
     "type": "conjunction / adverb"
   },
   {
+    "drow": "ekagra-kara",
+    "english": "concentrate",
+    "type": "verb"
+  },
+  {
+    "drow": "ekagrata",
+    "english": "focus",
+    "type": "noun"
+  },
+  {
     "drow": "ena",
     "english": "now; right now; already; by now",
     "type": "adverb"
@@ -2560,6 +3315,11 @@
     "type": "demonstrative"
   },
   {
+    "drow": "etha vasa",
+    "english": "that is enough",
+    "type": "phrase"
+  },
+  {
     "drow": "etha-prakar",
     "english": "like that; in that manner",
     "type": "adverb / expression"
@@ -2573,6 +3333,16 @@
     "drow": "farsh",
     "english": "floor; ground indoors",
     "type": "noun"
+  },
+  {
+    "drow": "fasal-katana",
+    "english": "harvest",
+    "type": "verb"
+  },
+  {
+    "drow": "feeka",
+    "english": "bland",
+    "type": "adjective"
   },
   {
     "drow": "filhaal",
@@ -2595,6 +3365,16 @@
     "type": "noun"
   },
   {
+    "drow": "gada-shorba",
+    "english": "stock cooking",
+    "type": "noun"
+  },
+  {
+    "drow": "gadda",
+    "english": "mattress",
+    "type": "noun"
+  },
+  {
     "drow": "gadi",
     "english": "cart; wagon",
     "type": "noun"
@@ -2605,14 +3385,34 @@
     "type": "adjective"
   },
   {
+    "drow": "gahrai",
+    "english": "depth",
+    "type": "noun"
+  },
+  {
+    "drow": "gahri-ghati",
+    "english": "canyon",
+    "type": "noun"
+  },
+  {
     "drow": "gajar",
     "english": "carrot",
+    "type": "noun"
+  },
+  {
+    "drow": "gala",
+    "english": "throat",
     "type": "noun"
   },
   {
     "drow": "galat",
     "english": "wrong; incorrect",
     "type": "adjective"
+  },
+  {
+    "drow": "galati-se",
+    "english": "by accident",
+    "type": "phrase"
   },
   {
     "drow": "gali",
@@ -2633,6 +3433,11 @@
     "drow": "gambhir",
     "english": "serious; grave",
     "type": "adjective"
+  },
+  {
+    "drow": "gana",
+    "english": "sing",
+    "type": "verb"
   },
   {
     "drow": "ganana",
@@ -2675,6 +3480,11 @@
     "type": "noun"
   },
   {
+    "drow": "garibi",
+    "english": "poverty",
+    "type": "noun"
+  },
+  {
     "drow": "garjana",
     "english": "thunder",
     "type": "noun"
@@ -2700,6 +3510,16 @@
     "type": "noun"
   },
   {
+    "drow": "garvita",
+    "english": "proud",
+    "type": "adjective"
+  },
+  {
+    "drow": "gati",
+    "english": "speed",
+    "type": "noun"
+  },
+  {
     "drow": "gautes",
     "english": "hear",
     "type": "verb"
@@ -2720,6 +3540,11 @@
     "type": "noun"
   },
   {
+    "drow": "gehun",
+    "english": "wheat",
+    "type": "noun"
+  },
+  {
     "drow": "Georgia",
     "english": "Georgia",
     "type": "proper noun"
@@ -2727,6 +3552,16 @@
   {
     "drow": "ghaati",
     "english": "valley; lowland",
+    "type": "noun"
+  },
+  {
+    "drow": "ghabraya",
+    "english": "nervous",
+    "type": "adjective"
+  },
+  {
+    "drow": "ghadi",
+    "english": "clock",
     "type": "noun"
   },
   {
@@ -2745,6 +3580,26 @@
     "type": "place / compound"
   },
   {
+    "drow": "ghar-karya",
+    "english": "chore",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-viraha",
+    "english": "homesick",
+    "type": "adjective"
+  },
+  {
+    "drow": "ghas-maidan",
+    "english": "meadow",
+    "type": "noun"
+  },
+  {
+    "drow": "ghasitana",
+    "english": "drag",
+    "type": "verb"
+  },
+  {
     "drow": "ghat",
     "english": "dock; waterside landing",
     "type": "noun"
@@ -2753,6 +3608,11 @@
     "drow": "ghata",
     "english": "decrease; reduce",
     "type": "verb"
+  },
+  {
+    "drow": "ghatana",
+    "english": "incident",
+    "type": "noun"
   },
   {
     "drow": "ghausa",
@@ -2765,9 +3625,24 @@
     "type": "noun"
   },
   {
+    "drow": "ghayal",
+    "english": "injured",
+    "type": "adjective"
+  },
+  {
     "drow": "ghoshana",
     "english": "announcement; proclamation",
     "type": "noun"
+  },
+  {
+    "drow": "ghoshana-kara",
+    "english": "announce",
+    "type": "verb"
+  },
+  {
+    "drow": "ghutana-tekana",
+    "english": "kneel",
+    "type": "verb"
   },
   {
     "drow": "ghutna",
@@ -2795,6 +3670,11 @@
     "type": "noun"
   },
   {
+    "drow": "grahak",
+    "english": "customer",
+    "type": "noun"
+  },
+  {
     "drow": "grahan",
     "english": "accept; acceptance; receive",
     "type": "verb / noun"
@@ -2803,6 +3683,11 @@
     "drow": "grahana",
     "english": "take; receive; accept",
     "type": "verb"
+  },
+  {
+    "drow": "gramavasi",
+    "english": "villager",
+    "type": "noun"
   },
   {
     "drow": "griha-dvara",
@@ -2845,14 +3730,39 @@
     "type": "noun"
   },
   {
+    "drow": "gundha-atta",
+    "english": "dough",
+    "type": "noun"
+  },
+  {
+    "drow": "gunjana-haxa",
+    "english": "mutter",
+    "type": "verb"
+  },
+  {
+    "drow": "gupta-priya",
+    "english": "secretive",
+    "type": "adjective"
+  },
+  {
     "drow": "gussa",
     "english": "anger; irritation",
     "type": "noun"
   },
   {
+    "drow": "haal-hi",
+    "english": "recently",
+    "type": "adverb"
+  },
+  {
     "drow": "haddi-shorba",
     "english": "bone broth",
     "type": "noun"
+  },
+  {
+    "drow": "haklana",
+    "english": "stammer",
+    "type": "verb"
   },
   {
     "drow": "halka",
@@ -2900,14 +3810,39 @@
     "type": "compound"
   },
   {
+    "drow": "hastakshar",
+    "english": "signature",
+    "type": "noun"
+  },
+  {
+    "drow": "hasya",
+    "english": "humor",
+    "type": "noun"
+  },
+  {
     "drow": "hatana",
     "english": "remove; take away",
     "type": "verb"
   },
   {
+    "drow": "hatash",
+    "english": "frustrated",
+    "type": "adjective"
+  },
+  {
+    "drow": "hatheli",
+    "english": "palm",
+    "type": "noun"
+  },
+  {
     "drow": "hathila",
     "english": "stubborn; obstinate",
     "type": "adjective"
+  },
+  {
+    "drow": "hathoda",
+    "english": "hammer",
+    "type": "noun"
   },
   {
     "drow": "hatta",
@@ -2935,6 +3870,11 @@
     "type": "noun / root"
   },
   {
+    "drow": "Haxa spashta",
+    "english": "speak clearly",
+    "type": "phrase"
+  },
+  {
     "drow": "haxarkama",
     "english": "context-dependent sensory/taste term",
     "type": "unresolved word"
@@ -2943,6 +3883,11 @@
     "drow": "hemanta",
     "english": "winter season",
     "type": "noun"
+  },
+  {
+    "drow": "hichaki",
+    "english": "hiccup",
+    "type": "verb"
   },
   {
     "drow": "hilao",
@@ -2967,6 +3912,11 @@
   {
     "drow": "hisab",
     "english": "account; tally",
+    "type": "noun"
+  },
+  {
+    "drow": "hisab-patra",
+    "english": "bill invoice",
     "type": "noun"
   },
   {
@@ -3035,9 +3985,24 @@
     "type": "demonstrative"
   },
   {
+    "drow": "inkar-kara",
+    "english": "deny",
+    "type": "verb"
+  },
+  {
     "drow": "intezar",
     "english": "wait; waiting",
     "type": "verb / noun"
+  },
+  {
+    "drow": "Intezar atra",
+    "english": "wait here",
+    "type": "phrase"
+  },
+  {
+    "drow": "intezar-da",
+    "english": "wait for",
+    "type": "verb"
   },
   {
     "drow": "irad",
@@ -3055,9 +4020,24 @@
     "type": "noun"
   },
   {
+    "drow": "irshyalu",
+    "english": "jealous",
+    "type": "adjective"
+  },
+  {
+    "drow": "is-bich",
+    "english": "in the meantime",
+    "type": "phrase"
+  },
+  {
     "drow": "ishara",
     "english": "gesture; indication",
     "type": "noun"
+  },
+  {
+    "drow": "ishara-kara",
+    "english": "point",
+    "type": "verb"
   },
   {
     "drow": "isi-kshan",
@@ -3083,6 +4063,11 @@
     "drow": "jaari",
     "english": "continue; keep going",
     "type": "verb"
+  },
+  {
+    "drow": "jabda",
+    "english": "jaw",
+    "type": "noun"
   },
   {
     "drow": "jabki",
@@ -3125,6 +4110,11 @@
     "type": "noun"
   },
   {
+    "drow": "jai",
+    "english": "oats",
+    "type": "noun"
+  },
+  {
     "drow": "jaisa",
     "english": "similar to; resembling",
     "type": "preposition"
@@ -3135,9 +4125,24 @@
     "type": "noun"
   },
   {
+    "drow": "jal-srota",
+    "english": "spring water",
+    "type": "noun"
+  },
+  {
+    "drow": "jal-yhana",
+    "english": "water plants",
+    "type": "verb"
+  },
+  {
     "drow": "jala",
     "english": "water",
     "type": "noun"
+  },
+  {
+    "drow": "jala-bhojana",
+    "english": "burnt food",
+    "type": "adjective"
   },
   {
     "drow": "jaldi",
@@ -3160,9 +4165,24 @@
     "type": "verb"
   },
   {
+    "drow": "jamana",
+    "english": "freeze",
+    "type": "verb"
+  },
+  {
+    "drow": "jambhai",
+    "english": "yawn",
+    "type": "verb"
+  },
+  {
     "drow": "jan",
     "english": "person; individual",
     "type": "noun"
+  },
+  {
+    "drow": "jan-bujhkar",
+    "english": "on purpose",
+    "type": "phrase"
   },
   {
     "drow": "jana-sabha",
@@ -3205,6 +4225,11 @@
     "type": "noun"
   },
   {
+    "drow": "jatil",
+    "english": "complicated",
+    "type": "adjective"
+  },
+  {
     "drow": "Javita",
     "english": "marriage",
     "type": "noun"
@@ -3223,6 +4248,11 @@
     "drow": "jawab-dena",
     "english": "answer; reply",
     "type": "verb"
+  },
+  {
+    "drow": "jeb",
+    "english": "pocket",
+    "type": "noun"
   },
   {
     "drow": "jhaadu",
@@ -3265,8 +4295,23 @@
     "type": "noun"
   },
   {
+    "drow": "jhukana",
+    "english": "crouch",
+    "type": "verb"
+  },
+  {
     "drow": "jhut",
     "english": "falsehood; lie",
+    "type": "noun"
+  },
+  {
+    "drow": "jigyasa",
+    "english": "curiosity",
+    "type": "noun"
+  },
+  {
+    "drow": "jihva",
+    "english": "tongue body",
     "type": "noun"
   },
   {
@@ -3355,6 +4400,11 @@
     "type": "adverb"
   },
   {
+    "drow": "kabja",
+    "english": "hinge",
+    "type": "noun"
+  },
+  {
     "drow": "kabutar",
     "english": "pigeon; dove",
     "type": "noun"
@@ -3435,6 +4485,11 @@
     "type": "noun"
   },
   {
+    "drow": "kahi",
+    "english": "somewhere",
+    "type": "adverb"
+  },
+  {
     "drow": "kahin-bhi",
     "english": "anywhere; wherever",
     "type": "modal / grammar"
@@ -3463,6 +4518,11 @@
     "drow": "kaise-bhi",
     "english": "anyhow; in any way",
     "type": "modal / grammar"
+  },
+  {
+    "drow": "kaksha",
+    "english": "class",
+    "type": "noun"
   },
   {
     "drow": "kal",
@@ -3500,6 +4560,11 @@
     "type": "noun"
   },
   {
+    "drow": "kalam-pankh",
+    "english": "quill",
+    "type": "noun"
+  },
+  {
     "drow": "kalasha",
     "english": "jug; pitcher",
     "type": "noun"
@@ -3510,9 +4575,24 @@
     "type": "noun"
   },
   {
+    "drow": "kalin",
+    "english": "carpet",
+    "type": "noun"
+  },
+  {
+    "drow": "kalpana-kara",
+    "english": "imagine",
+    "type": "verb"
+  },
+  {
     "drow": "kam",
     "english": "whom",
     "type": "question word"
+  },
+  {
+    "drow": "kam-sambhav",
+    "english": "unlikely",
+    "type": "adjective"
   },
   {
     "drow": "kam-se-kam",
@@ -3540,6 +4620,11 @@
     "type": "noun"
   },
   {
+    "drow": "kami",
+    "english": "shortage",
+    "type": "noun"
+  },
+  {
     "drow": "kamra",
     "english": "room; chamber",
     "type": "noun"
@@ -3555,8 +4640,18 @@
     "type": "noun"
   },
   {
+    "drow": "kanch-pyala",
+    "english": "glass drinking vessel",
+    "type": "noun"
+  },
+  {
     "drow": "kandha",
     "english": "shoulder",
+    "type": "noun"
+  },
+  {
+    "drow": "kanghi",
+    "english": "comb",
     "type": "noun"
   },
   {
@@ -3582,6 +4677,11 @@
   {
     "drow": "kapda",
     "english": "cloth; fabric",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-tukda",
+    "english": "rag",
     "type": "noun"
   },
   {
@@ -3620,6 +4720,11 @@
     "type": "noun"
   },
   {
+    "drow": "karchhi",
+    "english": "ladle",
+    "type": "noun"
+  },
+  {
     "drow": "karigar",
     "english": "artisan; skilled maker",
     "type": "noun"
@@ -3630,6 +4735,11 @@
     "type": "noun"
   },
   {
+    "drow": "karmachari",
+    "english": "employee",
+    "type": "noun"
+  },
+  {
     "drow": "karya",
     "english": "work; task; deed",
     "type": "noun"
@@ -3637,6 +4747,11 @@
   {
     "drow": "karyalaya",
     "english": "office; workplace",
+    "type": "noun"
+  },
+  {
+    "drow": "karyashala",
+    "english": "workshop",
     "type": "noun"
   },
   {
@@ -3660,9 +4775,19 @@
     "type": "question word"
   },
   {
+    "drow": "kata-chot",
+    "english": "cut wound",
+    "type": "noun"
+  },
+  {
     "drow": "katama",
     "english": "which",
     "type": "question word"
+  },
+  {
+    "drow": "katana",
+    "english": "bite",
+    "type": "verb"
   },
   {
     "drow": "katha",
@@ -3713,6 +4838,11 @@
     "drow": "kaunsa",
     "english": "which one",
     "type": "question word"
+  },
+  {
+    "drow": "kaushal",
+    "english": "skill",
+    "type": "noun"
   },
   {
     "drow": "kauva",
@@ -3770,6 +4900,11 @@
     "type": "noun"
   },
   {
+    "drow": "ketli",
+    "english": "kettle",
+    "type": "noun"
+  },
+  {
     "drow": "keval",
     "english": "merely; only",
     "type": "adverb"
@@ -3793,6 +4928,16 @@
     "drow": "khad",
     "english": "eat; devour",
     "type": "verb"
+  },
+  {
+    "drow": "khadiya",
+    "english": "chalk",
+    "type": "noun"
+  },
+  {
+    "drow": "khajur",
+    "english": "date fruit",
+    "type": "noun"
   },
   {
     "drow": "khali",
@@ -3823,6 +4968,11 @@
     "drow": "khar",
     "english": "biter; biting",
     "type": "noun / adjective"
+  },
+  {
+    "drow": "kharata",
+    "english": "snore",
+    "type": "verb"
   },
   {
     "drow": "kharcha-kara",
@@ -3910,9 +5060,19 @@
     "type": "noun"
   },
   {
+    "drow": "khijita",
+    "english": "irritated",
+    "type": "adjective"
+  },
+  {
     "drow": "khinch",
     "english": "pull; draw toward",
     "type": "verb"
+  },
+  {
+    "drow": "khira",
+    "english": "cucumber",
+    "type": "noun"
   },
   {
     "drow": "khodan",
@@ -3922,6 +5082,11 @@
   {
     "drow": "khoj",
     "english": "search; look for",
+    "type": "verb"
+  },
+  {
+    "drow": "khoj-kara",
+    "english": "explore",
     "type": "verb"
   },
   {
@@ -3937,6 +5102,16 @@
   {
     "drow": "khola",
     "english": "open; unlock",
+    "type": "verb"
+  },
+  {
+    "drow": "khola-modana",
+    "english": "unfold",
+    "type": "verb"
+  },
+  {
+    "drow": "kholana",
+    "english": "unwrap",
     "type": "verb"
   },
   {
@@ -3963,6 +5138,11 @@
     "drow": "khun-kam",
     "english": "thin-blooded; coward",
     "type": "insult"
+  },
+  {
+    "drow": "khurdura",
+    "english": "rough",
+    "type": "adjective"
   },
   {
     "drow": "khush",
@@ -3995,6 +5175,26 @@
     "type": "question word"
   },
   {
+    "drow": "Kim artha da-etha",
+    "english": "what does this mean",
+    "type": "phrase"
+  },
+  {
+    "drow": "Kim artha da-tumu",
+    "english": "what do you mean",
+    "type": "phrase"
+  },
+  {
+    "drow": "kim-bhava",
+    "english": "what happened",
+    "type": "question phrase"
+  },
+  {
+    "drow": "kim-ena",
+    "english": "what now",
+    "type": "question phrase"
+  },
+  {
     "drow": "kimmat-ghat",
     "english": "discount; reduced price",
     "type": "noun"
@@ -4020,14 +5220,39 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "kis-ke-liye",
+    "english": "for whom",
+    "type": "question word"
+  },
+  {
     "drow": "kis-ke-sath",
     "english": "with whom",
     "type": "question phrase"
   },
   {
+    "drow": "kis-samay",
+    "english": "what time",
+    "type": "question word"
+  },
+  {
     "drow": "kis-tarah",
     "english": "what kind; what sort",
     "type": "modal / grammar"
+  },
+  {
+    "drow": "kis-uddesha",
+    "english": "for what purpose",
+    "type": "question word"
+  },
+  {
+    "drow": "kisan",
+    "english": "farmer",
+    "type": "noun"
+  },
+  {
+    "drow": "kisi-prakar",
+    "english": "somehow",
+    "type": "adverb"
   },
   {
     "drow": "kiske",
@@ -4047,6 +5272,16 @@
   {
     "drow": "kitna",
     "english": "how much; how many",
+    "type": "question word"
+  },
+  {
+    "drow": "kitna-samay",
+    "english": "how long",
+    "type": "question word"
+  },
+  {
+    "drow": "kitna-vayas",
+    "english": "how old",
     "type": "question word"
   },
   {
@@ -4075,6 +5310,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "koi-xrou",
+    "english": "somebody",
+    "type": "pronoun"
+  },
+  {
     "drow": "komal",
     "english": "frail; delicate",
     "type": "adjective"
@@ -4095,6 +5335,11 @@
     "type": "verb"
   },
   {
+    "drow": "koyla",
+    "english": "charcoal",
+    "type": "noun"
+  },
+  {
     "drow": "krama",
     "english": "order; sequence",
     "type": "noun"
@@ -4105,6 +5350,21 @@
     "type": "politeness marker"
   },
   {
+    "drow": "Kripa haxa dhire",
+    "english": "please speak slowly",
+    "type": "phrase"
+  },
+  {
+    "drow": "Kripa punar haxa etha",
+    "english": "please repeat that",
+    "type": "phrase"
+  },
+  {
+    "drow": "Kripa-suno",
+    "english": "excuse me please",
+    "type": "phrase"
+  },
+  {
     "drow": "kripaya",
     "english": "please (polite form)",
     "type": "politeness marker"
@@ -4113,6 +5373,11 @@
     "drow": "kristal",
     "english": "crystal",
     "type": "noun"
+  },
+  {
+    "drow": "kritajna",
+    "english": "grateful",
+    "type": "adjective"
   },
   {
     "drow": "krodha",
@@ -4150,6 +5415,16 @@
     "type": "adjective"
   },
   {
+    "drow": "kuan",
+    "english": "well water",
+    "type": "noun"
+  },
+  {
+    "drow": "kuchh",
+    "english": "something",
+    "type": "pronoun"
+  },
+  {
     "drow": "kuchh-bhi",
     "english": "anything; whatever",
     "type": "modal / grammar"
@@ -4170,6 +5445,11 @@
     "type": "noun"
   },
   {
+    "drow": "kulha",
+    "english": "hip",
+    "type": "noun"
+  },
+  {
     "drow": "kulhadi",
     "english": "axe; hatchet",
     "type": "noun"
@@ -4183,6 +5463,11 @@
     "drow": "kund",
     "english": "dull-edged; blunt",
     "type": "adjective"
+  },
+  {
+    "drow": "kundi",
+    "english": "latch",
+    "type": "noun"
   },
   {
     "drow": "kunji",
@@ -4203,6 +5488,21 @@
     "drow": "kutra",
     "english": "where",
     "type": "question word"
+  },
+  {
+    "drow": "Kutra etha xce",
+    "english": "where is it",
+    "type": "phrase"
+  },
+  {
+    "drow": "Kutra tumu xce",
+    "english": "where are you",
+    "type": "phrase"
+  },
+  {
+    "drow": "Kutra Xcsadam xce",
+    "english": "where are we",
+    "type": "phrase"
   },
   {
     "drow": "kyon",
@@ -4255,6 +5555,11 @@
     "type": "adverb"
   },
   {
+    "drow": "laghu-bhojana",
+    "english": "snack",
+    "type": "noun"
+  },
+  {
     "drow": "lahsun",
     "english": "garlic",
     "type": "noun"
@@ -4267,6 +5572,11 @@
   {
     "drow": "lakdi",
     "english": "wood; timber",
+    "type": "noun"
+  },
+  {
+    "drow": "lakdi-peti",
+    "english": "crate",
     "type": "noun"
   },
   {
@@ -4283,6 +5593,11 @@
     "drow": "lamba",
     "english": "long; tall",
     "type": "adjective"
+  },
+  {
+    "drow": "lambai",
+    "english": "length",
+    "type": "noun"
   },
   {
     "drow": "lambh",
@@ -4330,14 +5645,29 @@
     "type": "verb"
   },
   {
+    "drow": "lifafa",
+    "english": "envelope",
+    "type": "noun"
+  },
+  {
     "drow": "likh",
     "english": "write; inscribe",
+    "type": "verb"
+  },
+  {
+    "drow": "likh-lena",
+    "english": "write down",
     "type": "verb"
   },
   {
     "drow": "likha",
     "english": "write",
     "type": "verb"
+  },
+  {
+    "drow": "likhit-sandesh",
+    "english": "note written",
+    "type": "noun"
   },
   {
     "drow": "lobha",
@@ -4362,6 +5692,11 @@
   {
     "drow": "lohar-kaam",
     "english": "smithing; metalworking",
+    "type": "noun"
+  },
+  {
+    "drow": "lohe-kila",
+    "english": "nail metal",
     "type": "noun"
   },
   {
@@ -4495,6 +5830,11 @@
     "type": "adjective"
   },
   {
+    "drow": "mahotsav-bhojana",
+    "english": "feast",
+    "type": "noun"
+  },
+  {
     "drow": "maida",
     "english": "flour; ground grain",
     "type": "noun"
@@ -4535,9 +5875,19 @@
     "type": "noun"
   },
   {
+    "drow": "malai",
+    "english": "cream dairy",
+    "type": "noun"
+  },
+  {
     "drow": "malik",
     "english": "master",
     "type": "title"
+  },
+  {
+    "drow": "malikiyat",
+    "english": "ownership",
+    "type": "noun"
   },
   {
     "drow": "mamsa",
@@ -4558,6 +5908,21 @@
     "drow": "mand",
     "english": "dim; dull",
     "type": "adjective"
+  },
+  {
+    "drow": "mand-vedana",
+    "english": "ache",
+    "type": "noun"
+  },
+  {
+    "drow": "mang",
+    "english": "demand noun",
+    "type": "noun"
+  },
+  {
+    "drow": "mang-kara",
+    "english": "demand",
+    "type": "verb"
   },
   {
     "drow": "mans",
@@ -4615,6 +5980,11 @@
     "type": "noun"
   },
   {
+    "drow": "marg-dikha",
+    "english": "lead",
+    "type": "verb"
+  },
+  {
     "drow": "marga-dvara",
     "english": "by way of; via",
     "type": "compound preposition"
@@ -4637,6 +6007,16 @@
   {
     "drow": "masala",
     "english": "spice; seasoning",
+    "type": "noun"
+  },
+  {
+    "drow": "mashal",
+    "english": "torch",
+    "type": "noun"
+  },
+  {
+    "drow": "masuda",
+    "english": "gum",
     "type": "noun"
   },
   {
@@ -4672,6 +6052,11 @@
   {
     "drow": "maya",
     "english": "illusion; magical appearance",
+    "type": "noun"
+  },
+  {
+    "drow": "mazak",
+    "english": "joke",
     "type": "noun"
   },
   {
@@ -4737,6 +6122,11 @@
   {
     "drow": "mendhak",
     "english": "frog; toad",
+    "type": "noun"
+  },
+  {
+    "drow": "meva",
+    "english": "nut edible",
     "type": "noun"
   },
   {
@@ -4815,8 +6205,18 @@
     "type": "noun"
   },
   {
+    "drow": "mitrata",
+    "english": "friendship",
+    "type": "noun"
+  },
+  {
     "drow": "mitti",
     "english": "soil; dirt",
+    "type": "noun"
+  },
+  {
+    "drow": "mitti-bartan",
+    "english": "ceramic",
     "type": "noun"
   },
   {
@@ -4832,6 +6232,11 @@
   {
     "drow": "mod",
     "english": "turn; bend",
+    "type": "verb"
+  },
+  {
+    "drow": "modana",
+    "english": "fold",
     "type": "verb"
   },
   {
@@ -4855,9 +6260,19 @@
     "type": "noun"
   },
   {
+    "drow": "mota",
+    "english": "thick",
+    "type": "adjective"
+  },
+  {
     "drow": "moti",
     "english": "pearl",
     "type": "noun"
+  },
+  {
+    "drow": "mridu-haxa",
+    "english": "whisper",
+    "type": "verb"
   },
   {
     "drow": "mubarak",
@@ -4900,8 +6315,18 @@
     "type": "noun"
   },
   {
+    "drow": "mulaqat-samay",
+    "english": "appointment",
+    "type": "noun"
+  },
+  {
     "drow": "mulya",
     "english": "price; value",
+    "type": "noun"
+  },
+  {
+    "drow": "mulya-chihna",
+    "english": "price tag",
     "type": "noun"
   },
   {
@@ -4948,6 +6373,11 @@
     "drow": "mushkil",
     "english": "difficult; hard",
     "type": "adjective"
+  },
+  {
+    "drow": "mushkil-se",
+    "english": "barely",
+    "type": "adverb"
   },
   {
     "drow": "muska",
@@ -5007,6 +6437,11 @@
   {
     "drow": "nagar",
     "english": "town",
+    "type": "noun"
+  },
+  {
+    "drow": "nagarik",
+    "english": "citizen",
     "type": "noun"
   },
   {
@@ -5075,6 +6510,11 @@
     "type": "adjective"
   },
   {
+    "drow": "namkin-jal",
+    "english": "saltwater",
+    "type": "noun"
+  },
+  {
     "drow": "namkina",
     "english": "salty",
     "type": "adjective"
@@ -5120,6 +6560,11 @@
     "type": "verb"
   },
   {
+    "drow": "nashpati",
+    "english": "pear",
+    "type": "noun"
+  },
+  {
     "drow": "nashta",
     "english": "breakfast; morning meal",
     "type": "noun"
@@ -5128,6 +6573,11 @@
     "drow": "natak",
     "english": "play; theatrical performance",
     "type": "noun"
+  },
+  {
+    "drow": "nataka-kara",
+    "english": "pretend",
+    "type": "verb"
   },
   {
     "drow": "nati",
@@ -5185,9 +6635,24 @@
     "type": "noun"
   },
   {
+    "drow": "nidralu",
+    "english": "sleepy",
+    "type": "adjective"
+  },
+  {
+    "drow": "nigalana",
+    "english": "swallow",
+    "type": "verb"
+  },
+  {
     "drow": "nigrani",
     "english": "surveillance; keeping watch",
     "type": "noun"
+  },
+  {
+    "drow": "niji",
+    "english": "private",
+    "type": "adjective"
   },
   {
     "drow": "nikalna",
@@ -5218,6 +6683,11 @@
     "drow": "nikate",
     "english": "nearby",
     "type": "adverb"
+  },
+  {
+    "drow": "nil-chot",
+    "english": "bruise",
+    "type": "noun"
   },
   {
     "drow": "nila",
@@ -5290,6 +6760,11 @@
     "type": "verb"
   },
   {
+    "drow": "nirdishta",
+    "english": "specific",
+    "type": "adjective"
+  },
+  {
     "drow": "nirnay",
     "english": "decision; judgment",
     "type": "noun"
@@ -5315,6 +6790,11 @@
     "type": "verb"
   },
   {
+    "drow": "nishan",
+    "english": "scar",
+    "type": "noun"
+  },
+  {
     "drow": "nishana",
     "english": "mark; sign",
     "type": "noun"
@@ -5335,6 +6815,11 @@
     "type": "verb"
   },
   {
+    "drow": "nishtha",
+    "english": "loyalty",
+    "type": "noun"
+  },
+  {
     "drow": "niskram",
     "english": "exit; go out",
     "type": "verb"
@@ -5342,6 +6827,16 @@
   {
     "drow": "nivas",
     "english": "live; reside",
+    "type": "verb"
+  },
+  {
+    "drow": "nivasi",
+    "english": "resident",
+    "type": "noun"
+  },
+  {
+    "drow": "nivedan-kara",
+    "english": "request",
     "type": "verb"
   },
   {
@@ -5353,6 +6848,11 @@
     "drow": "niyata",
     "english": "destined; intended; meant to be",
     "type": "adjective"
+  },
+  {
+    "drow": "niyokta",
+    "english": "employer",
+    "type": "noun"
   },
   {
     "drow": "nuksan",
@@ -5370,9 +6870,24 @@
     "type": "title / nickname"
   },
   {
+    "drow": "nyaya-mandal",
+    "english": "jury",
+    "type": "noun"
+  },
+  {
     "drow": "nyaya-sabha",
     "english": "court; hall of judgment",
     "type": "noun"
+  },
+  {
+    "drow": "nyayadhish",
+    "english": "judge",
+    "type": "noun"
+  },
+  {
+    "drow": "nyayapurna",
+    "english": "fair",
+    "type": "adjective"
   },
   {
     "drow": "O'zendaixu",
@@ -5387,6 +6902,11 @@
   {
     "drow": "ole",
     "english": "hail; hailstones",
+    "type": "noun"
+  },
+  {
+    "drow": "onth",
+    "english": "lip",
     "type": "noun"
   },
   {
@@ -5425,8 +6945,23 @@
     "type": "noun"
   },
   {
+    "drow": "pada-anguli",
+    "english": "toe",
+    "type": "noun"
+  },
+  {
+    "drow": "pados-mitra",
+    "english": "neighborliness",
+    "type": "noun"
+  },
+  {
     "drow": "padosi",
     "english": "neighbor",
+    "type": "noun"
+  },
+  {
+    "drow": "pagdandi",
+    "english": "trail",
     "type": "noun"
   },
   {
@@ -5485,6 +7020,11 @@
     "type": "noun"
   },
   {
+    "drow": "pak-vidhi",
+    "english": "recipe",
+    "type": "noun"
+  },
+  {
     "drow": "paka",
     "english": "cook; prepare food",
     "type": "verb"
@@ -5522,6 +7062,21 @@
   {
     "drow": "pala",
     "english": "raise; nurture a child",
+    "type": "verb"
+  },
+  {
+    "drow": "palak",
+    "english": "caretaker",
+    "type": "noun"
+  },
+  {
+    "drow": "palak-jhapakana",
+    "english": "blink",
+    "type": "verb"
+  },
+  {
+    "drow": "palayana-kara",
+    "english": "escape",
     "type": "verb"
   },
   {
@@ -5585,6 +7140,11 @@
     "type": "verb"
   },
   {
+    "drow": "paraspara",
+    "english": "one another",
+    "type": "pronoun"
+  },
+  {
     "drow": "paravaita",
     "english": "begone; go away",
     "type": "imperative"
@@ -5605,6 +7165,11 @@
     "type": "noun"
   },
   {
+    "drow": "pardesi",
+    "english": "foreign",
+    "type": "adjective"
+  },
+  {
     "drow": "pareshan",
     "english": "troubled; upset",
     "type": "adjective"
@@ -5613,6 +7178,11 @@
     "drow": "pareshani",
     "english": "trouble; inconvenience",
     "type": "noun"
+  },
+  {
+    "drow": "parichaya-yhana",
+    "english": "introduce",
+    "type": "verb"
   },
   {
     "drow": "parichit",
@@ -5648,6 +7218,11 @@
     "drow": "parivarta",
     "english": "change; alter",
     "type": "verb"
+  },
+  {
+    "drow": "pariyojana",
+    "english": "project",
+    "type": "noun"
   },
   {
     "drow": "parosa",
@@ -5720,6 +7295,16 @@
     "type": "verb"
   },
   {
+    "drow": "pasina",
+    "english": "sweat",
+    "type": "noun"
+  },
+  {
+    "drow": "pasli",
+    "english": "rib",
+    "type": "noun"
+  },
+  {
     "drow": "pat",
     "english": "fall; drop",
     "type": "verb"
@@ -5740,9 +7325,24 @@
     "type": "verb"
   },
   {
+    "drow": "patha-khoji",
+    "english": "scout",
+    "type": "noun"
+  },
+  {
     "drow": "pathar",
     "english": "stone; rock",
     "type": "noun"
+  },
+  {
+    "drow": "pathaya-peti",
+    "english": "parcel",
+    "type": "noun"
+  },
+  {
+    "drow": "patla",
+    "english": "thin",
+    "type": "adjective"
   },
   {
     "drow": "patra",
@@ -5757,6 +7357,11 @@
   {
     "drow": "patta",
     "english": "belt; strap",
+    "type": "noun"
+  },
+  {
+    "drow": "patta-gobhi",
+    "english": "cabbage",
     "type": "noun"
   },
   {
@@ -5835,6 +7440,16 @@
     "type": "noun"
   },
   {
+    "drow": "phal-bag",
+    "english": "orchard",
+    "type": "noun"
+  },
+  {
+    "drow": "phal-murabba",
+    "english": "jam fruit",
+    "type": "noun"
+  },
+  {
     "drow": "phalatah",
     "english": "as a result; as a consequence; consequently",
     "type": "conjunction phrase"
@@ -5862,6 +7477,11 @@
   {
     "drow": "phool-pankhuri",
     "english": "flower petal",
+    "type": "noun"
+  },
+  {
+    "drow": "phuhara",
+    "english": "fountain",
     "type": "noun"
   },
   {
@@ -5895,6 +7515,11 @@
     "type": "verb"
   },
   {
+    "drow": "pichhla",
+    "english": "previous",
+    "type": "adjective"
+  },
+  {
     "drow": "pila",
     "english": "yellow",
     "type": "adjective"
@@ -5910,13 +7535,28 @@
     "type": "noun / family"
   },
   {
+    "drow": "pith",
+    "english": "back body",
+    "type": "noun"
+  },
+  {
     "drow": "pixrit",
     "english": "love (romantic)",
     "type": "verb"
   },
   {
+    "drow": "pochha-kara",
+    "english": "mop",
+    "type": "verb"
+  },
+  {
     "drow": "ponch",
     "english": "wipe dry; dab",
+    "type": "verb"
+  },
+  {
+    "drow": "ponchhana",
+    "english": "wipe",
     "type": "verb"
   },
   {
@@ -5937,6 +7577,11 @@
   {
     "drow": "pradesh",
     "english": "region; territory",
+    "type": "noun"
+  },
+  {
+    "drow": "pragati",
+    "english": "progress",
     "type": "noun"
   },
   {
@@ -5965,9 +7610,24 @@
     "type": "adjective"
   },
   {
+    "drow": "prashansa",
+    "english": "compliment",
+    "type": "noun"
+  },
+  {
     "drow": "prashna",
     "english": "ask; question",
     "type": "verb"
+  },
+  {
+    "drow": "prashna-kara",
+    "english": "questioning",
+    "type": "verb"
+  },
+  {
+    "drow": "pratham",
+    "english": "first",
+    "type": "adverb"
   },
   {
     "drow": "pratham-kala",
@@ -5990,9 +7650,19 @@
     "type": "preposition phrase"
   },
   {
+    "drow": "pratibha",
+    "english": "talent",
+    "type": "noun"
+  },
+  {
     "drow": "pratidina",
     "english": "daily; every day",
     "type": "adverb"
+  },
+  {
+    "drow": "pratidvandi",
+    "english": "rival",
+    "type": "noun"
   },
   {
     "drow": "pratigya",
@@ -6007,6 +7677,11 @@
   {
     "drow": "pratijna",
     "english": "promise; solemn vow",
+    "type": "noun"
+  },
+  {
+    "drow": "pratik",
+    "english": "symbol",
     "type": "noun"
   },
   {
@@ -6030,6 +7705,11 @@
     "type": "noun"
   },
   {
+    "drow": "pratiyog-kara",
+    "english": "compete",
+    "type": "verb"
+  },
+  {
     "drow": "pratya",
     "english": "return; come back",
     "type": "verb"
@@ -6038,6 +7718,11 @@
     "drow": "pravesh",
     "english": "enter",
     "type": "verb"
+  },
+  {
+    "drow": "pravesh-dvar",
+    "english": "entrance",
+    "type": "noun"
   },
   {
     "drow": "pravesh-kara",
@@ -6057,6 +7742,11 @@
   {
     "drow": "preta",
     "english": "ghost; restless spirit",
+    "type": "noun"
+  },
+  {
+    "drow": "prishtha",
+    "english": "page",
     "type": "noun"
   },
   {
@@ -6110,6 +7800,16 @@
     "type": "expression"
   },
   {
+    "drow": "Punar dars shighra",
+    "english": "see you soon",
+    "type": "phrase"
+  },
+  {
+    "drow": "punar-arambha",
+    "english": "resume",
+    "type": "verb"
+  },
+  {
     "drow": "punar-mil",
     "english": "see you later",
     "type": "expression"
@@ -6145,6 +7845,11 @@
     "type": "adjective"
   },
   {
+    "drow": "purna-rup",
+    "english": "completely",
+    "type": "adverb"
+  },
+  {
     "drow": "Purohit",
     "english": "priest",
     "type": "noun / title"
@@ -6165,13 +7870,28 @@
     "type": "conjunction phrase"
   },
   {
+    "drow": "pushti-kara",
+    "english": "confirm",
+    "type": "verb"
+  },
+  {
     "drow": "pustaka",
     "english": "book",
     "type": "noun"
   },
   {
+    "drow": "pustaka-takhta",
+    "english": "bookshelf",
+    "type": "noun"
+  },
+  {
     "drow": "pustakalaya",
     "english": "library; book hall",
+    "type": "noun"
+  },
+  {
+    "drow": "pustakalaya-palak",
+    "english": "librarian",
     "type": "noun"
   },
   {
@@ -6193,6 +7913,11 @@
     "drow": "puxa-dar",
     "english": "child-bearing; pregnant",
     "type": "adjective"
+  },
+  {
+    "drow": "puxa-kala",
+    "english": "childhood",
+    "type": "noun"
   },
   {
     "drow": "puxayazi",
@@ -6225,6 +7950,11 @@
     "type": "noun"
   },
   {
+    "drow": "qarz-hav",
+    "english": "owe",
+    "type": "verb"
+  },
+  {
     "drow": "raahgir",
     "english": "traveler; passerby",
     "type": "noun"
@@ -6250,6 +7980,21 @@
     "type": "noun"
   },
   {
+    "drow": "rachana-kara",
+    "english": "create",
+    "type": "verb"
+  },
+  {
+    "drow": "rachanashakti",
+    "english": "creativity",
+    "type": "noun"
+  },
+  {
+    "drow": "ragadana",
+    "english": "scrub",
+    "type": "verb"
+  },
+  {
     "drow": "rah",
     "english": "path; way",
     "type": "noun"
@@ -6258,6 +8003,11 @@
     "drow": "rahasya",
     "english": "secret; hidden knowledge",
     "type": "noun"
+  },
+  {
+    "drow": "rahat-prapta",
+    "english": "relieved",
+    "type": "adjective"
   },
   {
     "drow": "raja",
@@ -6405,8 +8155,18 @@
     "type": "noun"
   },
   {
+    "drow": "rasoi-jadi",
+    "english": "herb culinary",
+    "type": "noun"
+  },
+  {
     "drow": "rassa",
     "english": "leash; tether",
+    "type": "noun"
+  },
+  {
+    "drow": "rassi",
+    "english": "rope",
     "type": "noun"
   },
   {
@@ -6480,6 +8240,16 @@
     "type": "verb"
   },
   {
+    "drow": "reedh",
+    "english": "spine",
+    "type": "noun"
+  },
+  {
+    "drow": "rekha-kara",
+    "english": "draw",
+    "type": "verb"
+  },
+  {
     "drow": "resham",
     "english": "silk; silk thread",
     "type": "noun"
@@ -6487,6 +8257,16 @@
   {
     "drow": "ret",
     "english": "sand",
+    "type": "noun"
+  },
+  {
+    "drow": "ret-ghadi",
+    "english": "hourglass",
+    "type": "noun"
+  },
+  {
+    "drow": "ret-kinara",
+    "english": "beach",
     "type": "noun"
   },
   {
@@ -6515,9 +8295,24 @@
     "type": "noun"
   },
   {
+    "drow": "rogashala",
+    "english": "hospital",
+    "type": "noun"
+  },
+  {
+    "drow": "rogi",
+    "english": "patient",
+    "type": "noun"
+  },
+  {
     "drow": "rom",
     "english": "hair; strand of hair",
     "type": "noun"
+  },
+  {
+    "drow": "ropana",
+    "english": "plant",
+    "type": "verb"
   },
   {
     "drow": "roshni",
@@ -6527,6 +8322,16 @@
   {
     "drow": "roti",
     "english": "bread",
+    "type": "noun"
+  },
+  {
+    "drow": "roti-dukan",
+    "english": "bakery",
+    "type": "noun"
+  },
+  {
+    "drow": "roti-kar",
+    "english": "baker",
     "type": "noun"
   },
   {
@@ -6640,6 +8445,11 @@
     "type": "adjective"
   },
   {
+    "drow": "sadrishya",
+    "english": "similar",
+    "type": "adjective"
+  },
+  {
     "drow": "saf",
     "english": "clear; clean",
     "type": "adjective"
@@ -6653,6 +8463,11 @@
     "drow": "safai",
     "english": "cleanliness; tidiness",
     "type": "noun"
+  },
+  {
+    "drow": "safal-bhava",
+    "english": "succeed",
+    "type": "verb"
   },
   {
     "drow": "safalta",
@@ -6688,6 +8503,11 @@
     "drow": "sahaj",
     "english": "easy; effortless",
     "type": "adjective"
+  },
+  {
+    "drow": "sahakarmi",
+    "english": "colleague",
+    "type": "noun"
   },
   {
     "drow": "sahal",
@@ -6737,6 +8557,16 @@
   {
     "drow": "sahayata",
     "english": "assistance; help",
+    "type": "noun"
+  },
+  {
+    "drow": "sahayog-kara",
+    "english": "cooperate",
+    "type": "verb"
+  },
+  {
+    "drow": "sahayogi",
+    "english": "ally",
     "type": "noun"
   },
   {
@@ -6790,6 +8620,11 @@
     "type": "noun"
   },
   {
+    "drow": "sakshi",
+    "english": "witness",
+    "type": "noun"
+  },
+  {
     "drow": "saktata",
     "english": "ability; capability",
     "type": "modal / grammar"
@@ -6800,8 +8635,23 @@
     "type": "noun"
   },
   {
+    "drow": "salad-patta",
+    "english": "lettuce",
+    "type": "noun"
+  },
+  {
+    "drow": "salah-yhana",
+    "english": "recommend",
+    "type": "verb"
+  },
+  {
     "drow": "samadhan",
     "english": "solution; answer",
+    "type": "noun"
+  },
+  {
+    "drow": "samagri",
+    "english": "ingredient",
     "type": "noun"
   },
   {
@@ -6825,6 +8675,21 @@
     "type": "noun"
   },
   {
+    "drow": "samanya",
+    "english": "general",
+    "type": "adjective"
+  },
+  {
+    "drow": "samanya-prakar",
+    "english": "as usual",
+    "type": "phrase"
+  },
+  {
+    "drow": "samanya-rup",
+    "english": "normally",
+    "type": "adverb"
+  },
+  {
     "drow": "samapt-kara",
     "english": "finish; complete",
     "type": "verb"
@@ -6842,6 +8707,11 @@
   {
     "drow": "samarpan",
     "english": "surrender; yield",
+    "type": "verb"
+  },
+  {
+    "drow": "samarthan-kara",
+    "english": "support",
     "type": "verb"
   },
   {
@@ -6863,6 +8733,11 @@
     "drow": "samay-par",
     "english": "on time; punctual",
     "type": "adverb"
+  },
+  {
+    "drow": "samay-suchi",
+    "english": "schedule",
+    "type": "noun"
   },
   {
     "drow": "sambandh",
@@ -6920,6 +8795,11 @@
     "type": "noun"
   },
   {
+    "drow": "sampatti",
+    "english": "wealth",
+    "type": "noun"
+  },
+  {
     "drow": "samuda",
     "english": "community; group",
     "type": "noun"
@@ -6970,6 +8850,11 @@
     "type": "adjective"
   },
   {
+    "drow": "sandehit",
+    "english": "suspect",
+    "type": "noun"
+  },
+  {
     "drow": "sandesh",
     "english": "instruction; dispatch",
     "type": "noun"
@@ -7005,6 +8890,11 @@
     "type": "noun"
   },
   {
+    "drow": "sangita-kara",
+    "english": "play music",
+    "type": "verb"
+  },
+  {
     "drow": "sangram",
     "english": "battle; combat",
     "type": "noun"
@@ -7028,6 +8918,11 @@
     "drow": "sankirna",
     "english": "narrow; constricted",
     "type": "adjective"
+  },
+  {
+    "drow": "sankraman",
+    "english": "infection",
+    "type": "noun"
   },
   {
     "drow": "sanskriti",
@@ -7060,6 +8955,11 @@
     "type": "noun"
   },
   {
+    "drow": "saptaha-ant",
+    "english": "weekend",
+    "type": "noun"
+  },
+  {
     "drow": "sarai",
     "english": "inn; lodging house",
     "type": "noun"
@@ -7072,6 +8972,11 @@
   {
     "drow": "sardi",
     "english": "cold weather; winter cold",
+    "type": "noun"
+  },
+  {
+    "drow": "sardi-rog",
+    "english": "cold illness",
     "type": "noun"
   },
   {
@@ -7100,9 +9005,24 @@
     "type": "preposition"
   },
   {
+    "drow": "sarva-sthan",
+    "english": "everywhere",
+    "type": "adverb"
+  },
+  {
+    "drow": "sarva-xrou",
+    "english": "everybody",
+    "type": "pronoun"
+  },
+  {
     "drow": "sarvada",
     "english": "every time",
     "type": "adverb"
+  },
+  {
+    "drow": "sarvajanik",
+    "english": "public",
+    "type": "adjective"
   },
   {
     "drow": "sarvesha",
@@ -7145,6 +9065,11 @@
     "type": "interjection / imperative"
   },
   {
+    "drow": "savadhan-se",
+    "english": "carefully",
+    "type": "adverb"
+  },
+  {
     "drow": "saval",
     "english": "question; query",
     "type": "noun"
@@ -7180,9 +9105,19 @@
     "type": "noun"
   },
   {
+    "drow": "sekana",
+    "english": "bake",
+    "type": "verb"
+  },
+  {
     "drow": "Selkie",
     "english": "Selkie",
     "type": "proper noun"
+  },
+  {
+    "drow": "sem",
+    "english": "beans",
+    "type": "noun"
   },
   {
     "drow": "Sensate",
@@ -7253,6 +9188,16 @@
     "drow": "sham",
     "english": "evening",
     "type": "noun"
+  },
+  {
+    "drow": "shamil-hona",
+    "english": "join",
+    "type": "verb"
+  },
+  {
+    "drow": "shamil-kara",
+    "english": "include",
+    "type": "verb"
   },
   {
     "drow": "shanti",
@@ -7360,6 +9305,16 @@
     "type": "noun / adjective"
   },
   {
+    "drow": "shesha",
+    "english": "remaining",
+    "type": "adjective"
+  },
+  {
+    "drow": "shesha-dhan",
+    "english": "balance money",
+    "type": "noun"
+  },
+  {
     "drow": "shighra",
     "english": "quickly; soon",
     "type": "adverb"
@@ -7370,6 +9325,11 @@
     "type": "adjective"
   },
   {
+    "drow": "shikayat-kara",
+    "english": "complain",
+    "type": "verb"
+  },
+  {
     "drow": "shikshak",
     "english": "teacher; instructor",
     "type": "noun"
@@ -7377,6 +9337,11 @@
   {
     "drow": "shikshalaya",
     "english": "school; place of learning",
+    "type": "noun"
+  },
+  {
+    "drow": "shira",
+    "english": "syrup",
     "type": "noun"
   },
   {
@@ -7515,6 +9480,11 @@
     "type": "adjective"
   },
   {
+    "drow": "sidhi",
+    "english": "ladder",
+    "type": "noun"
+  },
+  {
     "drow": "sidhiyan",
     "english": "stairs; staircase",
     "type": "noun"
@@ -7537,6 +9507,11 @@
   {
     "drow": "sikka",
     "english": "coin",
+    "type": "noun"
+  },
+  {
+    "drow": "sikka-thaili",
+    "english": "coin pouch",
     "type": "noun"
   },
   {
@@ -7563,6 +9538,16 @@
     "drow": "sirf",
     "english": "only; merely",
     "type": "adverb"
+  },
+  {
+    "drow": "sirka",
+    "english": "vinegar",
+    "type": "noun"
+  },
+  {
+    "drow": "sisa-kalam",
+    "english": "pencil",
+    "type": "noun"
   },
   {
     "drow": "siv-gautar",
@@ -7665,14 +9650,44 @@
     "type": "noun"
   },
   {
+    "drow": "sparsha-guna",
+    "english": "texture",
+    "type": "noun"
+  },
+  {
     "drow": "spashta",
     "english": "clear; understandable",
     "type": "adjective"
   },
   {
+    "drow": "spashta-kara",
+    "english": "clarify",
+    "type": "verb"
+  },
+  {
+    "drow": "spashtata",
+    "english": "clarity",
+    "type": "noun"
+  },
+  {
+    "drow": "spashtikaran",
+    "english": "clarification",
+    "type": "noun"
+  },
+  {
     "drow": "spasparabarr",
     "english": "sensation; sensory experience; physical/sensual experience",
     "type": "noun"
+  },
+  {
+    "drow": "spunj",
+    "english": "sponge",
+    "type": "noun"
+  },
+  {
+    "drow": "stabdha",
+    "english": "shocked",
+    "type": "adjective"
   },
   {
     "drow": "stana",
@@ -7688,6 +9703,11 @@
     "drow": "sthane",
     "english": "at",
     "type": "preposition"
+  },
+  {
+    "drow": "sthaniya",
+    "english": "local",
+    "type": "adjective"
   },
   {
     "drow": "subah-savera",
@@ -7715,6 +9735,11 @@
     "type": "verb"
   },
   {
+    "drow": "sudhar-kara",
+    "english": "fix",
+    "type": "verb"
+  },
+  {
     "drow": "sugandh-kara",
     "english": "smell; sniff",
     "type": "verb"
@@ -7723,6 +9748,21 @@
     "drow": "sui",
     "english": "needle",
     "type": "noun"
+  },
+  {
+    "drow": "sui-kila",
+    "english": "pin",
+    "type": "noun"
+  },
+  {
+    "drow": "sujhav",
+    "english": "suggestion",
+    "type": "noun"
+  },
+  {
+    "drow": "sujhav-yhana",
+    "english": "suggest",
+    "type": "verb"
   },
   {
     "drow": "sukha",
@@ -7815,6 +9855,21 @@
     "type": "adjective"
   },
   {
+    "drow": "surang",
+    "english": "tunnel",
+    "type": "noun"
+  },
+  {
+    "drow": "surya-ast",
+    "english": "sunset",
+    "type": "noun"
+  },
+  {
+    "drow": "surya-uday",
+    "english": "sunrise",
+    "type": "noun"
+  },
+  {
     "drow": "sust",
     "english": "sluggish; lethargic",
     "type": "adjective"
@@ -7830,9 +9885,34 @@
     "type": "grammar prefix"
   },
   {
+    "drow": "sva-adam",
+    "english": "by myself",
+    "type": "phrase"
+  },
+  {
+    "drow": "sva-etha",
+    "english": "itself",
+    "type": "pronoun"
+  },
+  {
     "drow": "sva-sukha",
     "english": "personal comfort; make yourself comfortable",
     "type": "compound"
+  },
+  {
+    "drow": "sva-tumu",
+    "english": "yourself",
+    "type": "pronoun"
+  },
+  {
+    "drow": "sva-vise",
+    "english": "themselves",
+    "type": "pronoun"
+  },
+  {
+    "drow": "sva-Xcsadam",
+    "english": "ourselves",
+    "type": "pronoun"
   },
   {
     "drow": "svagat",
@@ -7880,6 +9960,11 @@
     "type": "adjective"
   },
   {
+    "drow": "svatantrata",
+    "english": "freedom",
+    "type": "noun"
+  },
+  {
     "drow": "svayam",
     "english": "on one's own; oneself",
     "type": "pronoun"
@@ -7887,6 +9972,16 @@
   {
     "drow": "svikar",
     "english": "accept; receive",
+    "type": "verb"
+  },
+  {
+    "drow": "svikar-dosha",
+    "english": "confess",
+    "type": "verb"
+  },
+  {
+    "drow": "svikar-satya",
+    "english": "admit",
     "type": "verb"
   },
   {
@@ -7907,6 +10002,11 @@
   {
     "drow": "swayamsevak",
     "english": "volunteer",
+    "type": "noun"
+  },
+  {
+    "drow": "syahi",
+    "english": "ink",
     "type": "noun"
   },
   {
@@ -7948,6 +10048,16 @@
     "drow": "taiyar",
     "english": "ready; prepared",
     "type": "adjective"
+  },
+  {
+    "drow": "taiyar-kara",
+    "english": "prepare",
+    "type": "verb"
+  },
+  {
+    "drow": "takhta",
+    "english": "shelf",
+    "type": "noun"
   },
   {
     "drow": "takiya",
@@ -8020,6 +10130,11 @@
     "type": "endearment"
   },
   {
+    "drow": "tamatar",
+    "english": "tomato",
+    "type": "noun"
+  },
+  {
     "drow": "tamati",
     "english": "sweetest; very sweet",
     "type": "modifier"
@@ -8038,6 +10153,11 @@
     "drow": "tana",
     "english": "tree trunk; stem",
     "type": "noun"
+  },
+  {
+    "drow": "tanana",
+    "english": "stretch",
+    "type": "verb"
   },
   {
     "drow": "tantra",
@@ -8095,6 +10215,16 @@
     "type": "adverb"
   },
   {
+    "drow": "tauliya",
+    "english": "towel",
+    "type": "noun"
+  },
+  {
+    "drow": "tava",
+    "english": "pan",
+    "type": "noun"
+  },
+  {
     "drow": "tavat-kala",
     "english": "meanwhile",
     "type": "conjunction / adverb"
@@ -8103,6 +10233,11 @@
     "drow": "taza",
     "english": "fresh; newly prepared",
     "type": "adjective"
+  },
+  {
+    "drow": "taza-jal",
+    "english": "freshwater",
+    "type": "noun"
   },
   {
     "drow": "Tche",
@@ -8135,6 +10270,11 @@
     "type": "adjective"
   },
   {
+    "drow": "tekana",
+    "english": "lean",
+    "type": "verb"
+  },
+  {
     "drow": "tez",
     "english": "fast; swift",
     "type": "adjective"
@@ -8143,6 +10283,11 @@
     "drow": "tez-dhar",
     "english": "sharp-edged; keen",
     "type": "adjective"
+  },
+  {
+    "drow": "tez-vayu",
+    "english": "gust",
+    "type": "noun"
   },
   {
     "drow": "thahar",
@@ -8205,6 +10350,11 @@
     "type": "verb"
   },
   {
+    "drow": "thoda",
+    "english": "somewhat",
+    "type": "adverb"
+  },
+  {
     "drow": "thodi",
     "english": "chin",
     "type": "noun"
@@ -8235,6 +10385,16 @@
     "type": "verb"
   },
   {
+    "drow": "todana",
+    "english": "break something",
+    "type": "verb"
+  },
+  {
+    "drow": "tokri",
+    "english": "basket",
+    "type": "noun"
+  },
+  {
     "drow": "tol",
     "english": "weigh; measure mass",
     "type": "verb"
@@ -8250,9 +10410,19 @@
     "type": "number"
   },
   {
+    "drow": "tri-bar",
+    "english": "thrice",
+    "type": "adverb"
+  },
+  {
     "drow": "trina",
     "english": "grass",
     "type": "noun"
+  },
+  {
+    "drow": "tritiya",
+    "english": "third",
+    "type": "adverb"
   },
   {
     "drow": "trpta",
@@ -8265,6 +10435,11 @@
     "type": "noun"
   },
   {
+    "drow": "tulana-kara",
+    "english": "compare",
+    "type": "verb"
+  },
+  {
     "drow": "tuma",
     "english": "you (variant form)",
     "type": "pronoun"
@@ -8273,6 +10448,16 @@
     "drow": "tumu",
     "english": "you (singular)",
     "type": "pronoun"
+  },
+  {
+    "drow": "Tumu kara dhire",
+    "english": "take your time",
+    "type": "phrase"
+  },
+  {
+    "drow": "Tumu shakta sahay adam",
+    "english": "can you help me",
+    "type": "phrase"
   },
   {
     "drow": "tumys",
@@ -8310,6 +10495,11 @@
     "type": "verb"
   },
   {
+    "drow": "ubaya",
+    "english": "bored",
+    "type": "adjective"
+  },
+  {
     "drow": "ubhaya",
     "english": "both",
     "type": "correlative conjunction"
@@ -8328,6 +10518,11 @@
     "drow": "Ucca-xun",
     "english": "Highblood; Highborn elf",
     "type": "ethnonym / compound"
+  },
+  {
+    "drow": "uccharana-kara",
+    "english": "pronounce",
+    "type": "verb"
   },
   {
     "drow": "udaharan",
@@ -8353,6 +10548,11 @@
     "drow": "uddesha",
     "english": "in order to; so as to",
     "type": "purpose marker"
+  },
+  {
+    "drow": "udghosh-kara",
+    "english": "exclaim",
+    "type": "verb"
   },
   {
     "drow": "udhar",
@@ -8385,6 +10585,11 @@
     "type": "adjective"
   },
   {
+    "drow": "ullekh-kara",
+    "english": "mention",
+    "type": "verb"
+  },
+  {
     "drow": "ullu",
     "english": "owl",
     "type": "noun"
@@ -8400,14 +10605,39 @@
     "type": "adjective"
   },
   {
+    "drow": "unchai",
+    "english": "height",
+    "type": "noun"
+  },
+  {
+    "drow": "undelana",
+    "english": "pour",
+    "type": "verb"
+  },
+  {
     "drow": "ungli",
     "english": "finger; digit",
+    "type": "noun"
+  },
+  {
+    "drow": "ungli-gath",
+    "english": "knuckle",
     "type": "noun"
   },
   {
     "drow": "upahar",
     "english": "gift; present",
     "type": "noun"
+  },
+  {
+    "drow": "upahar-lapeta",
+    "english": "gift wrapping",
+    "type": "noun"
+  },
+  {
+    "drow": "upalabdha",
+    "english": "available",
+    "type": "adjective"
   },
   {
     "drow": "upar",
@@ -8442,6 +10672,11 @@
   {
     "drow": "upchar-ghar",
     "english": "clinic; healing house",
+    "type": "noun"
+  },
+  {
+    "drow": "upnama",
+    "english": "nickname",
     "type": "noun"
   },
   {
@@ -8500,8 +10735,18 @@
     "type": "noun"
   },
   {
+    "drow": "utsahita",
+    "english": "excited",
+    "type": "adjective"
+  },
+  {
     "drow": "utsav",
     "english": "festival; celebration",
+    "type": "noun"
+  },
+  {
+    "drow": "utsav-dina",
+    "english": "holiday",
     "type": "noun"
   },
   {
@@ -8620,6 +10865,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "vai-aram",
+    "english": "uncomfortable",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-asha",
     "english": "hopeless; without hope; no hope",
     "type": "adjective / vai-compound"
@@ -8650,6 +10900,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-bodha",
+    "english": "misunderstanding",
+    "type": "noun"
+  },
+  {
     "drow": "vai-chayan",
     "english": "without choice; no choice",
     "type": "adjective / vai-compound"
@@ -8675,6 +10930,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-dosh",
+    "english": "innocent",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-dosha",
     "english": "faultless; flawless",
     "type": "adjective / vai-compound"
@@ -8683,6 +10943,11 @@
     "drow": "vai-drishti",
     "english": "blind; sightless; no sight",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-drishya",
+    "english": "invisible",
+    "type": "adjective"
   },
   {
     "drow": "vai-eka",
@@ -8735,6 +11000,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-jnana",
+    "english": "ignorance",
+    "type": "noun"
+  },
+  {
     "drow": "vai-kama",
     "english": "don't want; do not want",
     "type": "modal / grammar"
@@ -8768,6 +11038,11 @@
     "drow": "vai-kshama",
     "english": "unforgiving; without forgiveness",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-mahatva",
+    "english": "unimportant",
+    "type": "adjective"
   },
   {
     "drow": "vai-marg",
@@ -8808,6 +11083,16 @@
     "drow": "vai-niyam",
     "english": "lawless; without rules",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-nyaya",
+    "english": "unfair",
+    "type": "adjective"
+  },
+  {
+    "drow": "vai-paka",
+    "english": "unripe",
+    "type": "adjective"
   },
   {
     "drow": "vai-parinam",
@@ -8875,6 +11160,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-saman",
+    "english": "unequal",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-samasya",
     "english": "trouble-free; without problems",
     "type": "adjective / vai-compound"
@@ -8895,6 +11185,16 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-satya-rup",
+    "english": "not really",
+    "type": "phrase"
+  },
+  {
+    "drow": "vai-savadhan-se",
+    "english": "carelessly",
+    "type": "adverb"
+  },
+  {
     "drow": "vai-seema",
     "english": "limitless; without limits",
     "type": "adjective / vai-compound"
@@ -8908,6 +11208,11 @@
     "drow": "vai-shakta-tha",
     "english": "could not; couldn't",
     "type": "modal / grammar"
+  },
+  {
+    "drow": "vai-shakti",
+    "english": "inability",
+    "type": "noun"
   },
   {
     "drow": "vai-shanti",
@@ -8950,9 +11255,19 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-taiyar",
+    "english": "unready",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-tama",
     "english": "not sweet; bitter; unsweet",
     "type": "negative compound"
+  },
+  {
+    "drow": "vai-upalabdha",
+    "english": "unavailable",
+    "type": "adjective"
   },
   {
     "drow": "vai-uttar",
@@ -8978,6 +11293,11 @@
     "drow": "vai-vishvas",
     "english": "distrustful; without trust",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-vishvas-kara",
+    "english": "distrust",
+    "type": "verb"
   },
   {
     "drow": "vai-vivad",
@@ -9060,13 +11380,33 @@
     "type": "noun"
   },
   {
+    "drow": "vana",
+    "english": "woodland",
+    "type": "noun"
+  },
+  {
+    "drow": "vapas-yhana",
+    "english": "return something",
+    "type": "verb"
+  },
+  {
     "drow": "vara",
     "english": "bridegroom; groom",
     "type": "noun"
   },
   {
+    "drow": "varnana-kara",
+    "english": "describe",
+    "type": "verb"
+  },
+  {
     "drow": "varsha",
     "english": "year",
+    "type": "noun"
+  },
+  {
+    "drow": "varsha-ganth",
+    "english": "anniversary",
     "type": "noun"
   },
   {
@@ -9100,6 +11440,11 @@
     "type": "verb"
   },
   {
+    "drow": "vastav-me",
+    "english": "actually",
+    "type": "adverb"
+  },
+  {
     "drow": "vastavatah",
     "english": "indeed; in fact",
     "type": "adverb"
@@ -9107,6 +11452,16 @@
   {
     "drow": "vastra",
     "english": "clothing; garment",
+    "type": "noun"
+  },
+  {
+    "drow": "vastra-almari",
+    "english": "wardrobe",
+    "type": "noun"
+  },
+  {
+    "drow": "vayas-kala",
+    "english": "adulthood",
     "type": "noun"
   },
   {
@@ -9175,6 +11530,11 @@
     "type": "verb"
   },
   {
+    "drow": "vidvan",
+    "english": "scholar",
+    "type": "noun"
+  },
+  {
     "drow": "vidya",
     "english": "knowledge; learned art",
     "type": "noun"
@@ -9190,6 +11550,16 @@
     "type": "noun"
   },
   {
+    "drow": "vikreta",
+    "english": "seller",
+    "type": "noun"
+  },
+  {
+    "drow": "vilamb-kara",
+    "english": "delay",
+    "type": "verb"
+  },
+  {
     "drow": "Vilasa",
     "english": "decadence; luxury; indulgence",
     "type": "noun"
@@ -9200,9 +11570,24 @@
     "type": "title / era"
   },
   {
+    "drow": "vinamrata",
+    "english": "politeness",
+    "type": "noun"
+  },
+  {
+    "drow": "vinash-kara",
+    "english": "destroy",
+    "type": "verb"
+  },
+  {
     "drow": "vinaya",
     "english": "humility; reverence",
     "type": "noun"
+  },
+  {
+    "drow": "vinaya-se",
+    "english": "politely",
+    "type": "adverb"
   },
   {
     "drow": "vinimaya-da",
@@ -9218,6 +11603,11 @@
     "drow": "viraha",
     "english": "miss; long for someone absent",
     "type": "verb / noun"
+  },
+  {
+    "drow": "virla",
+    "english": "rarely",
+    "type": "adverb"
   },
   {
     "drow": "virodhi",
@@ -9272,6 +11662,11 @@
   {
     "drow": "vishvas",
     "english": "trust; belief",
+    "type": "noun"
+  },
+  {
+    "drow": "vishvas-ghat",
+    "english": "betrayal",
     "type": "noun"
   },
   {
@@ -9345,9 +11740,29 @@
     "type": "noun"
   },
   {
+    "drow": "vyarth-kara",
+    "english": "waste",
+    "type": "verb"
+  },
+  {
+    "drow": "vyarth-saman",
+    "english": "waste noun",
+    "type": "noun"
+  },
+  {
+    "drow": "vyasta",
+    "english": "busy",
+    "type": "adjective"
+  },
+  {
     "drow": "vyavahar",
     "english": "behavior; conduct",
     "type": "noun"
+  },
+  {
+    "drow": "vyavastha-kara",
+    "english": "organize",
+    "type": "verb"
   },
   {
     "drow": "waise",
@@ -9570,6 +11985,11 @@
     "type": "conjunction"
   },
   {
+    "drow": "yatha-shighra",
+    "english": "as soon as possible",
+    "type": "phrase"
+  },
+  {
     "drow": "yatha-uddesha",
     "english": "so that; in order that",
     "type": "conjunction"
@@ -9658,6 +12078,11 @@
     "drow": "zaban-khar",
     "english": "sharp-tongued",
     "type": "adjective"
+  },
+  {
+    "drow": "zaitun",
+    "english": "olive",
+    "type": "noun"
   },
   {
     "drow": "zarur",

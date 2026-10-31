@@ -2218,5 +2218,150 @@
     "category": "Grammar & Connectors",
     "english": "Take the road through the forest.",
     "xrou": "Yhanam marga madhya-dvara vana."
+  },
+  {
+    "english": "Not anymore.",
+    "xrou": "abhi-vai-adhik.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "As soon as possible.",
+    "xrou": "yatha-shighra.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "As usual.",
+    "xrou": "samanya-prakar.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "At most.",
+    "xrou": "adhik-se-adhik.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "By accident.",
+    "xrou": "galati-se.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "On purpose.",
+    "xrou": "jan-bujhkar.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "By myself.",
+    "xrou": "sva-adam.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "At once.",
+    "xrou": "ek-sath.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "In the meantime.",
+    "xrou": "is-bich.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "More or less.",
+    "xrou": "adhik-athva-kam.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Not really.",
+    "xrou": "vai-satya-rup.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "That is enough.",
+    "xrou": "etha vasa.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "I do not know.",
+    "xrou": "Adam vai xypremanah.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Can you help me.",
+    "xrou": "Tumu shakta sahay adam.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "What does this mean.",
+    "xrou": "Kim artha da-etha.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Please repeat that.",
+    "xrou": "Kripa punar haxa etha.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Please speak slowly.",
+    "xrou": "Kripa haxa dhire.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Speak clearly.",
+    "xrou": "Haxa spashta.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "I am listening.",
+    "xrou": "Adam gautes.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "I am busy.",
+    "xrou": "Adam xce vyasta.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "I am free.",
+    "xrou": "Adam xce upalabdha.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Where are we.",
+    "xrou": "Kutra Xcsadam xce.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Where is it.",
+    "xrou": "Kutra etha xce.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Come here.",
+    "xrou": "Atra aao.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Leave me alone.",
+    "xrou": "Caxra adam akela.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "I will return.",
+    "xrou": "Adam thanatei punar caxra.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "See you soon.",
+    "xrou": "Punar dars shighra.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Take your time.",
+    "xrou": "Tumu kara dhire.",
+    "category": "Everyday Expressions"
+  },
+  {
+    "english": "Excuse me please.",
+    "xrou": "Kripa-suno.",
+    "category": "Everyday Expressions"
   }
 ]
