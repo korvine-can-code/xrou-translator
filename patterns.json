@@ -240,9 +240,9 @@
   {
     "category": "Travel",
     "english": "Come with [person].",
-    "xrou": "Agaccha saha [person].",
+    "xrou": "Agacka saha [person].",
     "example_en": "Come with me.",
-    "example_xrou": "Agaccha saha adam."
+    "example_xrou": "Agacka saha adam."
   },
   {
     "category": "Trade",
@@ -261,9 +261,9 @@
   {
     "category": "Family",
     "english": "Come here, [endearment].",
-    "xrou": "Agaccha atra, [endearment].",
+    "xrou": "Agacka atra, [endearment].",
     "example_en": "Come here, little one.",
-    "example_xrou": "Agaccha atra, tama-puxa."
+    "example_xrou": "Agacka atra, tama-puxa."
   },
   {
     "category": "Safety",
@@ -536,7 +536,7 @@
     "english": "[clause] and [clause].",
     "xrou": "[clause] uta [clause].",
     "example_en": "Before and after.",
-    "example_xrou": "Purva uta pashcha."
+    "example_xrou": "Purva uta pashka."
   },
   {
     "category": "Conjunctions",

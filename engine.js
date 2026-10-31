@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v8 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v13 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -45,7 +45,15 @@
     .map(s => s.replace(/\s*\([^)]*\)/g,'').trim())
     .filter(Boolean);
   const EN_CANON = {
+    'fuck':'xha', 'fucking':'xha', 'damn':'vekh', 'shit':'vekh',
     drow:'xrou', xrou:'xrou', people:'xrou',
+    master:'natha', lord:'natha',
+    wolf:'bhediya', wolves:'bhediyays',
+    werewolf:'tvaka-parnaxcsapxcal', werewolves:'tvaka-parnaxcsapxcal',
+    'skin-changer':'tvaka-parnaxcsapxcal', 'skin-changers':'tvaka-parnaxcsapxcal',
+    moon:'ratri-mani', moons:'ratri-maniys',
+    star:'ratri-kingari', stars:'ratri-kingariys',
+    moonlight:'ratri-mani-prakasha',
     sunlander:'Ozzen-xrou', sunlanders:'Ozzen-xrou',
     'surface-dweller':'Ozzen-xrou', 'surface-dwellers':'Ozzen-xrou',
     'surface dweller':'Ozzen-xrou', 'surface dwellers':'Ozzen-xrou',
@@ -74,7 +82,14 @@
     the:'', a:'', an:'',
   };
   const XROU_CANON = {
+    xha:'fuck', vekh:'damn', 'xha-vekh':'fucking hell',
     xrou:'Drow', 'ozzen-xrou':'sunlander',
+    natha:'master', 'adam-natha':'my master',
+    bhediya:'wolf', bhediyays:'wolves',
+    'tvaka-parnaxcsapxcal':'werewolf',
+    'ratri-mani':'moon', 'ratri-maniys':'moons',
+    'ratri-kingari':'star', 'ratri-kingariys':'stars',
+    'ratri-mani-prakasha':'moonlight',
     adam:'I', adar:'I', adas:'I', tumu:'you', xcsadam:'we',
     vai:'not', thanatei:'will', xanathes:'', xce:'is',
     shakta:'can', 'vai shakta':'cannot', 'vai-shakta':'unable',
@@ -280,7 +295,7 @@
         const lookup=indexes.xrou.get(rest)?.find(x=>x.key===rest);
         if(lookup) return 'my '+(XROU_CANON[rest]||splitAliases(lookup.entry.english)[0]);
       }
-      return splitAliases(segment.english)[0] || segment.english;
+      return (splitAliases(segment.english)[0] || segment.english).replace(/[.!?]+$/,'');
     }
     const isNounSrc = s => !!nounEntry(s,'xrou') || !!xrouNounRoot(s) || !!(s.startsWith('adam-') && nounEntry(s.slice(5),'xrou'));
     function englishAdjust(parts) {
