@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v17 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v20 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -29,14 +29,31 @@
     "couldn't":"could not", "wouldn't":"would not", "shouldn't":"should not",
     "mustn't":"must not", "mightn't":"might not", "needn't":"need not",
     "hasn't":"has not", "haven't":"have not", "hadn't":"had not",
-    "let's":"let us"
+    "let's":"let us", "ain't":"is not", "y'all":"you all",
+    "how'd":"how did", "where'd":"where did", "who'd":"who did", "what'd":"what did", "why'd":"why did",
+    "that'd":"that would", "there'd":"there would",
+    "who'll":"who will", "what'll":"what will", "where'll":"where will",
+    "couldn't've":"could not have", "wouldn't've":"would not have", "shouldn't've":"should not have",
+    "i'd've":"I would have", "you'd've":"you would have", "we'd've":"we would have", "they'd've":"they would have"
   };
   // Surrounding boundaries prevent replacement inside longer words or possessives.
   const contractionRe = /(^|[^\p{L}\p{N}])([\p{L}]+(?:['’‘][\p{L}]+)+)(?=$|[^\p{L}\p{N}])/gu;
   function expandEnglishContractions(text) {
-    return String(text).replace(contractionRe,(matched,prefix,word) => {
-      const expansion=CONTRACTIONS[norm(word)];
+    return String(text).replace(contractionRe,(matched,prefix,word,offset,whole) => {
+      let expansion=CONTRACTIONS[norm(word)];
       if(!expansion) return matched;
+      // Apostrophe-s/d may be a perfect construction, not a copula/conditional.
+      // For example: "she's eaten" = "she has eaten"; "I'd gone" = "I had gone".
+      const tail=String(whole).slice(offset+matched.length).trimStart();
+      const following=tail.match(/^[\p{L}]+/u)?.[0]?.toLowerCase() || '';
+      if (['he\'s','she\'s','it\'s','that\'s','who\'s','there\'s'].includes(norm(word))
+          && ['been','gone','seen','done','eaten','drunk','written','taken','given','spoken','known','found','lost','made','broken','left','come','had','read','heard','felt','bought','taught','brought','slept','run'].includes(following)) {
+        expansion=expansion.replace(/ is$/, ' has');
+      }
+      if (['i\'d','you\'d','he\'d','she\'d','we\'d','they\'d','it\'d'].includes(norm(word))
+          && ['been','gone','seen','done','eaten','drunk','written','taken','given','spoken','known','found','lost','made','broken','left','come','had','read','heard','felt','bought','taught','brought','slept','run'].includes(following)) {
+        expansion=expansion.replace(/ would$/, ' had');
+      }
       const adjusted=/^[A-Z]/.test(word) ? expansion[0].toUpperCase()+expansion.slice(1) : expansion;
       return prefix+adjusted;
     });
@@ -91,7 +108,8 @@
     my:'adam-', your:'da-tumu', our:'da-Xcsadam', their:'da-vise', his:'da-vise', her:'da-vise', mine:'dar-adam', yours:'dar-tumu',
     not:'vai', no:'vai', will:'thanatei', shall:'thanatei',
     'will not':'vai thanatei', 'should not':'vai vakhra', 'must not':'vai vakhra',
-    go:'caxra', leave:'caxra',
+    go:'caxra', leave:'caxra', stop:'vasa',
+    what:'kim', where:'kutra', why:'kasma', how:'katham', who:'kaun', when:'yadau',
     for:'da', to:'prati', 'for me':'da-adam', 'for you':'da-tumu', 'for us':'da-Xcsadam', 'for them':'da-vise',
     'to me':'da-adam', 'to you':'da-tumu', 'to us':'da-Xcsadam', 'to them':'da-vise',
     'did not':'xanathes vai', "didn't":'xanathes vai',
@@ -101,7 +119,7 @@
     "isn't":'vai xce', "aren't":'vai xce', "wasn't":'vai xce-tha', "weren't":'vai xce-tha',
     "shouldn't":'vai vakhra', "mustn't":'vai vakhra',
     "wouldn't":'vai iccha-tha', "mightn't":'vai sambhavit',
-    am:'xce', are:'xce', is:'xce', be:'xce',
+    am:'xce', are:'xce', is:'xce', be:'xce', was:'xanathes xce', were:'xanathes xce',
     child:'puxa', love:'pixrit', know:'xypremanah', understand:'xypremanah',
     protect:'raksha', save:'raksha', good:'xera',
     say:'haxa', speak:'haxa', give:'yhanam',
@@ -225,7 +243,7 @@
       const direct=EN_CANON[norm(key)];
       if (direct && !['','xce','vai'].includes(direct)) {
         // Canonical action roots are preferred over lexicon homonyms.
-        if(['love','know','understand','protect','save','say','speak','give','want','desire','do'].includes(norm(key))) return direct;
+        if(['love','know','understand','protect','save','say','speak','give','want','desire','do','go','leave','stop'].includes(norm(key))) return direct;
       }
       const match=(indexes.en.get(norm(key))||[]).find(e=>e.key===norm(key) && /verb/.test(e.entry.type||''));
       return match?.entry.drow || null;
@@ -242,25 +260,63 @@
     };
     const pastEnglish = raw => {
       const word=String(raw).trim();
-      const irregular={go:'went',leave:'left',see:'saw',hear:'heard',speak:'spoke',say:'said',do:'did',have:'had',make:'made',eat:'ate',drink:'drank',give:'gave',take:'took',know:'knew',understand:'understood',become:'became',think:'thought',come:'came',run:'ran',buy:'bought',teach:'taught',bring:'brought',write:'wrote',read:'read',feel:'felt',sleep:'slept',find:'found',lose:'lost',fight:'fought',hold:'held'};
+      const irregular={go:'went',leave:'left',see:'saw',hear:'heard',speak:'spoke',say:'said',do:'did',have:'had',make:'made',eat:'ate',drink:'drank',give:'gave',take:'took',know:'knew',understand:'understood',become:'became',think:'thought',come:'came',run:'ran',buy:'bought',teach:'taught',bring:'brought',write:'wrote',read:'read',feel:'felt',sleep:'slept',find:'found',lose:'lost',fight:'fought',hold:'held',swim:'swam',break:'broke',choose:'chose',drive:'drove',fly:'flew',stand:'stood',sit:'sat',meet:'met',keep:'kept',send:'sent',begin:'began',sing:'sang',fall:'fell',pay:'paid',sell:'sold',tell:'told',wear:'wore',grow:'grew',cut:'cut',put:'put',hit:'hit'};
       if(irregular[norm(word)]) return irregular[norm(word)];
       if(/e$/i.test(word)) return word+'d';
       if(/[^aeiou]y$/i.test(word)) return word.slice(0,-1)+'ied';
       return word+'ed';
     };
-    const englishVerbStem = raw => {
-      const s=norm(raw);
-      const irregular={went:'go',left:'leave',saw:'see',heard:'hear',spoke:'speak',said:'say',did:'do',had:'have',made:'make',ate:'eat',drank:'drink',gave:'give',took:'take',knew:'know',understood:'understand',became:'become',thought:'think',came:'come',ran:'run',bought:'buy',taught:'teach',brought:'bring',wrote:'write',read:'read',felt:'feel',slept:'sleep',found:'find',lost:'lose',fought:'fight',held:'hold'};
-      if(irregular[s] && verbEntry(irregular[s])) return {stem:irregular[s],past:true};
-      if(/ied$/.test(s) && verbEntry(s.slice(0,-3)+'y')) return {stem:s.slice(0,-3)+'y',past:true};
-      if(/ed$/.test(s)) {
-        for(const option of [s.slice(0,-1),s.slice(0,-2)]) if(verbEntry(option)) return {stem:option,past:true};
-      }
-      if(/ies$/.test(s) && verbEntry(s.slice(0,-3)+'y')) return {stem:s.slice(0,-3)+'y',past:false};
-      if(/es$/.test(s) && verbEntry(s.slice(0,-2))) return {stem:s.slice(0,-2),past:false};
-      if(/s$/.test(s) && verbEntry(s.slice(0,-1))) return {stem:s.slice(0,-1),past:false};
-      return null;
+    // English inflection: generate candidates, then accept only established Xrou verb roots.
+    // No new Xrou stems are invented. Handle -ing, -s, -ed and common irregular forms.
+    const irregularVerbForms={
+      went:'go', gone:'go', ran:'run', left:'leave', came:'come', saw:'see', seen:'see',
+      heard:'hear', spoke:'speak', spoken:'speak', said:'say', did:'do', done:'do',
+      had:'have', has:'have', made:'make', ate:'eat', eaten:'eat',
+      drank:'drink', drunk:'drink', gave:'give', given:'give',
+      took:'take', taken:'take', knew:'know', known:'know',
+      understood:'understand', became:'become', thought:'think',
+      bought:'buy', taught:'teach', brought:'bring', wrote:'write', written:'write',
+      felt:'feel', slept:'sleep', found:'find', lost:'lose', fought:'fight',
+      held:'hold', broke:'break', broken:'break', chose:'choose', chosen:'choose',
+      drove:'drive', driven:'drive', flew:'fly', flown:'fly',
+      stood:'stand', sat:'sit', met:'meet', kept:'keep', sent:'send',
+      began:'begin', begun:'begin', sang:'sing', sung:'sing',
+      fell:'fall', fallen:'fall', swam:'swim', swum:'swim',
+      paid:'pay', sold:'sell', told:'tell', wore:'wear', worn:'wear',
+      grew:'grow', grown:'grow', cut:'cut', put:'put', hit:'hit', read:'read'
     };
+    function englishVerbStem(raw) {
+      const s=norm(raw);
+      if (irregularVerbForms[s] && verbEntry(irregularVerbForms[s])) {
+        const present = ['has'].includes(s);
+        return {stem:irregularVerbForms[s],tense:present?'present':'past',past:!present};
+      }
+      let candidates=[],tense='present';
+      if(s.endsWith('ing') && s.length>5) {
+        tense='progressive';
+        const base=s.slice(0,-3);
+        candidates=[base,base+'e'];
+        // running -> run; swimming -> swim; stopping -> stop.
+        if(base.length>=2 && base.at(-1)===base.at(-2)) candidates.push(base.slice(0,-1));
+        // lying/dying/tying -> lie/die/tie.
+        if(base.endsWith('y')) candidates.push(base.slice(0,-1)+'ie');
+      } else if(s.endsWith('ied') && s.length>4) {
+        tense='past';candidates=[s.slice(0,-3)+'y'];
+      } else if(s.endsWith('ed') && s.length>3) {
+        tense='past';
+        const base=s.slice(0,-2);
+        candidates=[s.slice(0,-1),base];
+        if(base.length>=2 && base.at(-1)===base.at(-2)) candidates.push(base.slice(0,-1));
+      } else if(s.endsWith('ies') && s.length>4) {
+        candidates=[s.slice(0,-3)+'y',s.slice(0,-1)];
+      } else if(s.endsWith('es') && s.length>3) {
+        candidates=[s.slice(0,-1),s.slice(0,-2)];
+      } else if(s.endsWith('s') && s.length>2) {
+        candidates=[s.slice(0,-1)];
+      }
+      for(const stem of [...new Set(candidates)]) if(verbEntry(stem)) return {stem,tense,past:tense==='past'};
+      return null;
+    }
     const enNounSingular = raw => {
       const s=norm(raw);
       if(singularEnglish[s]) return singularEnglish[s];
@@ -293,7 +349,7 @@
           return {text:pluralizeXrou(root),kind:'plural'};
         }
         const v=englishVerbStem(s);
-        if(v) return {text:(v.past?'xanathes ':'')+verbEntry(v.stem),kind:v.past?'past':'verb'};
+        if(v) return {text:(v.past?'xanathes ':'')+verbEntry(v.stem),kind:v.past?'past':v.tense==='progressive'?'progressive':'verb'};
       } else {
         if(s.startsWith('adam-') && s.length>5) {
           const root=s.slice(5);
@@ -339,7 +395,7 @@
       return null;
     }
     let currentText='';
-    const pastForms={love:'loved',want:'wanted',protect:'protected',understand:'understood',know:'knew',give:'gave',do:'did',speak:'spoke',go:'went',become:'became',see:'saw',eat:'ate',hear:'heard',make:'made'};
+    const pastForms={love:'loved',want:'wanted',protect:'protected',understand:'understood',know:'knew',give:'gave',do:'did',speak:'spoke',go:'went',become:'became',see:'saw',eat:'ate',hear:'heard',make:'made',run:'ran',write:'wrote',drink:'drank',sleep:'slept',fight:'fought',buy:'bought',take:'took',find:'found',leave:'left',come:'came'};
     function englishForXrou(segment) {
       const d=norm(segment.drow);
       if (Object.hasOwn(XROU_CANON,d)) return XROU_CANON[d];
@@ -405,12 +461,92 @@
         if(p.src==='my' && n && !n.unknown && (isNounSrc(norm(n.text)) || !!nounEntry(n.src,'en') || !!enNounSingular(n.src))) {
           out.push({...p,text:'adam-'+n.text,end:n.end});i++;continue;
         }
+        if(p.src==='did' && n && !n.unknown && (verbEntry(n.src) || englishVerbStem(n.src))) {out.push({...p,text:'xanathes'});continue;}
         if(['a','an','the'].includes(p.src)) {out.push({...p,text:''});continue;}
         out.push(p);
       }
       return out;
     }
-    function translateLine(line,source) {
+    // Xrou currently marks past without an English perfect aspect distinction.
+    // For clear auxiliary + participle constructions, express the same event using
+    // the established xanathes past marker rather than translating an extra "have".
+    function simplifyEnglishPerfect(line) {
+      const m=line.match(/^(\s*)(I|you|he|she|we|they|it)\s+(have|has|had)\s+(not\s+)?([\p{L}]+)(.*)$/iu);
+      if(!m) return line;
+      const participle=m[5].toLowerCase();
+      const accepted=new Set(['been','gone','seen','done','eaten','drunk','written','taken','given',
+        'spoken','known','found','lost','made','broken','left','come','had','read','heard','felt',
+        'bought','taught','brought','slept','run','swum','flown','grown','worn','begun','sung']);
+      const v=englishVerbStem(participle);
+      if(!v || (!v.past && !accepted.has(participle))) return line;
+      // We cannot preserve English perfect aspect exactly in the current Xrou grammar.
+      return m[1]+m[2]+(m[4]?' did not '+v.stem:' '+pastEnglish(v.stem))+m[6];
+    }
+    // Turn common inverted English questions into simple Xrou clause order.
+    // Preserve the original question mark: the question particle is punctuation in this prototype.
+    // Only rewrites clear question patterns; other inputs retain dictionary matching.
+    function rewriteEnglishQuestion(line) {
+      const leading=line.match(/^\s*/)?.[0] || '';
+      const s=line.trim();
+      const word=s.match(/^(who|what|where|when|why|how|which|whose)(?:\s+|$)/i);
+      const wh=word ? word[0].trim() : '';
+      let body=word ? s.slice(word[0].length).trimStart() : s;
+      const aux=body.match(/^(am|is|are|was|were|do|does|did|can|could|will|would|should|must|shall|have|has|had)\s+(not\s+)?(.*)$/i);
+      if(!aux) return line;
+      const mode=aux[1].toLowerCase(),negative=!!aux[2], remaining=aux[3];
+      // Invert only subject-first questions. Simple pronoun subjects and names are supported.
+      const subject=remaining.match(/^(i|you|he|she|we|they|it|[A-Z][\p{L}\-']+)(?=\s|$)/iu);
+      if(!subject) return line;
+      const who=subject[0],rest=remaining.slice(subject[0].length).trimStart();
+      if(!rest && ['do','does','did'].includes(mode)) return line;
+      let rewritten='';
+      if(['do','does','did'].includes(mode)) {
+        if(negative) rewritten=who+' '+mode+' not '+rest;
+        else if(mode==='did') {
+          const verb=rest.match(/^[\p{L}]+/u)?.[0];
+          if(verb && (verbEntry(verb)||englishVerbStem(verb))) {
+            const stem=englishVerbStem(verb)?.stem || verb.toLowerCase();
+            rewritten=who+' '+pastEnglish(stem)+rest.slice(verb.length);
+          } else rewritten=who+' did '+rest;
+        } else rewritten=who+' '+rest;
+      } else rewritten=who+' '+mode+(negative?' not':'')+(rest?' '+rest:'');
+      return leading+(wh?wh+' ':'')+rewritten;
+    }
+    function polishEnglishQuestion(sentence) {
+      const trimmed=sentence.trim();
+      if(!trimmed.endsWith('?')) return sentence;
+      const wh='(?:Who|What|Where|When|Why|How|Which)';
+      // Where you are? -> Where are you?
+      let m=trimmed.match(new RegExp('^('+wh+')\\s+(I|you|he|she|we|they|it)\\s+(am|are|is|was|were)\\s*\\?$','i'));
+      if(m) return `${m[1]} ${m[3].toLowerCase()} ${m[2]==='I'?'I':m[2].toLowerCase()}?`.replace(/^([A-Za-z])/,c=>c.toUpperCase());
+      // You can see? / You are ready? -> Can you see? / Are you ready?
+      m=trimmed.match(/^(I|you|he|she|we|they|it)\s+(can|could|will|would|should|must|shall|am|are|is|was|were|have|has|had)\s+(.+?)\?$/i);
+      if(m) return `${m[2]} ${m[1]==='I'?'I':m[1].toLowerCase()} ${m[3]}?`.replace(/^([A-Za-z])/,c=>c.toUpperCase());
+      // You ran? -> Did you run? / You walked? -> Did you walk?
+      m=trimmed.match(/^(I|you|we|they|he|she|it)\s+([A-Za-z]+)(?:\s+(.+?))?\?$/i);
+      if(m) {
+        const pastToBase={ran:'run',went:'go',left:'leave',ate:'eat',drank:'drink',wrote:'write',
+          spoke:'speak',saw:'see',heard:'hear',gave:'give',took:'take',found:'find',slept:'sleep',
+          fought:'fight',bought:'buy',made:'make',understood:'understand',knew:'know',came:'come',
+          brought:'bring',felt:'feel',said:'say',did:'do'};
+        const past=m[2].toLowerCase();
+        let base=pastToBase[past]||null;
+        if(!base && past.endsWith('ed')) {
+          base=past.endsWith('ied')?past.slice(0,-3)+'y':past.endsWith('eed')?past.slice(0,-1):past.slice(0,-2);
+          if(!verbEntry(base) && verbEntry(base+'e')) base+='e';
+        }
+        if(base && verbEntry(base)) return `Did ${m[1]==='I'?'I':m[1].toLowerCase()} ${base}${m[3]?' '+m[3]:''}?`;
+      }
+      // You know? -> Do you know? (best-effort; avoids guessing on longer clauses).
+      m=trimmed.match(/^(I|you|we|they|he|she|it)\s+([A-Za-z]+)(?:\s+(.+?))?\?$/i);
+      if(m && !['not','is','are','can','will','could','would','am','must','should'].includes(m[2].toLowerCase())) {
+        const aux=['he','she','it'].includes(m[1].toLowerCase())?'Does':'Do';
+        return `${aux} ${m[1]} ${m[2]}${m[3]?' '+m[3]:''}?`;
+      }
+      return sentence;
+    }
+    function translateLine(line,source,isQuestion=false) {
+      const originalStartsUpper=/^[A-Z]/.test(line.trim());
       currentText=line;
       const full=fullPhrases[source].get(phraseKey(line));
       if(full && !(source==='xrou' && tokenize(line).length===1 && indexes.xrou.has(norm(phraseKey(line))))) {
@@ -420,6 +556,8 @@
         const label=source==='en'?full.english:full.xrou;
         return {text:leading+translation+trailing,matches:[`Phrasebook: ${label.trim()} → ${translation}`],unknown:[],segments:[]};
       }
+      if(source==='en' && isQuestion) line=rewriteEnglishQuestion(line);
+      if(source==='en') line=simplifyEnglishPerfect(line);
       const tokens=tokenize(line);
       if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
       const parts=[],matches=[],unknown=[];
@@ -440,8 +578,12 @@
         // never invent xrouys for this standalone headword.
         const irregularPlural=source==='en' && tokens[i].norm!=='people' && Object.hasOwn(singularEnglish,tokens[i].norm) ? derivedToken(tokens[i],source) : null;
         const prev=tokens[i-1]?.norm;
-        const contextualPast=source==='en' && !['did','had'].includes(tokens[i].norm) && ['i','you','he','she','we','they','it'].includes(prev) && englishVerbStem(tokens[i].norm)?.past ? derivedToken(tokens[i],source) : null;
-        const preferredDerived=irregularPlural || contextualPast;
+        const verbalForm=source==='en' ? englishVerbStem(tokens[i].norm) : null;
+        const subjectContext=['i','you','he','she','we','they','it'].includes(prev);
+        const auxContext=['am','is','are','was','were','have','has','had'].includes(prev);
+        const contextualVerb=source==='en' && verbalForm && ((verbalForm.past && (subjectContext || auxContext)) ||
+          (verbalForm.tense==='progressive' && (subjectContext || auxContext))) ? derivedToken(tokens[i],source) : null;
+        const preferredDerived=irregularPlural || contextualVerb;
         const match=preferredDerived ? null : matchAt(tokens,i,source);
         if(match) {
           const {entry,count}=match, phrase=tokens.slice(i,i+count).map(w=>w.raw).join(' ');
@@ -474,7 +616,7 @@
       }
       out+=line.slice(pos);
       out=out.replace(/[ \t]{2,}/g,' ').replace(/\s+([,;:.!?])/g,'$1').trim();
-      if(source==='en' && /^[A-Z]/.test(line.trim())) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
+      if(source==='en' && originalStartsUpper) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
       if(source==='xrou' && /[\p{L}]/u.test(out)) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
       return {text:out,matches,unknown,segments:processed};
     }
@@ -488,15 +630,20 @@
       for(let i=0;i<lines.length;i++) {
         if(/^\n+$/.test(lines[i])) { translated.push(lines[i]); continue; }
         const sentences=lines[i].split(/([.!?]+(?=\s|$))/);
-        for(const sentence of sentences) {
+        for(let j=0;j<sentences.length;j++) {
+          const sentence=sentences[j];
           if(/^[.!?]+$/.test(sentence)) {translated.push(sentence);continue;}
-          const res=translateLine(sentence,source);
+          const isQuestion=source==='en' && /^\?+/.test(sentences[j+1]||'');
+          const res=translateLine(sentence,source,isQuestion);
           translated.push(res.text);matches.push(...res.matches);unknown.push(...res.unknown);
         }
       }
       let output=translated.join('').replace(/ +\n/g,'\n');
       // English retains sentence capitalization after punctuation, even for multi-sentence text.
-      if(source==='xrou') output=output.replace(/([.!?]\s+)([a-z])/g,(_,a,b)=>a+b.toUpperCase());
+      if(source==='xrou') {
+        output=output.replace(/([.!?]\s+)([a-z])/g,(_,a,b)=>a+b.toUpperCase());
+        output=output.split(/(?<=\?)(?=\s|$)/).map(polishEnglishQuestion).join('');
+      }
       return {text:output,matches,unknown};
     }
     return {translate,suggestions,norm};
