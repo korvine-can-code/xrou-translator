@@ -184,6 +184,30 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
 .synonymChoice:hover { background:#fff; color:#101010; }
 .dictionarySynonymHints { grid-column:1/-1; padding:15px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:rgba(17,17,17,.93); border:1px solid rgba(255,255,255,.14); border-radius:14px; }
 .dictionarySynonymHints .synonymLabel { width:100%; }
+
+/* V21: GitHub Issue translation requests, available from every tab. */
+.requestPanel {
+  margin-top:18px; padding:24px;
+  border:1px solid rgba(255,255,255,.26);
+  border-radius:20px;
+  background:linear-gradient(150deg,rgba(26,26,26,.95),rgba(10,10,10,.94));
+  box-shadow:0 12px 38px rgba(0,0,0,.35);
+}
+.requestPanel h2 {
+  font:700 clamp(1.45rem,4vw,2rem)/1.17 Georgia,serif;
+  margin:0 0 8px;
+}
+.requestPanel p { margin:0 0 16px; color:#dedede; }
+.requestGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.requestField {min-width:0;}
+.requestField label { margin-top:0; }
+.requestField textarea { min-height:80px; }
+.requestField.wide {grid-column:1/-1;}
+.requestPanel .requestActions {display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px;}
+.requestPanel .requestFinePrint {font-size:.81rem;line-height:1.55;color:#bfbfbf;margin:8px 0 0;}
+.requestPanel input:focus,.requestPanel textarea:focus,.requestPanel select:focus {outline:2px solid #eee;outline-offset:2px;}
+@media(max-width:650px){.requestPanel{padding:17px}.requestGrid{grid-template-columns:1fr}.requestField.wide{grid-column:1}}
+
 </style>
 </head>
 <body>
@@ -329,9 +353,41 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
 
 <footer class="wrap">
   <div class="footerBox">Xrou-Haxa is a developing language. The translator favors established dictionary and phrasebook entries, with grammar assistance for everyday speech.</div>
+  <section class="requestPanel" id="request-translation" aria-labelledby="requestHeading">
+    <h2 id="requestHeading">Request a Translation</h2>
+    <p>Can't find a word or phrase in the dictionary? Suggest something for the Xrou lexicon. Requests are reviewed before any vocabulary is added.</p>
+    <form id="requestTranslationForm" action="https://github.com/korvine-can-code/xrou-translator/issues/new" method="get" target="_blank">
+      <div class="requestGrid">
+        <div class="requestField">
+          <label for="requestKind">What do you need?</label>
+          <select id="requestKind"><option value="Word">A word</option><option value="Phrase">A phrase or sentence</option></select>
+        </div>
+        <div class="requestField">
+          <label for="requestDirection">Translation direction</label>
+          <select id="requestDirection"><option value="English to Xrou">English → Xrou</option><option value="Xrou to English">Xrou → English</option></select>
+        </div>
+        <div class="requestField wide">
+          <label for="requestTerm">Word or phrase <span aria-hidden="true">*</span></label>
+          <textarea id="requestTerm" required maxlength="180" rows="2" placeholder="e.g., perseverance / I will return soon" aria-required="true"></textarea>
+        </div>
+        <div class="requestField wide">
+          <label for="requestContext">Context or intended meaning (optional)</label>
+          <textarea id="requestContext" maxlength="800" rows="3" placeholder="How is it being used in Astralith? Is there a special meaning or an established Xrou root to preserve?"></textarea>
+        </div>
+      </div>
+      <input type="hidden" name="title" id="requestIssueTitle">
+      <input type="hidden" name="body" id="requestIssueBody">
+      <div class="requestActions">
+        <button class="primary" type="submit">Continue to GitHub to submit</button>
+        <a href="https://github.com/korvine-can-code/xrou-translator/issues" target="_blank" rel="noopener noreferrer" style="color:#ddd;text-underline-offset:3px">View existing requests ↗</a>
+      </div>
+      <p class="requestFinePrint">This opens a prefilled GitHub issue in a new tab. You'll need a free GitHub account and must click <strong>Submit new issue</strong> there to send it. Nothing is sent by this form alone.</p>
+    </form>
+  </section>
 </footer>
 
 <script src="./engine.js" defer></script>
 <script src="./app.js" defer></script>
+<script src="./requests.js" defer></script>
 </body>
 </html>

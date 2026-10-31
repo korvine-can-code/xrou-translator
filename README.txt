@@ -1,12 +1,16 @@
-Dvandva Xrou-Haxa Translator — Version 20 (Grammar & Verbs)
+Dvandva Xrou-Haxa Translator — Version 21 (Translation Requests)
 
-What's new:
-- English -ing forms (running, writing, stopping, etc.) map to their recognized Xrou roots.
-- More regular and irregular verb forms (runs, ran, wrote, went, etc.).
-- Expanded contraction handling, including curly apostrophes and some ambiguous perfect forms.
-- Common question inversion and English question reconstruction.
-- Existing V19 favorites/history, clickable definitions, categories, synonym suggestions, lexicon, phrasebook, and website artwork preserved.
+Adds a "Request a Translation" form at the bottom of every page/tab. The form
+opens a prefilled GitHub issue in a new tab; users must log in and press
+Submit new issue before a request is sent. The website does not store requests.
 
-This is a rule-based system: ambiguous grammar and longer sentences may need human review.
+REQUIREMENT: Enable Issues for your public repository:
+https://github.com/korvine-can-code/xrou-translator/settings
+Settings > General > Features > Issues
 
-GitHub Pages: extract ZIP, upload/replace the files in repository root, commit. Keep your current CNAME file for the custom domain.
+GitHub Pages: upload/replace all extracted files in the repository root,
+including the new requests.js. Keep the existing CNAME file in GitHub
+for the xrou-haxa.com custom domain.
+
+The original dictionary, phrasebook, sentence patterns, engine,
+and Dvandva theme are unchanged.
