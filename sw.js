@@ -1,4 +1,4 @@
-const CACHE = 'dvandva-xrou-haxa-v2';
+const CACHE = 'dvandva-xrou-haxa-v3-vocab';
 const ASSETS = [
   './', './index.html', './engine.js', './app.js', './lexicon.json',
   './manifest.webmanifest', './assets/cave-bg.jpg', './assets/dvandva-header.png'
