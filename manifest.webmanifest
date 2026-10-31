@@ -1,0 +1,9 @@
+{
+  "name": "Xrou Speech Lexicon & Translator",
+  "short_name": "Xrou Speech",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#130f17",
+  "theme_color": "#1c1422",
+  "description": "Searchable Xrou/Drowspeech lexicon with literal bidirectional translation."
+}

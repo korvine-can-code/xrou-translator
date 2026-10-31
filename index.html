@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1c1422">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Xrou Speech — Lexicon & Translator</title>
+<style>
+:root {
+  --bg:#130f17; --panel:#211827; --panel2:#2b2034; --ink:#f6eff8;
+  --muted:#b8a9bd; --line:#46374f; --accent:#d2a8df; --accent2:#92beb7;
+  --warn:#e3bb76; --good:#9dd4af;
+}
+* { box-sizing:border-box; }
+html { color-scheme:dark; }
+body {
+  margin:0; color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%,rgba(132,78,154,.18),transparent 34rem),
+    radial-gradient(circle at 95% 15%,rgba(65,129,118,.12),transparent 30rem),
+    var(--bg);
+}
+.wrap { width:min(1080px,calc(100% - 28px)); margin:auto; }
+header { padding:42px 0 18px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.72rem; font-weight:800; color:var(--accent2); }
+h1 { font-family:Georgia,serif; font-size:clamp(2rem,8vw,4rem); line-height:.98; margin:.35rem 0 .55rem; }
+p { line-height:1.55; }
+.sub { color:var(--muted); max-width:780px; margin:0; }
+.tabs {
+  display:flex; gap:8px; margin-top:20px; padding:6px; width:max-content; max-width:100%;
+  background:rgba(33,24,39,.85); border:1px solid var(--line); border-radius:14px;
+}
+.tab {
+  min-height:40px; border:0; border-radius:10px; padding:0 16px; color:var(--muted);
+  background:transparent; cursor:pointer; font-weight:800;
+}
+.tab.active { color:var(--ink); background:var(--panel2); }
+.panel { display:none; padding:20px 0 64px; }
+.panel.active { display:block; }
+.box {
+  background:linear-gradient(180deg,rgba(43,32,52,.98),rgba(31,23,37,.98));
+  border:1px solid var(--line); border-radius:18px; padding:16px;
+  box-shadow:0 16px 44px rgba(0,0,0,.25);
+}
+label { display:block; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:7px; }
+textarea,input,select,button {
+  font:inherit; color:var(--ink); border-radius:12px; border:1px solid var(--line); background:#19131e;
+}
+textarea { width:100%; min-height:126px; padding:13px; resize:vertical; line-height:1.5; }
+input { width:100%; min-height:46px; padding:0 14px; }
+select { min-height:46px; padding:0 12px; }
+button {
+  min-height:42px; padding:0 14px; font-weight:800; cursor:pointer;
+}
+button:hover { background:var(--panel2); }
+.direction { display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:end; }
+.swap { min-width:46px; font-size:1.2rem; }
+.actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:12px; }
+.primary { background:#3d2948; border-color:#76578a; }
+.notice {
+  margin-top:12px; padding:11px 12px; border-radius:12px; color:#d8c7dd;
+  background:rgba(227,187,118,.07); border:1px solid rgba(227,187,118,.22); font-size:.88rem;
+}
+.output {
+  margin-top:16px; padding:15px; border-radius:14px; background:#17111b; border:1px solid var(--line);
+  min-height:84px;
+}
+.outputTitle { color:var(--muted); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+.translation { font-family:Georgia,serif; font-size:1.35rem; line-height:1.5; overflow-wrap:anywhere; }
+.unknown { color:var(--warn); }
+.details { margin-top:12px; display:flex; flex-wrap:wrap; gap:7px; }
+.chip {
+  padding:5px 8px; border-radius:999px; border:1px solid var(--line); background:var(--panel);
+  color:var(--muted); font-size:.78rem;
+}
+.controls { display:grid; grid-template-columns:minmax(0,1fr) 220px auto; gap:10px; }
+.meta { display:flex; justify-content:space-between; gap:12px; margin:11px 0 0; color:var(--muted); font-size:.86rem; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:14px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:15px; padding:15px; min-width:0; }
+.cardTop { display:flex; gap:10px; align-items:flex-start; justify-content:space-between; }
+.word { font-family:Georgia,serif; font-size:1.35rem; font-weight:700; overflow-wrap:anywhere; }
+.badge { color:#bce0db; border:1px solid rgba(146,190,183,.28); border-radius:999px; padding:4px 8px; font-size:.7rem; text-align:center; }
+.eng { margin-top:7px; line-height:1.45; }
+.notes { margin-top:8px; color:var(--muted); font-size:.86rem; line-height:1.45; }
+.empty { grid-column:1/-1; padding:36px; border:1px dashed var(--line); border-radius:15px; text-align:center; color:var(--muted); }
+footer { color:var(--muted); font-size:.84rem; padding-bottom:40px; }
+@media (max-width:760px) {
+  .direction { grid-template-columns:1fr; }
+  .swap { width:100%; }
+  .controls { grid-template-columns:1fr; }
+  .grid { grid-template-columns:1fr; }
+  .meta { flex-direction:column; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Xrou Speech</div>
+  <h1>Lexicon & Translator</h1>
+  <p class="sub">Search the dictionary or make a literal dictionary translation in either direction. Unknown words stay visibly marked instead of being invented.</p>
+  <div class="tabs">
+    <button class="tab active" data-tab="translator">Translator</button>
+    <button class="tab" data-tab="dictionary">Dictionary</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="translator" class="panel active">
+    <div class="box">
+      <div class="direction">
+        <div>
+          <label for="sourceLang">From</label>
+          <select id="sourceLang">
+            <option value="en">English</option>
+            <option value="xrou">Xrou / Drowspeech</option>
+          </select>
+        </div>
+        <button id="swapBtn" class="swap" title="Swap direction">⇄</button>
+        <div>
+          <label for="targetLang">To</label>
+          <select id="targetLang">
+            <option value="xrou">Xrou / Drowspeech</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top:14px">
+        <label for="sourceText">Text</label>
+        <textarea id="sourceText" placeholder="Type a word, phrase, or sentence…"></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="translateBtn" class="primary">Translate</button>
+        <button id="clearTranslate">Clear</button>
+        <button id="copyTranslation">Copy result</button>
+      </div>
+
+      <div class="notice">
+        This is a <strong>literal lexicon translator</strong>, not a full grammar engine. It prefers the longest known phrase/compound, then translates remaining words individually. Unknown words are shown in ⟦brackets⟧.
+      </div>
+
+      <div class="output">
+        <div class="outputTitle">Translation</div>
+        <div id="translation" class="translation">—</div>
+        <div id="translationDetails" class="details"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dictionary" class="panel">
+    <div class="box">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search English or Drowspeech…">
+        <select id="typeFilter">
+          <option value="">All types</option>
+          <option value="adjective">adjective</option><option value="adjective / adverb">adjective / adverb</option><option value="adjective / compound">adjective / compound</option><option value="adjective / endearment">adjective / endearment</option><option value="adjective / noun">adjective / noun</option><option value="adjective / pronoun">adjective / pronoun</option><option value="adjective / verb">adjective / verb</option><option value="adverb">adverb</option><option value="adverb / interjection">adverb / interjection</option><option value="adverb / noun">adverb / noun</option><option value="comparative element">comparative element</option><option value="compound">compound</option><option value="compound / endearment">compound / endearment</option><option value="compound / relational form">compound / relational form</option><option value="compound / title">compound / title</option><option value="compound / verb form">compound / verb form</option><option value="compound / vulgar">compound / vulgar</option><option value="conjunction">conjunction</option><option value="conjunction / adverb">conjunction / adverb</option><option value="conjunction / relational word">conjunction / relational word</option><option value="construction">construction</option><option value="demonstrative">demonstrative</option><option value="endearment">endearment</option><option value="endearment / compound">endearment / compound</option><option value="epithet / compound">epithet / compound</option><option value="ethnonym / compound">ethnonym / compound</option><option value="grammar form">grammar form</option><option value="grammar particle">grammar particle</option><option value="grammar prefix">grammar prefix</option><option value="imperative">imperative</option><option value="insult">insult</option><option value="insult / adjective">insult / adjective</option><option value="insult / compound">insult / compound</option><option value="insult / epithet">insult / epithet</option><option value="intensifier">intensifier</option><option value="interjection">interjection</option><option value="interjection / adjective">interjection / adjective</option><option value="interjection / imperative">interjection / imperative</option><option value="interjection / noun">interjection / noun</option><option value="modal">modal</option><option value="modal / imperative">modal / imperative</option><option value="modifier">modifier</option><option value="negative">negative</option><option value="negative compound">negative compound</option><option value="negative verb form">negative verb form</option><option value="nickname / compound">nickname / compound</option><option value="noun">noun</option><option value="noun / adjective">noun / adjective</option><option value="noun / endearment">noun / endearment</option><option value="noun / insult">noun / insult</option><option value="noun / relational word">noun / relational word</option><option value="noun / root">noun / root</option><option value="noun / suffix">noun / suffix</option><option value="noun / title">noun / title</option><option value="noun / verb">noun / verb</option><option value="number / adjective">number / adjective</option><option value="onomastic / marital particle">onomastic / marital particle</option><option value="onomastic / relational particle">onomastic / relational particle</option><option value="onomastic particle">onomastic particle</option><option value="particle">particle</option><option value="phrase">phrase</option><option value="place / title phrase">place / title phrase</option><option value="politeness marker">politeness marker</option><option value="possessive expression">possessive expression</option><option value="preposition">preposition</option><option value="pronoun">pronoun</option><option value="pronoun / possessive">pronoun / possessive</option><option value="proper noun">proper noun</option><option value="proper noun / group title">proper noun / group title</option><option value="proper noun / house name">proper noun / house name</option><option value="proper noun / order or sect">proper noun / order or sect</option><option value="question expression">question expression</option><option value="question phrase">question phrase</option><option value="question word">question word</option><option value="relational form">relational form</option><option value="relational word">relational word</option><option value="root">root</option><option value="slang / adjective">slang / adjective</option><option value="slang / compound">slang / compound</option><option value="slang / epithet">slang / epithet</option><option value="slang / idiom">slang / idiom</option><option value="swear / interjection">swear / interjection</option><option value="swear / verb">swear / verb</option><option value="title">title</option><option value="title / adjective">title / adjective</option><option value="title / compound">title / compound</option><option value="title / endearment">title / endearment</option><option value="title / loanword">title / loanword</option><option value="title / nickname">title / nickname</option><option value="title / noun">title / noun</option><option value="title / social term">title / social term</option><option value="unresolved word">unresolved word</option><option value="verb">verb</option><option value="verb / compound">verb / compound</option><option value="verb / construction">verb / construction</option><option value="verb / form">verb / form</option><option value="verb / noun">verb / noun</option><option value="verb / phrase">verb / phrase</option><option value="verb / root">verb / root</option>
+        </select>
+        <button id="clearSearch">Clear</button>
+      </div>
+      <div class="meta">
+        <div id="count"></div>
+        <div>Search works in both directions.</div>
+      </div>
+      <div id="results" class="grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  The translator intentionally leaves unknown words untranslated rather than guessing. As the lexicon grows, translation coverage improves automatically.
+</footer>
+
+<script>
+const LEXICON = [{"drow": "abhi", "english": "still; yet; nevertheless", "type": "adverb", "notes": ""}, {"drow": "acha", "english": "okay; right; I see", "type": "interjection", "notes": ""}, {"drow": "ada-kurtas", "english": "my claimed; the one I have claimed", "type": "possessive expression", "notes": ""}, {"drow": "adam", "english": "I; me; my (in compounds)", "type": "pronoun / possessive", "notes": "Masculine/default first person; Sivri uses this as her dialect default."}, {"drow": "adam-", "english": "my; of me", "type": "grammar prefix", "notes": "Possessive use in compounds."}, {"drow": "adam-anayhana", "english": "my offering; for me to offer", "type": "compound / verb form", "notes": "Seen in a question about how many children one should offer."}, {"drow": "adam-bhram", "english": "my lapse; my error", "type": "compound", "notes": ""}, {"drow": "adam-dhanya", "english": "my gratitude; my thanks", "type": "compound", "notes": ""}, {"drow": "Adam-dil", "english": "my heart; context-dependent possessive form", "type": "compound", "notes": "Used previously for 'my heart'; also appears in an older concubine construction, so its exact sense depends on context."}, {"drow": "Adam-Javitaran", "english": "my husband", "type": "compound / endearment", "notes": ""}, {"drow": "adam-kala", "english": "my time; my appointed/fated hour", "type": "compound", "notes": ""}, {"drow": "adam-lassesukha", "english": "my affections; my sexual favor; my intimacy", "type": "compound", "notes": ""}, {"drow": "adam-naqab", "english": "my mask", "type": "compound", "notes": ""}, {"drow": "adam-rupa", "english": "my appearance; my form", "type": "compound", "notes": ""}, {"drow": "adam-svamin", "english": "my lord; my master", "type": "compound / title", "notes": ""}, {"drow": "adam-xana", "english": "my soul; my essential self", "type": "compound", "notes": ""}, {"drow": "adam-xsfava", "english": "my rage", "type": "compound", "notes": ""}, {"drow": "Adam-yek", "english": "my only; my one", "type": "compound / endearment", "notes": ""}, {"drow": "adams", "english": "we", "type": "pronoun", "notes": "Older working form; Xcsadam is also used."}, {"drow": "adar", "english": "I; me (feminine)", "type": "pronoun", "notes": "Explicit feminine first-person form."}, {"drow": "adas", "english": "I; me (neutral)", "type": "pronoun", "notes": "Neutral first-person form."}, {"drow": "adhik", "english": "more; additional", "type": "adjective / adverb", "notes": ""}, {"drow": "adhikara", "english": "authority; right; permission", "type": "noun", "notes": ""}, {"drow": "adi", "english": "very; strongly", "type": "intensifier", "notes": "Older form; ati is also used."}, {"drow": "ah-haxa", "english": "sigh", "type": "noun", "notes": ""}, {"drow": "ai", "english": "of the union; by union with", "type": "onomastic particle", "notes": "Working surname particle."}, {"drow": "akan", "english": "context-dependent word", "type": "unresolved word", "notes": "Seen in an older Drowspeech example."}, {"drow": "amahay", "english": "ally-related element", "type": "noun / adjective", "notes": "Part of a phrase meaning 'you plural are allies.'"}, {"drow": "anaiba", "english": "unknown descriptor", "type": "unresolved word", "notes": "Appears after 'I think/believe you are ...'."}, {"drow": "anausa", "english": "always; forever", "type": "adverb", "notes": ""}, {"drow": "anayhana", "english": "offer; present; give", "type": "verb", "notes": "Variant/related form used in older examples."}, {"drow": "aniya-jarib", "english": "contraceptive herbs", "type": "noun", "notes": ""}, {"drow": "anokha", "english": "strange; unfamiliar", "type": "adjective", "notes": ""}, {"drow": "antatah", "english": "finally; at last; about time", "type": "adverb / interjection", "notes": ""}, {"drow": "anushas", "english": "discipline; correct; train", "type": "verb", "notes": ""}, {"drow": "anusiya", "english": "discord / dissent / cause-related root", "type": "root", "notes": "Meaning varies across constructions."}, {"drow": "anvis", "english": "seek; intend; try", "type": "verb", "notes": ""}, {"drow": "anya-dast", "english": "another hand", "type": "compound", "notes": ""}, {"drow": "apares", "english": "will need; need", "type": "modal", "notes": ""}, {"drow": "api", "english": "also; too", "type": "adverb", "notes": ""}, {"drow": "apsara", "english": "never / irrealis-related element", "type": "grammar form", "notes": "Appears in a sentence translated as 'I will never feel shame because of you.'"}, {"drow": "arambh", "english": "begin; start", "type": "verb", "notes": ""}, {"drow": "arha", "english": "worthy", "type": "adjective", "notes": ""}, {"drow": "asambhav", "english": "impossible", "type": "adjective", "notes": ""}, {"drow": "asha", "english": "hope; wish", "type": "verb / noun", "notes": ""}, {"drow": "ashista", "english": "impolite; discourteous; lacking manners", "type": "adjective", "notes": ""}, {"drow": "athva", "english": "or", "type": "conjunction", "notes": ""}, {"drow": "ati", "english": "too; excessively; very", "type": "intensifier", "notes": ""}, {"drow": "avara", "english": "future; coming", "type": "adjective / noun", "notes": ""}, {"drow": "aves", "english": "those; that which", "type": "demonstrative", "notes": ""}, {"drow": "ayina", "english": "mirror", "type": "noun", "notes": ""}, {"drow": "azidaraya", "english": "embrace; serpent-hold", "type": "noun", "notes": ""}, {"drow": "bakshes", "english": "forgiveness; pardon", "type": "noun", "notes": ""}, {"drow": "bala", "english": "child; little one", "type": "noun / endearment", "notes": ""}, {"drow": "Bala-zaban", "english": "childish speech; petty childish insults", "type": "compound", "notes": ""}, {"drow": "band", "english": "bound; bond", "type": "noun / adjective", "notes": ""}, {"drow": "Band-Javitar", "english": "bonded husband", "type": "title / endearment", "notes": ""}, {"drow": "bas", "english": "contextual limiter / emphasis", "type": "particle", "notes": "Appears in a negative 'not letting you leave' construction."}, {"drow": "Bauxes", "english": "mourn; grieve; sorrow", "type": "verb / root", "notes": "Related to bauxes-haxa 'whimper'."}, {"drow": "bauxes-haxa", "english": "whimper", "type": "noun", "notes": ""}, {"drow": "bauxes-kara", "english": "mourn; grieve", "type": "verb", "notes": ""}, {"drow": "Baxcen", "english": "sorry; apology", "type": "interjection / noun", "notes": ""}, {"drow": "baz", "english": "open", "type": "adjective / verb", "notes": ""}, {"drow": "be-lazzat", "english": "pleasure", "type": "noun", "notes": "Older pleasure term; lassetas is also used."}, {"drow": "behtar", "english": "better", "type": "adjective", "notes": ""}, {"drow": "bhas-kapa", "english": "blastcap", "type": "noun", "notes": ""}, {"drow": "bhasma", "english": "ash", "type": "noun", "notes": ""}, {"drow": "bhava", "english": "become", "type": "verb", "notes": ""}, {"drow": "bhavatu", "english": "may it be; let it be", "type": "modal / imperative", "notes": ""}, {"drow": "bhram", "english": "lapse; error; momentary failing", "type": "noun", "notes": ""}, {"drow": "caxra", "english": "leave; go away; run away", "type": "verb", "notes": ""}, {"drow": "cet", "english": "else; otherwise", "type": "particle", "notes": "Used in 'Na cet?' = 'Or else?'"}, {"drow": "chashm", "english": "eye; gaze", "type": "noun", "notes": ""}, {"drow": "chashm-kur", "english": "blind-eyed; oblivious", "type": "insult", "notes": ""}, {"drow": "chatham", "english": "that / demonstrative construction", "type": "demonstrative", "notes": "Context-dependent."}, {"drow": "chikitsa", "english": "medical treatment; healing care", "type": "noun", "notes": ""}, {"drow": "cumbana", "english": "kiss", "type": "noun / verb", "notes": ""}, {"drow": "da-", "english": "of; belonging to; from; because of; relational", "type": "grammar prefix", "notes": "Broad genitive/relational prefix, e.g. da-tumu."}, {"drow": "da-adam", "english": "of me; from me", "type": "relational form", "notes": ""}, {"drow": "da-Deva", "english": "of God; of the gods; divine", "type": "relational form", "notes": ""}, {"drow": "da-nagar", "english": "of the town", "type": "relational form", "notes": ""}, {"drow": "da-tumu", "english": "of you; yours; to you; from you", "type": "relational form", "notes": ""}, {"drow": "da-Vilasa", "english": "of Decadence; of indulgence", "type": "relational form", "notes": ""}, {"drow": "da-vise", "english": "of him; his", "type": "relational form", "notes": ""}, {"drow": "dah", "english": "burn", "type": "verb", "notes": ""}, {"drow": "Dani", "english": "Dani", "type": "proper noun", "notes": ""}, {"drow": "dant", "english": "tooth; teeth", "type": "noun", "notes": ""}, {"drow": "Dant-rast", "english": "true teeth; someone who backs up their threats", "type": "slang / idiom", "notes": ""}, {"drow": "dar", "english": "belonging; possession; realm / relation", "type": "relational word", "notes": "Used in possession and 'belongs to' constructions."}, {"drow": "dar-adam", "english": "mine", "type": "possessive expression", "notes": ""}, {"drow": "daraz", "english": "truly; really", "type": "adverb", "notes": ""}, {"drow": "darbar", "english": "role; office; station", "type": "noun", "notes": ""}, {"drow": "dars", "english": "see; look", "type": "verb", "notes": ""}, {"drow": "darsam", "english": "bold; audacious", "type": "adjective", "notes": ""}, {"drow": "dasa", "english": "slave; servant", "type": "noun", "notes": ""}, {"drow": "dasa-karm", "english": "slave labor", "type": "compound", "notes": ""}, {"drow": "dast-band", "english": "closed hand; miser", "type": "insult / compound", "notes": ""}, {"drow": "dast-khali", "english": "empty-handed; useless; good-for-nothing", "type": "insult", "notes": ""}, {"drow": "der", "english": "late", "type": "adjective / adverb", "notes": ""}, {"drow": "Deva", "english": "god; divinity", "type": "noun / title", "notes": ""}, {"drow": "Deva da-Vilasa", "english": "God of Decadence", "type": "title", "notes": ""}, {"drow": "Devexa", "english": "Delectant", "type": "title", "notes": ""}, {"drow": "dhanya", "english": "gratitude; thanks; appreciation", "type": "noun", "notes": ""}, {"drow": "dhar", "english": "holder; bearer; keeper", "type": "noun / suffix", "notes": ""}, {"drow": "digar-jay", "english": "elsewhere; another place", "type": "adverb / noun", "notes": ""}, {"drow": "dil-khasta", "english": "heart-tired; emotionally exhausted", "type": "compound", "notes": ""}, {"drow": "dina", "english": "day; days", "type": "noun", "notes": ""}, {"drow": "dosten", "english": "ally-related element", "type": "noun / adjective", "notes": "Part of a phrase meaning 'you plural are allies.'"}, {"drow": "draugov", "english": "lie; deceive", "type": "verb", "notes": ""}, {"drow": "drav", "english": "melt; become liquid", "type": "verb", "notes": ""}, {"drow": "durbal", "english": "weak", "type": "adjective", "notes": ""}, {"drow": "Dvandva", "english": "Dvandva", "type": "proper noun / group title", "notes": ""}, {"drow": "Dvar", "english": "Dwarf; Dwarves", "type": "noun", "notes": ""}, {"drow": "Dvar-zaban", "english": "Dwarven speech", "type": "compound", "notes": ""}, {"drow": "eh", "english": "eh; hey; interjection", "type": "interjection", "notes": ""}, {"drow": "ena", "english": "now; right now; already; by now", "type": "adverb", "notes": "Context-dependent working use."}, {"drow": "etha", "english": "this; it", "type": "demonstrative", "notes": ""}, {"drow": "garbha", "english": "pregnant", "type": "adjective", "notes": ""}, {"drow": "garruer", "english": "awaken; rouse; stir", "type": "verb", "notes": ""}, {"drow": "gautes", "english": "hear", "type": "verb", "notes": ""}, {"drow": "gautex", "english": "hear; be heard", "type": "verb / form", "notes": "Used in an older sentence; exact inflection uncertain."}, {"drow": "Georgia", "english": "Georgia", "type": "proper noun", "notes": ""}, {"drow": "ghar", "english": "home; house", "type": "noun", "notes": ""}, {"drow": "ghausa", "english": "sound; noise", "type": "noun", "notes": ""}, {"drow": "gir", "english": "take; seize", "type": "verb", "notes": ""}, {"drow": "grahan", "english": "accept; acceptance; receive", "type": "verb / noun", "notes": ""}, {"drow": "guha-patana", "english": "cave-in", "type": "noun", "notes": ""}, {"drow": "harit", "english": "green", "type": "adjective", "notes": ""}, {"drow": "Harit-kesha", "english": "green-hair; green-haired one", "type": "nickname / compound", "notes": ""}, {"drow": "hatta", "english": "even; at least", "type": "adverb", "notes": ""}, {"drow": "havarkama", "english": "lips", "type": "noun", "notes": ""}, {"drow": "haxa", "english": "sound; utterance; spoken words; voice", "type": "noun / root", "notes": "Productive sound/utterance root."}, {"drow": "haxarkama", "english": "context-dependent sensory/taste term", "type": "unresolved word", "notes": "Seen in an older phrase about tasting/experiencing everything together."}, {"drow": "hm-vai", "english": "mm-hm", "type": "interjection", "notes": ""}, {"drow": "iccha", "english": "want; desire; would like", "type": "verb", "notes": ""}, {"drow": "idias", "english": "if", "type": "conjunction", "notes": ""}, {"drow": "intezar", "english": "wait; waiting", "type": "verb / noun", "notes": ""}, {"drow": "jara", "english": "old age", "type": "noun", "notes": ""}, {"drow": "Javita", "english": "marriage", "type": "noun", "notes": "Used alone as a startled/questioning 'Marriage?'"}, {"drow": "javitamar", "english": "wife; consort", "type": "noun / title", "notes": ""}, {"drow": "Javitaran", "english": "husband", "type": "noun / title", "notes": "Masculine counterpart used for javitamar."}, {"drow": "jiva", "english": "alive; living", "type": "adjective", "notes": ""}, {"drow": "juvni", "english": "beloved", "type": "noun / adjective", "notes": "Seen in tama-juvni."}, {"drow": "ka-khet", "english": "who / comparative question construction", "type": "question expression", "notes": "Context-dependent."}, {"drow": "kala", "english": "wish / feel / modal element", "type": "grammar form", "notes": "Context-dependent."}, {"drow": "kama", "english": "desire; want", "type": "verb", "notes": ""}, {"drow": "kama-yhanam", "english": "gladly given; freely offered", "type": "phrase", "notes": ""}, {"drow": "kara", "english": "do; make; cause", "type": "verb", "notes": ""}, {"drow": "karm", "english": "labor; work", "type": "noun", "notes": ""}, {"drow": "kasma", "english": "why", "type": "question word", "notes": ""}, {"drow": "katham", "english": "how", "type": "question word", "notes": ""}, {"drow": "kavalam", "english": "from; apart; away from", "type": "relational word", "notes": "Used in a dissent/quarrel construction."}, {"drow": "ker", "english": "heart-related element", "type": "noun / root", "notes": "Appears in 'Offer your heart to me.'"}, {"drow": "kesha", "english": "hair", "type": "noun", "notes": ""}, {"drow": "khab", "english": "sleep", "type": "noun / verb", "notes": ""}, {"drow": "khad", "english": "eat; devour", "type": "verb", "notes": ""}, {"drow": "khar", "english": "biter; biting", "type": "noun / adjective", "notes": ""}, {"drow": "khasa-khasa", "english": "squabble; petty bickering", "type": "verb / noun", "notes": ""}, {"drow": "khasta", "english": "tired", "type": "adjective", "notes": ""}, {"drow": "khela", "english": "play", "type": "verb / noun", "notes": ""}, {"drow": "khun-kam", "english": "thin-blooded; coward", "type": "insult", "notes": ""}, {"drow": "khush", "english": "fun; enjoyable", "type": "adjective / noun", "notes": ""}, {"drow": "kim", "english": "what", "type": "question word", "notes": ""}, {"drow": "komal", "english": "frail; delicate", "type": "adjective", "notes": ""}, {"drow": "kripa", "english": "please", "type": "politeness marker", "notes": ""}, {"drow": "lamasa", "english": "touch; strike; lay hands on", "type": "verb", "notes": ""}, {"drow": "lassesukha", "english": "affections; sex; intimate favor", "type": "noun", "notes": "Appears in adam-lassesukha."}, {"drow": "lassetas", "english": "pleasure", "type": "noun", "notes": ""}, {"drow": "laxcarces", "english": "concubine", "type": "noun", "notes": ""}, {"drow": "lobha", "english": "greed; greedy", "type": "noun / adjective", "notes": ""}, {"drow": "Lobha-Paxain", "english": "Greedy Beast", "type": "insult / epithet", "notes": ""}, {"drow": "lruys", "english": "scream", "type": "verb / noun", "notes": ""}, {"drow": "madhya", "english": "middle; center", "type": "noun / adjective", "notes": ""}, {"drow": "maghz", "english": "brain", "type": "noun", "notes": ""}, {"drow": "maghz-e", "english": "brain of; possessive brain construction", "type": "compound / relational form", "notes": "Seen in a prior idiom about someone's brain arriving late."}, {"drow": "maitre", "english": "to me / relational element", "type": "relational form", "notes": "Appears in 'Offer your heart to me.'"}, {"drow": "malik", "english": "master", "type": "title", "notes": ""}, {"drow": "mara", "english": "our people; folk", "type": "noun", "notes": ""}, {"drow": "masal", "english": "seasoned; spiced", "type": "adjective", "notes": ""}, {"drow": "mibini", "english": "see", "type": "verb", "notes": ""}, {"drow": "mitava", "english": "make; cause; bring about", "type": "verb", "notes": "Seen in a teasing sentence meaning 'You can't even make me orgasm?'"}, {"drow": "Mo'Nique", "english": "Mo'Nique", "type": "proper noun", "notes": ""}, {"drow": "mubarak", "english": "congratulations; blessings", "type": "interjection", "notes": ""}, {"drow": "mukh-khara", "english": "sour face; pout", "type": "noun / insult", "notes": ""}, {"drow": "mund", "english": "world", "type": "noun", "notes": ""}, {"drow": "murakh", "english": "idiot; fool", "type": "insult", "notes": ""}, {"drow": "na", "english": "no; not", "type": "negative", "notes": ""}, {"drow": "na-dar", "english": "have none; be without", "type": "construction", "notes": ""}, {"drow": "na-dil", "english": "heartless", "type": "adjective", "notes": ""}, {"drow": "nagar", "english": "town", "type": "noun", "notes": ""}, {"drow": "nai", "english": "new", "type": "adjective", "notes": "Supported by nai-xun = new blood."}, {"drow": "nai-ba", "english": "beautiful; shining; radiant", "type": "adjective / compound", "notes": ""}, {"drow": "nai-xun", "english": "new blood", "type": "compound", "notes": ""}, {"drow": "naqab", "english": "mask; veil", "type": "noun", "notes": ""}, {"drow": "Narakan-paras", "english": "chosen; selected", "type": "title / adjective", "notes": ""}, {"drow": "nidhara", "english": "set down; put down; lower", "type": "verb", "notes": ""}, {"drow": "nimu", "english": "lemon", "type": "noun", "notes": "Useful root from Nimu-Thanatrutana."}, {"drow": "Nimu-Thanatrutana", "english": "Lemon-Deathsaviour", "type": "epithet / compound", "notes": ""}, {"drow": "nirnay", "english": "decision; judgment", "type": "noun", "notes": ""}, {"drow": "niyata", "english": "destined; intended; meant to be", "type": "adjective", "notes": ""}, {"drow": "nyaya", "english": "law; judgment; justice; verdict", "type": "noun", "notes": ""}, {"drow": "Nyaya-dhar", "english": "Bearer of Law; Keeper of the Law", "type": "title / nickname", "notes": ""}, {"drow": "O'zendaixu", "english": "Land of the sun", "type": "place / title phrase", "notes": ""}, {"drow": "oftadi", "english": "fall", "type": "verb", "notes": ""}, {"drow": "pada", "english": "leg; legs", "type": "noun", "notes": ""}, {"drow": "pairadyxes", "english": "garden", "type": "noun", "notes": "Useful root from a larger endearment compound."}, {"drow": "par", "english": "then; so", "type": "conjunction / adverb", "notes": ""}, {"drow": "parasa", "english": "spread; open apart", "type": "verb", "notes": ""}, {"drow": "paravaita", "english": "begone; go away", "type": "imperative", "notes": ""}, {"drow": "parun", "english": "how many", "type": "question phrase", "notes": ""}, {"drow": "parvah", "english": "care; concern", "type": "noun / verb", "notes": ""}, {"drow": "pashchatap", "english": "regret; remorse", "type": "noun / verb", "notes": ""}, {"drow": "Paxain", "english": "Horned Beast", "type": "title / noun", "notes": ""}, {"drow": "pichha", "english": "back; rear; behind", "type": "noun / relational word", "notes": ""}, {"drow": "pixrit", "english": "love", "type": "verb", "notes": ""}, {"drow": "preta", "english": "ghost; restless spirit", "type": "noun", "notes": ""}, {"drow": "prixist", "english": "love", "type": "verb", "notes": "Older love form; pixrit is also used."}, {"drow": "puja", "english": "worship; adore", "type": "verb", "notes": ""}, {"drow": "punar", "english": "again", "type": "adverb", "notes": ""}, {"drow": "pur", "english": "full", "type": "adjective", "notes": ""}, {"drow": "Purohit", "english": "priest", "type": "noun / title", "notes": ""}, {"drow": "puxa", "english": "child; children", "type": "noun", "notes": ""}, {"drow": "puxa-dar", "english": "child-bearing; pregnant", "type": "adjective", "notes": ""}, {"drow": "puxa-kara", "english": "make a child; try for a baby", "type": "verb / compound", "notes": ""}, {"drow": "puxayazi", "english": "context-dependent word", "type": "unresolved word", "notes": "Seen in an older Drowspeech example."}, {"drow": "qarib", "english": "close; near", "type": "adjective / adverb", "notes": ""}, {"drow": "qarz", "english": "debt; obligation owed", "type": "noun", "notes": ""}, {"drow": "rah", "english": "path; way", "type": "noun", "notes": ""}, {"drow": "Raja-xun", "english": "royal blood; noble blood", "type": "compound", "notes": ""}, {"drow": "rajan", "english": "king", "type": "noun / title", "notes": ""}, {"drow": "rajata", "english": "silver", "type": "noun / adjective", "notes": ""}, {"drow": "raksha", "english": "protection; guarding", "type": "noun", "notes": ""}, {"drow": "rakta", "english": "red; crimson", "type": "adjective", "notes": ""}, {"drow": "rasani", "english": "orgasm; climax", "type": "noun / verb", "notes": ""}, {"drow": "rasid", "english": "arrived", "type": "verb", "notes": ""}, {"drow": "rassa", "english": "leash; tether", "type": "noun", "notes": ""}, {"drow": "rast", "english": "yes", "type": "interjection", "notes": ""}, {"drow": "Ravael", "english": "Ravael", "type": "proper noun", "notes": ""}, {"drow": "Ravas", "english": "Gift", "type": "noun / title", "notes": ""}, {"drow": "Rax-darsam", "english": "badass; fierce one; audacious beast", "type": "slang / epithet", "notes": ""}, {"drow": "Raxuin", "english": "Raxuin", "type": "proper noun / house name", "notes": ""}, {"drow": "Raxuir", "english": "Beast", "type": "noun / title", "notes": ""}, {"drow": "razi", "english": "agree; assent; consent", "type": "verb", "notes": ""}, {"drow": "rhodah", "english": "flower", "type": "noun", "notes": "Useful root from a larger endearment compound."}, {"drow": "rukh-sust", "english": "weak-souled; spineless", "type": "insult", "notes": ""}, {"drow": "rupa", "english": "appearance; form", "type": "noun", "notes": ""}, {"drow": "sa", "english": "bound to; joined by bond", "type": "onomastic particle", "notes": "Working surname particle."}, {"drow": "sada", "english": "always; constantly", "type": "adverb", "notes": ""}, {"drow": "sah", "english": "bear; endure", "type": "verb", "notes": ""}, {"drow": "saha", "english": "with", "type": "preposition", "notes": ""}, {"drow": "sahal", "english": "easily; without difficulty", "type": "adverb", "notes": ""}, {"drow": "sahay", "english": "help; aid; assist", "type": "verb", "notes": ""}, {"drow": "sahodar", "english": "sibling", "type": "noun", "notes": ""}, {"drow": "sahra", "english": "companion", "type": "noun", "notes": ""}, {"drow": "samay", "english": "time", "type": "noun", "notes": ""}, {"drow": "samyak", "english": "properly; correctly; rightly", "type": "adverb", "notes": ""}, {"drow": "sarva", "english": "all", "type": "adjective / pronoun", "notes": ""}, {"drow": "saugavcse", "english": "fortunate; lucky", "type": "adjective", "notes": ""}, {"drow": "sava", "english": "manage oneself; take care of oneself", "type": "verb", "notes": ""}, {"drow": "savadhan", "english": "attention; alertness; heed; attend", "type": "interjection / imperative", "notes": "Useful as a sharp command: 'Attention.'"}, {"drow": "Selkie", "english": "Selkie", "type": "proper noun", "notes": ""}, {"drow": "Sensate", "english": "Sensate", "type": "proper noun / order or sect", "notes": ""}, {"drow": "shakta", "english": "strong; able; capable", "type": "adjective", "notes": "Can express strength or capability."}, {"drow": "Shakta-Raxuir", "english": "strong beast; powerhouse; formidable person", "type": "slang / compound", "notes": ""}, {"drow": "sham", "english": "evening", "type": "noun", "notes": ""}, {"drow": "shapa", "english": "curse", "type": "verb / noun", "notes": ""}, {"drow": "sharam", "english": "shame; embarrassment", "type": "noun", "notes": ""}, {"drow": "shava-murakh", "english": "ridiculous man; foolish man", "type": "insult", "notes": ""}, {"drow": "Sheriff", "english": "Sheriff", "type": "title / loanword", "notes": ""}, {"drow": "shesh", "english": "remainder; what remains", "type": "noun / adjective", "notes": ""}, {"drow": "shikasta", "english": "broken; cracked", "type": "adjective", "notes": ""}, {"drow": "shse", "english": "context-dependent particle / word", "type": "unresolved word", "notes": "Seen in an older shared-experience/tasting phrase."}, {"drow": "shuddha", "english": "refined; polished", "type": "adjective", "notes": ""}, {"drow": "shunya", "english": "emptiness; void; absence", "type": "noun", "notes": ""}, {"drow": "shvan", "english": "dog", "type": "noun / insult", "notes": ""}, {"drow": "shvas", "english": "breathe", "type": "verb", "notes": ""}, {"drow": "sikar", "english": "poison", "type": "noun", "notes": ""}, {"drow": "sir-na", "english": "never-full; insatiable", "type": "insult / adjective", "notes": ""}, {"drow": "siv-gautar", "english": "eavesdropper; hidden listener", "type": "noun", "notes": ""}, {"drow": "Sivri", "english": "Sivri", "type": "proper noun", "notes": ""}, {"drow": "siyat", "english": "quiet", "type": "adjective", "notes": ""}, {"drow": "smara", "english": "memory", "type": "noun", "notes": ""}, {"drow": "spasparabarr", "english": "sensation; sensory experience; physical/sensual experience", "type": "noun", "notes": "Useful sense from context."}, {"drow": "sun", "english": "soon", "type": "adverb", "notes": ""}, {"drow": "sun-thanatei", "english": "soon-to-be; shortly becoming", "type": "compound", "notes": ""}, {"drow": "sundara", "english": "beautiful", "type": "adjective", "notes": ""}, {"drow": "svamin", "english": "lord; master; sir", "type": "title", "notes": ""}, {"drow": "Svamin Nyaya", "english": "Sir Law; Lord Law", "type": "title / nickname", "notes": ""}, {"drow": "tacharvith", "english": "Great House", "type": "title / social term", "notes": ""}, {"drow": "tama", "english": "sweet; dear; affectionate", "type": "modifier", "notes": ""}, {"drow": "tama-Javitaran", "english": "dear husband", "type": "endearment", "notes": ""}, {"drow": "tama-juvni", "english": "sweet beloved; dear beloved", "type": "endearment", "notes": ""}, {"drow": "tama-sahra", "english": "dear companion", "type": "endearment", "notes": ""}, {"drow": "tama-sundar", "english": "cute; adorably pretty", "type": "adjective / endearment", "notes": ""}, {"drow": "tama-zusla", "english": "sweet beloved", "type": "endearment", "notes": ""}, {"drow": "tama-zusta", "english": "sweet beloved", "type": "endearment", "notes": "Variant spelling seen in an older phrase."}, {"drow": "tamati", "english": "sweetest; very sweet", "type": "modifier", "notes": "Extracted from a larger endearment compound."}, {"drow": "tamati-rhodah-adam-pairadyxes", "english": "sweetest flower of my garden", "type": "endearment / compound", "notes": ""}, {"drow": "tar", "english": "more than; beyond", "type": "comparative element", "notes": "Seen in 'I love you more than anything in this world.'"}, {"drow": "Tarakavur", "english": "insolent; rebellious", "type": "adjective", "notes": "Seen in an older child/girl insult."}, {"drow": "tarsarqta", "english": "obedience; submission", "type": "noun", "notes": ""}, {"drow": "tasyah", "english": "emphasis / assertion element", "type": "grammar form", "notes": "Seen in an older 'you are very strong' sentence."}, {"drow": "tathapi", "english": "anyway; nevertheless", "type": "adverb", "notes": ""}, {"drow": "Tche", "english": "interjection / particle", "type": "interjection", "notes": "Exact force depends on context."}, {"drow": "thanata", "english": "death; dead; die", "type": "noun / verb", "notes": "Used in a phrase about having already died."}, {"drow": "thanatei", "english": "will; future marker", "type": "grammar particle", "notes": ""}, {"drow": "thanatra", "english": "die; dying; approaching death", "type": "verb", "notes": ""}, {"drow": "Thanatrutana", "english": "Deathsaviour", "type": "title / compound", "notes": "Death-related title element."}, {"drow": "tuma", "english": "you (variant form)", "type": "pronoun", "notes": "Variant seen in an older sentence."}, {"drow": "tumu", "english": "you (singular)", "type": "pronoun", "notes": ""}, {"drow": "tumys", "english": "you (plural)", "type": "pronoun", "notes": ""}, {"drow": "tuvah", "english": "with you / together with you", "type": "relational form", "notes": "Seen in an older shared-experience passage."}, {"drow": "tyaj", "english": "discard; cast away", "type": "verb", "notes": ""}, {"drow": "Ucca", "english": "high; exalted", "type": "adjective", "notes": ""}, {"drow": "Ucca-xun", "english": "Highblood; Highborn elf", "type": "ethnonym / compound", "notes": ""}, {"drow": "ushna", "english": "heat; oppressive warmth", "type": "noun", "notes": ""}, {"drow": "uta", "english": "and", "type": "conjunction", "notes": ""}, {"drow": "va", "english": "and; but", "type": "conjunction", "notes": ""}, {"drow": "vaddress", "english": "fight", "type": "verb", "notes": ""}, {"drow": "vai", "english": "not; no; do not; negative/prohibitive marker", "type": "grammar particle", "notes": "Meaning depends on construction."}, {"drow": "vai-adhik", "english": "no more; not more", "type": "negative compound", "notes": ""}, {"drow": "vai-anusiya", "english": "do not quarrel; do not dissent; prohibition against discord", "type": "construction", "notes": ""}, {"drow": "vai-haxa", "english": "silence; silence someone; no-sound", "type": "noun / verb", "notes": ""}, {"drow": "vai-prixist", "english": "does not love", "type": "negative verb form", "notes": "Older love-root construction."}, {"drow": "vai-tama", "english": "not sweet; bitter; unsweet", "type": "negative compound", "notes": ""}, {"drow": "vai-vespa", "english": "only wish; wish only", "type": "construction", "notes": ""}, {"drow": "vai-xsna", "english": "stranger; not-known person", "type": "noun", "notes": ""}, {"drow": "vaiye-anausiya", "english": "bring/cause toward an outcome", "type": "verb / construction", "notes": "Exact nuance depends on context."}, {"drow": "vak-sundar", "english": "eloquent; beautiful in speech", "type": "adjective", "notes": ""}, {"drow": "vakhra", "english": "need; must; ought; should", "type": "modal", "notes": ""}, {"drow": "vasa", "english": "enough; stop", "type": "interjection / adjective", "notes": ""}, {"drow": "vash-het", "english": "dance", "type": "verb / phrase", "notes": "Appears in 'Let us dance.'"}, {"drow": "vastra-utara", "english": "strip; take off one's clothes", "type": "verb", "notes": ""}, {"drow": "vazra", "english": "very; intensely; loudly", "type": "intensifier", "notes": ""}, {"drow": "Vazra-darsam", "english": "very bold; fiercely audacious; badass; impressive", "type": "slang / adjective", "notes": ""}, {"drow": "vazra-haxa", "english": "scream", "type": "noun / verb", "notes": ""}, {"drow": "vazra-rakta", "english": "deep red; intense red", "type": "adjective", "notes": ""}, {"drow": "ve", "english": "joined to; joined into; bound into by union", "type": "onomastic / marital particle", "notes": "Working surname particle for a house entered or formed through marriage."}, {"drow": "vedana", "english": "pain; agony", "type": "noun", "notes": ""}, {"drow": "vekh", "english": "damn; shit", "type": "swear / interjection", "notes": ""}, {"drow": "vexna", "english": "let; allow; permit", "type": "verb", "notes": ""}, {"drow": "vhama", "english": "think; believe", "type": "verb", "notes": ""}, {"drow": "vikalpa", "english": "option; choice", "type": "noun", "notes": ""}, {"drow": "Vilasa", "english": "decadence; luxury; indulgence", "type": "noun", "notes": ""}, {"drow": "viraha", "english": "miss; long for someone absent", "type": "verb / noun", "notes": ""}, {"drow": "vise", "english": "he; him", "type": "pronoun", "notes": ""}, {"drow": "vismara", "english": "forget", "type": "verb", "notes": ""}, {"drow": "vuktem", "english": "taste / experience-related term", "type": "verb / noun", "notes": "Exact standalone sense remains context-dependent."}, {"drow": "xa", "english": "oh; hm", "type": "interjection", "notes": ""}, {"drow": "xai", "english": "amused scoff", "type": "interjection", "notes": ""}, {"drow": "Xamarjivan", "english": "Lifetaker", "type": "title / noun", "notes": ""}, {"drow": "xamarjivre", "english": "kill; take life", "type": "verb", "notes": ""}, {"drow": "xana", "english": "soul; essential self", "type": "noun", "notes": ""}, {"drow": "xanathes", "english": "past / prior-state marker", "type": "grammar form", "notes": "Used in working past-tense constructions."}, {"drow": "xar-vedana", "english": "extreme agony", "type": "noun", "notes": ""}, {"drow": "xara", "english": "wander off", "type": "verb", "notes": ""}, {"drow": "xauStyr", "english": "my favorite; favorite beloved", "type": "endearment", "notes": "Used in a lover context."}, {"drow": "xce", "english": "is; are; relational / clausal / question linker", "type": "grammar particle", "notes": "Flexible particle; do not force to one English word."}, {"drow": "xce-mara", "english": "disgrace of the people", "type": "insult", "notes": ""}, {"drow": "xcexcam", "english": "context-dependent word", "type": "unresolved word", "notes": "Seen in an older Drowspeech example."}, {"drow": "xcexce", "english": "and; clause linker", "type": "grammar particle", "notes": ""}, {"drow": "Xcsadam", "english": "we; us", "type": "pronoun", "notes": ""}, {"drow": "xcsadam-vikalpa", "english": "our options; our choices", "type": "compound", "notes": ""}, {"drow": "xe", "english": "one of; counted among", "type": "onomastic / relational particle", "notes": "Working surname or clan-membership particle."}, {"drow": "xera", "english": "good; well-behaved", "type": "adjective", "notes": ""}, {"drow": "xha", "english": "fuck", "type": "swear / verb", "notes": ""}, {"drow": "xha-khela", "english": "fuck-play; sex", "type": "compound / vulgar", "notes": ""}, {"drow": "xhantraj", "english": "context-dependent word", "type": "unresolved word", "notes": "Seen in an older Drowspeech example."}, {"drow": "xrou", "english": "person; people; Drow/Xrou", "type": "noun", "notes": "Used as the ethnonym Xrou and as a person/people root."}, {"drow": "xrou-mund", "english": "everyone; all people", "type": "compound", "notes": "Older collective construction."}, {"drow": "xrou-puxa", "english": "Drow boy; Xrou boy", "type": "compound", "notes": ""}, {"drow": "xrou-zaban", "english": "native Drow tongue; Xrou speech", "type": "compound", "notes": ""}, {"drow": "xsfava", "english": "rage; wrath", "type": "noun", "notes": ""}, {"drow": "Xsfava-xun", "english": "rage-blooded; fierce; intimidating", "type": "slang / compound", "notes": ""}, {"drow": "xun", "english": "blood", "type": "noun", "notes": ""}, {"drow": "xun-band", "english": "blood-clutcher; miser", "type": "insult", "notes": ""}, {"drow": "xun-caxra", "english": "bleed out; blood-leave", "type": "verb", "notes": ""}, {"drow": "Xun-Javitar", "english": "blood-bound husband", "type": "title / endearment", "notes": ""}, {"drow": "xun-rakta", "english": "blood-red; crimson", "type": "adjective", "notes": ""}, {"drow": "xvar", "english": "drink", "type": "verb", "notes": ""}, {"drow": "xypremanah", "english": "know; learn", "type": "verb", "notes": ""}, {"drow": "yadau", "english": "when", "type": "conjunction", "notes": ""}, {"drow": "yatha", "english": "like; as; as though", "type": "conjunction / relational word", "notes": ""}, {"drow": "Yauvye", "english": "future / again-related construction", "type": "grammar form", "notes": "Context-dependent."}, {"drow": "yek", "english": "one; only", "type": "number / adjective", "notes": ""}, {"drow": "yhana", "english": "share; give; offer", "type": "verb", "notes": "Seen in a prior line translated as 'Shared with you.'"}, {"drow": "yhanam", "english": "offer; give", "type": "verb", "notes": "Related to anayhana."}, {"drow": "zaban", "english": "tongue; speech; language", "type": "noun", "notes": ""}, {"drow": "zaban-khar", "english": "sharp-tongued", "type": "adjective", "notes": ""}, {"drow": "zu", "english": "the (title linker)", "type": "grammar particle", "notes": "Used between a name and title."}];
+
+function norm(s) {
+  return (s || '').toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+}
+function esc(s) {
+  return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+function splitEnglishAliases(s) {
+  return String(s).split(/\s*;\s*|\s+\/\s+/).map(x=>norm(x)).filter(Boolean);
+}
+function words(s) {
+  return (String(s).match(/[A-Za-zÀ-ÖØ-öø-ÿ0-9'’\-]+/g) || []);
+}
+
+const drowMap = new Map();
+const engMap = new Map();
+for (const item of LEXICON) {
+  const dk = norm(item.drow);
+  if (!drowMap.has(dk)) drowMap.set(dk, []);
+  drowMap.get(dk).push(item);
+
+  for (const alias of splitEnglishAliases(item.english)) {
+    if (!engMap.has(alias)) engMap.set(alias, []);
+    engMap.get(alias).push(item);
+  }
+}
+
+function phraseCandidates(map) {
+  return [...map.keys()]
+    .map(k=>({key:k, toks:words(k).map(norm)}))
+    .filter(x=>x.toks.length)
+    .sort((a,b)=>b.toks.length-a.toks.length || b.key.length-a.key.length);
+}
+const engPhrases = phraseCandidates(engMap);
+const drowPhrases = phraseCandidates(drowMap);
+
+function translateLiteral(text, from) {
+  const rawTokens = words(text);
+  if (!rawTokens.length) return {text:'—', matches:[], unknown:0};
+  const toks = rawTokens.map(norm);
+  const map = from === 'en' ? engMap : drowMap;
+  const candidates = from === 'en' ? engPhrases : drowPhrases;
+  const out = [];
+  const matches = [];
+  let unknown = 0;
+  let i = 0;
+
+  while (i < toks.length) {
+    let hit = null;
+    for (const c of candidates) {
+      if (c.toks.length > toks.length - i) continue;
+      let ok = true;
+      for (let j=0;j<c.toks.length;j++) {
+        if (toks[i+j] !== c.toks[j]) { ok=false; break; }
+      }
+      if (ok) { hit=c; break; }
+    }
+
+    if (hit) {
+      const items = map.get(hit.key) || [];
+      const chosen = items[0];
+      if (from === 'en') {
+        out.push(chosen.drow);
+        matches.push(`${rawTokens.slice(i,i+hit.toks.length).join(' ')} → ${chosen.drow}`);
+      } else {
+        const english = (chosen.english || '').split(';')[0].trim();
+        out.push(english || chosen.english);
+        matches.push(`${rawTokens.slice(i,i+hit.toks.length).join(' ')} → ${english || chosen.english}`);
+      }
+      i += hit.toks.length;
+    } else {
+      out.push(`⟦${rawTokens[i]}⟧`);
+      unknown++;
+      i++;
+    }
+  }
+  return {text:out.join(' '), matches, unknown};
+}
+
+const sourceLang = document.getElementById('sourceLang');
+const targetLang = document.getElementById('targetLang');
+const sourceText = document.getElementById('sourceText');
+const translation = document.getElementById('translation');
+const translationDetails = document.getElementById('translationDetails');
+
+function enforceDirection(changed) {
+  if (sourceLang.value === targetLang.value) {
+    if (changed === 'source') targetLang.value = sourceLang.value === 'en' ? 'xrou' : 'en';
+    else sourceLang.value = targetLang.value === 'en' ? 'xrou' : 'en';
+  }
+}
+sourceLang.addEventListener('change',()=>enforceDirection('source'));
+targetLang.addEventListener('change',()=>enforceDirection('target'));
+
+document.getElementById('swapBtn').addEventListener('click',()=>{
+  const a=sourceLang.value; sourceLang.value=targetLang.value; targetLang.value=a;
+  const current=translation.textContent;
+  if (current && current !== '—') sourceText.value=current.replace(/⟦|⟧/g,'');
+  doTranslate();
+});
+
+function doTranslate() {
+  const txt=sourceText.value.trim();
+  if (!txt) {
+    translation.textContent='—';
+    translationDetails.innerHTML='';
+    return;
+  }
+  const result=translateLiteral(txt,sourceLang.value);
+  translation.innerHTML = esc(result.text).replace(/⟦([^⟧]+)⟧/g,'<span class="unknown">⟦$1⟧</span>');
+  const detail = [];
+  detail.push(`<span class="chip">${result.matches.length} matched segment${result.matches.length===1?'':'s'}</span>`);
+  if (result.unknown) detail.push(`<span class="chip">${result.unknown} unknown word${result.unknown===1?'':'s'}</span>`);
+  result.matches.slice(0,12).forEach(m=>detail.push(`<span class="chip">${esc(m)}</span>`));
+  translationDetails.innerHTML=detail.join('');
+}
+document.getElementById('translateBtn').addEventListener('click',doTranslate);
+sourceText.addEventListener('keydown',e=>{
+  if ((e.ctrlKey||e.metaKey) && e.key==='Enter') doTranslate();
+});
+document.getElementById('clearTranslate').addEventListener('click',()=>{
+  sourceText.value=''; translation.textContent='—'; translationDetails.innerHTML=''; sourceText.focus();
+});
+document.getElementById('copyTranslation').addEventListener('click',async()=>{
+  const value=translation.textContent;
+  if (!value || value==='—') return;
+  try { await navigator.clipboard.writeText(value); } catch { window.prompt('Copy this:',value); }
+});
+
+// Dictionary
+const search=document.getElementById('search');
+const typeFilter=document.getElementById('typeFilter');
+const results=document.getElementById('results');
+const count=document.getElementById('count');
+
+function renderDictionary() {
+  const q=norm(search.value);
+  const type=typeFilter.value;
+  const filtered=LEXICON.filter(item=>{
+    if (type && item.type!==type) return false;
+    if (!q) return true;
+    return norm(item.drow).includes(q)||norm(item.english).includes(q)||norm(item.type).includes(q)||norm(item.notes).includes(q);
+  });
+  count.textContent=`${filtered.length} of ${LEXICON.length} entries`;
+  if (!filtered.length) {
+    results.innerHTML='<div class="empty">No matches found.</div>';
+    return;
+  }
+  results.innerHTML=filtered.map(item=>`
+    <article class="card">
+      <div class="cardTop">
+        <div class="word">${esc(item.drow)}</div>
+        ${item.type?`<div class="badge">${esc(item.type)}</div>`:''}
+      </div>
+      <div class="eng">${esc(item.english)}</div>
+      ${item.notes?`<div class="notes">${esc(item.notes)}</div>`:''}
+      <div class="actions"><button data-copy="${encodeURIComponent(item.drow)}">Copy</button></div>
+    </article>`).join('');
+  document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
+    const v=decodeURIComponent(btn.dataset.copy);
+    try { await navigator.clipboard.writeText(v); btn.textContent='Copied!'; setTimeout(()=>btn.textContent='Copy',800); }
+    catch { window.prompt('Copy this:',v); }
+  }));
+}
+search.addEventListener('input',renderDictionary);
+typeFilter.addEventListener('change',renderDictionary);
+document.getElementById('clearSearch').addEventListener('click',()=>{search.value='';typeFilter.value='';renderDictionary();search.focus();});
+
+// Tabs
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(btn.dataset.tab).classList.add('active');
+}));
+
+renderDictionary();
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  navigator.serviceWorker.register('./sw.js').catch(()=>{});
+}
+</script>
+</body>
+</html>
