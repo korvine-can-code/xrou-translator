@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v15 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v17 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();

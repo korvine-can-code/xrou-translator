@@ -139,6 +139,51 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
 .moreRow {display:flex;justify-content:center;margin-top:16px}
 #phraseResults .empty,#patternResults .empty {grid-column:1/-1}
 @media(max-width:760px) {.phraseControls {grid-template-columns:1fr;} .phraseGrid {grid-template-columns:1fr;} .tabs {width:100%;flex-wrap:wrap;justify-content:center;}}
+
+/* Version 18: saved phrases, browser history, clickable Xrou words, and themes. */
+.controls {grid-template-columns:minmax(0,1fr) minmax(145px,195px) minmax(160px,210px) auto;}
+.wordButton,.inlineGloss {display:inline; padding:0; margin:0; min-height:0; background:transparent; border:0; border-radius:2px; color:inherit; font:inherit; font-weight:inherit; cursor:pointer; text-align:left;}
+.wordButton:hover,.inlineGloss:hover {text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;background:transparent;}
+.inlineGloss {border-bottom:1px dotted rgba(255,255,255,.42);}
+.wordButton:focus-visible,.inlineGloss:focus-visible {outline:2px solid white;outline-offset:3px;}
+.starButton[aria-pressed="true"] {background:#e6e6e6;color:#111;border-color:white;}
+.starButton {font-size:.86rem;white-space:normal;}
+.savedGrid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px;}
+.savedHeading {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.savedHeading h2 {font-family:Georgia,serif;font-size:clamp(1.35rem,4vw,1.7rem);margin:0 0 5px;}
+.historyHeading {border-top:1px solid rgba(255,255,255,.18);padding-top:24px;margin-top:28px;}
+.miniCount {border:1px solid rgba(255,255,255,.19);background:#171717;color:#dedede;border-radius:999px;padding:7px 11px;font-size:.82rem;}
+.mutedSmall {font-size:.87rem;color:#bebebe;line-height:1.5;margin:0;}
+.savedCard {background:rgba(20,20,20,.95);border:1px solid rgba(255,255,255,.15);border-radius:15px;padding:15px;min-width:0;overflow-wrap:anywhere;}
+.savedTitle {font-family:Georgia,serif;font-size:1.19rem;font-weight:700;margin:5px 0;line-height:1.42;overflow-wrap:anywhere;}
+.savedSub {color:#d8d8d8;font-size:.88rem;line-height:1.45;white-space:pre-wrap;}
+.savedTag {font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:#bdbdbd;}
+.savedCard .actions button {min-height:33px;font-size:.81rem;}
+.subtleDanger {font-size:.85rem;}
+.privacyLine {margin-top:18px;}
+.wordDialog {max-width:min(520px,calc(100% - 24px));width:100%;max-height:min(88vh,850px);overflow:auto;background:#111;color:white;border:1px solid #777;border-radius:20px;padding:22px;box-shadow:0 25px 95px rgba(0,0,0,.7);}
+.wordDialog::backdrop {background:rgba(0,0,0,.76);backdrop-filter:blur(4px);}
+.wordDialog h2 {font-family:Georgia,serif;font-size:clamp(1.5rem,5vw,2rem);line-height:1.2;margin:8px 0 10px;overflow-wrap:anywhere;}
+.dialogTop {display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.dialogEyebrow {text-align:left;}
+.dialogClose {border-radius:50%;width:39px;min-height:39px;padding:0;flex-shrink:0;}
+.definitionEnglish {font-size:1.07rem;line-height:1.5;color:#f1f1f1;margin-bottom:6px;}
+.wordBreakdown {border-top:1px solid rgba(255,255,255,.2);margin:16px 0 4px;padding-top:14px;}
+.wordBreakdown h3 {font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:#cfcfcf;margin:0 0 11px;}
+.breakdownRow {display:flex;justify-content:space-between;gap:16px;align-items:start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.09);}
+.breakdownRow .mutedSmall {text-align:right;}
+@media (max-width:900px) {.controls {grid-template-columns:repeat(2,minmax(0,1fr));} .controls #search {grid-column:1/-1;}}
+@media (max-width:760px) {.savedGrid {grid-template-columns:1fr;} .controls {grid-template-columns:1fr;} .controls #search {grid-column:auto;} .savedHeading {align-items:flex-start;} .hero {padding:20px 12px 14px;}}
+
+/* Version 19 — synonyms are opt-in and distinct from spelling corrections. */
+.suggestionRow { align-items:flex-start; display:flex; flex-direction:column; gap:6px; padding:12px 0; border-top:1px solid rgba(255,255,255,.12); }
+.synonymSection { display:flex; flex-direction:column; align-items:flex-start; gap:6px; width:100%; }
+.synonymLabel { color:var(--muted); font-size:.78rem; line-height:1.45; }
+.synonymChoices { display:flex; flex-wrap:wrap; gap:6px; }
+.synonymChoice { background:#e3e3e3; color:#141414; border:1px solid rgba(255,255,255,.5); }
+.synonymChoice:hover { background:#fff; color:#101010; }
+.dictionarySynonymHints { grid-column:1/-1; padding:15px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:rgba(17,17,17,.93); border:1px solid rgba(255,255,255,.14); border-radius:14px; }
+.dictionarySynonymHints .synonymLabel { width:100%; }
 </style>
 </head>
 <body>
@@ -153,6 +198,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
       <button class="tab" data-tab="dictionary">Dictionary</button>
       <button class="tab" data-tab="phrasebook">Phrasebook</button>
       <button class="tab" data-tab="patterns">Sentence patterns</button>
+      <button class="tab" data-tab="saved">Saved &amp; History</button>
 
     </div>
   </div>
@@ -188,6 +234,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
         <button id="translateBtn" class="primary">Translate now</button>
         <button id="clearTranslate">Clear</button>
         <button id="copyTranslation">Copy result</button>
+        <button id="saveTranslation" type="button" aria-pressed="false" title="Save this translation to favorites">☆ Save translation</button>
       </div>
 <div class="output">
         <div class="outputTitle">Translation</div>
@@ -203,8 +250,11 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
     <div class="box">
       <div class="controls">
         <input id="search" type="search" placeholder="Search English or Xrou-Haxa…">
-        <select id="typeFilter">
+        <select id="typeFilter" aria-label="Filter by word type">
           <option value="">All types</option>
+        </select>
+        <select id="themeFilter" aria-label="Filter by vocabulary category">
+          <option value="">All themes</option>
         </select>
         <button id="clearSearch">Clear</button>
       </div>
@@ -213,6 +263,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
         <div>Search works in both directions.</div>
       </div>
       <div id="results" class="grid"></div>
+      <div class="moreRow"><button id="dictionaryMore" type="button" hidden>Show more words</button></div>
     </div>
   </section>
 
@@ -243,7 +294,38 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
     </div>
   </section>
 
+  <section id="saved" class="panel">
+    <div class="box">
+      <div class="savedHeading">
+        <div>
+          <h2>Favorites</h2>
+          <p class="mutedSmall">Star words, phrases, and translations to find them here later.</p>
+        </div>
+        <span id="favoritesCount" class="miniCount">0 saved</span>
+      </div>
+      <div id="favoritesResults" class="savedGrid"><div class="empty">No favorites yet. Star a word or phrase to save it.</div></div>
+      <div class="savedHeading historyHeading">
+        <div>
+          <h2>Recent translations</h2>
+          <p class="mutedSmall">The last 40 completed translations on this device. Live typing is saved after you pause.</p>
+        </div>
+        <button id="clearHistory" type="button" class="subtleDanger">Clear history</button>
+      </div>
+      <div id="historyResults" class="savedGrid"><div class="empty">Your recent translations will appear here.</div></div>
+      <p class="mutedSmall privacyLine">Favorites and history stay in this browser's local storage. They aren't uploaded or synchronized across devices.</p>
+    </div>
+  </section>
+
 </main>
+
+<dialog id="wordDialog" class="wordDialog" aria-labelledby="wordDialogTitle">
+  <div class="dialogTop"><span class="eyebrow dialogEyebrow">Xrou word details</span><button id="wordDialogClose" type="button" class="dialogClose" aria-label="Close word details">✕</button></div>
+  <h2 id="wordDialogTitle">Word</h2>
+  <div id="wordDialogEnglish" class="definitionEnglish"></div>
+  <div id="wordDialogType" class="mutedSmall"></div>
+  <div id="wordBreakdown" class="wordBreakdown"></div>
+  <div class="actions"><button id="wordDialogFavorite" type="button">☆ Save word</button><button id="wordDialogCopy" type="button">Copy Xrou</button><button id="wordDialogTry" type="button" class="primary">Try in translator</button></div>
+</dialog>
 
 <footer class="wrap">
   <div class="footerBox">Xrou-Haxa is a developing language. The translator favors established dictionary and phrasebook entries, with grammar assistance for everyday speech.</div>

@@ -1,9 +1,25 @@
-Dvandva Xrou-Haxa Translator — Version 16
+Dvandva Xrou-Haxa Translator — Version 19 (Synonym Suggestions)
 
-Changes in this update:
-- The main title banner now uses the user-provided illustrated cave background image.
-- Added anatomy and body-part vocabulary, including visible features, internal organs, bones, fluids, and sensory terms.
-- Existing translation engine, phrasebook, patterns, and Dvandva styling are preserved.
+New functionality:
+- For English words that are unknown to the translator, offers synonyms that
+  ALREADY have entries in the lexicon, along with their existing Xrou forms.
+- Suggestions never auto-replace words. Click a suggestion to replace only the
+  unrecognized word in your input and translate again.
+- Similar-spelling suggestions are kept separate so they are not mistaken for synonyms.
+- Empty dictionary searches also display available alternatives when found.
+- A bundled, editable synonyms.json file provides the meaning-based relationships.
+- When a word has no available synonyms, the translator continues to mark it unknown.
 
-GitHub Pages: Extract the ZIP and upload all files (including the assets folder) to your repository.
-Keep your existing CNAME file in the repository so your custom domain remains connected.
+Scope: Synonym suggestions currently target English input. Unknown Xrou words
+still receive similar-spelling suggestions; invented Xrou synonyms are not guessed.
+This is a curated, offline list, not a comprehensive semantic dictionary; choose
+alternatives carefully because synonyms can vary in tone or nuance.
+
+Everything from V18 is preserved, including:
+- All dictionary entries, phrasebook items, sentence patterns and grammar engine.
+- Favorites, translation history, clickable definitions, dictionary themes.
+- Dvandva crest, title art and cave background, and monochrome design.
+
+Installation: Extract this ZIP and upload files to your GitHub Pages repository,
+including synonyms.json. Commit and reload after publishing. Keep your existing
+CNAME file for your custom domain; this ZIP intentionally does not contain CNAME.

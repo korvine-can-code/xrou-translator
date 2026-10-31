@@ -350,6 +350,11 @@
     "type": "adjective"
   },
   {
+    "drow": "adbhuta-bhava",
+    "english": "awe; wonder; amazement",
+    "type": "noun"
+  },
+  {
     "drow": "adhara",
     "english": "lip; lips",
     "type": "noun"
@@ -480,6 +485,41 @@
     "type": "noun"
   },
   {
+    "drow": "agni-angan",
+    "english": "fireplace surround; hearth area",
+    "type": "noun"
+  },
+  {
+    "drow": "agni-bujha",
+    "english": "extinguish fire; put out a fire",
+    "type": "verb"
+  },
+  {
+    "drow": "agni-dhua",
+    "english": "smoke; hearth smoke",
+    "type": "noun"
+  },
+  {
+    "drow": "agni-garam",
+    "english": "heat up; make hot by fire",
+    "type": "verb"
+  },
+  {
+    "drow": "agni-jala",
+    "english": "light a fire; ignite firewood",
+    "type": "verb"
+  },
+  {
+    "drow": "agni-lakdi",
+    "english": "firewood; fuel wood",
+    "type": "noun"
+  },
+  {
+    "drow": "agni-rakh",
+    "english": "ashes; cinders; hearth ash",
+    "type": "noun"
+  },
+  {
     "drow": "agni-sthala",
     "english": "stove; cooking hearth",
     "type": "noun"
@@ -605,6 +645,11 @@
     "type": "adjective"
   },
   {
+    "drow": "akela-bhava",
+    "english": "isolation; feeling isolated",
+    "type": "noun"
+  },
+  {
     "drow": "akela-pan",
     "english": "solitude; being alone",
     "type": "noun"
@@ -657,6 +702,21 @@
   {
     "drow": "almari",
     "english": "cabinet",
+    "type": "noun"
+  },
+  {
+    "drow": "almari-kapda",
+    "english": "wardrobe; clothing cabinet",
+    "type": "noun"
+  },
+  {
+    "drow": "almari-kona",
+    "english": "cabinet compartment; storage compartment",
+    "type": "noun"
+  },
+  {
+    "drow": "almari-takhta",
+    "english": "bookcase; bookshelf",
     "type": "noun"
   },
   {
@@ -758,6 +818,16 @@
     "drow": "anek",
     "english": "several",
     "type": "adjective"
+  },
+  {
+    "drow": "ang-jhanjhan",
+    "english": "tingling; pins and needles",
+    "type": "noun"
+  },
+  {
+    "drow": "ang-manda",
+    "english": "numbness; numb",
+    "type": "noun / adjective"
   },
   {
     "drow": "anga",
@@ -975,6 +1045,11 @@
     "type": "compound"
   },
   {
+    "drow": "anya-dukh",
+    "english": "sympathy; sorrow for another",
+    "type": "noun"
+  },
+  {
     "drow": "anya-koi",
     "english": "anyone else",
     "type": "pronoun"
@@ -988,6 +1063,11 @@
     "drow": "anya-shabda",
     "english": "in other words",
     "type": "discourse connector"
+  },
+  {
+    "drow": "anya-vedana-bodha",
+    "english": "empathy; understanding another's pain",
+    "type": "noun"
   },
   {
     "drow": "anyatra",
@@ -1008,6 +1088,11 @@
     "drow": "apaman-kara",
     "english": "insult; offend",
     "type": "verb"
+  },
+  {
+    "drow": "apamana-bhava",
+    "english": "feeling insulted; offended",
+    "type": "adjective"
   },
   {
     "drow": "aparahna",
@@ -1077,6 +1162,11 @@
   {
     "drow": "ara",
     "english": "saw",
+    "type": "noun"
+  },
+  {
+    "drow": "ara-lakdi",
+    "english": "wood saw; carpentry saw",
     "type": "noun"
   },
   {
@@ -1225,6 +1315,21 @@
     "type": "noun"
   },
   {
+    "drow": "asan-gadda",
+    "english": "cushion; seat cushion",
+    "type": "noun"
+  },
+  {
+    "drow": "asan-lamba",
+    "english": "bench; long seat",
+    "type": "noun"
+  },
+  {
+    "drow": "asan-nicha",
+    "english": "stool; low seat",
+    "type": "noun"
+  },
+  {
     "drow": "asatya",
     "english": "false; untrue",
     "type": "adjective"
@@ -1240,8 +1345,18 @@
     "type": "verb / noun"
   },
   {
+    "drow": "asha-bhara",
+    "english": "hopeful; full of hope",
+    "type": "adjective"
+  },
+  {
     "drow": "asha-kiran",
     "english": "optimism; glimmer of hope",
+    "type": "noun"
+  },
+  {
+    "drow": "asha-nava",
+    "english": "renewed hope; fresh hope",
     "type": "noun"
   },
   {
@@ -1293,6 +1408,21 @@
     "drow": "asthi",
     "english": "bone",
     "type": "noun"
+  },
+  {
+    "drow": "asthi-bandh",
+    "english": "splint; bone brace",
+    "type": "noun"
+  },
+  {
+    "drow": "asthi-bhanga",
+    "english": "bone fracture; fractured bone",
+    "type": "noun"
+  },
+  {
+    "drow": "asthi-jora",
+    "english": "set a broken bone; bone setting",
+    "type": "verb"
   },
   {
     "drow": "asthi-majja",
@@ -1375,6 +1505,36 @@
     "type": "noun"
   },
   {
+    "drow": "atma-daya",
+    "english": "self-compassion; kindness to oneself",
+    "type": "noun"
+  },
+  {
+    "drow": "atma-dosha",
+    "english": "guilt; feeling at fault",
+    "type": "noun"
+  },
+  {
+    "drow": "atma-dvesha",
+    "english": "self-hatred; self-loathing",
+    "type": "noun"
+  },
+  {
+    "drow": "atma-samman",
+    "english": "self-respect; dignity",
+    "type": "noun"
+  },
+  {
+    "drow": "atma-sandeh",
+    "english": "self-doubt; uncertainty about oneself",
+    "type": "noun"
+  },
+  {
+    "drow": "atma-sharam",
+    "english": "embarrassment about oneself; self-consciousness",
+    "type": "noun"
+  },
+  {
     "drow": "atmavishvasi",
     "english": "confident",
     "type": "adjective"
@@ -1397,6 +1557,21 @@
   {
     "drow": "aushadhi",
     "english": "medicine; remedy",
+    "type": "noun"
+  },
+  {
+    "drow": "aushadhi-matra",
+    "english": "dose; dosage",
+    "type": "noun"
+  },
+  {
+    "drow": "aushadhi-pana",
+    "english": "take medicine; drink medicine",
+    "type": "verb"
+  },
+  {
+    "drow": "aushadhi-vidhi",
+    "english": "prescription; treatment instructions",
     "type": "noun"
   },
   {
@@ -1468,6 +1643,11 @@
     "drow": "ayina",
     "english": "mirror",
     "type": "noun"
+  },
+  {
+    "drow": "ayina-safa",
+    "english": "clean a mirror; polish a mirror",
+    "type": "verb"
   },
   {
     "drow": "ayudh",
@@ -1780,6 +1960,16 @@
     "type": "noun"
   },
   {
+    "drow": "balti-jal",
+    "english": "bucket of water; water bucket",
+    "type": "noun"
+  },
+  {
+    "drow": "balti-safa",
+    "english": "wash bucket; cleaning pail",
+    "type": "noun"
+  },
+  {
     "drow": "banav",
     "english": "build; construct",
     "type": "verb"
@@ -2005,6 +2195,11 @@
     "type": "noun"
   },
   {
+    "drow": "beshuddha",
+    "english": "unconscious; unconsciousness",
+    "type": "adjective / noun"
+  },
+  {
     "drow": "bevakuf",
     "english": "foolish; idiotic; stupid",
     "type": "adjective / insult"
@@ -2200,6 +2395,26 @@
     "type": "noun"
   },
   {
+    "drow": "bhaya-bhara",
+    "english": "terrified; frightened greatly",
+    "type": "adjective"
+  },
+  {
+    "drow": "bhaya-jita",
+    "english": "overcome fear; master fear",
+    "type": "verb"
+  },
+  {
+    "drow": "bhaya-sanka",
+    "english": "dread; fearful anticipation",
+    "type": "noun"
+  },
+  {
+    "drow": "bhaya-shanka",
+    "english": "apprehension; worried anticipation",
+    "type": "noun"
+  },
+  {
     "drow": "bhaybhit",
     "english": "afraid; frightened",
     "type": "adjective"
@@ -2242,6 +2457,21 @@
   {
     "drow": "bhitti",
     "english": "wall",
+    "type": "noun"
+  },
+  {
+    "drow": "bhitti-nishan",
+    "english": "mark on a wall; wall marking",
+    "type": "noun"
+  },
+  {
+    "drow": "bhitti-rang",
+    "english": "wall paint; painted wall",
+    "type": "noun"
+  },
+  {
+    "drow": "bhitti-sajja",
+    "english": "wall decoration; wall hanging",
     "type": "noun"
   },
   {
@@ -2355,6 +2585,21 @@
     "type": "noun"
   },
   {
+    "drow": "bhumi-jhaadu",
+    "english": "sweep the floor; sweep floors",
+    "type": "verb"
+  },
+  {
+    "drow": "bhumi-kalin",
+    "english": "floor covering; carpet",
+    "type": "noun"
+  },
+  {
+    "drow": "bhumi-pox",
+    "english": "mop a floor; wash the floor",
+    "type": "verb"
+  },
+  {
     "drow": "bhumi-tala",
     "english": "floor",
     "type": "noun"
@@ -2455,6 +2700,11 @@
     "type": "noun"
   },
   {
+    "drow": "botal-dhakkan",
+    "english": "bottle cap; bottle stopper; cork",
+    "type": "noun"
+  },
+  {
     "drow": "brush",
     "english": "brush",
     "type": "noun"
@@ -2487,6 +2737,21 @@
   {
     "drow": "bukhar",
     "english": "fever",
+    "type": "noun"
+  },
+  {
+    "drow": "bukhar-jank",
+    "english": "feverish; fever-stricken",
+    "type": "adjective"
+  },
+  {
+    "drow": "bukhar-kam",
+    "english": "lower a fever; reduce fever",
+    "type": "verb"
+  },
+  {
+    "drow": "bukhar-tivra",
+    "english": "high fever; severe fever",
     "type": "noun"
   },
   {
@@ -2710,6 +2975,16 @@
     "type": "verb"
   },
   {
+    "drow": "dah-gahra",
+    "english": "severe burn; deep burn",
+    "type": "noun"
+  },
+  {
+    "drow": "dah-halka",
+    "english": "mild burn; surface burn",
+    "type": "noun"
+  },
+  {
     "drow": "dahi",
     "english": "yogurt; fermented milk",
     "type": "noun"
@@ -2795,6 +3070,11 @@
     "type": "noun"
   },
   {
+    "drow": "daraj-kunji",
+    "english": "drawer key; drawer lock key",
+    "type": "noun"
+  },
+  {
     "drow": "daraz",
     "english": "truly; really",
     "type": "adverb"
@@ -2823,6 +3103,26 @@
     "drow": "darvaza",
     "english": "door; doorway",
     "type": "noun"
+  },
+  {
+    "drow": "darvaza-bandh",
+    "english": "shut a door; close a door",
+    "type": "verb"
+  },
+  {
+    "drow": "darvaza-khola",
+    "english": "open a door",
+    "type": "verb"
+  },
+  {
+    "drow": "darvaza-kunda",
+    "english": "door handle; door latch",
+    "type": "noun"
+  },
+  {
+    "drow": "darvaza-thok",
+    "english": "knock on a door; knock at the door",
+    "type": "verb"
   },
   {
     "drow": "darwaza",
@@ -2862,6 +3162,11 @@
   {
     "drow": "daya",
     "english": "mercy; compassion",
+    "type": "noun"
+  },
+  {
+    "drow": "daya-bhava",
+    "english": "compassion; empathetic concern",
     "type": "noun"
   },
   {
@@ -2930,6 +3235,11 @@
     "type": "noun"
   },
   {
+    "drow": "dhairya-bhar",
+    "english": "bravery; bold resolve",
+    "type": "noun"
+  },
+  {
     "drow": "dhakel",
     "english": "push; shove",
     "type": "verb"
@@ -2943,6 +3253,26 @@
     "drow": "dhal",
     "english": "shield; defensive board",
     "type": "noun"
+  },
+  {
+    "drow": "dhal-hasta",
+    "english": "shield grip; shield handle",
+    "type": "noun"
+  },
+  {
+    "drow": "dhal-kinara",
+    "english": "shield rim; shield edge",
+    "type": "noun"
+  },
+  {
+    "drow": "dhal-pith",
+    "english": "shield backing; back of shield",
+    "type": "noun"
+  },
+  {
+    "drow": "dhal-ukal",
+    "english": "raise a shield; lift shield",
+    "type": "verb"
   },
   {
     "drow": "dhamani",
@@ -3220,6 +3550,11 @@
     "type": "noun"
   },
   {
+    "drow": "dukh-aansu",
+    "english": "tears of sorrow; sad tears",
+    "type": "noun"
+  },
+  {
     "drow": "dukha",
     "english": "sadness; grief",
     "type": "noun"
@@ -3282,6 +3617,16 @@
   {
     "drow": "dvesha",
     "english": "hate; loathe",
+    "type": "verb"
+  },
+  {
+    "drow": "dvesha-gahra",
+    "english": "resentment; deep bitterness",
+    "type": "noun"
+  },
+  {
+    "drow": "dvesha-rok",
+    "english": "hold back hatred; restrain hatred",
     "type": "verb"
   },
   {
@@ -3495,6 +3840,11 @@
     "type": "noun"
   },
   {
+    "drow": "gala-dard",
+    "english": "sore throat; throat pain",
+    "type": "noun"
+  },
+  {
     "drow": "galat",
     "english": "wrong; incorrect",
     "type": "adjective"
@@ -3610,6 +3960,11 @@
     "type": "noun"
   },
   {
+    "drow": "garv-vinaya",
+    "english": "humble pride; quiet pride",
+    "type": "noun"
+  },
+  {
     "drow": "garva",
     "english": "pride",
     "type": "noun"
@@ -3695,14 +4050,139 @@
     "type": "place / compound"
   },
   {
+    "drow": "ghar-aangan",
+    "english": "patio; outdoor courtyard",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-andar",
+    "english": "interior; inside the home",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-aram",
+    "english": "sitting room; lounge",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-bahar",
+    "english": "porch; covered entry",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-bhandar",
+    "english": "pantry; food store",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-bhojan",
+    "english": "dining room; eating room",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-bikhar",
+    "english": "clutter; household mess",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-dar",
+    "english": "house entrance; doorway to a home",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-dehri",
+    "english": "threshold; doorstep",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-kabi",
+    "english": "house key; door key",
+    "type": "noun"
+  },
+  {
     "drow": "ghar-karya",
     "english": "chore",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-karyalaya",
+    "english": "home office; private workroom",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-khidki",
+    "english": "house window; windowpane",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-kiraya",
+    "english": "rent; house rent",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-malik",
+    "english": "landlord; owner of a house",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-marammat",
+    "english": "home repair; household maintenance",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-mehman",
+    "english": "houseguest; overnight guest",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-nike",
+    "english": "downstairs; lower floor",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-safa",
+    "english": "tidy the house; clean the home",
+    "type": "verb"
+  },
+  {
+    "drow": "ghar-sajavat",
+    "english": "decoration; ornamentation at home",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-sajja",
+    "english": "furnish a room; home decorating",
+    "type": "verb"
+  },
+  {
+    "drow": "ghar-samagri",
+    "english": "household supplies; household goods",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-tala",
+    "english": "door lock; house lock",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-upar",
+    "english": "upstairs; upper floor",
+    "type": "noun"
+  },
+  {
+    "drow": "ghar-vasi",
+    "english": "housemate; fellow resident",
     "type": "noun"
   },
   {
     "drow": "ghar-viraha",
     "english": "homesick",
     "type": "adjective"
+  },
+  {
+    "drow": "ghar-vyavastha",
+    "english": "housekeeping; keeping house",
+    "type": "noun"
   },
   {
     "drow": "ghas-maidan",
@@ -3742,6 +4222,41 @@
   {
     "drow": "ghav",
     "english": "wound; injury",
+    "type": "noun"
+  },
+  {
+    "drow": "ghav-bandh",
+    "english": "dress a wound; cover an injury",
+    "type": "verb"
+  },
+  {
+    "drow": "ghav-gahra",
+    "english": "deep wound; deep cut",
+    "type": "noun"
+  },
+  {
+    "drow": "ghav-kinh",
+    "english": "wound mark; injury mark",
+    "type": "noun"
+  },
+  {
+    "drow": "ghav-naya",
+    "english": "fresh wound; recent injury",
+    "type": "noun"
+  },
+  {
+    "drow": "ghav-purana",
+    "english": "old wound; old injury",
+    "type": "noun"
+  },
+  {
+    "drow": "ghav-safa",
+    "english": "clean a wound; wound cleaning",
+    "type": "verb"
+  },
+  {
+    "drow": "ghav-xota",
+    "english": "minor wound; shallow cut",
     "type": "noun"
   },
   {
@@ -3890,6 +4405,11 @@
     "type": "noun"
   },
   {
+    "drow": "gussa-phuta",
+    "english": "outburst of anger; angry outburst",
+    "type": "noun"
+  },
+  {
     "drow": "ha-ha",
     "english": "ha!; laughter",
     "type": "interjection"
@@ -3948,6 +4468,21 @@
     "drow": "hani",
     "english": "harm; injury",
     "type": "noun"
+  },
+  {
+    "drow": "hansi-bhava",
+    "english": "amusement; finding something funny",
+    "type": "noun"
+  },
+  {
+    "drow": "hansi-phuta",
+    "english": "burst out laughing; sudden laughter",
+    "type": "verb"
+  },
+  {
+    "drow": "hansi-rok",
+    "english": "hold back laughter; suppress a laugh",
+    "type": "verb"
   },
   {
     "drow": "hanu",
@@ -4030,6 +4565,11 @@
     "type": "noun"
   },
   {
+    "drow": "hathoda-kila",
+    "english": "hammer and nails; fastening tools",
+    "type": "noun"
+  },
+  {
     "drow": "hatta",
     "english": "even; at least",
     "type": "adverb"
@@ -4100,6 +4640,11 @@
     "type": "noun"
   },
   {
+    "drow": "himmat-jaga",
+    "english": "gather courage; muster courage",
+    "type": "verb"
+  },
+  {
     "drow": "himpaat",
     "english": "snowfall",
     "type": "noun"
@@ -4143,6 +4688,11 @@
     "drow": "hoh",
     "english": "whoa!; hold up!; exclamation of surprise",
     "type": "interjection"
+  },
+  {
+    "drow": "hosh-vapas",
+    "english": "regain consciousness; wake after fainting",
+    "type": "verb"
   },
   {
     "drow": "hridaya",
@@ -4242,6 +4792,11 @@
   {
     "drow": "irsha",
     "english": "jealousy; envy",
+    "type": "noun"
+  },
+  {
+    "drow": "irsha-jvala",
+    "english": "burning jealousy; intense envy",
     "type": "noun"
   },
   {
@@ -4550,6 +5105,21 @@
     "type": "noun"
   },
   {
+    "drow": "jhaadu-dhul",
+    "english": "dust; household dust",
+    "type": "noun"
+  },
+  {
+    "drow": "jhaadu-pan",
+    "english": "dustpan; rubbish pan",
+    "type": "noun"
+  },
+  {
+    "drow": "jhaadu-safai",
+    "english": "sweeping; house sweeping",
+    "type": "noun"
+  },
+  {
     "drow": "jhad",
     "english": "bush; shrub",
     "type": "noun"
@@ -4625,6 +5195,11 @@
     "type": "adjective"
   },
   {
+    "drow": "jiva-pariksha",
+    "english": "check vital signs; assess vitality",
+    "type": "verb"
+  },
+  {
     "drow": "jiva-sara",
     "english": "anima; life essence; vital essence",
     "type": "noun"
@@ -4642,6 +5217,36 @@
   {
     "drow": "juta",
     "english": "shoe; footwear",
+    "type": "noun"
+  },
+  {
+    "drow": "juta-dori",
+    "english": "shoelace; boot lace",
+    "type": "noun"
+  },
+  {
+    "drow": "juta-jor",
+    "english": "pair of shoes; footwear pair",
+    "type": "noun"
+  },
+  {
+    "drow": "juta-narma",
+    "english": "slipper; slippers",
+    "type": "noun"
+  },
+  {
+    "drow": "juta-sudhaara",
+    "english": "repair footwear; mend shoes",
+    "type": "verb"
+  },
+  {
+    "drow": "juta-tala",
+    "english": "shoe sole; boot sole",
+    "type": "noun"
+  },
+  {
+    "drow": "juta-uka",
+    "english": "boot; boots; high shoe",
     "type": "noun"
   },
   {
@@ -4800,8 +5405,18 @@
     "type": "noun"
   },
   {
+    "drow": "kagaz-jor",
+    "english": "stack of papers; paper pile",
+    "type": "noun"
+  },
+  {
     "drow": "kagaz-panna",
     "english": "sheet of paper; loose page",
+    "type": "noun"
+  },
+  {
+    "drow": "kagaz-patra",
+    "english": "parchment; writing sheet",
     "type": "noun"
   },
   {
@@ -4915,6 +5530,16 @@
     "type": "noun"
   },
   {
+    "drow": "kakra-bahar",
+    "english": "take out trash; remove rubbish",
+    "type": "verb"
+  },
+  {
+    "drow": "kakra-dabba",
+    "english": "trash bin; rubbish bin; wastebasket",
+    "type": "noun"
+  },
+  {
     "drow": "kaksha",
     "english": "class",
     "type": "noun"
@@ -4962,6 +5587,11 @@
   {
     "drow": "kalam-dani",
     "english": "pen holder; writing vessel",
+    "type": "noun"
+  },
+  {
+    "drow": "kalam-dhar",
+    "english": "penholder; quill holder",
     "type": "noun"
   },
   {
@@ -5080,6 +5710,11 @@
     "type": "adjective"
   },
   {
+    "drow": "kanc-patra",
+    "english": "glassware; glass vessel",
+    "type": "noun"
+  },
+  {
     "drow": "kandha",
     "english": "shoulder",
     "type": "noun"
@@ -5155,8 +5790,268 @@
     "type": "noun"
   },
   {
+    "drow": "kapda-antar",
+    "english": "undergarment; underclothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-bahana",
+    "english": "cloak; cloaks",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-bahi",
+    "english": "lining; garment lining",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-bahu",
+    "english": "sleeve; sleeves",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-baxa",
+    "english": "child's garment; children's clothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-bun",
+    "english": "weave fabric; weaving cloth",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-button",
+    "english": "button; clothing button",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-dori",
+    "english": "drawstring; clothing cord",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-gala",
+    "english": "scarf; scarves; neckcloth",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-gala-bandh",
+    "english": "collar; collar band",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-gant",
+    "english": "knot; fabric knot",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-ghagra",
+    "english": "skirt; skirts",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-ghar",
+    "english": "wardrobe; clothes cupboard",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-ghis",
+    "english": "worn-out clothing; frayed clothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-hath",
+    "english": "glove; gloves",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-jor",
+    "english": "patch; fabric patch",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-jora",
+    "english": "set of clothes; change of clothes",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kamda",
+    "english": "leather garment; leather clothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kamis",
+    "english": "shirt; shirts",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kinara",
+    "english": "hem; clothing hem",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-koga",
+    "english": "robe; robes",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kota",
+    "english": "coat; coats",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kunda",
+    "english": "buckle; clasp; fastener",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-kurta",
+    "english": "long shirt; kurta",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-lamba",
+    "english": "gown; long dress",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-matha",
+    "english": "hat; hats; head covering",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-moda",
+    "english": "fold clothes; fold laundry",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-mota",
+    "english": "heavy clothing; thick garment",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-mulya",
+    "english": "clothing price; cost of clothes",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-nap",
+    "english": "clothing size; garment measurement",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-naya",
+    "english": "new clothing; fresh clothes",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-nidra",
+    "english": "nightclothes; sleepwear",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-odhana",
+    "english": "mantle; shoulder cloak",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-oon",
+    "english": "wool; woolen fabric",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-pada",
+    "english": "sock; socks",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-pajama",
+    "english": "trousers; pants",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-patla",
+    "english": "thin clothing; light garment",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-phata",
+    "english": "torn clothing; ripped garment",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-poshak",
+    "english": "dress; dresses; outfit",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-purana",
+    "english": "old clothes; old clothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-raksha",
+    "english": "protective garment; protective clothing",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-rang",
+    "english": "dye fabric; color cloth",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-resham",
+    "english": "silken fabric; silk cloth",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-safa",
+    "english": "wash clothing; launder",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-san",
+    "english": "linen; linen cloth",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-sila",
+    "english": "tailor clothes; sew garments",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-sira",
+    "english": "hood; hooded covering",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-sudhara",
+    "english": "mend clothes; repair fabric",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-sukha",
+    "english": "dry clothing; hang clothes to dry",
+    "type": "verb"
+  },
+  {
+    "drow": "kapda-sutra",
+    "english": "yarn; textile thread",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-tanka",
+    "english": "seam; stitched seam",
+    "type": "noun"
+  },
+  {
     "drow": "kapda-tukda",
     "english": "rag",
+    "type": "noun"
+  },
+  {
+    "drow": "kapda-tunika",
+    "english": "tunic; tunics",
     "type": "noun"
   },
   {
@@ -5217,6 +6112,11 @@
   {
     "drow": "karna",
     "english": "ear; ears",
+    "type": "noun"
+  },
+  {
+    "drow": "karna-dard",
+    "english": "earache; ear pain",
     "type": "noun"
   },
   {
@@ -5420,6 +6320,126 @@
     "type": "noun"
   },
   {
+    "drow": "kavaka-bahu",
+    "english": "arm guard; vambrace",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-bandh",
+    "english": "armor strap; armor fastening",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-dhar",
+    "english": "wear armor; put on armor",
+    "type": "verb"
+  },
+  {
+    "drow": "kavaka-ghutna",
+    "english": "poleyn; knee armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-griva",
+    "english": "gorget; neck armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-gulpha",
+    "english": "sabatons; armored boots",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-hasta",
+    "english": "gauntlet; armored glove",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-jala",
+    "english": "chainmail; mail armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-jora",
+    "english": "armor set; suit of armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-kamda",
+    "english": "leather armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-kapda",
+    "english": "padded armor; gambeson",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-kat",
+    "english": "damaged armor; broken protection",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-pada",
+    "english": "greave; shin guard",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-patra",
+    "english": "plate armor; metal plates",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-safai",
+    "english": "armor maintenance; cleaning armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-shira",
+    "english": "helmet; helmets",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-skandha",
+    "english": "pauldron; shoulder armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-sroni",
+    "english": "cuirass skirt; hip armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-sudhaara",
+    "english": "repair armor; mend armor",
+    "type": "verb"
+  },
+  {
+    "drow": "kavaka-tanka",
+    "english": "armor rivet; metal rivet",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-uru",
+    "english": "cuisses; thigh armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-utaar",
+    "english": "remove armor; take off armor",
+    "type": "verb"
+  },
+  {
+    "drow": "kavaka-vaksha",
+    "english": "breastplate; chest armor",
+    "type": "noun"
+  },
+  {
+    "drow": "kavaka-wajan",
+    "english": "armor weight; weight of armor",
+    "type": "noun"
+  },
+  {
     "drow": "kavalam",
     "english": "from; apart; away from",
     "type": "relational word"
@@ -5590,6 +6610,16 @@
     "type": "noun"
   },
   {
+    "drow": "khansi-bhara",
+    "english": "wet cough; productive cough",
+    "type": "noun"
+  },
+  {
+    "drow": "khansi-sukha",
+    "english": "dry cough",
+    "type": "noun"
+  },
+  {
     "drow": "khar",
     "english": "biter; biting",
     "type": "noun / adjective"
@@ -5685,9 +6715,24 @@
     "type": "noun"
   },
   {
+    "drow": "khidki-kanc",
+    "english": "window glass; windowpane",
+    "type": "noun"
+  },
+  {
+    "drow": "khidki-parda",
+    "english": "window curtain; drape",
+    "type": "noun"
+  },
+  {
     "drow": "khij",
     "english": "irritation; impatience; annoyance",
     "type": "noun"
+  },
+  {
+    "drow": "khij-bhara",
+    "english": "annoyed; irritated; exasperated",
+    "type": "adjective"
   },
   {
     "drow": "khijita",
@@ -5797,6 +6842,11 @@
   {
     "drow": "khushi",
     "english": "happiness; delight",
+    "type": "noun"
+  },
+  {
+    "drow": "khushi-aansu",
+    "english": "happy tears; tears of joy",
     "type": "noun"
   },
   {
@@ -6080,6 +7130,11 @@
     "type": "adjective"
   },
   {
+    "drow": "komala-bhava",
+    "english": "tenderness; gentle feeling",
+    "type": "noun"
+  },
+  {
     "drow": "kori-xipe",
     "english": "secretly; on the sly",
     "type": "adverb"
@@ -6108,6 +7163,16 @@
     "drow": "kpva",
     "english": "cut; sever",
     "type": "verb"
+  },
+  {
+    "drow": "kpva-gahra",
+    "english": "deep incision; deep laceration",
+    "type": "noun"
+  },
+  {
+    "drow": "kpva-lakshana",
+    "english": "laceration; cut mark; cutting injury",
+    "type": "noun"
   },
   {
     "drow": "krama",
@@ -6157,6 +7222,11 @@
   {
     "drow": "krodha",
     "english": "anger",
+    "type": "noun"
+  },
+  {
+    "drow": "krodha-dhavani",
+    "english": "rage-filled cry; furious shout",
     "type": "noun"
   },
   {
@@ -6435,8 +7505,23 @@
     "type": "noun"
   },
   {
+    "drow": "lakdi-darvaza",
+    "english": "wooden door; timber door",
+    "type": "noun"
+  },
+  {
+    "drow": "lakdi-mej",
+    "english": "wooden table; timber table",
+    "type": "noun"
+  },
+  {
     "drow": "lakdi-peti",
     "english": "crate",
+    "type": "noun"
+  },
+  {
+    "drow": "lakdi-takhta",
+    "english": "wooden plank; wooden board",
     "type": "noun"
   },
   {
@@ -6613,6 +7698,11 @@
     "drow": "maafi-maango",
     "english": "apologize; ask forgiveness",
     "type": "imperative"
+  },
+  {
+    "drow": "maan-hani",
+    "english": "humiliation; loss of dignity",
+    "type": "noun"
   },
   {
     "drow": "maan-lo",
@@ -6810,6 +7900,51 @@
     "type": "noun"
   },
   {
+    "drow": "manas-ashanti",
+    "english": "inner turmoil; mental unrest",
+    "type": "noun"
+  },
+  {
+    "drow": "manas-bhara",
+    "english": "overwhelmed; emotionally overwhelmed",
+    "type": "adjective"
+  },
+  {
+    "drow": "manas-bhari",
+    "english": "heavyhearted; weighed down emotionally",
+    "type": "adjective"
+  },
+  {
+    "drow": "manas-chinta",
+    "english": "stress; mental strain",
+    "type": "noun"
+  },
+  {
+    "drow": "manas-halka",
+    "english": "lighthearted; carefree",
+    "type": "adjective"
+  },
+  {
+    "drow": "manas-kathor",
+    "english": "hardhearted; emotionally hardened",
+    "type": "adjective"
+  },
+  {
+    "drow": "manas-narma",
+    "english": "softhearted; gentlehearted",
+    "type": "adjective"
+  },
+  {
+    "drow": "manas-shanti",
+    "english": "serenity; peace of mind",
+    "type": "noun"
+  },
+  {
+    "drow": "manas-thaka",
+    "english": "emotionally exhausted; drained",
+    "type": "adjective"
+  },
+  {
     "drow": "mand",
     "english": "dim; dull",
     "type": "adjective"
@@ -6935,6 +8070,11 @@
     "type": "noun"
   },
   {
+    "drow": "marham-laga",
+    "english": "apply salve; apply ointment",
+    "type": "verb"
+  },
+  {
     "drow": "masa",
     "english": "month",
     "type": "noun"
@@ -6982,6 +8122,11 @@
   {
     "drow": "matka",
     "english": "pot; jar",
+    "type": "noun"
+  },
+  {
+    "drow": "matka-dhakkan",
+    "english": "jar lid; pot lid",
     "type": "noun"
   },
   {
@@ -7078,6 +8223,21 @@
     "drow": "mej",
     "english": "table; dining table",
     "type": "noun"
+  },
+  {
+    "drow": "mej-asan",
+    "english": "dining chair; table chair",
+    "type": "noun"
+  },
+  {
+    "drow": "mej-kapda",
+    "english": "tablecloth; table covering",
+    "type": "noun"
+  },
+  {
+    "drow": "mej-saf",
+    "english": "wipe the table; clean a table",
+    "type": "verb"
   },
   {
     "drow": "meja",
@@ -7455,6 +8615,11 @@
     "type": "noun"
   },
   {
+    "drow": "nabz-pariksha",
+    "english": "check pulse; check heartbeat",
+    "type": "verb"
+  },
+  {
     "drow": "nadi",
     "english": "river",
     "type": "noun"
@@ -7625,6 +8790,11 @@
     "type": "noun"
   },
   {
+    "drow": "nasa-bandh",
+    "english": "blocked nose; nasal congestion",
+    "type": "noun"
+  },
+  {
     "drow": "nasa-randhra",
     "english": "nostril; nostrils",
     "type": "noun"
@@ -7707,6 +8877,11 @@
   {
     "drow": "netra",
     "english": "eye; eyes",
+    "type": "noun"
+  },
+  {
+    "drow": "netra-dard",
+    "english": "eye pain; sore eyes",
     "type": "noun"
   },
   {
@@ -7857,6 +9032,16 @@
   {
     "drow": "nirasha",
     "english": "disappointment; despair",
+    "type": "noun"
+  },
+  {
+    "drow": "nirasha-bhara",
+    "english": "disappointed; disheartened",
+    "type": "adjective"
+  },
+  {
+    "drow": "nirasha-gahra",
+    "english": "deep despair; profound despair",
     "type": "noun"
   },
   {
@@ -8275,6 +9460,11 @@
     "type": "noun"
   },
   {
+    "drow": "pani-kami",
+    "english": "dehydration; lack of water",
+    "type": "noun"
+  },
+  {
     "drow": "panja",
     "english": "claw; claws",
     "type": "noun"
@@ -8337,6 +9527,16 @@
   {
     "drow": "parda",
     "english": "curtain; hanging fabric",
+    "type": "noun"
+  },
+  {
+    "drow": "parda-bandh",
+    "english": "tie back curtains; fasten drapes",
+    "type": "verb"
+  },
+  {
+    "drow": "parda-dori",
+    "english": "curtain cord; curtain tie",
     "type": "noun"
   },
   {
@@ -8600,6 +9800,16 @@
     "type": "noun"
   },
   {
+    "drow": "patti-kat",
+    "english": "gauze; medical gauze",
+    "type": "noun"
+  },
+  {
+    "drow": "patti-parivarta",
+    "english": "change a bandage; replace dressing",
+    "type": "verb"
+  },
+  {
     "drow": "paudha",
     "english": "plant; growing plant",
     "type": "noun"
@@ -8675,6 +9885,21 @@
     "type": "noun"
   },
   {
+    "drow": "peshi-aintha",
+    "english": "muscle cramp; spasm",
+    "type": "noun"
+  },
+  {
+    "drow": "peshi-dard",
+    "english": "muscle soreness",
+    "type": "noun"
+  },
+  {
+    "drow": "peshi-khink",
+    "english": "muscle strain; strained muscle",
+    "type": "noun"
+  },
+  {
     "drow": "pet-bhara",
     "english": "full after eating; satiated",
     "type": "adjective"
@@ -8682,6 +9907,11 @@
   {
     "drow": "peta",
     "english": "belly; gut; middle",
+    "type": "noun"
+  },
+  {
+    "drow": "peta-dard",
+    "english": "bellyache; stomachache; stomach pain",
     "type": "noun"
   },
   {
@@ -9085,6 +10315,21 @@
     "type": "adjective / noun"
   },
   {
+    "drow": "priya-garv",
+    "english": "admiration; respectful pride in another",
+    "type": "noun"
+  },
+  {
+    "drow": "priya-maan",
+    "english": "esteem; high regard",
+    "type": "noun"
+  },
+  {
+    "drow": "priya-smarana",
+    "english": "fond memory; cherished recollection",
+    "type": "noun"
+  },
+  {
     "drow": "priyatama",
     "english": "most beloved; dearest",
     "type": "noun / adjective"
@@ -9200,6 +10445,16 @@
     "type": "proper noun / magic"
   },
   {
+    "drow": "pustaka-mej",
+    "english": "writing desk; study desk",
+    "type": "noun"
+  },
+  {
+    "drow": "pustaka-stand",
+    "english": "bookstand; book holder",
+    "type": "noun"
+  },
+  {
     "drow": "pustaka-takhta",
     "english": "bookshelf",
     "type": "noun"
@@ -9282,6 +10537,11 @@
   {
     "drow": "raahat",
     "english": "relief; respite from worry",
+    "type": "noun"
+  },
+  {
+    "drow": "raahat-gahra",
+    "english": "profound relief; deep relief",
     "type": "noun"
   },
   {
@@ -9425,11 +10685,6 @@
     "type": "noun"
   },
   {
-    "drow": "rakt-srav",
-    "english": "bleeding; loss of blood",
-    "type": "noun"
-  },
-  {
     "drow": "rang",
     "english": "color; dye",
     "type": "noun"
@@ -9515,6 +10770,26 @@
     "type": "noun"
   },
   {
+    "drow": "rasoi-bartan",
+    "english": "utensil; kitchen utensil",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-bhanda",
+    "english": "cooking pot; stockpot",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-dabba",
+    "english": "food container; storage tin",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-dhara",
+    "english": "strainer; sieve; colander",
+    "type": "noun"
+  },
+  {
     "drow": "rasoi-ghar",
     "english": "kitchen; cooking room",
     "type": "noun"
@@ -9522,6 +10797,86 @@
   {
     "drow": "rasoi-jadi",
     "english": "herb culinary",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-kamka",
+    "english": "ladle; serving spoon",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-kata",
+    "english": "chopping board; cutting board",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-katora",
+    "english": "serving bowl; serving dish",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-katori",
+    "english": "small bowl; mixing bowl",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-kulha",
+    "english": "oven; baking oven",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-masal",
+    "english": "spice rack; spices container",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-mitti",
+    "english": "earthenware; clay dishes",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-namak",
+    "english": "salt cellar; salt container",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-pakana",
+    "english": "cook food; prepare a meal",
+    "type": "verb"
+  },
+  {
+    "drow": "rasoi-pakvana",
+    "english": "baked goods; baked food",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-patra",
+    "english": "cookware; cooking dishes",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-peya",
+    "english": "drinkware; cups and mugs",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-pis",
+    "english": "mortar and pestle; grinding tools",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-pisai",
+    "english": "food preparation; grinding food",
+    "type": "noun"
+  },
+  {
+    "drow": "rasoi-safai",
+    "english": "wash dishes; clean the kitchen",
+    "type": "verb"
+  },
+  {
+    "drow": "rasoi-xanna",
+    "english": "funnel; pouring funnel",
     "type": "noun"
   },
   {
@@ -9533,6 +10888,21 @@
     "drow": "rassi",
     "english": "rope",
     "type": "noun"
+  },
+  {
+    "drow": "rassi-bandh",
+    "english": "tie a rope; fasten with rope",
+    "type": "verb"
+  },
+  {
+    "drow": "rassi-gant",
+    "english": "rope knot; knot in rope",
+    "type": "noun"
+  },
+  {
+    "drow": "rassi-khola",
+    "english": "untie rope; loosen rope",
+    "type": "verb"
   },
   {
     "drow": "rast",
@@ -9705,6 +11075,56 @@
     "type": "noun"
   },
   {
+    "drow": "rog-gambhira",
+    "english": "serious illness; severe disease",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-karana",
+    "english": "cause of disease; cause of illness",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-lakshana",
+    "english": "symptom; symptoms",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-mukti",
+    "english": "recovery from illness; convalescence",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-nidana",
+    "english": "diagnosis; identification of illness",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-nivaran",
+    "english": "prevent illness; disease prevention",
+    "type": "verb"
+  },
+  {
+    "drow": "rog-pariksha",
+    "english": "medical examination; health examination",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-prasar",
+    "english": "disease spread; contagion",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-samanya",
+    "english": "mild illness",
+    "type": "noun"
+  },
+  {
+    "drow": "rog-sparsha",
+    "english": "contagious; infectious",
+    "type": "adjective"
+  },
+  {
     "drow": "rogashala",
     "english": "hospital",
     "type": "noun"
@@ -9845,6 +11265,21 @@
     "type": "noun"
   },
   {
+    "drow": "sabr-bhanga",
+    "english": "frustration; loss of patience",
+    "type": "noun"
+  },
+  {
+    "drow": "sabr-kshaya",
+    "english": "impatience building; dwindling patience",
+    "type": "noun"
+  },
+  {
+    "drow": "sabr-raksha",
+    "english": "keep patience; remain patient",
+    "type": "verb"
+  },
+  {
     "drow": "sabse",
     "english": "most; the most",
     "type": "modal / grammar"
@@ -9862,6 +11297,11 @@
   {
     "drow": "sabun",
     "english": "soap",
+    "type": "noun"
+  },
+  {
+    "drow": "sabun-dabba",
+    "english": "soap dish; soap container",
     "type": "noun"
   },
   {
@@ -10385,6 +11825,11 @@
     "type": "noun"
   },
   {
+    "drow": "sandeh-bhara",
+    "english": "suspicious; full of doubt",
+    "type": "adjective"
+  },
+  {
     "drow": "sandehi",
     "english": "suspicious; doubtful",
     "type": "adjective"
@@ -10412,6 +11857,16 @@
   {
     "drow": "sandhi",
     "english": "pact; treaty; formal agreement",
+    "type": "noun"
+  },
+  {
+    "drow": "sandhi-moda",
+    "english": "sprain; twisted joint",
+    "type": "noun"
+  },
+  {
+    "drow": "sandhi-moka",
+    "english": "dislocated joint; dislocation",
     "type": "noun"
   },
   {
@@ -10462,6 +11917,11 @@
   {
     "drow": "sankar",
     "english": "trouble; difficulty",
+    "type": "noun"
+  },
+  {
+    "drow": "sankat-sthiti",
+    "english": "critical condition; medical crisis",
     "type": "noun"
   },
   {
@@ -10675,6 +12135,11 @@
     "type": "noun"
   },
   {
+    "drow": "seedhi-pada",
+    "english": "stair; step of a staircase",
+    "type": "noun"
+  },
+  {
     "drow": "seema",
     "english": "border; boundary",
     "type": "noun"
@@ -10765,6 +12230,11 @@
     "type": "noun"
   },
   {
+    "drow": "shalya-vaidya",
+    "english": "surgeon; surgical healer",
+    "type": "noun"
+  },
+  {
     "drow": "sham",
     "english": "evening",
     "type": "noun"
@@ -10783,6 +12253,11 @@
     "drow": "shanti",
     "english": "peace; calm",
     "type": "noun"
+  },
+  {
+    "drow": "shanti-khoj",
+    "english": "seek peace; seek calm",
+    "type": "verb"
   },
   {
     "drow": "shanti-rakho",
@@ -10835,6 +12310,16 @@
     "type": "noun"
   },
   {
+    "drow": "sharam-bhara",
+    "english": "ashamed; deeply embarrassed",
+    "type": "adjective"
+  },
+  {
+    "drow": "sharam-mukti",
+    "english": "lose embarrassment; let go of shame",
+    "type": "verb"
+  },
+  {
     "drow": "sharbat",
     "english": "sweet drink; fruit cordial",
     "type": "noun"
@@ -10858,6 +12343,11 @@
     "drow": "shash",
     "english": "six",
     "type": "number"
+  },
+  {
+    "drow": "shastra-kriya",
+    "english": "surgery; surgical procedure",
+    "type": "noun"
   },
   {
     "drow": "shata",
@@ -10907,6 +12397,41 @@
   {
     "drow": "shayya",
     "english": "bed",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-dhara",
+    "english": "bedframe; bed frame",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-kadar",
+    "english": "bedsheet; bed sheet",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-kambal",
+    "english": "bed blanket; coverlet",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-odhan",
+    "english": "quilt; duvet; bedcover",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-par",
+    "english": "bedside; next to the bed",
+    "type": "noun"
+  },
+  {
+    "drow": "shayya-safa",
+    "english": "make the bed; straighten bedding",
+    "type": "verb"
+  },
+  {
+    "drow": "shayya-tala",
+    "english": "under the bed; bed underside",
     "type": "noun"
   },
   {
@@ -11090,6 +12615,16 @@
     "type": "adjective"
   },
   {
+    "drow": "shuddha-hosh",
+    "english": "conscious; alert; awake",
+    "type": "adjective"
+  },
+  {
+    "drow": "shuddha-patti",
+    "english": "sterile dressing; clean bandage",
+    "type": "noun"
+  },
+  {
     "drow": "shuddhi-kara",
     "english": "clean; purify",
     "type": "verb"
@@ -11130,6 +12665,26 @@
     "type": "verb"
   },
   {
+    "drow": "shvas-gahra",
+    "english": "deep breath; deep breathing",
+    "type": "noun"
+  },
+  {
+    "drow": "shvas-kathin",
+    "english": "shortness of breath; difficulty breathing",
+    "type": "noun"
+  },
+  {
+    "drow": "shvas-manda",
+    "english": "shallow breathing",
+    "type": "noun"
+  },
+  {
+    "drow": "shvas-rok",
+    "english": "hold one's breath; hold breath",
+    "type": "verb"
+  },
+  {
     "drow": "shvasa-patha",
     "english": "airway; windpipe; breathing passage",
     "type": "noun"
@@ -11142,6 +12697,11 @@
   {
     "drow": "sidhi",
     "english": "ladder",
+    "type": "noun"
+  },
+  {
+    "drow": "sidhi-bandh",
+    "english": "handrail; stair railing",
     "type": "noun"
   },
   {
@@ -11193,6 +12753,11 @@
     "drow": "sir-dard",
     "english": "headache",
     "type": "noun"
+  },
+  {
+    "drow": "sir-guma",
+    "english": "faint; fainting; pass out",
+    "type": "verb"
   },
   {
     "drow": "sir-na",
@@ -11295,8 +12860,33 @@
     "type": "noun"
   },
   {
+    "drow": "snana-garam",
+    "english": "warm bath; hot bath",
+    "type": "noun"
+  },
+  {
     "drow": "snana-griha",
     "english": "bathroom; bathing room",
+    "type": "noun"
+  },
+  {
+    "drow": "snana-jal",
+    "english": "bathwater; bathing water",
+    "type": "noun"
+  },
+  {
+    "drow": "snana-kapda",
+    "english": "washcloth; washing cloth",
+    "type": "noun"
+  },
+  {
+    "drow": "snana-patra",
+    "english": "washbasin; basin; washing bowl",
+    "type": "noun"
+  },
+  {
+    "drow": "snana-thand",
+    "english": "cold bath; cold wash",
     "type": "noun"
   },
   {
@@ -11308,6 +12898,11 @@
     "drow": "sneha",
     "english": "affection; familial love; platonic love",
     "type": "noun / verb"
+  },
+  {
+    "drow": "sneha-bhara",
+    "english": "affectionate; loving; tender",
+    "type": "adjective"
   },
   {
     "drow": "sok",
@@ -11340,6 +12935,16 @@
     "type": "noun"
   },
   {
+    "drow": "soojan-bhara",
+    "english": "swollen; inflamed",
+    "type": "adjective"
+  },
+  {
+    "drow": "soojan-kam",
+    "english": "reduce swelling; relieve inflammation",
+    "type": "verb"
+  },
+  {
     "drow": "sooki",
     "english": "list; register",
     "type": "noun"
@@ -11352,6 +12957,16 @@
   {
     "drow": "soot",
     "english": "thread; spun fiber",
+    "type": "noun"
+  },
+  {
+    "drow": "soot-kata",
+    "english": "cut thread; snip thread",
+    "type": "verb"
+  },
+  {
+    "drow": "soot-sui",
+    "english": "sewing kit; needle and thread",
     "type": "noun"
   },
   {
@@ -11495,8 +13110,23 @@
     "type": "noun"
   },
   {
+    "drow": "sui-bandh",
+    "english": "stitch a wound; suture a wound",
+    "type": "verb"
+  },
+  {
+    "drow": "sui-dabba",
+    "english": "needle case; sewing box",
+    "type": "noun"
+  },
+  {
     "drow": "sui-kila",
     "english": "pin",
+    "type": "noun"
+  },
+  {
+    "drow": "sui-sila",
+    "english": "suture; sutures; medical stitches",
     "type": "noun"
   },
   {
@@ -11515,6 +13145,11 @@
     "type": "noun"
   },
   {
+    "drow": "sukh-dukh",
+    "english": "mixed emotions; bittersweet feeling",
+    "type": "noun"
+  },
+  {
     "drow": "sukha",
     "english": "comfort; ease",
     "type": "noun"
@@ -11525,9 +13160,19 @@
     "type": "noun"
   },
   {
+    "drow": "sukha-sparsha",
+    "english": "comfort; comforting touch",
+    "type": "noun"
+  },
+  {
     "drow": "sukha-vayu",
     "english": "dry air",
     "type": "noun"
+  },
+  {
+    "drow": "sukha-yhana",
+    "english": "comfort someone; offer comfort",
+    "type": "verb"
   },
   {
     "drow": "sukhada",
@@ -11780,6 +13425,11 @@
     "type": "noun"
   },
   {
+    "drow": "syahi-matka",
+    "english": "inkwell; inkpot",
+    "type": "noun"
+  },
+  {
     "drow": "tacharvith",
     "english": "Great House",
     "type": "title / social term"
@@ -11995,6 +13645,11 @@
     "type": "noun"
   },
   {
+    "drow": "tauliya-stand",
+    "english": "towel rack; towel rail",
+    "type": "noun"
+  },
+  {
     "drow": "tava",
     "english": "pan",
     "type": "noun"
@@ -12180,6 +13835,11 @@
     "type": "adjective"
   },
   {
+    "drow": "tikshna-aushadhi",
+    "english": "strong medicine; potent remedy",
+    "type": "noun"
+  },
+  {
     "drow": "titli",
     "english": "butterfly",
     "type": "noun"
@@ -12290,9 +13950,44 @@
     "type": "noun"
   },
   {
+    "drow": "tvaka-dana",
+    "english": "rash; skin rash",
+    "type": "noun"
+  },
+  {
+    "drow": "tvaka-foda",
+    "english": "blister; blisters",
+    "type": "noun"
+  },
+  {
+    "drow": "tvaka-jalan",
+    "english": "skin burn; burning skin",
+    "type": "noun"
+  },
+  {
+    "drow": "tvaka-khara",
+    "english": "irritated skin; skin irritation",
+    "type": "noun"
+  },
+  {
+    "drow": "tvaka-kharox",
+    "english": "scrape; abrasion; scraped skin",
+    "type": "noun"
+  },
+  {
+    "drow": "tvaka-khujli",
+    "english": "itch; itching",
+    "type": "noun"
+  },
+  {
     "drow": "tvaka-parnaxcsapxcal",
     "english": "werewolf; werewolves; skin-changer; skin-changers; skin changer; skin changers",
     "type": "noun / shapeshifter"
+  },
+  {
+    "drow": "tvaka-rog",
+    "english": "skin condition; skin disease",
+    "type": "noun"
   },
   {
     "drow": "tyaga",
@@ -12313,6 +14008,11 @@
     "drow": "ubaya",
     "english": "bored",
     "type": "adjective"
+  },
+  {
+    "drow": "ubaya-bhava",
+    "english": "boredom; feeling bored",
+    "type": "noun"
   },
   {
     "drow": "ubhaya",
@@ -12600,6 +14300,11 @@
     "type": "noun"
   },
   {
+    "drow": "utsaha-bhara",
+    "english": "excited; thrilled; eager",
+    "type": "adjective"
+  },
+  {
     "drow": "utsaha-hina",
     "english": "unenthusiastic; without enthusiasm",
     "type": "adjective / vai-compound"
@@ -12775,6 +14480,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-bhaya",
+    "english": "fearless; without fear",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-bhaya-bodh",
     "english": "reckless; without awareness of danger",
     "type": "adjective / vai-compound"
@@ -12860,6 +14570,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-garv",
+    "english": "humble; without pride",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-ghar",
     "english": "homeless; without a home; no home",
     "type": "adjective / vai-compound"
@@ -12888,6 +14603,11 @@
     "drow": "vai-himmat",
     "english": "cowardly; without courage",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-hosh",
+    "english": "unconscious; without consciousness",
+    "type": "adjective"
   },
   {
     "drow": "vai-irad",
@@ -13015,6 +14735,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-nishkaya",
+    "english": "uncertain; unsure",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-niskit",
     "english": "uncertain; unsure",
     "type": "modal / grammar"
@@ -13080,9 +14805,19 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-rog",
+    "english": "healthy; free of disease",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-rupa",
     "english": "formless; without shape",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-sabr",
+    "english": "impatient; without patience",
+    "type": "adjective"
   },
   {
     "drow": "vai-sabut",
@@ -13155,6 +14890,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-santosh",
+    "english": "discontent; dissatisfaction",
+    "type": "noun"
+  },
+  {
     "drow": "vai-satya-rup",
     "english": "not really",
     "type": "phrase"
@@ -13200,9 +14940,19 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-shvas",
+    "english": "breathless; without breath",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-smriti",
     "english": "forgetful; without memory",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-sneha",
+    "english": "unaffectionate; without affection",
+    "type": "adjective"
   },
   {
     "drow": "vai-sparsha",
@@ -13255,6 +15005,11 @@
     "type": "adjective"
   },
   {
+    "drow": "vai-utsaaha",
+    "english": "unenthusiastic; lacking enthusiasm",
+    "type": "adjective"
+  },
+  {
     "drow": "vai-uttar",
     "english": "unanswered; without an answer",
     "type": "adjective / vai-compound"
@@ -13263,6 +15018,11 @@
     "drow": "vai-vakhra",
     "english": "must not; should not",
     "type": "modal / grammar"
+  },
+  {
+    "drow": "vai-vedana",
+    "english": "painless; without pain",
+    "type": "adjective"
   },
   {
     "drow": "vai-vespa",
@@ -13283,6 +15043,11 @@
     "drow": "vai-vishvas-kara",
     "english": "distrust",
     "type": "verb"
+  },
+  {
+    "drow": "vai-vishvas-yogya",
+    "english": "untrustworthy; unreliable",
+    "type": "adjective"
   },
   {
     "drow": "vai-vivad",
@@ -13335,6 +15100,41 @@
     "type": "noun"
   },
   {
+    "drow": "vaidya-ghar",
+    "english": "clinic; infirmary; sickroom",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-kaam",
+    "english": "medical care; medical work",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-patra",
+    "english": "medical record; patient record",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-sahay",
+    "english": "medical assistance; medical help",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-shayya",
+    "english": "hospital bed; sickbed",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-shiksha",
+    "english": "medical training",
+    "type": "noun"
+  },
+  {
+    "drow": "vaidya-upkarana",
+    "english": "medical instrument; medical instruments",
+    "type": "noun"
+  },
+  {
     "drow": "vaidyays",
     "english": "medics; healers",
     "type": "noun / plural"
@@ -13348,6 +15148,11 @@
     "drow": "vaiye-anausiya",
     "english": "bring/cause toward an outcome",
     "type": "verb / construction"
+  },
+  {
+    "drow": "vajra-asha",
+    "english": "strong hope; steadfast hope",
+    "type": "noun"
   },
   {
     "drow": "vak-sundar",
@@ -13520,6 +15325,36 @@
     "type": "noun"
   },
   {
+    "drow": "vedana-dhadak",
+    "english": "throbbing pain",
+    "type": "noun"
+  },
+  {
+    "drow": "vedana-hara",
+    "english": "pain relief; painkiller; analgesic",
+    "type": "noun"
+  },
+  {
+    "drow": "vedana-kam",
+    "english": "reduce pain; ease pain",
+    "type": "verb"
+  },
+  {
+    "drow": "vedana-manda",
+    "english": "dull pain; aching pain",
+    "type": "noun"
+  },
+  {
+    "drow": "vedana-tikshna",
+    "english": "sharp pain; stabbing pain",
+    "type": "noun"
+  },
+  {
+    "drow": "vedana-tivra",
+    "english": "severe pain; intense pain",
+    "type": "noun"
+  },
+  {
     "drow": "vekh",
     "english": "damn; shit",
     "type": "swear / interjection"
@@ -13645,6 +15480,16 @@
     "type": "verb / noun"
   },
   {
+    "drow": "viraha-bhava",
+    "english": "longing; yearning",
+    "type": "noun"
+  },
+  {
+    "drow": "viraha-ghar",
+    "english": "homesickness; longing for home",
+    "type": "noun"
+  },
+  {
     "drow": "virla",
     "english": "rarely",
     "type": "adverb"
@@ -13732,6 +15577,16 @@
   {
     "drow": "vismaya",
     "english": "surprise; wonder",
+    "type": "noun"
+  },
+  {
+    "drow": "vismaya-bhara",
+    "english": "astonished; amazed",
+    "type": "adjective"
+  },
+  {
+    "drow": "vismaya-stambha",
+    "english": "shock; stunned surprise",
     "type": "noun"
   },
   {
@@ -13895,6 +15750,16 @@
     "type": "noun"
   },
   {
+    "drow": "xat-kona",
+    "english": "ceiling corner; upper corner",
+    "type": "noun"
+  },
+  {
+    "drow": "xat-risav",
+    "english": "roof leak; leaking roof",
+    "type": "noun"
+  },
+  {
     "drow": "xauStyr",
     "english": "my favorite; favorite beloved",
     "type": "endearment"
@@ -13985,6 +15850,11 @@
     "type": "verb"
   },
   {
+    "drow": "xink",
+    "english": "sneeze; sneezing",
+    "type": "verb"
+  },
+  {
     "drow": "xipa",
     "english": "concealed; hidden",
     "type": "adjective"
@@ -14055,9 +15925,19 @@
     "type": "insult"
   },
   {
+    "drow": "xun-boond",
+    "english": "drop of blood; blood drop",
+    "type": "noun"
+  },
+  {
     "drow": "xun-caxra",
     "english": "bleed out; blood-leave",
     "type": "verb"
+  },
+  {
+    "drow": "xun-garam",
+    "english": "hot-tempered; quick to anger",
+    "type": "adjective"
   },
   {
     "drow": "Xun-gawah",
@@ -14065,9 +15945,24 @@
     "type": "oath / exclamation"
   },
   {
+    "drow": "xun-jama",
+    "english": "blood clot; clotted blood",
+    "type": "noun"
+  },
+  {
+    "drow": "xun-jamav",
+    "english": "coagulation; blood clotting",
+    "type": "noun"
+  },
+  {
     "drow": "Xun-Javitar",
     "english": "blood-bound husband",
     "type": "title / endearment"
+  },
+  {
+    "drow": "xun-kshaya",
+    "english": "blood loss; hemorrhage",
+    "type": "noun"
   },
   {
     "drow": "xun-patha",
@@ -14078,6 +15973,16 @@
     "drow": "xun-rakta",
     "english": "blood-red; crimson",
     "type": "adjective"
+  },
+  {
+    "drow": "xun-rok",
+    "english": "stop bleeding; staunch blood flow",
+    "type": "verb"
+  },
+  {
+    "drow": "xun-srav",
+    "english": "bleeding; flow of blood",
+    "type": "noun"
   },
   {
     "drow": "xun-thanda",
@@ -14093,6 +15998,11 @@
     "drow": "xupana",
     "english": "hide; conceal",
     "type": "verb"
+  },
+  {
+    "drow": "xuri-vaidya",
+    "english": "scalpel; surgical knife",
+    "type": "noun"
   },
   {
     "drow": "xut-gaya",

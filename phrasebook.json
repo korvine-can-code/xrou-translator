@@ -3218,5 +3218,215 @@
     "english": "Anima is not the soul.",
     "xrou": "Jiva-sara vai xce Viv.",
     "category": "Astralith: Magic & Professions"
+  },
+  {
+    "english": "Where does it hurt?",
+    "xrou": "Kutra xce vedana da-tumu?",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "How badly are you hurt?",
+    "xrou": "Kati gambhira ghav da-tumu?",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "Let me see the wound.",
+    "xrou": "Vexna adam dars ghav.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "I need a bandage.",
+    "xrou": "Adam apares patti-bandh.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "Stop the bleeding!",
+    "xrou": "Xun-rok!",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "Take a deep breath.",
+    "xrou": "Shvas-gahra kara.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "Try to stay awake.",
+    "xrou": "Anvis hosh-raksha.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "You have a fever.",
+    "xrou": "Tumu hav bukhar.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "I need a medic.",
+    "xrou": "Adam apares vaidya.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "The wound needs cleaning.",
+    "xrou": "Ghav apares safai.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "The bone is broken.",
+    "xrou": "Asthi xce bhanga.",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "Does it hurt when you move?",
+    "xrou": "Xce vedana yadau tumu caxra?",
+    "category": "Injuries & Medicine"
+  },
+  {
+    "english": "I am worried about you.",
+    "xrou": "Adam xce kinta da-tumu.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I am proud of you.",
+    "xrou": "Adam xce garv da-tumu.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I do not trust them.",
+    "xrou": "Adam vai vishvas vise.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "Do not be afraid.",
+    "xrou": "Vai xce bhaya-bhara.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I feel better now.",
+    "xrou": "Adam xce samyak ena.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I am feeling overwhelmed.",
+    "xrou": "Adam xce manas-bhara.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "That was embarrassing.",
+    "xrou": "Etha xanathes sharam-bhara.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "My patience is gone.",
+    "xrou": "Adam-sabr xce shunya.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I miss home.",
+    "xrou": "Adam viraha-ghar.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "I need some peace.",
+    "xrou": "Adam apares shanti.",
+    "category": "Emotions & Reactions"
+  },
+  {
+    "english": "Where is my cloak?",
+    "xrou": "Kutra xce adam-kapda-bahana?",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "Put on your helmet.",
+    "xrou": "Kavaka-dhar da-tumu kavaka-shira.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "Take off your armor.",
+    "xrou": "Kavaka-utaar da-tumu kavaka.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "My boots are wet.",
+    "xrou": "Adam-juta-uka xce bhijita.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "The clasp is broken.",
+    "xrou": "Kapda-kunda xce bhanga.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "I need to repair my armor.",
+    "xrou": "Adam apares kavaka-sudhaara adam-kavaka.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "These clothes are too big.",
+    "xrou": "Etha kapda xce ati-vishala.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "Bring me the gloves.",
+    "xrou": "Yhanam kapda-hath da-adam.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "The coat is torn.",
+    "xrou": "Kapda-kota xce kapda-phata.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "I can mend it.",
+    "xrou": "Adam shakta kapda-sudhara etha.",
+    "category": "Clothing & Armor"
+  },
+  {
+    "english": "Please close the door.",
+    "xrou": "Kripa darvaza-bandh.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "I will clean the kitchen.",
+    "xrou": "Adam thanatei rasoi-safai.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "Where is the spare key?",
+    "xrou": "Kutra xce anya kunji?",
+    "category": "Home & Household"
+  },
+  {
+    "english": "Set the table, please.",
+    "xrou": "Kripa mej-sajja.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "The roof is leaking.",
+    "xrou": "Xat xce xat-risav.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "I need fresh bedsheets.",
+    "xrou": "Adam apares nai shayya-kadar.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "The fire has gone out.",
+    "xrou": "Agni xce vai jiva.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "Take out the trash.",
+    "xrou": "Kakra-bahar.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "The room is a mess.",
+    "xrou": "Ghar-andar xce ghar-bikhar.",
+    "category": "Home & Household"
+  },
+  {
+    "english": "Leave the door unlocked.",
+    "xrou": "Darvaza tala vai.",
+    "category": "Home & Household"
   }
 ]
