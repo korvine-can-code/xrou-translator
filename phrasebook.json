@@ -56,7 +56,7 @@
   },
   {
     "english": "Come inside.",
-    "xrou": "Agacka antar.",
+    "xrou": "Agaccha antar.",
     "category": "Greetings & Farewells"
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "english": "Thank you for coming.",
-    "xrou": "Adam-dhanya da-tumu da-agacka.",
+    "xrou": "Adam-dhanya da-tumu da-agaccha.",
     "category": "Greetings & Farewells"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "english": "Maybe.",
-    "xrou": "Kadakit.",
+    "xrou": "Kadachit.",
     "category": "Everyday Conversation"
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "english": "Are you certain?",
-    "xrou": "Tumu xce nishkita?",
+    "xrou": "Tumu xce nishchita?",
     "category": "Questions & Answers"
   },
   {
@@ -421,7 +421,7 @@
   },
   {
     "english": "Come with me.",
-    "xrou": "Agacka saha adam.",
+    "xrou": "Agaccha saha adam.",
     "category": "Requests & Instructions"
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "english": "Come here, little one.",
-    "xrou": "Agacka atra, tama-puxa.",
+    "xrou": "Agaccha atra, tama-puxa.",
     "category": "Family & Affection"
   },
   {
@@ -626,7 +626,7 @@
   },
   {
     "english": "Please come home.",
-    "xrou": "Kripa agacka ghar.",
+    "xrou": "Kripa agaccha ghar.",
     "category": "Family & Affection"
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "english": "Do you want tea?",
-    "xrou": "Tumu kama kai?",
+    "xrou": "Tumu kama chai?",
     "category": "Food & Hospitality"
   },
   {
@@ -826,7 +826,7 @@
   },
   {
     "english": "I am going downstairs.",
-    "xrou": "Adam gamana nike.",
+    "xrou": "Adam gamana niche.",
     "category": "Home & Daily Life"
   },
   {
@@ -996,7 +996,7 @@
   },
   {
     "english": "Come back later.",
-    "xrou": "Punar agacka baad-me.",
+    "xrou": "Punar agaccha baad-me.",
     "category": "Time & Plans"
   },
   {
@@ -1016,7 +1016,7 @@
   },
   {
     "english": "Maybe tomorrow.",
-    "xrou": "Kadakit akal.",
+    "xrou": "Kadachit akal.",
     "category": "Time & Plans"
   },
   {
@@ -1046,7 +1046,7 @@
   },
   {
     "english": "I am worried.",
-    "xrou": "Adam xce kintit.",
+    "xrou": "Adam xce chintit.",
     "category": "Emotions & Reassurance"
   },
   {
@@ -1071,7 +1071,7 @@
   },
   {
     "english": "Do not worry.",
-    "xrou": "Vai kinta.",
+    "xrou": "Vai chinta.",
     "category": "Emotions & Reassurance"
   },
   {
@@ -1256,7 +1256,7 @@
   },
   {
     "english": "The river is behind us.",
-    "xrou": "Nadi xce pike Xcsadam.",
+    "xrou": "Nadi xce piche Xcsadam.",
     "category": "Travel & Directions"
   },
   {
@@ -1296,7 +1296,7 @@
   },
   {
     "english": "I want to sell this.",
-    "xrou": "Adam kama bek etha.",
+    "xrou": "Adam kama bech etha.",
     "category": "Trade & Work"
   },
   {
@@ -1331,12 +1331,12 @@
   },
   {
     "english": "I will pay tomorrow.",
-    "xrou": "Adam thanatei kuka akal.",
+    "xrou": "Adam thanatei chuka akal.",
     "category": "Trade & Work"
   },
   {
     "english": "I already paid.",
-    "xrou": "Adam xanathes kuka.",
+    "xrou": "Adam xanathes chuka.",
     "category": "Trade & Work"
   },
   {
@@ -1386,7 +1386,7 @@
   },
   {
     "english": "The payment is fair.",
-    "xrou": "Kuka xce nyaya.",
+    "xrou": "Chuka xce nyaya.",
     "category": "Trade & Work"
   },
   {
@@ -1556,7 +1556,7 @@
   },
   {
     "english": "Stay behind me.",
-    "xrou": "Stha pike adam.",
+    "xrou": "Stha piche adam.",
     "category": "Safety & Adventure"
   },
   {
@@ -1576,7 +1576,7 @@
   },
   {
     "english": "We need to hide.",
-    "xrou": "Xcsadam apares kupa.",
+    "xrou": "Xcsadam apares chupa.",
     "category": "Safety & Adventure"
   },
   {
@@ -1661,7 +1661,7 @@
   },
   {
     "english": "Come to the gathering.",
-    "xrou": "Agacka da-sabha.",
+    "xrou": "Agaccha da-sabha.",
     "category": "Community & Gatherings"
   },
   {
@@ -1711,7 +1711,7 @@
   },
   {
     "english": "I came to help.",
-    "xrou": "Adam xanathes agacka da-sahay.",
+    "xrou": "Adam xanathes agaccha da-sahay.",
     "category": "Community & Gatherings"
   },
   {
@@ -1856,7 +1856,7 @@
   },
   {
     "english": "I have no choice.",
-    "xrou": "Adam vai-kayan.",
+    "xrou": "Adam vai-chayan.",
     "category": "Abilities & Negation"
   },
   {
@@ -1911,7 +1911,7 @@
   },
   {
     "english": "Tell me the truth.",
-    "xrou": "Haxa sak da-adam.",
+    "xrou": "Haxa sach da-adam.",
     "category": "Everyday Conversation"
   },
   {
@@ -1921,7 +1921,7 @@
   },
   {
     "english": "I have an idea.",
-    "xrou": "Adam hav vikar.",
+    "xrou": "Adam hav vichar.",
     "category": "Everyday Conversation"
   },
   {
@@ -1981,12 +1981,12 @@
   },
   {
     "english": "Let's discuss it.",
-    "xrou": "Xce uta karka etha.",
+    "xrou": "Xce uta charcha etha.",
     "category": "Everyday Conversation"
   },
   {
     "english": "I need to think.",
-    "xrou": "Adam apares vikar-kara.",
+    "xrou": "Adam apares vichar-kara.",
     "category": "Everyday Conversation"
   },
   {
@@ -2092,7 +2092,7 @@
   {
     "category": "Grammar & Connectors",
     "english": "Before and after.",
-    "xrou": "Purva uta pashka."
+    "xrou": "Purva uta pashcha."
   },
   {
     "category": "Grammar & Connectors",
@@ -2172,7 +2172,7 @@
   {
     "category": "Grammar & Connectors",
     "english": "I will go after dinner.",
-    "xrou": "Adam thanatei caxra pashka ratri-bhojana."
+    "xrou": "Adam thanatei caxra pashcha ratri-bhojana."
   },
   {
     "category": "Grammar & Connectors",
@@ -2261,7 +2261,7 @@
   },
   {
     "english": "In the meantime.",
-    "xrou": "is-bik.",
+    "xrou": "is-bich.",
     "category": "Everyday Expressions"
   },
   {
@@ -2363,720 +2363,5 @@
     "english": "Excuse me please.",
     "xrou": "Kripa-suno.",
     "category": "Everyday Expressions"
-  },
-  {
-    "english": "Fuck!",
-    "xrou": "Xha!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Oh, fuck.",
-    "xrou": "Arre, xha.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Fuck this!",
-    "xrou": "Xha etha!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Fuck off!",
-    "xrou": "Xha paravaita!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Fuck's sake!",
-    "xrou": "Uff-vekh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Fucking hell!",
-    "xrou": "Xha-vekh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Damn it!",
-    "xrou": "Vekh-vasa!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Damn you!",
-    "xrou": "Shapa-tumu!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Curse this!",
-    "xrou": "Shapa-etha!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Gods damn it!",
-    "xrou": "Deva-vekh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Damn the sun!",
-    "xrou": "Ozzendaihyu-vekh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "What the hell?!",
-    "xrou": "Kim xha?!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "What in the Everdark?!",
-    "xrou": "Kim da-Everdark?!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Gods above!",
-    "xrou": "Deva upari!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Gods help us.",
-    "xrou": "Deva sahay Xcsadam.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "For the love of the gods!",
-    "xrou": "Da-pixrit da-Deva!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "By the night!",
-    "xrou": "Ratri-gawah!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "By my blood!",
-    "xrou": "Xun-gawah!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Everdark take it!",
-    "xrou": "Everdark-shapa!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Good grief!",
-    "xrou": "Hai-re!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Oh, for goodness' sake!",
-    "xrou": "Uff!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Oh no!",
-    "xrou": "Haye!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Well, well, well.",
-    "xrou": "Aha-re, aha-re.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Would you look at that!",
-    "xrou": "Arey-vah!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Wow!",
-    "xrou": "Vah!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Ew!",
-    "xrou": "Xi!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "That's disgusting!",
-    "xrou": "Etha xce ghinaspad!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Ugh, not again.",
-    "xrou": "Uff, punar vai.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Oh, come on!",
-    "xrou": "Arre, kalo!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Hmph. Whatever.",
-    "xrou": "Hmph. Kux-bhi.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "You absolute fool!",
-    "xrou": "Tumu maha-murakh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "You damned idiot!",
-    "xrou": "Tumu vekh-murakh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "You shameless fool!",
-    "xrou": "Tumu vai-sharam murakh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "What nonsense!",
-    "xrou": "Kim bakvas!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "That's utter rubbish.",
-    "xrou": "Etha xce maha-bakvas.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "I hate this place.",
-    "xrou": "Adam dvesha etha sthan.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Go away, you fool.",
-    "xrou": "Paravaita, tumu murakh.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Don't you dare.",
-    "xrou": "Tumu vai anvis.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Don't test me.",
-    "xrou": "Vai azmana adam.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Don't push your luck.",
-    "xrou": "Vai azmana tumu bhagya.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "You're joking.",
-    "xrou": "Tumu haxa bakvas.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "You must be joking.",
-    "xrou": "Tumu vakhra haxa bakvas.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I don't believe it.",
-    "xrou": "Adam vai sak-mana etha.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Are you serious?",
-    "xrou": "Tumu xce sak-me?",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I mean it.",
-    "xrou": "Adam haxa satya.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I'm serious.",
-    "xrou": "Adam xce sak-me.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Not a chance.",
-    "xrou": "Bilkul-vai.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Absolutely yes.",
-    "xrou": "Rast-bilkul!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Well, obviously.",
-    "xrou": "Khair, avashya.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "What now?",
-    "xrou": "Kim ena?",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "And then what?",
-    "xrou": "Phir-kya?",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Why on earth?",
-    "xrou": "Kyon-bhala?",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Who knows?",
-    "xrou": "Kya-pata?",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "It figures.",
-    "xrou": "Pata-kala.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "As if!",
-    "xrou": "Yatha idias!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "You're impossible.",
-    "xrou": "Tumu xce asambhav.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I knew it!",
-    "xrou": "Adam xanathes xypremanah etha!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I told you so!",
-    "xrou": "Adam xanathes haxa da-tumu!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I don't care.",
-    "xrou": "Adam vai kinta.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "That's your problem.",
-    "xrou": "Etha xce samasya da-tumu.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "That's not my problem.",
-    "xrou": "Etha vai xce samasya da-adam.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Mind your own business.",
-    "xrou": "Dhyan apna-kaam.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I changed my mind.",
-    "xrou": "Adam xanathes sok-badal.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "On second thought...",
-    "xrou": "Rai-badal...",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Never mind.",
-    "xrou": "Khair.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Whatever you say.",
-    "xrou": "Yatha tumu haxa.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Don't flatter yourself.",
-    "xrou": "Vai puja ahankara.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "You wish.",
-    "xrou": "Tumu asha etha.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "In your dreams.",
-    "xrou": "Da-tumu svapna.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I'm not impressed.",
-    "xrou": "Adam vai xce akambhit.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "That's ridiculous.",
-    "xrou": "Etha xce asambhav-murakh.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "What a mess.",
-    "xrou": "Kim avyavastha.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "This is getting worse.",
-    "xrou": "Etha bhava badtar.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "You have my attention.",
-    "xrou": "Tumu hav adam-dhyan.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Hold on a moment.",
-    "xrou": "Ruk-zara.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Give it time.",
-    "xrou": "Samay-de.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Hurry up!",
-    "xrou": "Jaldi-karo!",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Calm down.",
-    "xrou": "Shanti-rakho.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Listen here.",
-    "xrou": "Suno-zara.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Think about it.",
-    "xrou": "Soko-zara.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Please say that again.",
-    "xrou": "Kripa vapas-kaho.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Move aside.",
-    "xrou": "Hata-zara.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Make way!",
-    "xrou": "Rasta-do!",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Don't change the subject.",
-    "xrou": "Vai baat-talo.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Keep that to yourself.",
-    "xrou": "Rahasya-rakho etha.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "That's beside the point.",
-    "xrou": "Etha vai xce mudda.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "To be honest...",
-    "xrou": "Sak-kahu...",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "In my opinion...",
-    "xrou": "Adam-rai...",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "For now, yes.",
-    "xrou": "Filhal, rast.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "For now, no.",
-    "xrou": "Filhal, vai.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "This time, no.",
-    "xrou": "Is-bar, vai.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Next time, perhaps.",
-    "xrou": "Agli-bar, kadakit.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "You never know.",
-    "xrou": "Tumu kabhi-vai xypremanah.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "It doesn't matter.",
-    "xrou": "Etha vai xce mahatva.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "That's enough already.",
-    "xrou": "Bas-vasa!",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I have had enough.",
-    "xrou": "Adam hav vasa.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Let's get this over with.",
-    "xrou": "Xcsadam kara etha antima.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "It's worth a try.",
-    "xrou": "Etha xce yogya azmana.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I'm on my way.",
-    "xrou": "Adam caxra prati tumu.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I won't be long.",
-    "xrou": "Adam vai thanatei lambi-der.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I'll think about it.",
-    "xrou": "Adam thanatei sok etha.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I need some space.",
-    "xrou": "Adam apares thoda sthan.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "I need a moment alone.",
-    "xrou": "Adam apares eka kshana akela.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "How did that happen?",
-    "xrou": "Katham etha xanathes bhava?",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Where did everyone go?",
-    "xrou": "Kutra xrou xanathes caxra?",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "The night knows.",
-    "xrou": "Ratri xypremanah.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Not even the Everdark knows.",
-    "xrou": "Everdark api vai xypremanah.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "A poison tongue makes enemies.",
-    "xrou": "Sikar-zaban kara shatru.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "You have a poison tongue.",
-    "xrou": "Tumu hav sikar-zaban.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Stone-minded fool!",
-    "xrou": "Pathar-manas murakh!",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Your words burn.",
-    "xrou": "Da-tumu shabda agni.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Even spiders have more patience.",
-    "xrou": "Makari api hav adhik sabr.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Don't tempt the darkness.",
-    "xrou": "Vai azmana Everdark.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Let the night judge.",
-    "xrou": "Vexna ratri nyaya.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "The sun can have you.",
-    "xrou": "Ozzendaihyu shakta hav tumu.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "I would rather face the Everdark.",
-    "xrou": "Adam icka-tha samna Everdark.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "There are worse things than silence.",
-    "xrou": "Vai-haxa da-adhik bura vastu.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Your silence says enough.",
-    "xrou": "Da-tumu vai-haxa haxa vasa.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "My patience is spent.",
-    "xrou": "Adam-sabr xce shunya.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "Ow!",
-    "xrou": "Ai!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Phew!",
-    "xrou": "Huff!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Whoa!",
-    "xrou": "Hoh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Huh?",
-    "xrou": "Hein?",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Shh!",
-    "xrou": "Shh!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Psst!",
-    "xrou": "Psst!",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "Tsk, tsk.",
-    "xrou": "Tch, tch.",
-    "category": "Expletives & Exclamations"
-  },
-  {
-    "english": "All right, all right!",
-    "xrou": "Axa-axa!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Fine, have it your way.",
-    "xrou": "Axa, yatha tumu kama.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "That is too much!",
-    "xrou": "Bas-bahut!",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "Enough is enough.",
-    "xrou": "Vasa xce vasa.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I swear it.",
-    "xrou": "Sak-kasam.",
-    "category": "Reactions & Banter"
-  },
-  {
-    "english": "I swear by the night.",
-    "xrou": "Kasam da-ratri.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "My patience is running out.",
-    "xrou": "Adam-sabr xce sabar-khatam.",
-    "category": "Creative Xrou Idioms"
-  },
-  {
-    "english": "I have had better days.",
-    "xrou": "Adam hav adhik samyak dina.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "Not another word.",
-    "xrou": "Vai anya shabda.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "That is not what I meant.",
-    "xrou": "Etha vai xce arth da-adam.",
-    "category": "Everyday Turns of Phrase"
-  },
-  {
-    "english": "My lord.",
-    "xrou": "Adam-natha.",
-    "category": "Formal address"
-  },
-  {
-    "english": "Yes, my lord.",
-    "xrou": "Rast, adam-natha.",
-    "category": "Formal address"
-  },
-  {
-    "english": "The wolf is here.",
-    "xrou": "Bhediya xce atra.",
-    "category": "Nature"
-  },
-  {
-    "english": "The wolves are here.",
-    "xrou": "Bhediyays xce atra.",
-    "category": "Nature"
-  },
-  {
-    "english": "A skin-changer.",
-    "xrou": "Eka tvaka-parnaxcsapxcal.",
-    "category": "Nature"
-  },
-  {
-    "english": "Look at the moon.",
-    "xrou": "Dars prati ratri-mani.",
-    "category": "Nature"
-  },
-  {
-    "english": "Look at the stars.",
-    "xrou": "Dars prati ratri-kingariys.",
-    "category": "Nature"
   }
 ]

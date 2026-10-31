@@ -1,27 +1,10 @@
-Dvandva Xrou-Haxa Translator — Version 13 (Orthography Revision)
+Dvandva Xrou-Haxa Translator — Version 10 (streamlined navigation)
 
-Canonical werewolf term (supplied by language creator):
-  tvaka-parnaxcsapxcal = werewolf / werewolves (collective), skin-changer
-  parnaxcsapxcal = transformation / shapeshifting
-  tvaka = skin
+Changes:
+- Removed the Grammar guide tab and its page content.
+- Retained Translator, Dictionary, Phrasebook and Sentence patterns tabs.
+- Retained grammar processing in engine.js and all lexicon/phrasebook/pattern files.
+- Retained the monochrome theme, background and header artwork.
+- Updated offline cache version so the new navigation is shown.
 
-Sanskrit/Hindustani-rooted Xrou spelling normalized:
-  ch  -> k (typically unaspirated)
-  chh -> x (typically aspirated)
-  tvacha -> tvaka
-  chingari -> kingari; ratri-chingari -> ratri-kingari
-
-Established proper titles (Tacharvith) and onomatopoeia (Tche, tch)
-retain their spelling because they are not Sanskrit-rooted transliterations.
-A handful of ambiguous words were given unique replacement roots to avoid
-accidentally collapsing two unrelated meanings into one lexicon headword.
-
-The former werewolf terms tvacha-parivartaka / tvacha-parivartakays are removed.
-The exact form tvaka-parnaxcsapxcal has both singular and plural English
-senses as requested; it is not automatically suffixed with -ys in the lexicon.
-
-HOW TO INSTALL:
-Extract ZIP and upload every website file to the root of the existing GitHub
-Pages repository, replacing existing files. Preserve the assets/ directory.
-Keep any existing CNAME file in your GitHub repository; it is not in this ZIP.
-Commit changes and reload the published site. Versioned offline cache updated.
+GitHub Pages: Extract the ZIP and upload all files to the repository root, preserving the assets/ directory; commit changes.
