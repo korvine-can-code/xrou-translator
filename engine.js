@@ -17,6 +17,9 @@
     my:'adam-', your:'da-tumu', our:'da-Xcsadam', their:'da-vise', his:'da-vise', her:'da-vise', mine:'dar-adam', yours:'dar-tumu',
     not:'vai', no:'vai', will:'thanatei', shall:'thanatei',
     'will not':'vai thanatei', 'should not':'vai vakhra', 'must not':'vai vakhra',
+    go:'caxra', leave:'caxra',
+    for:'da', to:'prati', 'for me':'da-adam', 'for you':'da-tumu', 'for us':'da-Xcsadam', 'for them':'da-vise',
+    'to me':'da-adam', 'to you':'da-tumu', 'to us':'da-Xcsadam', 'to them':'da-vise',
     'did not':'xanathes vai', "didn't":'xanathes vai',
     can:'shakta', cannot:'vai shakta', "can't":'vai shakta',
     could:'shakta-tha', "couldn't":'vai-shakta-tha',
@@ -44,6 +47,9 @@
     'dar-adam':'mine', 'adam-javitaran':'my husband',
     'adam-matar':'my mother', 'adam-pitar':'my father',
     punar:'again', bali:'sacrifice', tumys:'you', vise:'they',
+    da:'for', prati:'to', saha:'with', upari:'on', adhas:'under', antar:'in', bahir:'out',
+    uta:'and', athva:'or', lekin:'but', kyunki:'because', idias:'if', kintu:'although', paryanta:'until',
+    'vai-saha':'without', 'karana-da':'because of', 'vishaya-da':'about', 'antara-madhye':'between',
     rast:'yes', kripa:'please', xera:'good',
   };
   const pronouns = new Set(['adam','adar','adas','tumu','tumys','xcsadam','vise']);
@@ -88,6 +94,7 @@
       if (!list.some(x=>x.key===word)) list.push({key:word,toks,entry,override});
     }
     // Prioritize a few known grammatical words over ambiguous ordinary dictionary senses.
+    // Dictionary words for motion and benefaction are handled by the contextual English postprocessor.
     for(const [en,drow] of Object.entries(EN_CANON)) {
       if (drow) add('en',en,{drow,english:en,type:'grammar'},true);
     }
@@ -274,6 +281,16 @@
         }
         if(p.src==='will' && n?.src==='not') {out.push({...p,text:'vai thanatei',end:n.end});i++;continue;}
         if(['do','does','did'].includes(p.src) && n?.src==='not') {out.push({...p,text:p.src==='did'?'xanathes vai':'vai',end:n.end});i++;continue;}
+        // English 'to' before an action verb is an infinitive marker, not a destination.
+        // e.g. 'want to go' -> 'kama caxra'; 'go to town' keeps 'prati'.
+        if(p.src==='to' && n && !n.unknown && (verbEntry(n.src) || (['go','leave','come','see','help','make','give','protect','speak','do','take','say','understand','eat','drink','read','write','walk','run','sleep','wait','be','have'].includes(n.src)))) {
+          out.push({...p,text:''});continue;
+        }
+        // Benefactive 'for' + pronoun combines into a relational expression.
+        if(p.src==='for' && n && !n.unknown && ['me','you','us','them','him','her'].includes(n.src)) {
+          const poss={me:'da-adam',you:'da-tumu',us:'da-Xcsadam',them:'da-vise',him:'da-vise',her:'da-vise'};
+          out.push({...p,text:poss[n.src],end:n.end});i++;continue;
+        }
         if(p.src==='my' && n && !n.unknown && (isNounSrc(norm(n.text)) || !!nounEntry(n.src,'en') || !!enNounSingular(n.src))) {
           out.push({...p,text:'adam-'+n.text,end:n.end});i++;continue;
         }
@@ -285,7 +302,7 @@
     function translateLine(line,source) {
       currentText=line;
       const full=fullPhrases[source].get(phraseKey(line));
-      if(full) {
+      if(full && !(source==='xrou' && tokenize(line).length===1 && indexes.xrou.has(norm(phraseKey(line))))) {
         const translation=(source==='en'?full.xrou:full.english).replace(/[.!?]+$/,'');
         const leading=(line.match(/^\s*/)||[''])[0];
         const trailing=(line.match(/\s*$/)||[''])[0];

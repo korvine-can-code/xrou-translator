@@ -2023,5 +2023,200 @@
     "english": "Unprotected.",
     "xrou": "Vai-rakshak.",
     "category": "Vai-Compounds"
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "This is for you.",
+    "xrou": "Etha xce da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "This is for me.",
+    "xrou": "Etha xce da-adam."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "This is for us.",
+    "xrou": "Etha xce da-Xcsadam."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I made this for you.",
+    "xrou": "Adam xanathes kara etha da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I will do this for you.",
+    "xrou": "Adam thanatei kara etha da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I can do this for you.",
+    "xrou": "Adam shakta kara etha da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I cannot do this without you.",
+    "xrou": "Adam vai shakta kara etha vai-saha tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "With you, always.",
+    "xrou": "Saha tumu, anausa."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Without you, never.",
+    "xrou": "Vai-saha tumu, kala."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Between you and me.",
+    "xrou": "Antara-madhye tumu uta adam."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I am here for you.",
+    "xrou": "Adam xce atra da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I am with you.",
+    "xrou": "Adam xce saha tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I will wait until tomorrow.",
+    "xrou": "Adam thanatei intezar paryanta akal."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Before and after.",
+    "xrou": "Purva uta pashcha."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Above and below.",
+    "xrou": "Upari uta adhas."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Inside and outside.",
+    "xrou": "Antar uta bahir."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Do this instead of that.",
+    "xrou": "Kara etha badle-da aves."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Not because of you.",
+    "xrou": "Vai karana-da tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Because I love you.",
+    "xrou": "Kyunki adam pixrit tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I understand, but I disagree.",
+    "xrou": "Adam xypremanah, lekin adam vai-sammati."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Either this or that.",
+    "xrou": "Athva etha athva aves."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Neither this nor that.",
+    "xrou": "Vai-eka etha uta-vai aves."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "If you wish.",
+    "xrou": "Idias tumu kama."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Unless you object.",
+    "xrou": "Idias-vai tumu virodha."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Even if I fail.",
+    "xrou": "Api-idias adam asafal."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Although I am tired.",
+    "xrou": "Kintu adam xce khasta."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Whether you stay or leave.",
+    "xrou": "Idias-athva tumu sthira athva caxra."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "If you need me, call.",
+    "xrou": "Idias tumu apares adam, ahvana."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I am leaving because I must.",
+    "xrou": "Adam caxra kyunki adam vakhra."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I will go after dinner.",
+    "xrou": "Adam thanatei caxra pashcha ratri-bhojana."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "For the sake of my family.",
+    "xrou": "Da-hita adam-parivar."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "This is about our home.",
+    "xrou": "Etha xce vishaya-da da-Xcsadam ghar."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "There is no time.",
+    "xrou": "Vai xce samay."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I am going to the house.",
+    "xrou": "Adam caxra prati ghar."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I want to go.",
+    "xrou": "Adam kama caxra."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I am speaking to you.",
+    "xrou": "Adam haxa da-tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I can speak with you.",
+    "xrou": "Adam shakta haxa saha tumu."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "I will do it whether or not you agree.",
+    "xrou": "Adam thanatei kara etha idias-athva-vai tumu sammati."
+  },
+  {
+    "category": "Grammar & Connectors",
+    "english": "Take the road through the forest.",
+    "xrou": "Yhanam marga madhya-dvara vana."
   }
 ]

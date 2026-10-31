@@ -236,13 +236,23 @@
   },
   {
     "drow": "adhas",
-    "english": "below; beneath",
+    "english": "below; beneath; down; underneath; under",
     "type": "preposition"
+  },
+  {
+    "drow": "adhas-prati",
+    "english": "down to",
+    "type": "compound preposition"
   },
   {
     "drow": "adhik",
     "english": "more; additional",
     "type": "adjective / adverb"
+  },
+  {
+    "drow": "adhika-saha",
+    "english": "in addition to",
+    "type": "compound preposition"
   },
   {
     "drow": "adhikansha",
@@ -303,6 +313,11 @@
     "drow": "agnikunda",
     "english": "hearth; fireplace",
     "type": "noun"
+  },
+  {
+    "drow": "agre-da",
+    "english": "in front of",
+    "type": "compound preposition"
   },
   {
     "drow": "ah-haxa",
@@ -441,7 +456,7 @@
   },
   {
     "drow": "anausa",
-    "english": "always; forever",
+    "english": "always; forever; for good",
     "type": "adverb"
   },
   {
@@ -520,14 +535,34 @@
     "type": "adverb / preposition"
   },
   {
+    "drow": "antar-da",
+    "english": "inside of",
+    "type": "compound preposition"
+  },
+  {
     "drow": "antar-kalaha",
     "english": "infighting; internal quarrel",
     "type": "noun"
   },
   {
+    "drow": "antar-madhye",
+    "english": "within",
+    "type": "preposition"
+  },
+  {
+    "drow": "antar-prati",
+    "english": "into",
+    "type": "preposition"
+  },
+  {
     "drow": "antara",
     "english": "difference; distinction",
     "type": "noun"
+  },
+  {
+    "drow": "antara-madhye",
+    "english": "between",
+    "type": "preposition"
   },
   {
     "drow": "antatah",
@@ -540,6 +575,11 @@
     "type": "adjective"
   },
   {
+    "drow": "antima-sthane",
+    "english": "ending at",
+    "type": "compound preposition"
+  },
+  {
     "drow": "anumati",
     "english": "permission; approval",
     "type": "noun"
@@ -548,6 +588,16 @@
     "drow": "anupata",
     "english": "ratio; proportion",
     "type": "noun"
+  },
+  {
+    "drow": "anusar",
+    "english": "along",
+    "type": "preposition"
+  },
+  {
+    "drow": "anusar-da",
+    "english": "according to; in accordance with",
+    "type": "compound preposition"
   },
   {
     "drow": "anusara",
@@ -573,6 +623,16 @@
     "drow": "anya-dast",
     "english": "another hand",
     "type": "compound"
+  },
+  {
+    "drow": "anya-paksha",
+    "english": "on the other hand",
+    "type": "discourse connector"
+  },
+  {
+    "drow": "anya-shabda",
+    "english": "in other words",
+    "type": "discourse connector"
   },
   {
     "drow": "anyatra",
@@ -606,8 +666,23 @@
   },
   {
     "drow": "api",
-    "english": "also; too",
+    "english": "also; too; as well",
     "type": "adverb"
+  },
+  {
+    "drow": "api-idias",
+    "english": "even if",
+    "type": "conjunction"
+  },
+  {
+    "drow": "api-kintu",
+    "english": "even though",
+    "type": "conjunction"
+  },
+  {
+    "drow": "api-nama",
+    "english": "also known as",
+    "type": "connector phrase"
   },
   {
     "drow": "apsara",
@@ -628,6 +703,16 @@
     "drow": "arambha",
     "english": "begin; start",
     "type": "verb"
+  },
+  {
+    "drow": "arambha-da",
+    "english": "starting from",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "arambha-sthane",
+    "english": "beginning at",
+    "type": "compound preposition"
   },
   {
     "drow": "ardha",
@@ -668,6 +753,11 @@
     "drow": "artha",
     "english": "meaning; sense",
     "type": "noun"
+  },
+  {
+    "drow": "arthat",
+    "english": "that is; namely",
+    "type": "discourse connector"
   },
   {
     "drow": "asafalta",
@@ -765,14 +855,34 @@
     "type": "adjective"
   },
   {
+    "drow": "atah",
+    "english": "thus; hence; accordingly",
+    "type": "conjunction / adverb"
+  },
+  {
     "drow": "athva",
     "english": "or",
+    "type": "conjunction"
+  },
+  {
+    "drow": "athva athva",
+    "english": "either or",
+    "type": "conjunction phrase"
+  },
+  {
+    "drow": "athva-cet",
+    "english": "or else",
     "type": "conjunction"
   },
   {
     "drow": "ati",
     "english": "too; excessively; very",
     "type": "intensifier"
+  },
+  {
+    "drow": "ati-dur-da",
+    "english": "far from",
+    "type": "compound preposition"
   },
   {
     "drow": "ati-vishala",
@@ -925,6 +1035,11 @@
     "type": "noun"
   },
   {
+    "drow": "badle-da",
+    "english": "instead of; in place of; rather than",
+    "type": "compound preposition"
+  },
+  {
     "drow": "bahas",
     "english": "argue; debate",
     "type": "verb"
@@ -933,6 +1048,16 @@
     "drow": "bahir",
     "english": "out; outside; outward",
     "type": "adverb / preposition"
+  },
+  {
+    "drow": "bahir-da",
+    "english": "out of; outside of",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "bahishkrit",
+    "english": "excluding",
+    "type": "preposition"
   },
   {
     "drow": "bahut",
@@ -1820,13 +1945,18 @@
     "type": "noun / verb"
   },
   {
+    "drow": "da",
+    "english": "for",
+    "type": "preposition"
+  },
+  {
     "drow": "da-",
     "english": "of; belonging to; from; because of; relational",
     "type": "grammar prefix"
   },
   {
     "drow": "da-adam",
-    "english": "of me; from me",
+    "english": "of me; from me; for me",
     "type": "relational form"
   },
   {
@@ -1853,6 +1983,11 @@
     "drow": "da-Harlow",
     "english": "to Harlow; in Harlow",
     "type": "phrase"
+  },
+  {
+    "drow": "da-hita",
+    "english": "for the sake of",
+    "type": "compound preposition"
   },
   {
     "drow": "da-kara",
@@ -1895,9 +2030,24 @@
     "type": "phrase"
   },
   {
+    "drow": "da-sarva",
+    "english": "for all",
+    "type": "preposition phrase"
+  },
+  {
+    "drow": "da-sva",
+    "english": "for oneself",
+    "type": "preposition phrase"
+  },
+  {
     "drow": "da-tumu",
-    "english": "of you; yours; to you; from you",
+    "english": "of you; yours; to you; from you; for you",
     "type": "relational form"
+  },
+  {
+    "drow": "da-uddesha",
+    "english": "for the purpose of",
+    "type": "compound preposition"
   },
   {
     "drow": "da-Vilasa",
@@ -1906,8 +2056,13 @@
   },
   {
     "drow": "da-vise",
-    "english": "of him; his",
+    "english": "of him; his; for them; for him; for her",
     "type": "relational form"
+  },
+  {
+    "drow": "da-Xcsadam",
+    "english": "for us",
+    "type": "preposition phrase"
   },
   {
     "drow": "dabba",
@@ -2336,7 +2491,7 @@
   },
   {
     "drow": "dvara",
-    "english": "door; gate",
+    "english": "door; gate; by; by means of",
     "type": "noun"
   },
   {
@@ -2375,9 +2530,29 @@
     "type": "number / article"
   },
   {
+    "drow": "eka-athva",
+    "english": "either",
+    "type": "correlative conjunction"
+  },
+  {
+    "drow": "eka-kala",
+    "english": "at the same time; simultaneously",
+    "type": "conjunction / adverb"
+  },
+  {
+    "drow": "eka-varam",
+    "english": "once",
+    "type": "conjunction / adverb"
+  },
+  {
     "drow": "ena",
     "english": "now; right now; already; by now",
     "type": "adverb"
+  },
+  {
+    "drow": "ena-kyunki",
+    "english": "now that",
+    "type": "conjunction"
   },
   {
     "drow": "etha",
@@ -2822,6 +2997,31 @@
   {
     "drow": "idias",
     "english": "if",
+    "type": "conjunction"
+  },
+  {
+    "drow": "idias-athva",
+    "english": "whether",
+    "type": "conjunction"
+  },
+  {
+    "drow": "idias-athva-vai",
+    "english": "whether or not",
+    "type": "conjunction"
+  },
+  {
+    "drow": "idias-bhava",
+    "english": "in case; just in case; in the event that",
+    "type": "conjunction"
+  },
+  {
+    "drow": "idias-mana",
+    "english": "assuming that; supposing that",
+    "type": "conjunction"
+  },
+  {
+    "drow": "idias-niyama",
+    "english": "provided that; providing that",
     "type": "conjunction"
   },
   {
@@ -3275,6 +3475,11 @@
     "type": "grammar form"
   },
   {
+    "drow": "kala-madhye",
+    "english": "during",
+    "type": "preposition"
+  },
+  {
     "drow": "kala-rang",
     "english": "black",
     "type": "adjective"
@@ -3303,6 +3508,11 @@
     "drow": "kali-mirch",
     "english": "pepper; black pepper",
     "type": "noun"
+  },
+  {
+    "drow": "kam",
+    "english": "whom",
+    "type": "question word"
   },
   {
     "drow": "kam-se-kam",
@@ -3390,9 +3600,19 @@
     "type": "verb"
   },
   {
+    "drow": "kara-kala",
+    "english": "while doing",
+    "type": "conjunction phrase"
+  },
+  {
     "drow": "karan",
     "english": "reason; cause",
     "type": "noun"
+  },
+  {
+    "drow": "karana-da",
+    "english": "due to; owing to; thanks to",
+    "type": "compound preposition"
   },
   {
     "drow": "karar",
@@ -3437,6 +3657,11 @@
   {
     "drow": "kasya",
     "english": "whose",
+    "type": "question word"
+  },
+  {
+    "drow": "katama",
+    "english": "which",
     "type": "question word"
   },
   {
@@ -3553,6 +3778,11 @@
     "drow": "kevala",
     "english": "only; merely",
     "type": "adverb"
+  },
+  {
+    "drow": "kevala-idias",
+    "english": "only if; if and only if",
+    "type": "conjunction"
   },
   {
     "drow": "khab",
@@ -3910,6 +4140,11 @@
     "type": "noun"
   },
   {
+    "drow": "kshana-kala",
+    "english": "for a while",
+    "type": "adverbial phrase"
+  },
+  {
     "drow": "kshanik",
     "english": "brief; momentary",
     "type": "adjective"
@@ -3981,7 +4216,7 @@
   },
   {
     "drow": "kyunki",
-    "english": "because; since",
+    "english": "because; since; seeing that; given that",
     "type": "conjunction"
   },
   {
@@ -4195,9 +4430,19 @@
     "type": "noun / adjective"
   },
   {
+    "drow": "madhya-dvara",
+    "english": "through",
+    "type": "preposition"
+  },
+  {
     "drow": "madhyahna",
     "english": "noon; midday",
     "type": "noun"
+  },
+  {
+    "drow": "madhye",
+    "english": "among; amongst; amid; amidst",
+    "type": "preposition"
   },
   {
     "drow": "madira",
@@ -4368,6 +4613,11 @@
     "drow": "marg-darshan",
     "english": "directions; guidance on a route",
     "type": "noun"
+  },
+  {
+    "drow": "marga-dvara",
+    "english": "by way of; via",
+    "type": "compound preposition"
   },
   {
     "drow": "marham",
@@ -4955,6 +5205,21 @@
     "type": "adjective"
   },
   {
+    "drow": "nikat-bhava",
+    "english": "about to",
+    "type": "aspect marker"
+  },
+  {
+    "drow": "nikat-da",
+    "english": "near to; close to",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "nikate",
+    "english": "nearby",
+    "type": "adverb"
+  },
+  {
     "drow": "nila",
     "english": "blue",
     "type": "adjective"
@@ -5300,6 +5565,11 @@
     "type": "verb"
   },
   {
+    "drow": "par-paar",
+    "english": "across",
+    "type": "preposition"
+  },
+  {
     "drow": "para",
     "english": "other; another",
     "type": "adjective"
@@ -5365,6 +5635,11 @@
     "type": "noun"
   },
   {
+    "drow": "parita",
+    "english": "around",
+    "type": "preposition"
+  },
+  {
     "drow": "parivar",
     "english": "family; household",
     "type": "noun"
@@ -5378,6 +5653,16 @@
     "drow": "parosa",
     "english": "serve food; portion a meal",
     "type": "verb"
+  },
+  {
+    "drow": "parshva",
+    "english": "beside",
+    "type": "preposition"
+  },
+  {
+    "drow": "parshva-da",
+    "english": "next to",
+    "type": "compound preposition"
   },
   {
     "drow": "parson",
@@ -5401,7 +5686,7 @@
   },
   {
     "drow": "paryanta",
-    "english": "until; up to; as far as",
+    "english": "until; up to; as far as; till",
     "type": "preposition"
   },
   {
@@ -5413,6 +5698,16 @@
     "drow": "pashcha",
     "english": "after; afterward",
     "type": "adverb"
+  },
+  {
+    "drow": "pashcha-da",
+    "english": "following; subsequent to",
+    "type": "preposition"
+  },
+  {
+    "drow": "pashcha-yat",
+    "english": "after which",
+    "type": "conjunction phrase"
   },
   {
     "drow": "pashchatap",
@@ -5538,6 +5833,11 @@
     "drow": "phal",
     "english": "fruit",
     "type": "noun"
+  },
+  {
+    "drow": "phalatah",
+    "english": "as a result; as a consequence; consequently",
+    "type": "conjunction phrase"
   },
   {
     "drow": "phenk",
@@ -5670,6 +5970,26 @@
     "type": "verb"
   },
   {
+    "drow": "pratham-kala",
+    "english": "for the first time",
+    "type": "adverbial phrase"
+  },
+  {
+    "drow": "prati",
+    "english": "to; unto; toward; towards; per",
+    "type": "preposition"
+  },
+  {
+    "drow": "prati-eka",
+    "english": "for each",
+    "type": "preposition phrase"
+  },
+  {
+    "drow": "prati-sarva",
+    "english": "for every",
+    "type": "preposition phrase"
+  },
+  {
     "drow": "pratidina",
     "english": "daily; every day",
     "type": "adverb"
@@ -5688,6 +6008,21 @@
     "drow": "pratijna",
     "english": "promise; solemn vow",
     "type": "noun"
+  },
+  {
+    "drow": "pratiksha-kala",
+    "english": "pending",
+    "type": "preposition"
+  },
+  {
+    "drow": "pratinidhi-da",
+    "english": "on behalf of",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "pratiphala-da",
+    "english": "in return for",
+    "type": "compound preposition"
   },
   {
     "drow": "pratishtha",
@@ -5818,6 +6153,16 @@
     "drow": "purva",
     "english": "before; earlier",
     "type": "adverb"
+  },
+  {
+    "drow": "purva-da",
+    "english": "prior to",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "purva-yat",
+    "english": "before which",
+    "type": "conjunction phrase"
   },
   {
     "drow": "pustaka",
@@ -6331,7 +6676,12 @@
   },
   {
     "drow": "saha",
-    "english": "with",
+    "english": "with; plus; along with",
+    "type": "preposition"
+  },
+  {
+    "drow": "saha-parshva",
+    "english": "alongside",
     "type": "preposition"
   },
   {
@@ -6393,6 +6743,11 @@
     "drow": "sahi",
     "english": "correct; right",
     "type": "adjective"
+  },
+  {
+    "drow": "sahit",
+    "english": "including",
+    "type": "preposition"
   },
   {
     "drow": "sahodar",
@@ -6580,6 +6935,11 @@
     "type": "noun"
   },
   {
+    "drow": "samukha",
+    "english": "opposite; facing",
+    "type": "preposition"
+  },
+  {
     "drow": "samvad",
     "english": "dialogue; conversation",
     "type": "noun"
@@ -6728,6 +7088,16 @@
     "drow": "sarva",
     "english": "all",
     "type": "adjective / pronoun"
+  },
+  {
+    "drow": "sarva-antar",
+    "english": "throughout",
+    "type": "preposition"
+  },
+  {
+    "drow": "sarva-parita",
+    "english": "all around",
+    "type": "preposition"
   },
   {
     "drow": "sarvada",
@@ -7200,6 +7570,11 @@
     "type": "noun"
   },
   {
+    "drow": "sivaya",
+    "english": "except; except for; apart from",
+    "type": "preposition"
+  },
+  {
     "drow": "Sivri",
     "english": "Sivri",
     "type": "proper noun"
@@ -7308,6 +7683,11 @@
     "drow": "stha",
     "english": "stay; remain",
     "type": "verb"
+  },
+  {
+    "drow": "sthane",
+    "english": "at",
+    "type": "preposition"
   },
   {
     "drow": "subah-savera",
@@ -7540,6 +7920,16 @@
     "type": "title / compound"
   },
   {
+    "drow": "tada-paryanta",
+    "english": "until then; until such time as",
+    "type": "conjunction phrase"
+  },
+  {
+    "drow": "tada-prabhriti",
+    "english": "since then; since that time; ever since; from then on",
+    "type": "adverb"
+  },
+  {
     "drow": "tahkhana",
     "english": "cellar; basement",
     "type": "noun"
@@ -7691,13 +8081,23 @@
   },
   {
     "drow": "tathapi",
-    "english": "anyway; nevertheless",
+    "english": "anyway; nevertheless; nonetheless",
     "type": "adverb"
+  },
+  {
+    "drow": "tathapi-da",
+    "english": "despite; in spite of",
+    "type": "preposition"
   },
   {
     "drow": "tatra",
     "english": "there; over there",
     "type": "adverb"
+  },
+  {
+    "drow": "tavat-kala",
+    "english": "meanwhile",
+    "type": "conjunction / adverb"
   },
   {
     "drow": "taza",
@@ -7910,6 +8310,16 @@
     "type": "verb"
   },
   {
+    "drow": "ubhaya",
+    "english": "both",
+    "type": "correlative conjunction"
+  },
+  {
+    "drow": "ubhaya uta",
+    "english": "both and",
+    "type": "conjunction phrase"
+  },
+  {
     "drow": "Ucca",
     "english": "high; exalted",
     "type": "adjective"
@@ -7925,6 +8335,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "udaharana-rupa",
+    "english": "for example; for instance",
+    "type": "connector phrase"
+  },
+  {
     "drow": "udara",
     "english": "stomach; abdomen",
     "type": "noun"
@@ -7933,6 +8348,11 @@
     "drow": "udasi",
     "english": "sadness; gloom",
     "type": "noun"
+  },
+  {
+    "drow": "uddesha",
+    "english": "in order to; so as to",
+    "type": "purpose marker"
   },
   {
     "drow": "udhar",
@@ -7991,18 +8411,28 @@
   },
   {
     "drow": "upar",
-    "english": "upstairs; upward",
+    "english": "upstairs; upward; up",
     "type": "adverb"
   },
   {
     "drow": "upari",
-    "english": "above; on top",
+    "english": "above; on top; on; upon; over",
+    "type": "preposition"
+  },
+  {
+    "drow": "upari-prati",
+    "english": "onto",
     "type": "preposition"
   },
   {
     "drow": "upavesh",
     "english": "sit",
     "type": "verb"
+  },
+  {
+    "drow": "upayoga-kara",
+    "english": "using",
+    "type": "preposition"
   },
   {
     "drow": "upayogi",
@@ -8022,6 +8452,16 @@
   {
     "drow": "uta",
     "english": "and",
+    "type": "conjunction"
+  },
+  {
+    "drow": "uta-saha",
+    "english": "as well as",
+    "type": "conjunction"
+  },
+  {
+    "drow": "uta-vai",
+    "english": "nor",
     "type": "conjunction"
   },
   {
@@ -8245,6 +8685,16 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-eka",
+    "english": "without any; neither",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "vai-eka uta-vai",
+    "english": "neither nor",
+    "type": "conjunction phrase"
+  },
+  {
     "drow": "vai-gandha",
     "english": "odorless; without scent",
     "type": "adjective / vai-compound"
@@ -8305,6 +8755,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-kevala lekin-adhik",
+    "english": "not only but also",
+    "type": "conjunction phrase"
+  },
+  {
     "drow": "vai-khatra",
     "english": "safe; without danger",
     "type": "adjective / vai-compound"
@@ -8323,6 +8778,11 @@
     "drow": "vai-mitra",
     "english": "friendless; without friends",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-mulya",
+    "english": "for free",
+    "type": "adverbial phrase"
   },
   {
     "drow": "vai-nama",
@@ -8393,6 +8853,11 @@
     "drow": "vai-sach",
     "english": "untrue; not true",
     "type": "adjective / vai-compound"
+  },
+  {
+    "drow": "vai-saha",
+    "english": "without; minus",
+    "type": "preposition"
   },
   {
     "drow": "vai-sahamati",
@@ -8535,6 +9000,11 @@
     "type": "modal / grammar"
   },
   {
+    "drow": "vai-yatha",
+    "english": "unlike",
+    "type": "preposition"
+  },
+  {
     "drow": "vai-zarurat",
     "english": "needless; unnecessary",
     "type": "adjective / vai-compound"
@@ -8628,6 +9098,11 @@
     "drow": "vashikara",
     "english": "compel; bring under magical influence",
     "type": "verb"
+  },
+  {
+    "drow": "vastavatah",
+    "english": "indeed; in fact",
+    "type": "adverb"
   },
   {
     "drow": "vastra",
@@ -8730,6 +9205,16 @@
     "type": "noun"
   },
   {
+    "drow": "vinimaya-da",
+    "english": "in exchange for",
+    "type": "compound preposition"
+  },
+  {
+    "drow": "viparita-rupa",
+    "english": "by contrast",
+    "type": "discourse connector"
+  },
+  {
     "drow": "viraha",
     "english": "miss; long for someone absent",
     "type": "verb / noun"
@@ -8738,6 +9223,16 @@
     "drow": "virodhi",
     "english": "opponent; adversary",
     "type": "noun"
+  },
+  {
+    "drow": "viruddha",
+    "english": "against; versus",
+    "type": "preposition"
+  },
+  {
+    "drow": "viruddha-da",
+    "english": "as opposed to",
+    "type": "compound preposition"
   },
   {
     "drow": "vise",
@@ -8750,9 +9245,24 @@
     "type": "adjective"
   },
   {
+    "drow": "vishaya-da",
+    "english": "regarding; concerning; about; with regard to; in respect to",
+    "type": "preposition"
+  },
+  {
+    "drow": "vishaya-rupa",
+    "english": "in terms of",
+    "type": "compound preposition"
+  },
+  {
     "drow": "vishesh",
     "english": "special; particular",
     "type": "adjective"
+  },
+  {
+    "drow": "visheshatah",
+    "english": "specifically; in particular",
+    "type": "discourse connector"
   },
   {
     "drow": "vishrama",
@@ -9005,6 +9515,11 @@
     "type": "verb"
   },
   {
+    "drow": "ya-kaun",
+    "english": "whoever; no matter who",
+    "type": "conjunction / pronoun"
+  },
+  {
     "drow": "yachana",
     "english": "beg; petition; plead",
     "type": "verb"
@@ -9020,9 +9535,29 @@
     "type": "conjunction"
   },
   {
+    "drow": "yadau-yadau",
+    "english": "whenever; no matter when",
+    "type": "conjunction"
+  },
+  {
     "drow": "yadi-na",
     "english": "unless",
     "type": "conjunction"
+  },
+  {
+    "drow": "yasya-yasya",
+    "english": "whosever",
+    "type": "question word"
+  },
+  {
+    "drow": "yat-katama",
+    "english": "whichever",
+    "type": "conjunction / pronoun"
+  },
+  {
+    "drow": "yat-kim",
+    "english": "no matter what",
+    "type": "conjunction phrase"
   },
   {
     "drow": "yatha",
@@ -9030,9 +9565,39 @@
     "type": "conjunction / relational word"
   },
   {
+    "drow": "yatha-idias",
+    "english": "as if",
+    "type": "conjunction"
+  },
+  {
+    "drow": "yatha-uddesha",
+    "english": "so that; in order that",
+    "type": "conjunction"
+  },
+  {
+    "drow": "yatha-vai",
+    "english": "lest",
+    "type": "conjunction"
+  },
+  {
     "drow": "yatra",
     "english": "where; upon which",
     "type": "relative word"
+  },
+  {
+    "drow": "yatra-antar",
+    "english": "wherein",
+    "type": "conjunction"
+  },
+  {
+    "drow": "yatra-par",
+    "english": "whereupon",
+    "type": "conjunction"
+  },
+  {
+    "drow": "yatra-yatra",
+    "english": "no matter where",
+    "type": "conjunction phrase"
   },
   {
     "drow": "yatri",
@@ -9045,9 +9610,19 @@
     "type": "grammar form"
   },
   {
+    "drow": "yavat-kala",
+    "english": "as long as; so long as",
+    "type": "conjunction"
+  },
+  {
     "drow": "yek",
     "english": "one; only",
     "type": "number / adjective"
+  },
+  {
+    "drow": "yena",
+    "english": "whereby",
+    "type": "conjunction"
   },
   {
     "drow": "yhana",

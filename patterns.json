@@ -439,5 +439,173 @@
     "xrou": "Vise [verb].",
     "example_en": "They walk.",
     "example_xrou": "Vise cara."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[something] is for [someone].",
+    "xrou": "[something] xce da-[someone].",
+    "example_en": "This is for you.",
+    "example_xrou": "Etha xce da-tumu."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[person] gives [object] to [person].",
+    "xrou": "[person] yhanam [object] da-[person].",
+    "example_en": "Give a key to Ash.",
+    "example_xrou": "Yhanam eka kunji da-Ash."
+  },
+  {
+    "category": "Prepositions",
+    "english": "Go to [place].",
+    "xrou": "Caxra prati [place].",
+    "example_en": "Go to the house.",
+    "example_xrou": "Caxra prati ghar."
+  },
+  {
+    "category": "Prepositions",
+    "english": "I want to [verb].",
+    "xrou": "Adam kama [verb].",
+    "example_en": "I want to leave.",
+    "example_xrou": "Adam kama caxra."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[thing] is in [place].",
+    "xrou": "[thing] xce antar [place].",
+    "example_en": "The key is in the house.",
+    "example_xrou": "Kunji xce antar ghar."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[thing] is on [thing].",
+    "xrou": "[thing] xce upari [thing].",
+    "example_en": "The book is on the table.",
+    "example_xrou": "Pustaka xce upari mez."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[person] is with [person].",
+    "xrou": "[person] xce saha [person].",
+    "example_en": "I am with you.",
+    "example_xrou": "Adam xce saha tumu."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[person] is without [thing].",
+    "xrou": "[person] xce vai-saha [thing].",
+    "example_en": "I am without money.",
+    "example_xrou": "Adam xce vai-saha paisa."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[place] is between [place] and [place].",
+    "xrou": "[place] xce antara-madhye [place] uta [place].",
+    "example_en": "Between you and me.",
+    "example_xrou": "Antara-madhye tumu uta adam."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[thing] is about [topic].",
+    "xrou": "[thing] xce vishaya-da [topic].",
+    "example_en": "This is about our home.",
+    "example_xrou": "Etha xce vishaya-da da-Xcsadam ghar."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[thing] is because of [cause].",
+    "xrou": "[thing] xce karana-da [cause].",
+    "example_en": "Not because of you.",
+    "example_xrou": "Vai karana-da tumu."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[action] happens during [time].",
+    "xrou": "[action] kala-madhye [time].",
+    "example_en": "During the night.",
+    "example_xrou": "Kala-madhye ratri."
+  },
+  {
+    "category": "Prepositions",
+    "english": "[action] continues until [time].",
+    "xrou": "[action] paryanta [time].",
+    "example_en": "Until tomorrow.",
+    "example_xrou": "Paryanta akal."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "[clause] and [clause].",
+    "xrou": "[clause] uta [clause].",
+    "example_en": "Before and after.",
+    "example_xrou": "Purva uta pashcha."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Either [a] or [b].",
+    "xrou": "Athva [a] athva [b].",
+    "example_en": "Either this or that.",
+    "example_xrou": "Athva etha athva aves."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Neither [a] nor [b].",
+    "xrou": "Vai-eka [a] uta-vai [b].",
+    "example_en": "Neither this nor that.",
+    "example_xrou": "Vai-eka etha uta-vai aves."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "[clause] but [clause].",
+    "xrou": "[clause] lekin [clause].",
+    "example_en": "I understand, but I disagree.",
+    "example_xrou": "Adam xypremanah, lekin adam vai-sammati."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "[action] because [reason].",
+    "xrou": "[action] kyunki [reason].",
+    "example_en": "Because I love you.",
+    "example_xrou": "Kyunki adam pixrit tumu."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "If [condition], [result].",
+    "xrou": "Idias [condition], [result].",
+    "example_en": "If you wish.",
+    "example_xrou": "Idias tumu kama."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Unless [condition], [result].",
+    "xrou": "Idias-vai [condition], [result].",
+    "example_en": "Unless you object.",
+    "example_xrou": "Idias-vai tumu virodha."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Although [condition], [result].",
+    "xrou": "Kintu [condition], [result].",
+    "example_en": "Although I am tired.",
+    "example_xrou": "Kintu adam xce khasta."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Even if [condition], [result].",
+    "xrou": "Api-idias [condition], [result].",
+    "example_en": "Even if I fail.",
+    "example_xrou": "Api-idias adam asafal."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "Whether [a] or [b].",
+    "xrou": "Idias-athva [a] athva [b].",
+    "example_en": "Whether you stay or leave.",
+    "example_xrou": "Idias-athva tumu sthira athva caxra."
+  },
+  {
+    "category": "Conjunctions",
+    "english": "[goal] so that [result].",
+    "xrou": "[goal] yatha-uddesha [result].",
+    "example_en": "So that you understand.",
+    "example_xrou": "Yatha-uddesha tumu xypremanah."
   }
 ]
