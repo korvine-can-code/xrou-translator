@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v2 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v4 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -6,7 +6,7 @@
   root.XrouEngine = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function() {
   'use strict';
-  const norm = s => String(s ?? '').toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  const norm = s => String(s ?? '').replace(/[’‘]/g, "'").toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
   const lexWords = text => (String(text).match(/[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu) || []);
   const splitAliases = english => String(english || '').split(/\s*;\s*|\s+\/\s+/)
     .map(s => s.replace(/\s*\([^)]*\)/g,'').trim())
@@ -15,6 +15,13 @@
     i:'adam', me:'adam', you:'tumu', we:'Xcsadam', us:'Xcsadam',
     my:'adam-', your:'da-tumu', mine:'dar-adam', yours:'dar-tumu',
     not:'vai', no:'vai', will:'thanatei', shall:'thanatei',
+    'will not':'vai thanatei', 'should not':'vai vakhra', 'must not':'vai vakhra',
+    can:'shakta', cannot:'vai shakta', "can't":'vai shakta',
+    could:'shakta-tha', "couldn't":'vai-shakta-tha',
+    "won't":'vai thanatei', "don't":'vai', "doesn't":'vai', "didn't":'vai',
+    "isn't":'vai xce', "aren't":'vai xce', "wasn't":'vai xce-tha', "weren't":'vai xce-tha',
+    "shouldn't":'vai vakhra', "mustn't":'vai vakhra',
+    "wouldn't":'vai iccha-tha', "mightn't":'vai sambhavit',
     am:'xce', are:'xce', is:'xce', be:'xce',
     love:'pixrit', know:'xypremanah', understand:'xypremanah',
     protect:'raksha', save:'raksha', good:'xera',
@@ -26,6 +33,9 @@
   const XROU_CANON = {
     adam:'I', adar:'I', adas:'I', tumu:'you', xcsadam:'we',
     vai:'not', thanatei:'will', xanathes:'', xce:'is',
+    shakta:'can', 'vai shakta':'cannot', 'vai-shakta':'unable',
+    'shakta-tha':'could', 'vai-shakta-tha':'could not',
+    'vai thanatei':'will not',
     pixrit:'love', xypremanah:'understand', raksha:'protect',
     kama:'want', haxa:'speak', kara:'do', bhava:'become',
     'adam-':'my', 'da-tumu':'to you', 'dar-tumu':'yours',
@@ -54,9 +64,19 @@
     }
     return row[b.length];
   }
-  function createTranslator(lexicon) {
+  function createTranslator(lexicon, phrasebook=[]) {
     if (!Array.isArray(lexicon)) throw new TypeError('Lexicon must be an array');
     const indexes={en:new Map(),xrou:new Map()};
+    // Exact phrase translations are curated independently of word-by-word grammar.
+    // The longest common phrases have explicit context rather than guessing the sense of a root.
+    const phraseKey = s => norm(s).replace(/[^\p{L}\p{N}'’\-]+/gu,' ').replace(/\s+/g,' ').trim();
+    const fullPhrases={en:new Map(),xrou:new Map()};
+    for(const phrase of phrasebook) {
+      if(!phrase || !phrase.english || !phrase.xrou) continue;
+      const en=phraseKey(phrase.english),xrou=phraseKey(phrase.xrou);
+      if(en && !fullPhrases.en.has(en)) fullPhrases.en.set(en,phrase);
+      if(xrou && !fullPhrases.xrou.has(xrou)) fullPhrases.xrou.set(xrou,phrase);
+    }
     function add(lang,key,entry,override=false) {
       const word=norm(key), toks=lexWords(word).map(norm);
       if (!word || !toks.length) return;
@@ -157,6 +177,14 @@
     }
     function translateLine(line,source) {
       currentText=line;
+      const full=fullPhrases[source].get(phraseKey(line));
+      if(full) {
+        const translation=(source==='en'?full.xrou:full.english).replace(/[.!?]+$/,'');
+        const leading=(line.match(/^\s*/)||[''])[0];
+        const trailing=(line.match(/\s*$/)||[''])[0];
+        const label=source==='en'?full.english:full.xrou;
+        return {text:leading+translation+trailing,matches:[`Phrasebook: ${label.trim()} → ${translation}`],unknown:[],segments:[]};
+      }
       const tokens=tokenize(line);
       if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
       const parts=[],matches=[],unknown=[];

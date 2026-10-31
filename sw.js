@@ -1,21 +1,13 @@
-const CACHE = 'dvandva-xrou-haxa-v3-vocab';
-const ASSETS = [
-  './', './index.html', './engine.js', './app.js', './lexicon.json',
-  './manifest.webmanifest', './assets/cave-bg.jpg', './assets/dvandva-header.png'
-];
-self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
-});
-self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
-});
-self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
-  event.respondWith(fetch(event.request).then(response => {
-    if (response.ok && new URL(event.request.url).origin === self.location.origin) {
-      const copy = response.clone();
-      caches.open(CACHE).then(cache => cache.put(event.request, copy));
+const CACHE = 'dvandva-xrou-haxa-v4-vai-lexicon';
+const ASSETS = ['./','./index.html','./lexicon.json','./phrasebook.json','./patterns.json','./engine.js','./app.js','./manifest.webmanifest','./assets/cave-bg.jpg','./assets/dvandva-header.png'];
+self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
+self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+  event.respondWith(fetch(event.request).then(response=>{
+    if(response.ok && new URL(event.request.url).origin===self.location.origin){
+      const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));
     }
     return response;
-  }).catch(() => caches.match(event.request)));
+  }).catch(()=>caches.match(event.request)));
 });

@@ -123,6 +123,22 @@ footer { color:#c7c7c7; font-size:.84rem; padding-bottom:40px; }
 .suggestButton { background:#282828; border-color:rgba(255,255,255,.35);color:#fff;min-height:30px;padding:0 10px; font-weight:600; }
 textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid #f0f0f0;outline-offset:2px; }
 .translation { white-space:pre-wrap; }
+
+.phraseIntro {margin:0 0 16px;color:var(--muted);line-height:1.55}
+.phraseControls { display:grid; grid-template-columns:minmax(0,1fr) 240px auto; gap:10px; }
+.phraseGrid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px; }
+.phraseCard { background:rgba(20,20,20,.95);border:1px solid rgba(255,255,255,.15);border-radius:15px;padding:16px;min-width:0; }
+.phraseEnglish {font-size:.93rem;color:#d6d6d6;line-height:1.45}
+.phraseXrou {font-family:Georgia,serif;font-size:1.27rem;font-weight:bold;margin-top:9px;overflow-wrap:anywhere;line-height:1.45}
+.phraseCard .actions {margin-top:14px}
+.phraseCard button {min-height:34px;font-size:.82rem;font-weight:650}
+.phraseTag {font-size:.72rem;letter-spacing:.04em;color:#bcbcbc;text-transform:uppercase;margin-bottom:10px}
+.patternForm {font-family:Georgia,serif;font-size:1.15rem;line-height:1.4;overflow-wrap:anywhere}
+.patternExample {margin-top:11px;padding-top:11px;border-top:1px solid rgba(255,255,255,.12);font-size:.84rem;color:#d1d1d1;line-height:1.5}
+.patternExample strong {color:#fff}
+.moreRow {display:flex;justify-content:center;margin-top:16px}
+#phraseResults .empty,#patternResults .empty {grid-column:1/-1}
+@media(max-width:760px) {.phraseControls {grid-template-columns:1fr;} .phraseGrid {grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -135,6 +151,8 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
     <div class="tabs">
       <button class="tab active" data-tab="translator">Translator</button>
       <button class="tab" data-tab="dictionary">Dictionary</button>
+      <button class="tab" data-tab="phrasebook">Phrasebook</button>
+      <button class="tab" data-tab="patterns">Sentence patterns</button>
     </div>
   </div>
 </header>
@@ -201,10 +219,37 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
       <div id="results" class="grid"></div>
     </div>
   </section>
+
+  <section id="phrasebook" class="panel">
+    <div class="box">
+      <p class="phraseIntro">Browse and copy common expressions for everyday Astralith roleplay. You can also try any example directly in the translator. These are curated or newly proposed Xrou expressions; some alternate readings depend on context.</p>
+      <div class="phraseControls">
+        <input id="phraseSearch" type="search" placeholder="Search phrases in English or Xrou…" aria-label="Search phrasebook">
+        <select id="phraseCategory" aria-label="Phrase category"><option value="">All categories</option></select>
+        <button id="phraseClear" type="button">Clear</button>
+      </div>
+      <div class="meta"><div id="phraseCount" role="status">Loading phrasebook…</div><div>English ↔ Xrou · click Copy or Try</div></div>
+      <div id="phraseResults" class="phraseGrid"></div>
+      <div class="moreRow"><button id="phraseMore" type="button" hidden>Show more phrases</button></div>
+    </div>
+  </section>
+
+  <section id="patterns" class="panel">
+    <div class="box">
+      <p class="phraseIntro">Use these structures to build original Xrou sentences. Words in [brackets] are placeholders, not automatic translations. The examples below demonstrate each pattern, but not every combination will be grammatically valid.</p>
+      <div class="phraseControls">
+        <input id="patternSearch" type="search" placeholder="Search grammar patterns…" aria-label="Search sentence patterns">
+        <select id="patternCategory" aria-label="Pattern category"><option value="">All categories</option></select>
+        <button id="patternClear" type="button">Clear</button>
+      </div>
+      <div class="meta"><div id="patternCount" role="status">Loading sentence patterns…</div><div>Use an example to try it in the translator</div></div>
+      <div id="patternResults" class="phraseGrid"></div>
+    </div>
+  </section>
 </main>
 
 <footer class="wrap">
-  <div class="footerBox">Version 2 adds starter grammar rules and live translation, while keeping unknown words visible. Xrou grammar is evolving; review complex translations before using them in roleplay.</div>
+  <div class="footerBox">Version 3 includes a curated phrasebook and reusable sentence patterns. Exact phrase matches improve familiar expressions; grammar rules remain provisional and complex translations should still be reviewed.</div>
 </footer>
 
 <script src="./engine.js" defer></script>

@@ -1,0 +1,2027 @@
+[
+  {
+    "english": "Hello.",
+    "xrou": "Namaskar.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Good morning.",
+    "xrou": "Samyak prabhat.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Good evening.",
+    "xrou": "Samyak sham.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Good night.",
+    "xrou": "Samyak ratri.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Welcome home.",
+    "xrou": "Svagata ghar.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Welcome, friend.",
+    "xrou": "Svagata, mitra.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "How are you?",
+    "xrou": "Katham tumu xce?",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "I am well.",
+    "xrou": "Adam xce samyak.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "I am tired.",
+    "xrou": "Adam xce khasta.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "It's good to see you.",
+    "xrou": "Xce samyak dars tumu.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "It's been a long time.",
+    "xrou": "Etha xce dirgha samay.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Come inside.",
+    "xrou": "Agaccha antar.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Please, sit down.",
+    "xrou": "Kripa, baith.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Make yourself comfortable.",
+    "xrou": "Kara sva-sukha.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Please stay.",
+    "xrou": "Kripa, stha.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "I should be going.",
+    "xrou": "Adam vakhra caxra.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "I must leave now.",
+    "xrou": "Adam vakhra caxra ena.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Goodbye, friend.",
+    "xrou": "Punar dars, mitra.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Until we meet again.",
+    "xrou": "Punar dars.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Go well.",
+    "xrou": "Caxra samyak.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "May the night protect you.",
+    "xrou": "Ratri raksha tumu.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Have a good day.",
+    "xrou": "Tumu hav samyak dina.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "See you tomorrow.",
+    "xrou": "Punar dars akal.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Thank you for coming.",
+    "xrou": "Adam-dhanya da-tumu da-agaccha.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "You are always welcome.",
+    "xrou": "Tumu anausa svagata.",
+    "category": "Greetings & Farewells"
+  },
+  {
+    "english": "Yes.",
+    "xrou": "Rast.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "No.",
+    "xrou": "Vai.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Maybe.",
+    "xrou": "Kadachit.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Of course.",
+    "xrou": "Avashya.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I agree.",
+    "xrou": "Adam sahamat.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I disagree.",
+    "xrou": "Adam vai sahamat.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I understand.",
+    "xrou": "Adam xypremanah.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I don't understand.",
+    "xrou": "Adam vai xypremanah.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I know.",
+    "xrou": "Adam xypremanah.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I don't know.",
+    "xrou": "Adam vai xypremanah.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I remember.",
+    "xrou": "Adam smarana.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I forgot.",
+    "xrou": "Adam xanathes vismara.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That is true.",
+    "xrou": "Etha xce satya.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That is a lie.",
+    "xrou": "Etha xce draugov.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I believe you.",
+    "xrou": "Adam vishvas tumu.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I don't believe you.",
+    "xrou": "Adam vai vishvas tumu.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Speak plainly.",
+    "xrou": "Haxa spashta.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Speak slowly, please.",
+    "xrou": "Kripa, haxa dhire.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Say that again.",
+    "xrou": "Haxa etha punar.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I have a question.",
+    "xrou": "Adam hav prashna.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I have an answer.",
+    "xrou": "Adam hav uttara.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Tell me everything.",
+    "xrou": "Haxa adam sarva.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Let me explain.",
+    "xrou": "Vexna adam vyakhya.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That makes sense.",
+    "xrou": "Etha xce samyak.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That is strange.",
+    "xrou": "Etha xce anokha.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I was wrong.",
+    "xrou": "Adam xanathes bhram.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "You are right.",
+    "xrou": "Tumu xce satya.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Nothing has changed.",
+    "xrou": "Shunya parivarta.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Everything has changed.",
+    "xrou": "Sarva parivarta.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Let's talk later.",
+    "xrou": "Xce uta haxa baad-me.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "What is your name?",
+    "xrou": "Kim xce nama da-tumu?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "My name is Sivri.",
+    "xrou": "Nama da-adam xce Sivri.",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Who are you?",
+    "xrou": "Ka xce tumu?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Where are you?",
+    "xrou": "Kutra tumu xce?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Where is my friend?",
+    "xrou": "Kutra adam-mitra xce?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Where are we going?",
+    "xrou": "Kutra Xcsadam gamana?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Where did you go?",
+    "xrou": "Kutra tumu xanathes gamana?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "When will you return?",
+    "xrou": "Yadau tumu thanatei punar caxra?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Why are you here?",
+    "xrou": "Kasma tumu xce atra?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Why did you leave?",
+    "xrou": "Kasma tumu xanathes caxra?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "What happened?",
+    "xrou": "Kim xanathes bhava?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "What is happening?",
+    "xrou": "Kim bhava ena?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "What do you want?",
+    "xrou": "Kim tumu kama?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "What do you need?",
+    "xrou": "Kim tumu apares?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "What should I do?",
+    "xrou": "Kim adam vakhra kara?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "How can I help?",
+    "xrou": "Katham adam shakta sahay?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "How much does it cost?",
+    "xrou": "Kati mulya?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "How many do you need?",
+    "xrou": "Kati tumu apares?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Is this yours?",
+    "xrou": "Etha xce dar-tumu?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Is this mine?",
+    "xrou": "Etha xce dar-adam?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Are you certain?",
+    "xrou": "Tumu xce nishchita?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Are you ready?",
+    "xrou": "Tumu xce taiyar?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Do you understand?",
+    "xrou": "Tumu xypremanah?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Can you hear me?",
+    "xrou": "Tumu shakta gautes adam?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "May I ask a question?",
+    "xrou": "Adam shakta prashna?",
+    "category": "Questions & Answers"
+  },
+  {
+    "english": "Please help me.",
+    "xrou": "Kripa sahay adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Help us, please.",
+    "xrou": "Kripa sahay Xcsadam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Wait here.",
+    "xrou": "Intezar atra.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Wait a moment.",
+    "xrou": "Eka kshana intezar.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Come with me.",
+    "xrou": "Agaccha saha adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Follow me.",
+    "xrou": "Anusara adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Stay close.",
+    "xrou": "Stha qarib.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Don't go.",
+    "xrou": "Vai caxra.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Do not touch that.",
+    "xrou": "Vai lamasa etha.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Please listen.",
+    "xrou": "Kripa gautes.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Look at me.",
+    "xrou": "Dars adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Look over there.",
+    "xrou": "Dars tatra.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Be careful.",
+    "xrou": "Sava samyak.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Be quiet.",
+    "xrou": "Siyat.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Speak louder.",
+    "xrou": "Haxa vazra.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Open the door.",
+    "xrou": "Khola darvaza.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Close the door.",
+    "xrou": "Bandh-kara darvaza.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Give me a moment.",
+    "xrou": "Yhanam eka kshana da-adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Give me the key.",
+    "xrou": "Yhanam kunji da-adam.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Take this.",
+    "xrou": "Grahana etha.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Put it here.",
+    "xrou": "Stha etha atra.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Leave it alone.",
+    "xrou": "Vexna etha stha.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Try again.",
+    "xrou": "Anvis punar.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Do it now.",
+    "xrou": "Kara etha ena.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "Stop, please.",
+    "xrou": "Vasa, kripa.",
+    "category": "Requests & Instructions"
+  },
+  {
+    "english": "This is my family.",
+    "xrou": "Etha xce adam-parivar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "This is my mother.",
+    "xrou": "Etha xce adam-matar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "This is my father.",
+    "xrou": "Etha xce adam-pitar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "This is my husband.",
+    "xrou": "Etha xce adam-Javitaran.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "This is my wife.",
+    "xrou": "Etha xce adam-Javitamar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Where are the children?",
+    "xrou": "Kutra puxa xce?",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "The children are sleeping.",
+    "xrou": "Puxa xce svap.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "The baby is awake.",
+    "xrou": "Tama-puxa xce jagrita.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Come here, little one.",
+    "xrou": "Agaccha atra, tama-puxa.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Don't cry, little one.",
+    "xrou": "Vai ruda, tama-puxa.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Everything will be well.",
+    "xrou": "Sarva thanatei samyak.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "I love you.",
+    "xrou": "Adam pixrit tumu.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "I care about you.",
+    "xrou": "Adam sneha tumu.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "I missed you.",
+    "xrou": "Adam xanathes viraha tumu.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "I trust you.",
+    "xrou": "Adam vishvas tumu.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "You are my friend.",
+    "xrou": "Tumu xce adam-mitra.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "You are my family.",
+    "xrou": "Tumu xce adam-parivar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "I'm proud of you.",
+    "xrou": "Adam xce garva da-tumu.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "You did well.",
+    "xrou": "Tumu xanathes kara samyak.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "You are doing well.",
+    "xrou": "Tumu kara vazra samyak.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Please come home.",
+    "xrou": "Kripa agaccha ghar.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Rest, my love.",
+    "xrou": "Vishrama, adam-priya.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Sleep well.",
+    "xrou": "Svap samyak.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "My little one.",
+    "xrou": "Adam tama-puxa.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Mama is here.",
+    "xrou": "Amma xce atra.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Papa is here.",
+    "xrou": "Abba xce atra.",
+    "category": "Family & Affection"
+  },
+  {
+    "english": "Are you hungry?",
+    "xrou": "Tumu xce bhukha?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Are you thirsty?",
+    "xrou": "Tumu xce bepani?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I am hungry.",
+    "xrou": "Adam xce bhukha.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I am thirsty.",
+    "xrou": "Adam xce bepani.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I want water.",
+    "xrou": "Adam kama jal.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I want bread.",
+    "xrou": "Adam kama roti.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Do you want tea?",
+    "xrou": "Tumu kama chai?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Would you like something to eat?",
+    "xrou": "Tumu kama bhojya?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Dinner is ready.",
+    "xrou": "Ratri-bhojana xce taiyar.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Breakfast is ready.",
+    "xrou": "Prabhat-bhojana xce taiyar.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "The food is hot.",
+    "xrou": "Bhojya xce garam.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "The water is cold.",
+    "xrou": "Jal xce shita.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "The soup is good.",
+    "xrou": "Shorba xce samyak.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Please eat.",
+    "xrou": "Kripa khad.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Please drink.",
+    "xrou": "Kripa xvar.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Eat with me.",
+    "xrou": "Khad saha adam.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Have some more.",
+    "xrou": "Grahana adhik.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "That's enough.",
+    "xrou": "Etha xce vasa.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I'm full.",
+    "xrou": "Adam xce trpta.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I don't want more.",
+    "xrou": "Adam vai kama adhik.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Can I have some water?",
+    "xrou": "Adam shakta hav jal?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Who is cooking?",
+    "xrou": "Ka paka?",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "I will cook tonight.",
+    "xrou": "Adam thanatei paka aaj-ratri.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Thank you for dinner.",
+    "xrou": "Adam-dhanya da-tumu da-ratri-bhojana.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "The table is ready.",
+    "xrou": "Mez xce taiyar.",
+    "category": "Food & Hospitality"
+  },
+  {
+    "english": "Where is the key?",
+    "xrou": "Kutra kunji xce?",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The door is open.",
+    "xrou": "Darvaza xce khola.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The window is closed.",
+    "xrou": "Khidki xce bandh.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The room is clean.",
+    "xrou": "Kamra xce saf.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The room is dirty.",
+    "xrou": "Kamra xce ganda.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The house is quiet.",
+    "xrou": "Ghar xce siyat.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Someone is outside.",
+    "xrou": "Ka xce bahir.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Nobody is here.",
+    "xrou": "Shunya xce atra.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I am going upstairs.",
+    "xrou": "Adam gamana upar.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I am going downstairs.",
+    "xrou": "Adam gamana niche.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Where should I sleep?",
+    "xrou": "Kutra adam vakhra svap?",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I need a blanket.",
+    "xrou": "Adam apares kambal.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Please bring a candle.",
+    "xrou": "Kripa la mombatti.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The fire is burning.",
+    "xrou": "Agni xce jala.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The candle went out.",
+    "xrou": "Mombatti xanathes bujha.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The floor is wet.",
+    "xrou": "Bhumi xce bhiga.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The water is boiling.",
+    "xrou": "Jal xce ubala.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I need to wash my hands.",
+    "xrou": "Adam apares dhona adam-hasta.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I will clean the room.",
+    "xrou": "Adam thanatei saf-kara kamra.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Where is my bag?",
+    "xrou": "Kutra adam-thaila xce?",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I lost my coat.",
+    "xrou": "Adam xanathes nasha adam-kot.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "The bed is comfortable.",
+    "xrou": "Shayya xce sukhada.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "Please turn off the light.",
+    "xrou": "Kripa bujha prakasha.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "I will return home later.",
+    "xrou": "Adam thanatei punar caxra ghar baad-me.",
+    "category": "Home & Daily Life"
+  },
+  {
+    "english": "What time is it?",
+    "xrou": "Kim samay xce?",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "It is early.",
+    "xrou": "Etha xce jaldi.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "It is late.",
+    "xrou": "Etha xce der.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Not yet.",
+    "xrou": "Vai abhi.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Right now.",
+    "xrou": "Ena.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "In a moment.",
+    "xrou": "Eka kshana.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "In a minute.",
+    "xrou": "Eka nimisha.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Soon, I promise.",
+    "xrou": "Sun, adam pratijna.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Wait until morning.",
+    "xrou": "Intezar da-prabhat.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "We will leave tomorrow.",
+    "xrou": "Xcsadam thanatei caxra akal.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "I was here yesterday.",
+    "xrou": "Adam xanathes xce atra beeta-kal.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "I'll see you tonight.",
+    "xrou": "Adam thanatei dars tumu aaj-ratri.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "What are your plans?",
+    "xrou": "Kim yojana da-tumu?",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "I have no plans.",
+    "xrou": "Adam vai hav yojana.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Let's begin.",
+    "xrou": "Xce uta arambha.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Let's finish this.",
+    "xrou": "Xce uta samapta etha.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "We have enough time.",
+    "xrou": "Xcsadam hav vasa samay.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "We have little time.",
+    "xrou": "Xcsadam hav alp samay.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "I need more time.",
+    "xrou": "Adam apares adhik samay.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Come back later.",
+    "xrou": "Punar agaccha baad-me.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Every day.",
+    "xrou": "Sarva dina.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Every night.",
+    "xrou": "Sarva ratri.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Not today.",
+    "xrou": "Vai aaj-dina.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Maybe tomorrow.",
+    "xrou": "Kadachit akal.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "Until next time.",
+    "xrou": "Punar dars.",
+    "category": "Time & Plans"
+  },
+  {
+    "english": "I am happy.",
+    "xrou": "Adam xce prasanna.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am sad.",
+    "xrou": "Adam xce dukhi.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am angry.",
+    "xrou": "Adam xce krodhit.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am afraid.",
+    "xrou": "Adam xce bhaya.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am worried.",
+    "xrou": "Adam xce chintit.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am confused.",
+    "xrou": "Adam xce bhranti.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am exhausted.",
+    "xrou": "Adam xce khasta.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I feel better.",
+    "xrou": "Adam xce adhik samyak.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I feel worse.",
+    "xrou": "Adam xce adhik asvastha.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "Do not worry.",
+    "xrou": "Vai chinta.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "Don't be afraid.",
+    "xrou": "Vai bhaya.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "You are safe here.",
+    "xrou": "Tumu xce surakshit atra.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am here with you.",
+    "xrou": "Adam xce atra saha tumu.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "You are not alone.",
+    "xrou": "Tumu vai xce eka.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I need some rest.",
+    "xrou": "Adam apares vishrama.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I need to be alone.",
+    "xrou": "Adam apares xce eka.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I want to talk.",
+    "xrou": "Adam kama haxa.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I don't want to talk.",
+    "xrou": "Adam vai kama haxa.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I believe in you.",
+    "xrou": "Adam vishvas tumu.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I forgive you.",
+    "xrou": "Adam bakshes tumu.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "Please forgive me.",
+    "xrou": "Kripa bakshes adam.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I am sorry.",
+    "xrou": "Adam Baxcen.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "It's not your fault.",
+    "xrou": "Etha vai dosha da-tumu.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "I need help.",
+    "xrou": "Adam apares sahay.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "Thank you for listening.",
+    "xrou": "Adam-dhanya da-tumu da-gautes.",
+    "category": "Emotions & Reassurance"
+  },
+  {
+    "english": "Where is the road?",
+    "xrou": "Kutra rasta xce?",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Where is the nearest town?",
+    "xrou": "Kutra qarib nagar xce?",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "How far is it?",
+    "xrou": "Kati dur etha xce?",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Are we lost?",
+    "xrou": "Xcsadam xce bhramita?",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "I know the way.",
+    "xrou": "Adam xypremanah rasta.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "I don't know the way.",
+    "xrou": "Adam vai xypremanah rasta.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Follow the road.",
+    "xrou": "Anusara rasta.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Turn left.",
+    "xrou": "Phira vama.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Turn right.",
+    "xrou": "Phira dakshina.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Go straight ahead.",
+    "xrou": "Gamana sidha.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "We must cross the river.",
+    "xrou": "Xcsadam vakhra para nadi.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The bridge is broken.",
+    "xrou": "Pul xce bhanga.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The path is dangerous.",
+    "xrou": "Rasta xce khatarnak.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The forest is quiet.",
+    "xrou": "Van xce siyat.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The road is long.",
+    "xrou": "Rasta xce dirgha.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "I need a map.",
+    "xrou": "Adam apares nakshe.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Where is the boat?",
+    "xrou": "Kutra naav xce?",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The boat is ready.",
+    "xrou": "Naav xce taiyar.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "We leave at dawn.",
+    "xrou": "Xcsadam caxra da-prabhat.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "We will travel together.",
+    "xrou": "Xcsadam thanatei yatra saha.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The mountain is ahead.",
+    "xrou": "Pahad xce aage.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "The river is behind us.",
+    "xrou": "Nadi xce piche Xcsadam.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "Let's find shelter.",
+    "xrou": "Xce uta khoj ashraya.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "We should stop here.",
+    "xrou": "Xcsadam vakhra vasa atra.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "We are almost home.",
+    "xrou": "Xcsadam xce qarib ghar.",
+    "category": "Travel & Directions"
+  },
+  {
+    "english": "How much is this?",
+    "xrou": "Kati mulya etha?",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "That is expensive.",
+    "xrou": "Etha xce mahanga.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "That is cheap.",
+    "xrou": "Etha xce sasta.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I want to buy this.",
+    "xrou": "Adam kama kharid etha.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I want to sell this.",
+    "xrou": "Adam kama bech etha.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "Do you accept coin?",
+    "xrou": "Tumu svikara sikka?",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I have enough coin.",
+    "xrou": "Adam hav vasa sikka.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I need more coin.",
+    "xrou": "Adam apares adhik sikka.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "What are you offering?",
+    "xrou": "Kim tumu yhanam?",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I offer a fair trade.",
+    "xrou": "Adam yhanam nyaya vyapar.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "We can trade.",
+    "xrou": "Xcsadam shakta vyapar.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I will pay tomorrow.",
+    "xrou": "Adam thanatei chuka akal.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I already paid.",
+    "xrou": "Adam xanathes chuka.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "This belongs to me.",
+    "xrou": "Etha xce dar-adam.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "This belongs to you.",
+    "xrou": "Etha xce dar-tumu.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "Nothing is free.",
+    "xrou": "Shunya xce muft.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "You owe me nothing.",
+    "xrou": "Vai qarz.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I have work to do.",
+    "xrou": "Adam hav karya da-kara.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "We need more supplies.",
+    "xrou": "Xcsadam apares adhik saman.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "Who is in charge?",
+    "xrou": "Ka xce adhikari?",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "Speak to the leader.",
+    "xrou": "Haxa da-neta.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I have a contract.",
+    "xrou": "Adam hav karar.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "The payment is fair.",
+    "xrou": "Chuka xce nyaya.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "The market is open.",
+    "xrou": "Bazaar xce khola.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "Let's discuss the price.",
+    "xrou": "Xce uta haxa da-mulya.",
+    "category": "Trade & Work"
+  },
+  {
+    "english": "I need more wood.",
+    "xrou": "Adam apares adhik lakdi.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "I need more stone.",
+    "xrou": "Adam apares adhik patthar.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Bring me the iron.",
+    "xrou": "La loha da-adam.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The metal is hot.",
+    "xrou": "Dhatu xce garam.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The blade is sharp.",
+    "xrou": "Dhar xce tikshna.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The blade is dull.",
+    "xrou": "Dhar xce kund.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "We need more tools.",
+    "xrou": "Xcsadam apares adhik auzar.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Where is the forge?",
+    "xrou": "Kutra bhatti xce?",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The fire is too hot.",
+    "xrou": "Agni xce ati garam.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The potion is ready.",
+    "xrou": "Aushadhi xce taiyar.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "I need clean water.",
+    "xrou": "Adam apares saf jal.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Bring the empty jar.",
+    "xrou": "La khali bartan.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The jar is full.",
+    "xrou": "Bartan xce purna.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The jar is empty.",
+    "xrou": "Bartan xce khali.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Mix these together.",
+    "xrou": "Mishra etha saha.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Heat the mixture.",
+    "xrou": "Garam-kara mishrana.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Cool it slowly.",
+    "xrou": "Shita-kara etha dhire.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Do not drink that.",
+    "xrou": "Vai xvar etha.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "This is poison.",
+    "xrou": "Etha xce sikar.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Everything is poison.",
+    "xrou": "Sikar xce mund.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The herbs are fresh.",
+    "xrou": "Oshadhi xce taza.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The work is finished.",
+    "xrou": "Karya xce samapta.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "The work is not finished.",
+    "xrou": "Karya vai xce samapta.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "I need a little more.",
+    "xrou": "Adam apares alp adhik.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Please be careful.",
+    "xrou": "Kripa, sava samyak.",
+    "category": "Crafts & Alchemy"
+  },
+  {
+    "english": "Stop right there.",
+    "xrou": "Vasa atra.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Who goes there?",
+    "xrou": "Ka gamana tatra?",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Identify yourself.",
+    "xrou": "Haxa nama da-tumu.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "We are not enemies.",
+    "xrou": "Xcsadam vai xce shatru.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "I mean no harm.",
+    "xrou": "Adam vai kama hani.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Keep your distance.",
+    "xrou": "Stha dur.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Stay behind me.",
+    "xrou": "Stha piche adam.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "There is danger ahead.",
+    "xrou": "Sankata xce aage.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Someone is watching us.",
+    "xrou": "Ka dars Xcsadam.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Do not make a sound.",
+    "xrou": "Vai kara haxa.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "We need to hide.",
+    "xrou": "Xcsadam apares chupa.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Let's leave quietly.",
+    "xrou": "Xce uta caxra siyat.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "I heard something.",
+    "xrou": "Adam xanathes gautes etha.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Did you see that?",
+    "xrou": "Tumu xanathes dars etha?",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "We are safe now.",
+    "xrou": "Xcsadam xce surakshit ena.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Are you hurt?",
+    "xrou": "Tumu xce vedana?",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "I am not hurt.",
+    "xrou": "Adam vai xce vedana.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "I need a healer.",
+    "xrou": "Adam apares vaidya.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "The wound is serious.",
+    "xrou": "Ghav xce gambhir.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "The danger has passed.",
+    "xrou": "Sankata xanathes caxra.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "We must protect the children.",
+    "xrou": "Xcsadam vakhra raksha puxa.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Do not give up.",
+    "xrou": "Vai tyaga.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Hold on.",
+    "xrou": "Saha.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Be brave.",
+    "xrou": "Bhava darsam.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "We will survive.",
+    "xrou": "Xcsadam thanatei jiva.",
+    "category": "Safety & Adventure"
+  },
+  {
+    "english": "Welcome to Harlow.",
+    "xrou": "Svagata da-Harlow.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "The tavern is open.",
+    "xrou": "Madhushala xce khola.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Come to the gathering.",
+    "xrou": "Agaccha da-sabha.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Everyone is welcome.",
+    "xrou": "Sarva xce svagata.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "We have guests.",
+    "xrou": "Xcsadam hav mehman.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Please introduce yourself.",
+    "xrou": "Kripa haxa nama da-tumu.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "This is an important meeting.",
+    "xrou": "Etha xce mahatva sabha.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "We should discuss this.",
+    "xrou": "Xcsadam vakhra haxa da-etha.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "I have an announcement.",
+    "xrou": "Adam hav ghoshana.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Listen to the announcement.",
+    "xrou": "Gautes ghoshana.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Who is hosting?",
+    "xrou": "Ka xce mezban?",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Who invited you?",
+    "xrou": "Ka nimantrana tumu?",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "I came to help.",
+    "xrou": "Adam xanathes agaccha da-sahay.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Please take a seat.",
+    "xrou": "Kripa baith.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Let us begin.",
+    "xrou": "Xce uta arambha.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "We need volunteers.",
+    "xrou": "Xcsadam apares swayamsevak.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "The event starts soon.",
+    "xrou": "Utsava arambha sun.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Thank you for attending.",
+    "xrou": "Adam-dhanya da-tumu da-sabha.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "The meeting is over.",
+    "xrou": "Sabha xce samapta.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Let's celebrate.",
+    "xrou": "Xce uta utsava.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Congratulations!",
+    "xrou": "Mubarak!",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "That was wonderful.",
+    "xrou": "Etha xanathes adbhut.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "We'll meet again.",
+    "xrou": "Xcsadam thanatei mil punar.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Good luck to you.",
+    "xrou": "Shubha-bhagya da-tumu.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "Until next time, friends.",
+    "xrou": "Punar dars, mitra.",
+    "category": "Community & Gatherings"
+  },
+  {
+    "english": "I can do it.",
+    "xrou": "Adam shakta kara etha.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I cannot do it.",
+    "xrou": "Adam vai shakta kara etha.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can't see.",
+    "xrou": "Adam vai shakta dars.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can see you.",
+    "xrou": "Adam shakta dars tumu.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I cannot hear you.",
+    "xrou": "Adam vai shakta gautes tumu.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can help you.",
+    "xrou": "Adam shakta sahay tumu.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can't help you.",
+    "xrou": "Adam vai shakta sahay tumu.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "Can I help?",
+    "xrou": "Adam shakta sahay?",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I could try.",
+    "xrou": "Adam shakta-tha koshish.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I cannot stay.",
+    "xrou": "Adam vai shakta thahar.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can stay.",
+    "xrou": "Adam shakta thahar.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "It is impossible.",
+    "xrou": "Etha xce vai-sambhavit.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "Is it possible?",
+    "xrou": "Etha xce sambhavit?",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "You can leave.",
+    "xrou": "Tumu shakta caxra.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "You cannot leave.",
+    "xrou": "Tumu vai shakta caxra.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I don't want to.",
+    "xrou": "Adam vai kama.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I have no choice.",
+    "xrou": "Adam vai-chayan.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I have no hope.",
+    "xrou": "Adam vai-asha.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I don't need help.",
+    "xrou": "Adam vai apares sahayata.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I can manage myself.",
+    "xrou": "Adam shakta sava adam.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I cannot remember.",
+    "xrou": "Adam vai shakta smarana.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I don't trust him.",
+    "xrou": "Adam vai vishvas vise.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I'm not afraid.",
+    "xrou": "Adam vai bhaybhit.",
+    "category": "Abilities & Negation"
+  },
+  {
+    "english": "I am ready.",
+    "xrou": "Adam xce taiyar.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I am not ready.",
+    "xrou": "Adam vai xce taiyar.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "What do you mean?",
+    "xrou": "Kim tumu arth-kara?",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That doesn't make sense.",
+    "xrou": "Etha vai-spashta.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Tell me the truth.",
+    "xrou": "Haxa sach da-adam.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I made a mistake.",
+    "xrou": "Adam xanathes kara bhul.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I have an idea.",
+    "xrou": "Adam hav vichar.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "What is your opinion?",
+    "xrou": "Kim xce raay da-tumu?",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "We have a problem.",
+    "xrou": "Xcsadam hav samasya.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "We need a solution.",
+    "xrou": "Xcsadam apares samadhan.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Do you agree?",
+    "xrou": "Tumu sahamat?",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "That is not necessary.",
+    "xrou": "Etha xce vai-zarurat.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Why not?",
+    "xrou": "Kyon-nahi?",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I will be careful.",
+    "xrou": "Adam thanatei xce savdhan.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "This is dangerous.",
+    "xrou": "Etha xce khatra.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "There is no danger.",
+    "xrou": "Vai khatra.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I am going home.",
+    "xrou": "Adam caxra ghar.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Do not forget.",
+    "xrou": "Vai vismara.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Let's discuss it.",
+    "xrou": "Xce uta charcha etha.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "I need to think.",
+    "xrou": "Adam apares vichar-kara.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "You have my permission.",
+    "xrou": "Tumu hav adam-anumati.",
+    "category": "Everyday Conversation"
+  },
+  {
+    "english": "Without mercy.",
+    "xrou": "Vai-daya.",
+    "category": "Vai-Compounds"
+  },
+  {
+    "english": "Blind.",
+    "xrou": "Vai-drishti.",
+    "category": "Vai-Compounds"
+  },
+  {
+    "english": "Deaf.",
+    "xrou": "Vai-shruti.",
+    "category": "Vai-Compounds"
+  },
+  {
+    "english": "Nameless.",
+    "xrou": "Vai-nama.",
+    "category": "Vai-Compounds"
+  },
+  {
+    "english": "Sleepless.",
+    "xrou": "Vai-nidra.",
+    "category": "Vai-Compounds"
+  },
+  {
+    "english": "Unprotected.",
+    "xrou": "Vai-rakshak.",
+    "category": "Vai-Compounds"
+  }
+]
