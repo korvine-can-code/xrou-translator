@@ -1,6 +1,7 @@
-const CACHE = 'dvandva-xrou-haxa-v1';
+const CACHE = 'dvandva-xrou-haxa-v2';
 const ASSETS = [
-  './', './index.html', './lexicon.json', './manifest.webmanifest', './assets/cave-bg.jpg', './assets/dvandva-header.png'
+  './', './index.html', './engine.js', './app.js', './lexicon.json',
+  './manifest.webmanifest', './assets/cave-bg.jpg', './assets/dvandva-header.png'
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
