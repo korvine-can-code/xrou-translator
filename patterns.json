@@ -327,5 +327,117 @@
     "xrou": "vai-[noun]",
     "example_en": "nameless",
     "example_xrou": "vai-nama"
+  },
+  {
+    "category": "Noun plurality",
+    "english": "[noun] (plural).",
+    "xrou": "[noun]ys.",
+    "example_en": "Mothers.",
+    "example_xrou": "Matarys."
+  },
+  {
+    "category": "Noun plurality",
+    "english": "The [plural noun] are here.",
+    "xrou": "[noun]ys xce atra.",
+    "example_en": "The books are here.",
+    "example_xrou": "Pustakays xce atra."
+  },
+  {
+    "category": "Noun plurality",
+    "english": "My [plural noun].",
+    "xrou": "Adam-[noun]ys.",
+    "example_en": "My books.",
+    "example_xrou": "Adam-pustakays."
+  },
+  {
+    "category": "Noun plurality",
+    "english": "Your [plural noun].",
+    "xrou": "Da-tumu [noun]ys.",
+    "example_en": "Your mothers.",
+    "example_xrou": "Da-tumu matarys."
+  },
+  {
+    "category": "Possession",
+    "english": "Your [noun].",
+    "xrou": "Da-tumu [noun].",
+    "example_en": "Your house.",
+    "example_xrou": "Da-tumu ghar."
+  },
+  {
+    "category": "Possession",
+    "english": "Our [noun].",
+    "xrou": "Da-Xcsadam [noun].",
+    "example_en": "Our house.",
+    "example_xrou": "Da-Xcsadam ghar."
+  },
+  {
+    "category": "Possession",
+    "english": "Their [noun].",
+    "xrou": "Da-vise [noun].",
+    "example_en": "Their house.",
+    "example_xrou": "Da-vise ghar."
+  },
+  {
+    "category": "Possession",
+    "english": "My [noun]s.",
+    "xrou": "Adam-[noun]ys.",
+    "example_en": "My friends.",
+    "example_xrou": "Adam-mitrays."
+  },
+  {
+    "category": "Past",
+    "english": "I [past verb] you.",
+    "xrou": "Adam xanathes [verb] tumu.",
+    "example_en": "I protected you.",
+    "example_xrou": "Adam xanathes raksha tumu."
+  },
+  {
+    "category": "Past",
+    "english": "I [past verb].",
+    "xrou": "Adam xanathes [verb].",
+    "example_en": "I walked.",
+    "example_xrou": "Adam xanathes cara."
+  },
+  {
+    "category": "Past",
+    "english": "We [past verb].",
+    "xrou": "Xcsadam xanathes [verb].",
+    "example_en": "We walked.",
+    "example_xrou": "Xcsadam xanathes cara."
+  },
+  {
+    "category": "Future",
+    "english": "We will [verb].",
+    "xrou": "Xcsadam thanatei [verb].",
+    "example_en": "We will travel.",
+    "example_xrou": "Xcsadam thanatei yatra."
+  },
+  {
+    "category": "Negation",
+    "english": "Without [noun] (lexical adjective).",
+    "xrou": "vai-[noun].",
+    "example_en": "Without sight.",
+    "example_xrou": "vai-drishti."
+  },
+  {
+    "category": "Ability",
+    "english": "I cannot [verb].",
+    "xrou": "Adam vai shakta [verb].",
+    "example_en": "I cannot see.",
+    "example_xrou": "Adam vai shakta dars."
+  },
+  {
+    "category": "Verbs",
+    "english": "She [verb]s.",
+    "xrou": "Vise [verb].",
+    "example_en": "She walks.",
+    "example_xrou": "Vise cara."
+  },
+  {
+    "category": "Verbs",
+    "english": "They [verb].",
+    "xrou": "Vise [verb].",
+    "example_en": "They walk.",
+    "example_xrou": "Vise cara."
   }
 ]

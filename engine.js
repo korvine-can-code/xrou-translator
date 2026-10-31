@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v4 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v5 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -13,9 +13,11 @@
     .filter(Boolean);
   const EN_CANON = {
     i:'adam', me:'adam', you:'tumu', we:'Xcsadam', us:'Xcsadam',
-    my:'adam-', your:'da-tumu', mine:'dar-adam', yours:'dar-tumu',
+    he:'vise', she:'vise', they:'vise', him:'vise', them:'vise',
+    my:'adam-', your:'da-tumu', our:'da-Xcsadam', their:'da-vise', his:'da-vise', her:'da-vise', mine:'dar-adam', yours:'dar-tumu',
     not:'vai', no:'vai', will:'thanatei', shall:'thanatei',
     'will not':'vai thanatei', 'should not':'vai vakhra', 'must not':'vai vakhra',
+    'did not':'xanathes vai', "didn't":'xanathes vai',
     can:'shakta', cannot:'vai shakta', "can't":'vai shakta',
     could:'shakta-tha', "couldn't":'vai-shakta-tha',
     "won't":'vai thanatei', "don't":'vai', "doesn't":'vai', "didn't":'vai',
@@ -23,7 +25,7 @@
     "shouldn't":'vai vakhra', "mustn't":'vai vakhra',
     "wouldn't":'vai iccha-tha', "mightn't":'vai sambhavit',
     am:'xce', are:'xce', is:'xce', be:'xce',
-    love:'pixrit', know:'xypremanah', understand:'xypremanah',
+    child:'puxa', love:'pixrit', know:'xypremanah', understand:'xypremanah',
     protect:'raksha', save:'raksha', good:'xera',
     say:'haxa', speak:'haxa', give:'yhanam',
     want:'kama', desire:'kama', please:'kripa',
@@ -38,14 +40,14 @@
     'vai thanatei':'will not',
     pixrit:'love', xypremanah:'understand', raksha:'protect',
     kama:'want', haxa:'speak', kara:'do', bhava:'become',
-    'adam-':'my', 'da-tumu':'to you', 'dar-tumu':'yours',
+    'adam-':'my', 'da-tumu':'to you', 'da-xcsadam':'our', 'da-vise':'their', 'dar-tumu':'yours',
     'dar-adam':'mine', 'adam-javitaran':'my husband',
     'adam-matar':'my mother', 'adam-pitar':'my father',
-    punar:'again', bali:'sacrifice', puxa:'child',
+    punar:'again', bali:'sacrifice', tumys:'you', vise:'they',
     rast:'yes', kripa:'please', xera:'good',
   };
-  const pronouns = new Set(['adam','adar','adas','tumu','xcsadam','vise']);
-  const beFor = x => ['adam','adar','adas'].includes(x) ? 'am' : x === 'tumu' || x === 'xcsadam' ? 'are' : 'is';
+  const pronouns = new Set(['adam','adar','adas','tumu','tumys','xcsadam','vise']);
+  const beFor = x => ['adam','adar','adas'].includes(x) ? 'am' : x === 'tumu' || x === 'tumys' || x === 'xcsadam' ? 'are' : 'is';
   const tokenize = s => {
     const re = /[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu;
     const words=[]; let match;
@@ -98,6 +100,103 @@
     for(const lang of ['en','xrou']) {
       for(const list of indexes[lang].values()) list.sort((a,b)=>b.toks.length-a.toks.length || Number(b.override)-Number(a.override));
     }
+    // Version 5 morphology. Explicit dictionary entries always win over derived forms.
+    // -ys is a PROPOSED regular count-noun plural, inspired by the attested tumys.
+    // Some nouns (notably puxa) also have an established collective reading.
+    const nounEntry = (key,lang) => {
+      const entry=(indexes[lang].get(norm(key))||[]).find(e=>e.key===norm(key) && /noun|family|title|endearment/i.test(e.entry.type||''));
+      return entry?.entry || null;
+    };
+    const verbEntry = key => {
+      const direct=EN_CANON[norm(key)];
+      if (direct && !['','xce','vai'].includes(direct)) {
+        // Canonical action roots are preferred over lexicon homonyms.
+        if(['love','know','understand','protect','save','say','speak','give','want','desire','do'].includes(norm(key))) return direct;
+      }
+      const match=(indexes.en.get(norm(key))||[]).find(e=>e.key===norm(key) && /verb/.test(e.entry.type||''));
+      return match?.entry.drow || null;
+    };
+    const preferredNoun={child:'puxa',children:'puxa'};
+    const singularEnglish={children:'child',men:'man',women:'woman',people:'person',feet:'foot',teeth:'tooth',mice:'mouse',geese:'goose'};
+    const pluralEnglish={child:'children',man:'men',woman:'women',person:'people',foot:'feet',tooth:'teeth',mouse:'mice',goose:'geese'};
+    const toEnglishPlural = raw => {
+      const word=String(raw).trim(),key=norm(word);
+      if(pluralEnglish[key]) return pluralEnglish[key];
+      if(/[^aeiou]y$/i.test(word)) return word.slice(0,-1)+'ies';
+      if(/(s|sh|ch|x|z)$/i.test(word)) return word+'es';
+      return word+'s';
+    };
+    const pastEnglish = raw => {
+      const word=String(raw).trim();
+      const irregular={go:'went',leave:'left',see:'saw',hear:'heard',speak:'spoke',say:'said',do:'did',have:'had',make:'made',eat:'ate',drink:'drank',give:'gave',take:'took',know:'knew',understand:'understood',become:'became',think:'thought',come:'came',run:'ran',buy:'bought',teach:'taught',bring:'brought',write:'wrote',read:'read',feel:'felt',sleep:'slept',find:'found',lose:'lost',fight:'fought',hold:'held'};
+      if(irregular[norm(word)]) return irregular[norm(word)];
+      if(/e$/i.test(word)) return word+'d';
+      if(/[^aeiou]y$/i.test(word)) return word.slice(0,-1)+'ied';
+      return word+'ed';
+    };
+    const englishVerbStem = raw => {
+      const s=norm(raw);
+      const irregular={went:'go',left:'leave',saw:'see',heard:'hear',spoke:'speak',said:'say',did:'do',had:'have',made:'make',ate:'eat',drank:'drink',gave:'give',took:'take',knew:'know',understood:'understand',became:'become',thought:'think',came:'come',ran:'run',bought:'buy',taught:'teach',brought:'bring',wrote:'write',read:'read',felt:'feel',slept:'sleep',found:'find',lost:'lose',fought:'fight',held:'hold'};
+      if(irregular[s] && verbEntry(irregular[s])) return {stem:irregular[s],past:true};
+      if(/ied$/.test(s) && verbEntry(s.slice(0,-3)+'y')) return {stem:s.slice(0,-3)+'y',past:true};
+      if(/ed$/.test(s)) {
+        for(const option of [s.slice(0,-1),s.slice(0,-2)]) if(verbEntry(option)) return {stem:option,past:true};
+      }
+      if(/ies$/.test(s) && verbEntry(s.slice(0,-3)+'y')) return {stem:s.slice(0,-3)+'y',past:false};
+      if(/es$/.test(s) && verbEntry(s.slice(0,-2))) return {stem:s.slice(0,-2),past:false};
+      if(/s$/.test(s) && verbEntry(s.slice(0,-1))) return {stem:s.slice(0,-1),past:false};
+      return null;
+    };
+    const enNounSingular = raw => {
+      const s=norm(raw);
+      if(singularEnglish[s]) return singularEnglish[s];
+      if(/ies$/.test(s) && nounEntry(s.slice(0,-3)+'y','en')) return s.slice(0,-3)+'y';
+      if(/es$/.test(s) && nounEntry(s.slice(0,-2),'en')) return s.slice(0,-2);
+      if(/s$/.test(s) && nounEntry(s.slice(0,-1),'en')) return s.slice(0,-1);
+      return null;
+    };
+    const xrouNounRoot = raw => {
+      // The hyphen is optional in manually entered nouns: matarys / matar-ys.
+      const s=norm(raw).replace(/-ys$/,'ys');
+      if(!s.endsWith('ys') || s.length<5) return null;
+      const root=s.slice(0,-2);
+      return nounEntry(root,'xrou') ? root : null;
+    };
+    const xrouEnglishNoun = raw => {
+      const root=xrouNounRoot(raw);
+      if(!root) return null;
+      const entry=nounEntry(root,'xrou');
+      return toEnglishPlural(XROU_CANON[root] || splitAliases(entry.english)[0]);
+    };
+    const pluralizeXrou = drow => /ys$/i.test(drow) ? drow : drow+'ys';
+    function derivedToken(token,source) {
+      const raw=token.raw, s=token.norm;
+      if(source==='en') {
+        // Only nouns already in the dictionary can be inflected.
+        const singular=enNounSingular(s);
+        if(singular && nounEntry(singular,'en')) {
+          const root=preferredNoun[singular] || nounEntry(singular,'en').drow;
+          return {text:pluralizeXrou(root),kind:'plural'};
+        }
+        const v=englishVerbStem(s);
+        if(v) return {text:(v.past?'xanathes ':'')+verbEntry(v.stem),kind:v.past?'past':'verb'};
+      } else {
+        if(s.startsWith('adam-') && s.length>5) {
+          const root=s.slice(5);
+          const plain=nounEntry(root,'xrou');
+          if(plain) return {text:'my '+(XROU_CANON[root] || splitAliases(plain.english)[0]),kind:'possessive'};
+          const plural=xrouEnglishNoun(root);
+          if(plural) return {text:'my '+plural,kind:'possessive plural'};
+        }
+        const plural=xrouEnglishNoun(s);
+        if(plural) return {text:plural,kind:'plural'};
+        if(s.startsWith('vai-') && s.length>4) {
+          const root=s.slice(4),base=nounEntry(root,'xrou');
+          if(base) return {text:'without '+splitAliases(base.english)[0],kind:'negative compound'};
+        }
+      }
+      return null;
+    }
     const vocab={en:[...indexes.en.keys()],xrou:[...indexes.xrou.keys()]};
     function suggestions(input,lang,max=3) {
       const target=norm(input), options=[];
@@ -137,6 +236,7 @@
       }
       return splitAliases(segment.english)[0] || segment.english;
     }
+    const isNounSrc = s => !!nounEntry(s,'xrou') || !!xrouNounRoot(s) || !!(s.startsWith('adam-') && nounEntry(s.slice(5),'xrou'));
     function englishAdjust(parts) {
       const out=[];
       for(let i=0;i<parts.length;i++) {
@@ -147,13 +247,17 @@
         if(part.src==='vai' && next==='xce' && pronouns.has(prev)) {
           out.push({...part,text:beFor(prev)+' not',end:parts[i+1].end});i++;continue;
         }
+        if(part.src==='xanathes' && next==='vai' && parts[i+2]) {
+          out.push({...part,text:'did not',end:parts[i+1].end});i++;continue;
+        }
         if(part.src==='xanathes' && next && parts[i+1]) {
           const verb=parts[i+1].text;
-          out.push({...part,text:pastForms[verb] || ('previously '+verb),end:parts[i+1].end});i++;continue;
+          out.push({...part,text:pastForms[verb] || pastEnglish(verb),end:parts[i+1].end});i++;continue;
         }
         let txt=part.text;
         if(part.src==='vai' && !['xce','thanatei'].includes(next)) txt=pronouns.has(prev)?'do not':'do not';
         if(part.src==='xce' && pronouns.has(prev)) txt=beFor(prev);
+        if(['da-tumu','da-xcsadam','da-vise'].includes(part.src) && parts[i+1] && !parts[i+1].unknown && isNounSrc(parts[i+1].src)) txt=({'da-tumu':'your','da-xcsadam':'our','da-vise':'their'})[part.src];
         if(part.src==='bali' && (prev==='xce'||out[out.length-1]?.text?.endsWith(' not'))) {
           txt='a sacrifice';
         }
@@ -169,7 +273,10 @@
           out.push({...p,text:'vai xce',end:n.end}); i++; continue;
         }
         if(p.src==='will' && n?.src==='not') {out.push({...p,text:'vai thanatei',end:n.end});i++;continue;}
-        if(['do','does','did'].includes(p.src) && n?.src==='not') {out.push({...p,text:'vai',end:n.end});i++;continue;}
+        if(['do','does','did'].includes(p.src) && n?.src==='not') {out.push({...p,text:p.src==='did'?'xanathes vai':'vai',end:n.end});i++;continue;}
+        if(p.src==='my' && n && !n.unknown && (isNounSrc(norm(n.text)) || !!nounEntry(n.src,'en') || !!enNounSingular(n.src))) {
+          out.push({...p,text:'adam-'+n.text,end:n.end});i++;continue;
+        }
         if(['a','an','the'].includes(p.src)) {out.push({...p,text:''});continue;}
         out.push(p);
       }
@@ -189,7 +296,11 @@
       if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
       const parts=[],matches=[],unknown=[];
       for(let i=0;i<tokens.length;) {
-        const match=matchAt(tokens,i,source);
+        const irregularPlural=source==='en' && Object.hasOwn(singularEnglish,tokens[i].norm) ? derivedToken(tokens[i],source) : null;
+        const prev=tokens[i-1]?.norm;
+        const contextualPast=source==='en' && !['did','had'].includes(tokens[i].norm) && ['i','you','he','she','we','they','it'].includes(prev) && englishVerbStem(tokens[i].norm)?.past ? derivedToken(tokens[i],source) : null;
+        const preferredDerived=irregularPlural || contextualPast;
+        const match=preferredDerived ? null : matchAt(tokens,i,source);
         if(match) {
           const {entry,count}=match, phrase=tokens.slice(i,i+count).map(w=>w.raw).join(' ');
           const drow=entry.entry.drow;
@@ -200,9 +311,15 @@
           i+=count;
         } else {
           const token=tokens[i];
-          const guesses=suggestions(token.raw,source);
-          unknown.push({word:token.raw,suggestions:guesses});
-          parts.push({src:token.norm,text:`⟦${token.raw}⟧`,start:token.start,end:token.end,unknown:true});
+          const derived=preferredDerived || derivedToken(token,source);
+          if(derived) {
+            parts.push({src:token.norm,text:derived.text,start:token.start,end:token.end,unknown:false});
+            matches.push(`${token.raw} → ${derived.text} (${derived.kind})`);
+          } else {
+            const guesses=suggestions(token.raw,source);
+            unknown.push({word:token.raw,suggestions:guesses});
+            parts.push({src:token.norm,text:`⟦${token.raw}⟧`,start:token.start,end:token.end,unknown:true});
+          }
           i++;
         }
       }

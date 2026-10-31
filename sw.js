@@ -1,4 +1,4 @@
-const CACHE = 'dvandva-xrou-haxa-v4-vai-lexicon';
+const CACHE = 'dvandva-xrou-haxa-v5-grammar';
 const ASSETS = ['./','./index.html','./lexicon.json','./phrasebook.json','./patterns.json','./engine.js','./app.js','./manifest.webmanifest','./assets/cave-bg.jpg','./assets/dvandva-header.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
