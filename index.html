@@ -185,6 +185,20 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
 .dictionarySynonymHints { grid-column:1/-1; padding:15px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:rgba(17,17,17,.93); border:1px solid rgba(255,255,255,.14); border-radius:14px; }
 .dictionarySynonymHints .synonymLabel { width:100%; }
 
+/* V22: Xrou speech register controls. */
+.registerGroup { margin-top:16px; padding:15px; border:1px solid rgba(255,255,255,.16); border-radius:15px; background:rgba(10,10,10,.67); }
+.registerTop { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.registerTop label { margin:0 0 4px; }
+.registerHelp { color:#c9c9c9; font-size:.81rem; line-height:1.5; margin-top:6px; }
+.registerButtons { display:flex; align-items:center; padding:4px; border:1px solid rgba(255,255,255,.2); border-radius:12px; background:#090909; }
+.registerBtn { border:0; border-radius:9px; padding:0 17px; background:transparent; color:#d0d0d0; min-width:95px; }
+.registerBtn.active { background:#ececec; color:#111; }
+.registerBtn.active:hover { background:#fff; }
+.genderGroup { margin-top:15px; }
+.genderGroup[hidden] { display:none; }
+.genderGroup select { min-width:min(100%,290px); }
+@media(max-width:580px) { .registerTop {flex-direction:column;align-items:stretch;} .registerButtons {width:100%;} .registerBtn{flex:1;} }
+
 /* V21: GitHub Issue translation requests, available from every tab. */
 .requestPanel {
   margin-top:18px; padding:24px;
@@ -247,6 +261,28 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
             <option value="en">English</option>
           </select>
         </div>
+      </div>
+
+      <div class="registerGroup" aria-label="Xrou speech register settings">
+        <div class="registerTop">
+          <div>
+            <label id="registerLabel">Xrou speech</label>
+            <div class="registerHelp" id="registerHelp">Casual: adam = I, adamys = we</div>
+          </div>
+          <div class="registerButtons" role="group" aria-labelledby="registerLabel">
+            <button type="button" id="casualMode" class="registerBtn active" aria-pressed="true">Casual</button>
+            <button type="button" id="formalMode" class="registerBtn" aria-pressed="false">Formal</button>
+          </div>
+        </div>
+        <div id="genderGroup" class="genderGroup" hidden>
+          <label for="formalGender">Formal first-person form</label>
+          <select id="formalGender">
+            <option value="masculine">Masculine — adam</option>
+            <option value="feminine">Feminine — adar</option>
+            <option value="neutral" selected>Neutral — adal</option>
+          </select>
+        </div>
+        <div class="registerHelp">Applies to English → Xrou output and Xrou examples. Both registers are recognized when translating Xrou → English.</div>
       </div>
 
       <div style="margin-top:14px">

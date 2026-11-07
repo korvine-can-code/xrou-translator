@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v19 — dictionary synonym suggestions, plus v18 QoL tools */
+/* Dvandva Xrou-Haxa Translator v22 — register choice, plus synonyms and v18 QoL tools */
 (() => {
   'use strict';
   const byId=id=>document.getElementById(id);
@@ -12,6 +12,36 @@
   const details=byId('translationDetails'), suggestionsBox=byId('suggestions');
   const status=byId('translationStatus'), search=byId('search'),typeFilter=byId('typeFilter');
   const results=byId('results'),count=byId('count');
+  // Xrou speech register: persisted locally; applies only when displaying Xrou.
+  const registerStorageKey='dvandva-register-v22';
+  let registerSettings={mode:'casual',gender:'neutral'};
+  try {
+    const stored=JSON.parse(localStorage.getItem(registerStorageKey)||'null');
+    if(stored && ['casual','formal'].includes(stored.mode))registerSettings.mode=stored.mode;
+    if(stored && ['masculine','feminine','neutral'].includes(stored.gender))registerSettings.gender=stored.gender;
+  }catch(_){}
+  const displayXrou=text=>XrouEngine.applyXrouRegister(text,registerSettings.mode,registerSettings.gender);
+  const displayRegister=()=>{
+    byId('casualMode').classList.toggle('active',registerSettings.mode==='casual');
+    byId('formalMode').classList.toggle('active',registerSettings.mode==='formal');
+    byId('casualMode').setAttribute('aria-pressed',String(registerSettings.mode==='casual'));
+    byId('formalMode').setAttribute('aria-pressed',String(registerSettings.mode==='formal'));
+    byId('genderGroup').hidden=registerSettings.mode!=='formal';
+    byId('formalGender').value=registerSettings.gender;
+    byId('registerHelp').textContent=registerSettings.mode==='casual'
+      ?'Casual: adam = I, adamys = we'
+      :'Formal: adam / adar / adal = masculine / feminine / neutral I; Xcsadam = we';
+  };
+  const updateRegister=()=>{
+    try{localStorage.setItem(registerStorageKey,JSON.stringify(registerSettings));}catch(_){}
+    displayRegister();
+    renderPhrasebook();renderPatterns();doTranslate();
+  };
+  byId('casualMode').addEventListener('click',()=>{registerSettings.mode='casual';updateRegister();});
+  byId('formalMode').addEventListener('click',()=>{registerSettings.mode='formal';updateRegister();});
+  byId('formalGender').addEventListener('change',e=>{registerSettings.gender=e.target.value;updateRegister();});
+  displayRegister();
+
 
   // V18 — saved items/history are local to this device, not uploaded or synchronized.
   const favoriteStorageKey='dvandva-favorites-v18';
@@ -35,7 +65,17 @@
   function persist(key,arr){try{localStorage.setItem(key,JSON.stringify(arr));}catch(err){console.warn('Browser storage unavailable:',err);}}
   const favoriteKeyWord=w=>'word:'+norm(w);
   const favoriteKeyPhrase=p=>'phrase:'+norm(p.xrou)+'|'+norm(p.english);
-  const favoriteKeyTranslation=t=>'translation:'+t.from+'|'+norm(t.source);
+  const favoriteKeyTranslation=t=>'translation:'+t.from+'|'+norm(t.source)+'|'+(t.mode||'casual')+'|'+(t.gender||'neutral');
+  // Migrate pre-V22 favorites so users keep their saved translations when
+  // register-specific favorites are introduced. Old entries were not tagged.
+  let migratedFavorites=false;
+  for(const f of favorites){
+    if(f.kind==='translation' && f.source && f.from && f.key!==favoriteKeyTranslation(f)) {
+      f.mode=f.mode||'casual'; f.gender=f.gender||'neutral';
+      f.key=favoriteKeyTranslation(f); migratedFavorites=true;
+    }
+  }
+  if(migratedFavorites)persist(favoriteStorageKey,favorites);
   const isFavorite=key=>favorites.some(f=>f.key===key);
   function toggleFavorite(entry){
     const old=favorites.findIndex(f=>f.key===entry.key);
@@ -179,7 +219,7 @@
   }
   function currentTranslation(){
     if(!lastTranslation||!sourceText.value.trim()) return null;
-    return {...lastTranslation,source:sourceText.value,from:sourceLang.value,to:targetLang.value};
+    return {...lastTranslation,source:sourceText.value,from:sourceLang.value,to:targetLang.value,mode:registerSettings.mode,gender:registerSettings.gender};
   }
   function updateTranslationFavorite(){
     const btn=byId('saveTranslation');
@@ -240,7 +280,14 @@
       const i=Number(b.dataset.favCopy??b.dataset.favTry??b.dataset.favRemove),f=favorites[i];
       if(!f)return;
       if(b.hasAttribute('data-fav-copy')) await copyText(f.word||f.xrou||f.result||'');
-      if(b.hasAttribute('data-fav-try')) useInTranslator(f.source||f.english||f.word||'',f.from||((f.kind==='word')?'xrou':'en'));
+      if(b.hasAttribute('data-fav-try')) {
+        if(f.kind==='translation'){
+          if(['casual','formal'].includes(f.mode))registerSettings.mode=f.mode;
+          if(['masculine','feminine','neutral'].includes(f.gender))registerSettings.gender=f.gender;
+          displayRegister();
+        }
+        useInTranslator(f.source||f.english||f.word||'',f.from||((f.kind==='word')?'xrou':'en'));
+      }
       if(b.hasAttribute('data-fav-remove')) toggleFavorite(f);
     });
     byId('historyResults').addEventListener('click',async e=>{
@@ -249,7 +296,11 @@
       const i=Number(b.dataset.historyCopy??b.dataset.historyTry??b.dataset.historyStar),h=history[i];
       if(!h)return;
       if(b.hasAttribute('data-history-copy')) await copyText(h.result);
-      if(b.hasAttribute('data-history-try'))useInTranslator(h.source,h.from);
+      if(b.hasAttribute('data-history-try')) {
+        if(h.mode && ['casual','formal'].includes(h.mode))registerSettings.mode=h.mode;
+        if(h.gender && ['masculine','feminine','neutral'].includes(h.gender))registerSettings.gender=h.gender;
+        displayRegister(); useInTranslator(h.source,h.from);
+      }
       if(b.hasAttribute('data-history-star'))saveTranslation(h);
     });
     byId('clearHistory').addEventListener('click',()=>{
@@ -284,7 +335,7 @@
   function doTranslate() {
     if(!engine) return;
     const text=sourceText.value;
-    const result=engine.translate(text,sourceLang.value);
+    const result=engine.translate(text,sourceLang.value,registerSettings);
     if(targetLang.value==='xrou') {
       // Unknown brackets stay plain text; recognized Xrou headwords are clickable.
       output.innerHTML=result.text.split(/(⟦[^⟧]+⟧)/g).map(part=>
@@ -292,7 +343,7 @@
     } else {
       output.innerHTML=esc(result.text).replace(/⟦([^⟧]+)⟧/g,'<span class="unknown">⟦$1⟧</span>');
     }
-    lastTranslation={source:text,result:result.text,from:sourceLang.value,to:targetLang.value};
+    lastTranslation={source:text,result:result.text,from:sourceLang.value,to:targetLang.value,mode:registerSettings.mode,gender:registerSettings.gender};
     updateTranslationFavorite();
     details.innerHTML='';
     suggestionsBox.replaceChildren();
@@ -441,7 +492,7 @@
     pResults.innerHTML=shown.length?shown.map((entry,i)=>`<article class="phraseCard">
       <div class="phraseTag">${esc(entry.category)}</div>
       <div class="phraseEnglish">${esc(entry.english)}</div>
-      <div class="phraseXrou">${renderXrouWords(entry.xrou)}</div>
+      <div class="phraseXrou">${renderXrouWords(displayXrou(entry.xrou))}</div>
       <div class="actions">
         <button type="button" data-pcopy="${i}">Copy Xrou</button>
         <button type="button" data-ptry="${i}" class="primary">Try in translator</button>
@@ -457,7 +508,7 @@
       const entry=shown[idx];if(!entry) return;
       if(button.hasAttribute('data-pstar'))savePhrase(entry);
       else if(button.hasAttribute('data-ptry')) useInTranslator(entry.english);
-      else if(await copyText(entry.xrou)){button.textContent='Copied!';setTimeout(()=>{button.textContent='Copy Xrou';},950);}
+      else if(await copyText(displayXrou(entry.xrou))){button.textContent='Copied!';setTimeout(()=>{button.textContent='Copy Xrou';},950);}
     };
   }
   function renderPatterns() {
@@ -468,8 +519,8 @@
     gResults.innerHTML=filtered.length?filtered.map((entry,i)=>`<article class="phraseCard">
       <div class="phraseTag">${esc(entry.category)}</div>
       <div class="phraseEnglish">${esc(entry.english)}</div>
-      <div class="patternForm">${esc(entry.xrou)}</div>
-      <div class="patternExample"><strong>Example:</strong> ${esc(entry.example_en)}<br>${esc(entry.example_xrou)}</div>
+      <div class="patternForm">${esc(displayXrou(entry.xrou))}</div>
+      <div class="patternExample"><strong>Example:</strong> ${esc(entry.example_en)}<br>${esc(displayXrou(entry.example_xrou))}</div>
       <div class="actions"><button type="button" class="primary" data-pattern="${i}">Try example</button></div>
     </article>`).join(''):'<div class="empty">No patterns match your search.</div>';
     gResults.onclick=event=>{

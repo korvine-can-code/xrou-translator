@@ -100,9 +100,14 @@
     "type": "noun"
   },
   {
+    "drow": "adal",
+    "english": "I; me (formal neutral)",
+    "type": "pronoun"
+  },
+  {
     "drow": "adam",
-    "english": "I; me; my (in compounds)",
-    "type": "pronoun / possessive"
+    "english": "I; me (casual universal; formal masculine)",
+    "type": "pronoun"
   },
   {
     "drow": "Adam apares sahay",
@@ -325,18 +330,13 @@
     "type": "compound / endearment"
   },
   {
-    "drow": "adams",
-    "english": "we (older variant)",
+    "drow": "adamys",
+    "english": "we; us (casual universal)",
     "type": "pronoun"
   },
   {
     "drow": "adar",
-    "english": "I; me (feminine)",
-    "type": "pronoun"
-  },
-  {
-    "drow": "adas",
-    "english": "I; me (neutral)",
+    "english": "I; me (formal feminine)",
     "type": "pronoun"
   },
   {
@@ -2690,6 +2690,11 @@
     "type": "verb"
   },
   {
+    "drow": "bizaza",
+    "english": "frog",
+    "type": "noun"
+  },
+  {
     "drow": "bodha-kara",
     "english": "realize",
     "type": "verb"
@@ -2827,6 +2832,11 @@
   {
     "drow": "da-adam",
     "english": "of me; from me; for me",
+    "type": "relational form"
+  },
+  {
+    "drow": "da-adamys",
+    "english": "our; for us (casual)",
     "type": "relational form"
   },
   {
@@ -5171,7 +5181,7 @@
   },
   {
     "drow": "jhut",
-    "english": "falsehood; lie",
+    "english": "falsehood (older form)",
     "type": "noun"
   },
   {
@@ -7135,6 +7145,11 @@
     "type": "noun"
   },
   {
+    "drow": "kori",
+    "english": "theft; stealing",
+    "type": "noun"
+  },
+  {
     "drow": "kori-xipe",
     "english": "secretly; on the sly",
     "type": "adverb"
@@ -8246,7 +8261,7 @@
   },
   {
     "drow": "mendhak",
-    "english": "frog; toad",
+    "english": "toad (older word)",
     "type": "noun"
   },
   {
@@ -8338,6 +8353,11 @@
     "drow": "mitha",
     "english": "sweet; sugary",
     "type": "adjective"
+  },
+  {
+    "drow": "mitr",
+    "english": "truth",
+    "type": "noun"
   },
   {
     "drow": "mitra",
@@ -8826,7 +8846,7 @@
   },
   {
     "drow": "natha",
-    "english": "master; lord",
+    "english": "master; lord (general honorific)",
     "type": "title"
   },
   {
@@ -11511,7 +11531,7 @@
   },
   {
     "drow": "sak",
-    "english": "truth; fact",
+    "english": "fact; factual matter",
     "type": "noun"
   },
   {
@@ -12076,8 +12096,8 @@
   },
   {
     "drow": "satya",
-    "english": "true; real; truth",
-    "type": "adjective / noun"
+    "english": "true; real; genuine",
+    "type": "adjective"
   },
   {
     "drow": "satya-vac",
@@ -14700,6 +14720,11 @@
     "type": "adjective / vai-compound"
   },
   {
+    "drow": "vai-mitr",
+    "english": "lie; untruth; falsehood",
+    "type": "noun / privative compound"
+  },
+  {
     "drow": "vai-mitra",
     "english": "friendless; without friends",
     "type": "adjective / vai-compound"
@@ -15295,6 +15320,11 @@
     "type": "noun"
   },
   {
+    "drow": "vaz",
+    "english": "big; large",
+    "type": "adjective"
+  },
+  {
     "drow": "vazra",
     "english": "very; intensely; loudly",
     "type": "intensifier"
@@ -15760,6 +15790,16 @@
     "type": "noun"
   },
   {
+    "drow": "Xatra",
+    "english": "Lord (title)",
+    "type": "title"
+  },
+  {
+    "drow": "Xatrani",
+    "english": "Lady (title)",
+    "type": "title"
+  },
+  {
     "drow": "xauStyr",
     "english": "my favorite; favorite beloved",
     "type": "endearment"
@@ -15796,7 +15836,7 @@
   },
   {
     "drow": "Xcsadam",
-    "english": "we; us",
+    "english": "we; us (formal)",
     "type": "pronoun"
   },
   {

@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v20 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v22 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -103,7 +103,11 @@
     'surface-dweller':'Ozzen-xrou', 'surface-dwellers':'Ozzen-xrou',
     'surface dweller':'Ozzen-xrou', 'surface dwellers':'Ozzen-xrou',
     'sun folk':'Ozzen-xrou', 'sun-folk':'Ozzen-xrou',
+    // Register-specific first-person pronouns are selected after translating.
     i:'adam', me:'adam', you:'tumu', we:'Xcsadam', us:'Xcsadam',
+    truth:'mitr', lie:'vai-mitr', untruth:'vai-mitr', falsehood:'vai-mitr',
+    frog:'bizaza', big:'vaz', large:'vaz', theft:'kori', stealing:'kori',
+    lord:'Xatra', lady:'Xatrani',
     he:'vise', she:'vise', they:'vise', him:'vise', them:'vise',
     my:'adam-', your:'da-tumu', our:'da-Xcsadam', their:'da-vise', his:'da-vise', her:'da-vise', mine:'dar-adam', yours:'dar-tumu',
     not:'vai', no:'vai', will:'thanatei', shall:'thanatei',
@@ -161,14 +165,17 @@
     'ratri-mani':'moon', 'ratri-maniys':'moons',
     'ratri-kingari':'star', 'ratri-kingariys':'stars',
     'ratri-mani-prakasha':'moonlight',
-    adam:'I', adar:'I', adas:'I', tumu:'you', xcsadam:'we',
+    // Accept either speech register in Xrou → English, regardless of toggle.
+    adam:'I', adar:'I', adal:'I', adamys:'we', tumu:'you', xcsadam:'we',
+    mitr:'truth', 'vai-mitr':'lie', bizaza:'frog', xatra:'Lord', xatrani:'Lady',
+    vaz:'big', kori:'theft',
     vai:'not', thanatei:'will', xanathes:'', xce:'is',
     shakta:'can', 'vai shakta':'cannot', 'vai-shakta':'unable',
     'shakta-tha':'could', 'vai-shakta-tha':'could not',
     'vai thanatei':'will not',
     pixrit:'love', xypremanah:'understand', raksha:'protect',
     kama:'want', haxa:'speak', kara:'do', bhava:'become',
-    'adam-':'my', 'da-tumu':'to you', 'da-xcsadam':'our', 'da-vise':'their', 'dar-tumu':'yours',
+    'adam-':'my', 'da-tumu':'to you', 'da-xcsadam':'our', 'da-adamys':'our', 'da-vise':'their', 'dar-tumu':'yours',
     'dar-adam':'mine', 'adam-javitaran':'my husband',
     'adam-matar':'my mother', 'adam-pitar':'my father',
     punar:'again', bali:'sacrifice', tumys:'you', vise:'they',
@@ -177,8 +184,8 @@
     'vai-saha':'without', 'karana-da':'because of', 'vishaya-da':'about', 'antara-madhye':'between',
     rast:'yes', kripa:'please', xera:'good',
   };
-  const pronouns = new Set(['adam','adar','adas','tumu','tumys','xcsadam','vise']);
-  const beFor = x => ['adam','adar','adas'].includes(x) ? 'am' : x === 'tumu' || x === 'tumys' || x === 'xcsadam' ? 'are' : 'is';
+  const pronouns = new Set(['adam','adar','adal','adamys','tumu','tumys','xcsadam','vise']);
+  const beFor = x => ['adam','adar','adal'].includes(x) ? 'am' : ['tumu','tumys','xcsadam','adamys'].includes(x) ? 'are' : 'is';
   const tokenize = s => {
     const re = /[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu;
     const words=[]; let match;
@@ -196,6 +203,29 @@
       }
     }
     return row[b.length];
+  }
+  // Xrou register is a surface form, not a different lexicon or grammar.
+  // Apply only to standalone first-person pronouns. Never change compounds
+  // like adam-matar (my mother), da-Xcsadam (our), or proper names.
+  // A deliberate exception: Xcsadam ⇄ adamys may appear in standalone phrases.
+  function applyXrouRegister(text,mode='casual',gender='neutral') {
+    const current=mode==='formal'?'formal':'casual';
+    const form=['masculine','feminine','neutral'].includes(gender)?gender:'neutral';
+    const first=current==='casual'?'adam':({masculine:'adam',feminine:'adar',neutral:'adal'}[form]);
+    const plural=current==='casual'?'adamys':'Xcsadam';
+    // Preserve user-facing unknown markers as-is.
+    return String(text).split(/(⟦[^⟧]*⟧)/g).map(chunk=>{
+      if(chunk.startsWith('⟦'))return chunk;
+      const withOur=chunk.replace(/(?<![\p{L}\p{N}-])(da-xcsadam|da-adamys)(?![\p{L}\p{N}-])/giu,original=>{
+        const possessive=current==='casual'?'da-adamys':'da-Xcsadam';
+        return /^[A-Z]/.test(original)?possessive[0].toUpperCase()+possessive.slice(1):possessive;
+      });
+      return withOur.replace(/(?<![\p{L}\p{N}-])(xcsadam|adamys|adam|adar|adal|adas)(?![\p{L}\p{N}-])/giu,original=>{
+        const v=norm(original);
+        const replacement=['xcsadam','adamys'].includes(v)?plural:first;
+        return /^[A-Z]/.test(original)?replacement[0].toUpperCase()+replacement.slice(1):replacement;
+      });
+    }).join('');
   }
   function createTranslator(lexicon, phrasebook=[]) {
     if (!Array.isArray(lexicon)) throw new TypeError('Lexicon must be an array');
@@ -427,7 +457,7 @@
         let txt=part.text;
         if(part.src==='vai' && !['xce','thanatei'].includes(next)) txt=pronouns.has(prev)?'do not':'do not';
         if(part.src==='xce' && pronouns.has(prev)) txt=beFor(prev);
-        if(['da-tumu','da-xcsadam','da-vise'].includes(part.src) && parts[i+1] && !parts[i+1].unknown && isNounSrc(parts[i+1].src)) txt=({'da-tumu':'your','da-xcsadam':'our','da-vise':'their'})[part.src];
+        if(['da-tumu','da-xcsadam','da-adamys','da-vise'].includes(part.src) && parts[i+1] && !parts[i+1].unknown && isNounSrc(parts[i+1].src)) txt=({'da-tumu':'your','da-xcsadam':'our','da-adamys':'our','da-vise':'their'})[part.src];
         if(part.src==='bali' && (prev==='xce'||out[out.length-1]?.text?.endsWith(' not'))) {
           txt='a sacrifice';
         }
@@ -568,6 +598,15 @@
         Unseeing:'Vai-drishti-krita'
       };
       for(let i=0;i<tokens.length;) {
+        // In English, "a lie" is vai-mitr (a falsehood) but "I lie" / "don't lie"
+        // is the established verb draugov (to lie or deceive).
+        if(source==='en' && tokens[i].norm==='lie' &&
+          ['i','you','he','she','we','they','it','to','not','never','can','cannot','will','do','does','did','dont','please'].includes(tokens[i-1]?.norm)) {
+          const token=tokens[i];
+          parts.push({src:'lie',text:'draugov',start:token.start,end:token.end,unknown:false});
+          matches.push(`${token.raw} → draugov (verb)`);
+          i++;continue;
+        }
         if(source==='en' && Object.hasOwn(titleMagic,tokens[i].raw)) {
           const token=tokens[i]; const output=titleMagic[token.raw];
           parts.push({src:token.norm,text:output,start:token.start,end:token.end,unknown:false});
@@ -620,7 +659,7 @@
       if(source==='xrou' && /[\p{L}]/u.test(out)) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
       return {text:out,matches,unknown,segments:processed};
     }
-    function translate(text,source='en') {
+    function translate(text,source='en',options={}) {
       if(source!=='en' && source!=='xrou') throw new Error('Invalid source language');
       if(!String(text).trim()) return {text:'—',matches:[],unknown:[]};
       // Only English input is expanded; Xrou has its own vocabulary and morphology.
@@ -644,9 +683,17 @@
         output=output.replace(/([.!?]\s+)([a-z])/g,(_,a,b)=>a+b.toUpperCase());
         output=output.split(/(?<=\?)(?=\s|$)/).map(polishEnglishQuestion).join('');
       }
+      if(source==='en') {
+        output=applyXrouRegister(output, options.mode, options.gender);
+        // Display matching Xrou values in the selected register as well.
+        for(let i=0;i<matches.length;i++) {
+          const marker=matches[i].indexOf(' → ');
+          if(marker>=0)matches[i]=matches[i].slice(0,marker+3)+applyXrouRegister(matches[i].slice(marker+3),options.mode,options.gender);
+        }
+      }
       return {text:output,matches,unknown};
     }
     return {translate,suggestions,norm};
   }
-  return {createTranslator,norm,expandEnglishContractions};
+  return {createTranslator,norm,expandEnglishContractions,applyXrouRegister};
 });
