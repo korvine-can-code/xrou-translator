@@ -165,6 +165,12 @@
   function lookupWord(word){
     const k=norm(word);
     if(wordLookup.has(k)) return wordLookup.get(k);
+    // Productive yha- sacred compounds can be explored even if the combined
+    // word does not yet have a dedicated lexicon entry.
+    if(k.startsWith('yha') && k.length>3 && wordLookup.has(k.slice(3))){
+      const base=wordLookup.get(k.slice(3));
+      return {drow:word,english:'holy '+base.english.split(';')[0].trim(),type:'compound / sacred prefix'};
+    }
     if(k.endsWith('ys')&&wordLookup.has(k.slice(0,-2))){
       const e=wordLookup.get(k.slice(0,-2));
       return {...e,drow:word,english:e.english+' (plural form)',type:e.type};
@@ -186,13 +192,23 @@
   }
   function breakdown(word){
     const roots=String(word).split('-');
-    if(roots.length<2) return [];
-    return roots.map(root=>{
-      const base=wordLookup.get(norm(root));
-      if(base) return {root,meaning:base.english.split(';')[0].trim()};
-      if(norm(root)==='vai') return {root,meaning:'no / without / not'};
-      return {root,meaning:'Unlisted root — meaning not yet recorded'};
-    });
+    const pieces=[];
+    for(const root of roots){
+      const normalized=norm(root);
+      // The sacred prefix is joined without a hyphen: yha + dhatu.
+      // For Faesong, also expand the first component of yhadhatu-haxa.
+      if(normalized.startsWith('yha') && normalized.length>3 && wordLookup.has(normalized.slice(3))){
+        const base=wordLookup.get(normalized.slice(3));
+        pieces.push({root:'yha-',meaning:'holy / sacred'});
+        pieces.push({root:root.slice(3),meaning:base.english.split(';')[0].trim()});
+        continue;
+      }
+      const base=wordLookup.get(normalized);
+      if(base) pieces.push({root,meaning:base.english.split(';')[0].trim()});
+      else if(normalized==='vai') pieces.push({root,meaning:'no / without / not'});
+      else pieces.push({root,meaning:'Unlisted root — meaning not yet recorded'});
+    }
+    return pieces.length>1 ? pieces : [];
   }
   function openWord(word){
     const item=lookupWord(word);

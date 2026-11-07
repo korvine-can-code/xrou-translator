@@ -2944,12 +2944,6 @@
     "pavana": [
       "Nature & weather"
     ],
-    "pavitra-dhatu-agni": [
-      "Nature & weather"
-    ],
-    "Pavitra-dhatu-zaban": [
-      "Magic & alchemy"
-    ],
     "Paxain": [
       "Nature & weather"
     ],
@@ -4870,6 +4864,22 @@
     ],
     "da-adamys": [
       "Language & conversation"
+    ],
+    "yhadhatu-agni": [
+      "Nature & weather"
+    ],
+    "yhadhatu": [
+      "Magic & alchemy",
+      "People & society"
+    ],
+    "yhadhatu-haxa": [
+      "Magic & alchemy"
+    ],
+    "yha": [
+      "Language & conversation"
+    ],
+    "yhamakari": [
+      "Nature & weather"
     ]
   }
 }

@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v22 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v23 — deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -77,11 +77,12 @@
     potion:'rasayan-peya', potions:'rasayan-peyays',
     doing:'kara', delusion:'Bhranti', astralith:'shapa-dharaka-burj',
     metal:'dhatu', wind:'vayu', fire:'agni', ice:'baraf', water:'jal',
-    lightning:'pavitra-dhatu-agni', thunder:'upari-pratidhvaniys',
+    lightning:'yhadhatu-agni', thunder:'upari-pratidhvaniys',
     sky:'upari', above:'upari', earth:'bhumi', dirt:'mitti', soil:'mitti',
     agreement:'sahamati', pact:'sandhi', blood:'xun', bone:'asthi',
     magma:'bhumi-agni', fate:'niyati', red:'xun',
-    silver:'pavitra-dhatu', crown:'shikhara', pinnacle:'shikhara',
+    silver:'yhadhatu', holy:'yha', sacred:'yha', hallowed:'yha', speech:'haxa',
+    'holy spider':'yhamakari', 'sacred spider':'yhamakari', crown:'shikhara', pinnacle:'shikhara',
     spider:'Makari', web:'Makari-jala', desert:'vai-jal',
     tree:'paudha-stambha', trees:'paudha-stambhays', forest:'paudha-stambhays',
     meadow:'vai-paudha-stambhays',
@@ -150,13 +151,13 @@
     'skar-xrou':'draconian', 'ardha-rax':'wildkin',
     xun:'blood',
     'shapa-dharaka-burj':'Astralith',
-    'pavitra-dhatu':'silver', 'pavitra-dhatu-agni':'lightning',
+    'yhadhatu':'silver', 'yhadhatu-agni':'lightning', yha:'holy',
     'upari-pratidhvaniys':'thunder', 'bhumi-agni':'magma',
     niyati:'fate', 'makari-jala':'web',
     'vai-jal':'desert', 'paudha-stambha':'tree',
     'paudha-stambhays':'forest', 'vai-paudha-stambhays':'meadow',
     shikhara:'crown',
-    'ozzendaihyu-priya':'Solstice', 'pavitra-dhatu-zaban':'Faesong',
+    'ozzendaihyu-priya':'Solstice', 'yhadhatu-haxa':'Faesong',
     agraha:'Delusion', 'eka-saha-prakriti':'Heartwood',
     'pustaka-dharaka':'Mnemosyne', 'vai-drishti-krita':'Unseeing',
     natha:'master', 'adam-natha':'my master',
@@ -388,6 +389,13 @@
           const plural=xrouEnglishNoun(root);
           if(plural) return {text:'my '+plural,kind:'possessive plural'};
         }
+        // Productive sacred prefix; e.g. yhabhediya => holy wolf.
+        // Prefer exact lexicon headwords (handled by matchAt) over this fallback.
+        if(s.startsWith('yha') && s.length>3) {
+          const root=s.slice(3);
+          const base=indexes.xrou.get(root)?.find(e=>e.key===root);
+          if(base) return {text:'holy '+(XROU_CANON[root] || splitAliases(base.entry.english)[0]),kind:'sacred compound'};
+        }
         const plural=xrouEnglishNoun(s);
         if(plural) return {text:plural,kind:'plural'};
         if(s.startsWith('vai-') && s.length>4) {
@@ -477,6 +485,14 @@
         if(['can','cannot','could','would','should','must','might','shall','have','has','had','need'].includes(p.src) && n?.src==='not') {
           const negative={can:'vai shakta',cannot:'vai shakta',could:'vai-shakta-tha',would:'vai iccha-tha',should:'vai vakhra',must:'vai vakhra',might:'vai sambhavit',shall:'vai thanatei',have:'vai hav',has:'vai hav',had:'xanathes vai hav',need:'vai apares'};
           out.push({...p,text:negative[p.src],end:n.end});i++;continue;
+        }
+        // Sacred/holy + an established Xrou headword => yha<root>.
+        // Only concatenate when both parts are known; do not invent roots.
+        if(['holy','sacred','hallowed'].includes(p.src) && n && !n.unknown &&
+           /^[\p{L}][\p{L}\p{N}-]*$/u.test(n.text) &&
+           !/^yha/i.test(n.text) &&
+           /^\s+$/.test(currentText.slice(p.end,n.start))) {
+          out.push({...p,text:'yha'+n.text.toLowerCase(),end:n.end});i++;continue;
         }
         // English 'to' before an action verb is an infinitive marker, not a destination.
         // e.g. 'want to go' -> 'kama caxra'; 'go to town' keeps 'prati'.
@@ -593,7 +609,7 @@
       const parts=[],matches=[],unknown=[];
       const titleMagic={
         Astralith:'shapa-dharaka-burj', Solstice:'Ozzendaihyu-priya',
-        Faesong:'Pavitra-dhatu-zaban', Delusion:'Agraha',
+        Faesong:'yhadhatu-haxa', Delusion:'Agraha',
         Heartwood:'Eka-saha-prakriti', Mnemosyne:'Pustaka-dharaka',
         Unseeing:'Vai-drishti-krita'
       };

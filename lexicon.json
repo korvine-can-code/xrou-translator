@@ -9855,21 +9855,6 @@
     "type": "adjective"
   },
   {
-    "drow": "pavitra-dhatu",
-    "english": "silver; sacred metal",
-    "type": "noun / sacred material"
-  },
-  {
-    "drow": "pavitra-dhatu-agni",
-    "english": "lightning; silver-flame",
-    "type": "noun"
-  },
-  {
-    "drow": "Pavitra-dhatu-zaban",
-    "english": "Faesong; silver-tongued",
-    "type": "proper noun / magic"
-  },
-  {
     "drow": "Paxain",
     "english": "Horned Beast",
     "type": "title / noun"
@@ -16188,6 +16173,31 @@
     "drow": "yena",
     "english": "whereby",
     "type": "conjunction"
+  },
+  {
+    "drow": "yha",
+    "english": "holy; sacred; hallowed",
+    "type": "grammar prefix"
+  },
+  {
+    "drow": "yhadhatu",
+    "english": "silver; sacred metal; holy metal",
+    "type": "noun / sacred material"
+  },
+  {
+    "drow": "yhadhatu-agni",
+    "english": "lightning; silver-flame",
+    "type": "noun"
+  },
+  {
+    "drow": "yhadhatu-haxa",
+    "english": "Faesong; silver-speech; silver-tongued",
+    "type": "proper noun / magic"
+  },
+  {
+    "drow": "yhamakari",
+    "english": "sacred spider; holy spider",
+    "type": "compound / noun"
   },
   {
     "drow": "yhana",

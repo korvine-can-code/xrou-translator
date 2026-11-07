@@ -3106,7 +3106,7 @@
   },
   {
     "english": "The silver flame.",
-    "xrou": "Pavitra-dhatu-agni.",
+    "xrou": "Yhadhatu-agni.",
     "category": "Nature & Creatures"
   },
   {
@@ -3428,5 +3428,20 @@
     "english": "Leave the door unlocked.",
     "xrou": "Darvaza tala vai.",
     "category": "Home & Household"
+  },
+  {
+    "english": "The sacred spider.",
+    "xrou": "Yhamakari.",
+    "category": "Faith & Symbolism"
+  },
+  {
+    "english": "The sacred metal.",
+    "xrou": "Yhadhatu.",
+    "category": "Faith & Symbolism"
+  },
+  {
+    "english": "Faesong.",
+    "xrou": "Yhadhatu-haxa.",
+    "category": "Magic & Alchemy"
   }
 ]
