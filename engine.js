@@ -1,4 +1,4 @@
-/* Dvandva Xrou-Haxa Translator v23 — deterministic, offline translation helpers.
+/* Dvandva Xrou-Haxa Translator v26 — clause-aware, deterministic, offline translation helpers.
    This is a starter grammar engine, not a complete model of Xrou grammar. */
 (function(root, factory) {
   const api = factory();
@@ -105,7 +105,7 @@
     'surface dweller':'Ozzen-xrou', 'surface dwellers':'Ozzen-xrou',
     'sun folk':'Ozzen-xrou', 'sun-folk':'Ozzen-xrou',
     // Register-specific first-person pronouns are selected after translating.
-    i:'adam', me:'adam', you:'tumu', we:'Xcsadam', us:'Xcsadam',
+    i:'adam', me:'adam', you:'tumu', 'you all':'tumys', "y'all":'tumys', we:'Xcsadam', us:'Xcsadam',
     truth:'mitr', lie:'vai-mitr', untruth:'vai-mitr', falsehood:'vai-mitr',
     frog:'bizaza', big:'vaz', large:'vaz', theft:'kori', stealing:'kori',
     lord:'Xatra', lady:'Xatrani',
@@ -179,7 +179,7 @@
     'adam-':'my', 'da-tumu':'to you', 'da-xcsadam':'our', 'da-adamys':'our', 'da-vise':'their', 'dar-tumu':'yours',
     'dar-adam':'mine', 'adam-javitaran':'my husband',
     'adam-matar':'my mother', 'adam-pitar':'my father',
-    punar:'again', bali:'sacrifice', tumys:'you', vise:'they',
+    punar:'again', bali:'sacrifice', tumys:'you all', vise:'they',
     da:'for', prati:'to', saha:'with', upari:'above', adhas:'under', antar:'in', bahir:'out',
     uta:'and', athva:'or', lekin:'but', kyunki:'because', idias:'if', kintu:'although', paryanta:'until',
     'vai-saha':'without', 'karana-da':'because of', 'vishaya-da':'about', 'antara-madhye':'between',
@@ -463,13 +463,87 @@
           out.push({...part,text:pastForms[verb] || pastEnglish(verb),end:parts[i+1].end});i++;continue;
         }
         let txt=part.text;
-        if(part.src==='vai' && !['xce','thanatei'].includes(next)) txt=pronouns.has(prev)?'do not':'do not';
+        if(part.src==='vai' && !['xce','thanatei'].includes(next)) {
+          // Negative particle modifies the following verb; English needs an auxiliary.
+          // Avoid attaching 'do not' to an adjective/noun without grammatical evidence.
+          const nextVerb=next && isXrouAction(next);
+          txt=nextVerb && pronouns.has(prev) ? 'do not' : 'not';
+        }
         if(part.src==='xce' && pronouns.has(prev)) txt=beFor(prev);
         if(['da-tumu','da-xcsadam','da-adamys','da-vise'].includes(part.src) && parts[i+1] && !parts[i+1].unknown && isNounSrc(parts[i+1].src)) txt=({'da-tumu':'your','da-xcsadam':'our','da-adamys':'our','da-vise':'their'})[part.src];
         if(part.src==='bali' && (prev==='xce'||out[out.length-1]?.text?.endsWith(' not'))) {
           txt='a sacrifice';
         }
         out.push({...part,text:txt});
+      }
+      return out;
+    }
+    // V25: Realize simple Xrou clauses rather than blindly replacing each word.
+    // Xrou's attested examples use S-V-O order, subject -> tense/negative -> verb.
+    // This is deliberately conservative: no unattested syntactic morphology is invented.
+    const xrouActionRoots=new Set(['pixrit','kama','kara','khad','raksha','caxra',
+      'xypremanah','haxa','yhanam','bhava','xamarjivre','draugov','vasa']);
+    function isXrouAction(root) {
+      const key=norm(root);
+      if(xrouActionRoots.has(key))return true;
+      const entries=indexes.xrou.get(key)||[];
+      return entries.some(item=>item.key===key && /(^|[\s\/])verb($|[\s\/])/i.test(item.entry.type||''));
+    }
+    const subjectPronouns=new Set(['adam','adar','adal','adamys','xcsadam','tumu','tumys','vise']);
+    const objectPronouns={adam:'me',adar:'me',adal:'me',adamys:'us',xcsadam:'us',tumu:'you',tumys:'you'};
+    const singularThirdPronouns=new Set(['he','she','it','this','that']);
+    function conjugateEnglishPresent(verb) {
+      const irregular={be:'is',have:'has',do:'does',go:'goes',say:'says'};
+      const word=String(verb);
+      if(irregular[norm(word)])return irregular[norm(word)];
+      if(/[^aeiou]y$/i.test(word))return word.slice(0,-1)+'ies';
+      if(/(s|sh|ch|x|z|o)$/i.test(word))return word+'es';
+      return word+'s';
+    }
+    function realizeXrouClause(parts, options={}) {
+      // Keep earlier morphology and phrase recognition, but resolve English case,
+      // tense agreement and do-support using the entire clause.
+      const out=englishAdjust(parts).map(item=>({...item}));
+      if(!out.length)return out;
+      const viseReading=['he','she','they'].includes(options.vise)?options.vise:'they';
+      const originalFirst=parts[0]?.src;
+      const hasSubject=subjectPronouns.has(originalFirst)||originalFirst==='etha';
+      const subjectEnglish=originalFirst==='vise'?viseReading:
+        ['adam','adar','adal'].includes(originalFirst)?'I':
+        ['adamys','xcsadam'].includes(originalFirst)?'we':
+        ['tumu','tumys'].includes(originalFirst)?'you':
+        originalFirst==='etha'?'this':null;
+      const thirdSingular=singularThirdPronouns.has(subjectEnglish);
+      let hasAuxiliary=false,finiteVerbSeen=false;
+      for(let i=0;i<out.length;i++) {
+        const p=out[i],root=p.src;
+        if(subjectPronouns.has(root)) {
+          const isSubject=i===0 && hasSubject;
+          if(root==='vise') p.text=isSubject?viseReading:({he:'him',she:'her',they:'them'}[viseReading]);
+          else if(!isSubject && Object.hasOwn(objectPronouns,root)) p.text=objectPronouns[root];
+          else if(isSubject && ['adam','adar','adal'].includes(root))p.text='I';
+          else if(isSubject && ['adamys','xcsadam'].includes(root))p.text='we';
+          else if(root==='tumys')p.text='you all';
+        }
+        // English copulas must agree with the subject, even when Xrou uses
+        // the same grammatical root xce for everyone.
+        if(root==='xce' && hasSubject) p.text=subjectEnglish==='I'?'am':
+          thirdSingular?'is':'are';
+        if(root==='vai' && /^(do|does) not$/.test(p.text)) {
+          // 'vai yatha' is NOT an established English action verb; it is a
+          // relational expression. Don't hallucinate a do-support construction.
+          if(!hasSubject || !isXrouAction(parts[i+1]?.src))p.text='not';
+          else p.text=thirdSingular?'does not':'do not';
+        }
+        if(root==='vai' && /^(am|are|is) not$/.test(p.text))
+          p.text=(subjectEnglish==='I'?'am':thirdSingular?'is':'are')+' not';
+        if(/^(will( not)?|did not|do not|does not|can( not)?|could( not)?|would( not)?)$/.test(p.text))hasAuxiliary=true;
+        // Present-tense verb agreement: only for an identified action verb in
+        // an ordinary main clause. Never conjugate past/future or nouns.
+        if(hasSubject && i>0 && isXrouAction(root) && !finiteVerbSeen) {
+          if(thirdSingular && !hasAuxiliary)p.text=conjugateEnglishPresent(p.text);
+          finiteVerbSeen=true;
+        }
       }
       return out;
     }
@@ -529,7 +603,7 @@
       return m[1]+m[2]+(m[4]?' did not '+v.stem:' '+pastEnglish(v.stem))+m[6];
     }
     // Turn common inverted English questions into simple Xrou clause order.
-    // Preserve the original question mark: the question particle is punctuation in this prototype.
+    // The proposed Xrou question particle xek is added during realization.
     // Only rewrites clear question patterns; other inputs retain dictionary matching.
     function rewriteEnglishQuestion(line) {
       const leading=line.match(/^\s*/)?.[0] || '';
@@ -568,6 +642,9 @@
       // You can see? / You are ready? -> Can you see? / Are you ready?
       m=trimmed.match(/^(I|you|he|she|we|they|it)\s+(can|could|will|would|should|must|shall|am|are|is|was|were|have|has|had)\s+(.+?)\?$/i);
       if(m) return `${m[2]} ${m[1]==='I'?'I':m[1].toLowerCase()} ${m[3]}?`.replace(/^([A-Za-z])/,c=>c.toUpperCase());
+      // Negative auxiliary questions: "She does not love you?" -> "Does she not love you?"
+      m=trimmed.match(/^(I|you|he|she|we|they|it)\s+(do|does|did|will|would|can|could|should|must|shall|am|are|is|was|were)\s+not(?:\s+(.+?))?\?$/i);
+      if(m)return `${m[2]} ${m[1]==='I'?'I':m[1].toLowerCase()} not${m[3]?' '+m[3]:''}?`.replace(/^([A-Za-z])/,c=>c.toUpperCase());
       // You ran? -> Did you run? / You walked? -> Did you walk?
       m=trimmed.match(/^(I|you|we|they|he|she|it)\s+([A-Za-z]+)(?:\s+(.+?))?\?$/i);
       if(m) {
@@ -586,13 +663,31 @@
       // You know? -> Do you know? (best-effort; avoids guessing on longer clauses).
       m=trimmed.match(/^(I|you|we|they|he|she|it)\s+([A-Za-z]+)(?:\s+(.+?))?\?$/i);
       if(m && !['not','is','are','can','will','could','would','am','must','should'].includes(m[2].toLowerCase())) {
-        const aux=['he','she','it'].includes(m[1].toLowerCase())?'Does':'Do';
-        return `${aux} ${m[1]} ${m[2]}${m[3]?' '+m[3]:''}?`;
+        const singular=['he','she','it'].includes(m[1].toLowerCase());
+        const aux=singular?'Does':'Do';
+        let verb=m[2];
+        // English after does uses the uninflected verb: "Does she love?",
+        // not "Does she loves?". Only strip endings for known verbs.
+        if(singular && !verbEntry(verb)) {
+          const stems=verb.endsWith('ies')?[verb.slice(0,-3)+'y']:
+            verb.endsWith('es')?[verb.slice(0,-2),verb.slice(0,-1)]:
+            verb.endsWith('s')?[verb.slice(0,-1)]:[];
+          const known=stems.find(x=>verbEntry(x));
+          if(known)verb=known;
+        }
+        return `${aux} ${m[1]==='I'?'I':m[1].toLowerCase()} ${verb}${m[3]?' '+m[3]:''}?`;
       }
       return sentence;
     }
-    function translateLine(line,source,isQuestion=false) {
+    function translateLine(line,source,isQuestion=false,translatorOptions={}) {
       const originalStartsUpper=/^[A-Z]/.test(line.trim());
+      const leadingWhitespace=(line.match(/^\s*/)||[''])[0];
+      const trailingWhitespace=(line.match(/\s*$/)||[''])[0];
+      // Proposed standalone polar-question marker: xek at the END of the clause.
+      // Bare punctuation-only questions remain accepted for the approved legacy sample.
+      // Strip it before word matching so it cannot become a false unknown word.
+      const hasPolarParticle=source==='xrou' && /(?:^|\s)xek\s*$/iu.test(line);
+      if(hasPolarParticle) line=line.replace(/\s+xek(?=\s*$)/iu,'');
       currentText=line;
       const full=fullPhrases[source].get(phraseKey(line));
       if(full && !(source==='xrou' && tokenize(line).length===1 && indexes.xrou.has(norm(phraseKey(line))))) {
@@ -600,12 +695,12 @@
         const leading=(line.match(/^\s*/)||[''])[0];
         const trailing=(line.match(/\s*$/)||[''])[0];
         const label=source==='en'?full.english:full.xrou;
-        return {text:leading+translation+trailing,matches:[`Phrasebook: ${label.trim()} → ${translation}`],unknown:[],segments:[]};
+        return {text:leading+translation+trailing,matches:[`Phrasebook: ${label.trim()} → ${translation}`],unknown:[],segments:[],question:hasPolarParticle};
       }
       if(source==='en' && isQuestion) line=rewriteEnglishQuestion(line);
       if(source==='en') line=simplifyEnglishPerfect(line);
       const tokens=tokenize(line);
-      if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[]};
+      if(!tokens.length) return {text:line,matches:[],unknown:[],segments:[],question:hasPolarParticle};
       const parts=[],matches=[],unknown=[];
       const titleMagic={
         Astralith:'shapa-dharaka-burj', Solstice:'Ozzendaihyu-priya',
@@ -662,7 +757,7 @@
           i++;
         }
       }
-      const processed=source==='xrou'?englishAdjust(parts):englishToXrou(parts);
+      const processed=source==='xrou'?realizeXrouClause(parts,translatorOptions):englishToXrou(parts);
       let out='',pos=0;
       for(const p of processed) {
         // preserve all original punctuation, but normalize whitespace after skipped grammar particles.
@@ -671,9 +766,19 @@
       }
       out+=line.slice(pos);
       out=out.replace(/[ \t]{2,}/g,' ').replace(/\s+([,;:.!?])/g,'$1').trim();
-      if(source==='en' && originalStartsUpper) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
-      if(source==='xrou' && /[\p{L}]/u.test(out)) out=out.replace(/^([\p{L}])/u,s=>s.toUpperCase());
-      return {text:out,matches,unknown,segments:processed};
+      // translateLine may trim a sentence fragment; preserve original boundary
+      // whitespace so punctuation and the next translated sentence never fuse.
+      out=leadingWhitespace+out+trailingWhitespace;
+      // Standard Xrou yes/no question: S-V-O (+ modifiers) xek?
+      // WH questions use kim/kutra/etc., not the polar particle by default.
+      if(source==='en' && isQuestion && !/^(?:who|what|where|when|why|how|which|whose)\b/i.test(line.trim())) {
+        out=out.replace(/\s*$/,'')+' xek'+trailingWhitespace;
+        matches.push('Question → xek (provisional polar particle)');
+      }
+      if(source==='en' && originalStartsUpper) out=out.replace(/^(\s*)([\p{L}])/u,(_,w,c)=>w+c.toUpperCase());
+      if(source==='xrou' && /[\p{L}]/u.test(out)) out=out.replace(/^(\s*)([\p{L}])/u,(_,w,c)=>w+c.toUpperCase());
+      if(hasPolarParticle)matches.push('xek → yes/no question (provisional particle)');
+      return {text:out,matches,unknown,segments:processed,question:hasPolarParticle};
     }
     function translate(text,source='en',options={}) {
       if(source!=='en' && source!=='xrou') throw new Error('Invalid source language');
@@ -684,20 +789,27 @@
       const translated=[];const matches=[],unknown=[];
       for(let i=0;i<lines.length;i++) {
         if(/^\n+$/.test(lines[i])) { translated.push(lines[i]); continue; }
-        const sentences=lines[i].split(/([.!?]+(?=\s|$))/);
+        const sentences=lines[i].split(/([.!?]+(?=\s|$|[\p{L}⟦]))/u);
         for(let j=0;j<sentences.length;j++) {
           const sentence=sentences[j];
           if(/^[.!?]+$/.test(sentence)) {translated.push(sentence);continue;}
           const isQuestion=source==='en' && /^\?+/.test(sentences[j+1]||'');
-          const res=translateLine(sentence,source,isQuestion);
-          translated.push(res.text);matches.push(...res.matches);unknown.push(...res.unknown);
+          const res=translateLine(sentence,source,isQuestion,options);
+          // A question particle indicates interrogation even without written '?'.
+          const hasFollowingQuestion=/^\?+/.test(sentences[j+1]||'');
+          translated.push(res.text + (source==='xrou' && res.question && !hasFollowingQuestion ? '?' : ''));
+          matches.push(...res.matches);unknown.push(...res.unknown);
         }
       }
       let output=translated.join('').replace(/ +\n/g,'\n');
+      // A period/question mark/exclamation point starts a new sentence even
+      // when the source omitted a space (e.g. 'Eat this.This will do').
+      // Don't modify decimals such as 3.14 or ellipses.
+      output=output.replace(/([.!?])([\p{L}⟦])/gu,'$1 $2');
       // English retains sentence capitalization after punctuation, even for multi-sentence text.
       if(source==='xrou') {
         output=output.replace(/([.!?]\s+)([a-z])/g,(_,a,b)=>a+b.toUpperCase());
-        output=output.split(/(?<=\?)(?=\s|$)/).map(polishEnglishQuestion).join('');
+        output=output.replace(/(^|[.!?]+\s+)([^.!?]*\?)/gu,(_,prefix,clause)=>prefix+polishEnglishQuestion(clause));
       }
       if(source==='en') {
         output=applyXrouRegister(output, options.mode, options.gender);

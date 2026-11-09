@@ -1,0 +1,62 @@
+[
+  {
+    "xrou": "Tumu pixrit adam xek?",
+    "english": "Do you love me?",
+    "topic": "Polar question, second person"
+  },
+  {
+    "xrou": "Vise pixrit tumu xek?",
+    "english": "Does she love you?",
+    "topic": "Polar question, third person"
+  },
+  {
+    "xrou": "Tumu thanatei raksha adam xek?",
+    "english": "Will you protect me?",
+    "topic": "Future question"
+  },
+  {
+    "xrou": "Vise vai pixrit adam xek?",
+    "english": "Does she not love me?",
+    "topic": "Negated question"
+  },
+  {
+    "xrou": "Vise xanathes raksha adam xek?",
+    "english": "Did she protect me?",
+    "topic": "Past question"
+  },
+  {
+    "xrou": "Adamys pixrit tumys.",
+    "english": "We love you all.",
+    "topic": "Plural pronouns, confirmation"
+  },
+  {
+    "xrou": "Tumu vai raksha adam.",
+    "english": "You do not protect me.",
+    "topic": "Negation and object case"
+  },
+  {
+    "xrou": "Xcsadam thanatei caxra.",
+    "english": "We will leave.",
+    "topic": "Formal plural and future"
+  },
+  {
+    "xrou": "Vise xanathes pixrit adam.",
+    "english": "She loved me.",
+    "topic": "Past and object pronoun"
+  },
+  {
+    "xrou": "Adam vai thanatei caxra.",
+    "english": "I will not leave.",
+    "topic": "Negative future order"
+  },
+  {
+    "xrou": "Tumu raksha adam xek",
+    "english": "Do you protect me?",
+    "topic": "Spoken question without punctuation"
+  },
+  {
+    "xrou": "Adam pixrit tumu. Tumu pixrit adam xek?",
+    "english": "I love you. Do you love me?",
+    "topic": "Multiple sentences"
+  }
+]

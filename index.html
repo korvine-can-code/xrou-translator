@@ -285,6 +285,15 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
         <div class="registerHelp">Applies to English → Xrou output and Xrou examples. Both registers are recognized when translating Xrou → English.</div>
       </div>
 
+      <div id="viseReadingGroup" class="genderGroup" hidden>
+        <label for="viseReading">Translate <em>vise</em> as (English context)</label>
+        <select id="viseReading">
+          <option value="they" selected>They / them — neutral default</option>
+          <option value="she">She / her</option>
+          <option value="he">He / him</option>
+        </select>
+        <div class="registerHelp">Xrou <em>vise</em> stays the same. This only helps English choose pronouns and verb agreement.</div>
+      </div>
       <div style="margin-top:14px">
         <label for="sourceText">Text</label>
         <textarea id="sourceText" placeholder="Type a word, phrase, or sentence…"></textarea>
@@ -302,6 +311,7 @@ textarea:focus,input:focus,select:focus,button:focus-visible { outline:2px solid
         <div id="translationDetails" class="details"></div>
         <div id="suggestions" class="suggestions" aria-live="polite"></div>
         <div id="translationStatus" class="statusLine" role="status">Loading dictionary…</div>
+        <p class="mutedSmall" style="margin-top:12px">Grammar preview: yes/no questions use proposed final particle <strong>xek</strong>. Its form is not yet canon.</p>
       </div>
     </div>
   </section>

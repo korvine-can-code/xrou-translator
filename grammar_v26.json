@@ -1,0 +1,71 @@
+{
+  "version": "v26",
+  "confirmed": {
+    "canonical_examples_approved": 12,
+    "neutral_word_order": "subject–verb–object (SVO)",
+    "verb_position": "Tense and negative markers occur between the subject and main verb in approved simple examples",
+    "first_person_case": "adam serves as both I and me; interpret by SVO position",
+    "first_person_formal": "adar (feminine singular), adam (masculine singular), adal (neutral singular); plural Xcsadam",
+    "first_person_casual": "adam singular, adamys plural",
+    "questions": "Xrou has a dedicated question particle; exact form and obligatoriness not yet user-approved",
+    "question_samples": "Approved Vise pixrit tumu? still recognized as a question."
+  },
+  "provisional_implementation": {
+    "particle": "xek",
+    "status": "PROPOSED, NOT CANON",
+    "position": "sentence-final, immediately before question punctuation",
+    "scope": "yes/no (polar) questions, not what/where/why questions",
+    "legacy_questions": "question punctuation alone remains accepted for previously approved examples",
+    "example": "Vise pixrit tumu xek? → Does she love you?"
+  },
+  "canonical_tests": [
+    {
+      "xrou": "Adam pixrit tumu.",
+      "english": "I love you."
+    },
+    {
+      "xrou": "Tumu raksha adam.",
+      "english": "You protect me."
+    },
+    {
+      "xrou": "Vise pixrit tumu.",
+      "english": "She loves you."
+    },
+    {
+      "xrou": "Adam vai pixrit tumu.",
+      "english": "I do not love you."
+    },
+    {
+      "xrou": "Adam xanathes caxra.",
+      "english": "I left."
+    },
+    {
+      "xrou": "Adam thanatei caxra.",
+      "english": "I will leave."
+    },
+    {
+      "xrou": "Vise pixrit tumu?",
+      "english": "Does she love you?"
+    },
+    {
+      "xrou": "Adamys pixrit tumys.",
+      "english": "We love you all."
+    },
+    {
+      "xrou": "Adar pixrit tumu.",
+      "english": "I love you."
+    },
+    {
+      "xrou": "Xcsadam pixrit tumu.",
+      "english": "We love you."
+    },
+    {
+      "xrou": "Sikar xce mund.",
+      "english": "Everything is poison."
+    },
+    {
+      "xrou": "Xce uta vash-het.",
+      "english": "Let us dance."
+    }
+  ]
+}

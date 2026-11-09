@@ -15,6 +15,8 @@
   // Xrou speech register: persisted locally; applies only when displaying Xrou.
   const registerStorageKey='dvandva-register-v22';
   let registerSettings={mode:'casual',gender:'neutral'};
+  let viseReading='they';
+  try { const v=localStorage.getItem('dvandva-vise-reading-v25');if(['he','she','they'].includes(v))viseReading=v; } catch(_) {}
   try {
     const stored=JSON.parse(localStorage.getItem(registerStorageKey)||'null');
     if(stored && ['casual','formal'].includes(stored.mode))registerSettings.mode=stored.mode;
@@ -41,7 +43,14 @@
   byId('formalMode').addEventListener('click',()=>{registerSettings.mode='formal';updateRegister();});
   byId('formalGender').addEventListener('change',e=>{registerSettings.gender=e.target.value;updateRegister();});
   displayRegister();
-
+  const viseSelector=byId('viseReading');
+  const updateViseVisibility=()=>{byId('viseReadingGroup').hidden=sourceLang.value!=='xrou';};
+  viseSelector.value=viseReading;
+  viseSelector.addEventListener('change',()=>{
+    viseReading=viseSelector.value;
+    try {localStorage.setItem('dvandva-vise-reading-v25',viseReading);}catch(_){}
+    doTranslate();
+  });
 
   // V18 — saved items/history are local to this device, not uploaded or synchronized.
   const favoriteStorageKey='dvandva-favorites-v18';
@@ -336,14 +345,16 @@
     }
     doTranslate();
   }
-  sourceLang.addEventListener('change',()=>enforceDirection('source'));
-  targetLang.addEventListener('change',()=>enforceDirection('target'));
+  sourceLang.addEventListener('change',()=>{enforceDirection('source');updateViseVisibility();});
+  targetLang.addEventListener('change',()=>{enforceDirection('target');updateViseVisibility();});
   byId('swapBtn').addEventListener('click',()=>{
     [sourceLang.value,targetLang.value]=[targetLang.value,sourceLang.value];
     const current=output.textContent;
     if(current && current!=='—' && !current.startsWith('Dictionary')) sourceText.value=current.replace(/[⟦⟧]/g,'');
+    updateViseVisibility();
     doTranslate();
   });
+  updateViseVisibility();
   const copyText=async value=>{
     try { await navigator.clipboard.writeText(value); return true; }
     catch {window.prompt('Copy this:',value);return false;}
@@ -351,7 +362,7 @@
   function doTranslate() {
     if(!engine) return;
     const text=sourceText.value;
-    const result=engine.translate(text,sourceLang.value,registerSettings);
+    const result=engine.translate(text,sourceLang.value,{...registerSettings,vise:viseReading});
     if(targetLang.value==='xrou') {
       // Unknown brackets stay plain text; recognized Xrou headwords are clickable.
       output.innerHTML=result.text.split(/(⟦[^⟧]+⟧)/g).map(part=>
